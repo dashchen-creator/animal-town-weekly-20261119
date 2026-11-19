@@ -1,0 +1,3648 @@
+{
+  "published_at_utc": "2026-11-19T08:18:51.182252+00:00",
+  "source_cutoff": "主报告11/19 14:38 · 工作站补查15:42 · 北京时间",
+  "scope": "130 direct report references plus immediate dependencies of three linked galleries. 49 main-page images and 8 main-page videos. No full project or raw platform history.",
+  "references": [
+    {
+      "path": "docs/production/merge2-producer/周报_20261116-20261119_20261119T1438+0800.md",
+      "bytes": 23871,
+      "sha256": "626410f86aee01f928df4c8bd515cbb45cc94bf772a59ea265a0001628b571e9",
+      "report_sha256": "626410f86aee01f928df4c8bd515cbb45cc94bf772a59ea265a0001628b571e9",
+      "source_changed_after_report": false,
+      "url": "files/626410f86aee01f928df4c8b.md",
+      "large": false,
+      "filename": "周报_20261116-20261119_20261119T1438+0800.md",
+      "published_bytes": 21134,
+      "published_sha256": "762540916ec773eda48a731fcb617383d40ed74b7d573715f6db1a3eb1ede7fe"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/核验结果.json",
+      "bytes": 812,
+      "sha256": "fbf9d2095f154ee94707108de788e633010dc99a7e087b71b3504c581ae5ebc8",
+      "report_sha256": "fbf9d2095f154ee94707108de788e633010dc99a7e087b71b3504c581ae5ebc8",
+      "source_changed_after_report": false,
+      "url": "files/fbf9d2095f154ee94707108d.json",
+      "large": false,
+      "filename": "核验结果.json",
+      "published_bytes": 812,
+      "published_sha256": "fbf9d2095f154ee94707108de788e633010dc99a7e087b71b3504c581ae5ebc8"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/internal-r04-r2/reference/IN09.png",
+      "bytes": 2217575,
+      "sha256": "a38fba13e1b9bf9109e1e46c37ae79aebe0f805d33028a60dedad054f869f04e",
+      "report_sha256": "a38fba13e1b9bf9109e1e46c37ae79aebe0f805d33028a60dedad054f869f04e",
+      "source_changed_after_report": false,
+      "url": "files/a38fba13e1b9bf9109e1e46c.png",
+      "large": false,
+      "filename": "IN09.png",
+      "published_bytes": 2217575,
+      "published_sha256": "a38fba13e1b9bf9109e1e46c37ae79aebe0f805d33028a60dedad054f869f04e"
+    },
+    {
+      "path": "LocalOnly/builds/android/20261119-125521-cdde0e59/AnimalTownReskin-debug.apk",
+      "bytes": 279517705,
+      "sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+      "report_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+      "source_changed_after_report": false,
+      "url": "downloads/a958a19dfd588de3244b75f0.html",
+      "large": true,
+      "filename": "AnimalTownReskin-debug.apk",
+      "parts": [
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-000.bin",
+          "bytes": 8388608,
+          "sha256": "d69f3f3996baffdefa2f54956f61bbb67b8a2c977603a3e66e01e53394375a56"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-001.bin",
+          "bytes": 8388608,
+          "sha256": "8ba4753f594e454bef7c6a40928e8d9405eccc18041026efd496a46734a09452"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-002.bin",
+          "bytes": 8388608,
+          "sha256": "c9a4d059f7d441c6f6dbb2b98711e0beda29890b9800a4aa183df6a86da49ab7"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-003.bin",
+          "bytes": 8388608,
+          "sha256": "edd3d2fffcf43adbe7036f327e2cd2a50f1c2df87f01f8916c76ef4cdf281b1b"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-004.bin",
+          "bytes": 8388608,
+          "sha256": "34f1a8e003f7edf0126c743978dc7d2e873a07556b2f14309af6f257f0c69e6c"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-005.bin",
+          "bytes": 8388608,
+          "sha256": "d6ab0891609a5e30920a9a7c007da10476e1db75b89c1688085f15a1bf72223f"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-006.bin",
+          "bytes": 8388608,
+          "sha256": "9aab6e90072f2f6ed89f6b1f9dcf19a64677fc804418b587d91baf82b121c82d"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-007.bin",
+          "bytes": 8388608,
+          "sha256": "0e1a8410534bdb1364b5306b5a583485e58e8834dcc377cc24036d2ee4ca5388"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-008.bin",
+          "bytes": 8388608,
+          "sha256": "cb40de1cfb79066ef24e6c658420ff381eb59eb594a230137588ece8c8b03d89"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-009.bin",
+          "bytes": 8388608,
+          "sha256": "77bb0244fb0a1da8efa205b269998be44a72dfbe46fb6c32a0ca33d26b77a999"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-010.bin",
+          "bytes": 8388608,
+          "sha256": "592840a856b9a74d40ad7dacbdd5b6fd87c40460fcf672d4101a87016566fe93"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-011.bin",
+          "bytes": 8388608,
+          "sha256": "a46bd56792f7f1ae3f17353a666b10499d1c3f293bc62ca67cea83a44aa861c3"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-012.bin",
+          "bytes": 8388608,
+          "sha256": "c034247bd116bd084b123fd924419b9841592e86c70e7a85db5b92003c39c5a6"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-013.bin",
+          "bytes": 8388608,
+          "sha256": "eafe2f59815c1f8fe9bf3f41ddd0d2e4f9ac08604db3c3837d64e7de88e15363"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-014.bin",
+          "bytes": 8388608,
+          "sha256": "f207b0374c2f75707b751a31380c92ae65abcf0c180eae4b8b7e74f8fd31ac1d"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-015.bin",
+          "bytes": 8388608,
+          "sha256": "432060251c3f600ed7b878dc34ca1a8def69b9bd2ab330d564d2c59bec371d73"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-016.bin",
+          "bytes": 8388608,
+          "sha256": "84352bb949587251ca895ba8fde90fb5fa8f0027defe739bb73a663d336d9f6a"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-017.bin",
+          "bytes": 8388608,
+          "sha256": "6f222ed985c8445581a9390a4c60072f144fbfc6cc4cff7df201a6023726e47b"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-018.bin",
+          "bytes": 8388608,
+          "sha256": "190900e15f472597426a60ad5c479d757d8b9acb0a646487f024917e78242057"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-019.bin",
+          "bytes": 8388608,
+          "sha256": "8d5b9b5928a79277b50d1affba7567b9846966cc93e501e0d1ed3015fac23024"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-020.bin",
+          "bytes": 8388608,
+          "sha256": "795599f38f89efc1b43aa3f4569dee0e86618c8731dcb7c83f6ef950bb9c7057"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-021.bin",
+          "bytes": 8388608,
+          "sha256": "8ea94f0a45c65abdc54a2febb6edd146341667e4e56ac0382c835e147999a19c"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-022.bin",
+          "bytes": 8388608,
+          "sha256": "943cb29bbf7479d39189cebf6fbf5a43ef1edf2d2f5c3aaa8ad3c4012413b738"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-023.bin",
+          "bytes": 8388608,
+          "sha256": "c78445a5c668bb5cc2d65a2c2190042e2309b761409e6e13d5f72222d4a2b450"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-024.bin",
+          "bytes": 8388608,
+          "sha256": "685207a470e6772e5c1af6adc030057cf0cd43349a32461387d75891a0b10c02"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-025.bin",
+          "bytes": 8388608,
+          "sha256": "9b0be5c3cc34fb07cd82f0cdd849d4d41e4d5ba2fe964a3bb39066fb1bf194fd"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-026.bin",
+          "bytes": 8388608,
+          "sha256": "17c423e25b7b59c8fa5ea2c1a354a3fa0a9b7be364fe2223520c7637b9b768f4"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-027.bin",
+          "bytes": 8388608,
+          "sha256": "ed6f8478b26f8fc37d92dce53e343c88129791b6b59f3ec48c6e9b9f4c84b70d"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-028.bin",
+          "bytes": 8388608,
+          "sha256": "00ea2bea8df4aee7482c591a373256b69f51f5d5a6ced6ef22ad2856ca87615d"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-029.bin",
+          "bytes": 8388608,
+          "sha256": "241703e86e918a906451f65f9ba8f0870f3ba878273494a2932191fb003199db"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-030.bin",
+          "bytes": 8388608,
+          "sha256": "01c03ad610629b8781c538eb1449f2aa2022f00f37578ab9f566eac02c26d365"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-031.bin",
+          "bytes": 8388608,
+          "sha256": "20351a0b26c6f3b958721ef6e2ef30ecee397249b163642eb0ceaa7daf75ba7a"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-032.bin",
+          "bytes": 8388608,
+          "sha256": "7eb2713f3b0bdaa08d8b1ab6ff4be2ba223194fdfea4437d15fefc57e75a3764"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/a958a19dfd588de3244b75f0-033.bin",
+          "bytes": 2693641,
+          "sha256": "18e526c16967685e23212cb84975d0aa22f33982f7f92a7fcd676e6178bff5e8"
+        }
+      ],
+      "published_bytes": 8619,
+      "published_sha256": "3bb45dff57836515c7f7b39b58369869f4dddfbfdc44912f980376721cf05ff0"
+    },
+    {
+      "path": "LocalOnly/builds/android/20261119-125521-cdde0e59/build-result.json",
+      "bytes": 3671,
+      "sha256": "468423b37c7b533191224fdcd64c40486d1a484cbc7ecd422c97a0aa567a292a",
+      "report_sha256": "468423b37c7b533191224fdcd64c40486d1a484cbc7ecd422c97a0aa567a292a",
+      "source_changed_after_report": false,
+      "url": "files/468423b37c7b533191224fdc.json",
+      "large": false,
+      "filename": "build-result.json",
+      "published_bytes": 3671,
+      "published_sha256": "468423b37c7b533191224fdcd64c40486d1a484cbc7ecd422c97a0aa567a292a"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/v35-android.md",
+      "bytes": 4294,
+      "sha256": "b99442ec7490169a97c9f5839cd159244e1b5ab6f513639e11beb37316e7672a",
+      "report_sha256": "b99442ec7490169a97c9f5839cd159244e1b5ab6f513639e11beb37316e7672a",
+      "source_changed_after_report": false,
+      "url": "files/b99442ec7490169a97c9f583.md",
+      "large": false,
+      "filename": "v35-android.md",
+      "published_bytes": 4168,
+      "published_sha256": "57dfa7edd0631ed976e5206673dc43bbd722ec05da11311270ae4925c74dd80b"
+    },
+    {
+      "path": "LocalOnly/ai-day-v35-android/v35-chapter-end-cold-resume/result.json",
+      "bytes": 3776,
+      "sha256": "7be560bb53a4da3cf23232c46ad0c2d4c4a0c056ef08b8e12ff472f9cf987d56",
+      "report_sha256": "7be560bb53a4da3cf23232c46ad0c2d4c4a0c056ef08b8e12ff472f9cf987d56",
+      "source_changed_after_report": false,
+      "url": "files/7be560bb53a4da3cf23232c4.json",
+      "large": false,
+      "filename": "result.json",
+      "published_bytes": 3776,
+      "published_sha256": "7be560bb53a4da3cf23232c46ad0c2d4c4a0c056ef08b8e12ff472f9cf987d56"
+    },
+    {
+      "path": "docs/version/P0C1C2_Flambe_20261117/序章与前两章版本落地需求.md",
+      "bytes": 35944,
+      "sha256": "f3353adcbaaa11e44524f2c392e435cf91ce5fbb7462b3a4f66078361d9b974f",
+      "report_sha256": "f3353adcbaaa11e44524f2c392e435cf91ce5fbb7462b3a4f66078361d9b974f",
+      "source_changed_after_report": false,
+      "url": "files/f3353adcbaaa11e44524f2c3.md",
+      "large": false,
+      "filename": "序章与前两章版本落地需求.md",
+      "published_bytes": 36220,
+      "published_sha256": "7c9366279db55994a3824190a776c546ee6823c6dc37b8ac3417a06f81de5249"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/交付.md",
+      "bytes": 10614,
+      "sha256": "3486b83a6e09241af4ab6ae70786b1a0f9d37c2ffad54d65f6599fa9f67b8e66",
+      "report_sha256": "3486b83a6e09241af4ab6ae70786b1a0f9d37c2ffad54d65f6599fa9f67b8e66",
+      "source_changed_after_report": false,
+      "url": "files/3486b83a6e09241af4ab6ae7.md",
+      "large": false,
+      "filename": "交付.md",
+      "published_bytes": 11410,
+      "published_sha256": "4f1af3de605113c02fe8e6f2cffac05cb4353b779804519585d4a19048eca690"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/economy.md",
+      "bytes": 5320,
+      "sha256": "6c67d41cbc3d937724d7059732315a288e8d460472366b63116f5ceb4cec361d",
+      "report_sha256": "6c67d41cbc3d937724d7059732315a288e8d460472366b63116f5ceb4cec361d",
+      "source_changed_after_report": false,
+      "url": "files/6c67d41cbc3d937724d70597.md",
+      "large": false,
+      "filename": "economy.md",
+      "published_bytes": 5518,
+      "published_sha256": "b47f82732f2575d02c9c65ef8eb0c18d11083618b49f47ca298191ed92a09d84"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/economy-flow.md",
+      "bytes": 2685,
+      "sha256": "9e33748d41a5507bf6aafe3bd24719dfb2728f0e95f62bc887c9584f7b76e238",
+      "report_sha256": "9e33748d41a5507bf6aafe3bd24719dfb2728f0e95f62bc887c9584f7b76e238",
+      "source_changed_after_report": false,
+      "url": "files/9e33748d41a5507bf6aafe3b.md",
+      "large": false,
+      "filename": "economy-flow.md",
+      "published_bytes": 2975,
+      "published_sha256": "09e4a43174eb6f67c03d155fdd2a608e87e553fc17d941ddbdc829941c48bc4e"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/observation-android-v35-full.json",
+      "bytes": 210336,
+      "sha256": "07f2146ecaa8d97e465419fbe4167f152623bb2dccd087aab766788ef4bc56f4",
+      "report_sha256": "07f2146ecaa8d97e465419fbe4167f152623bb2dccd087aab766788ef4bc56f4",
+      "source_changed_after_report": false,
+      "url": "files/07f2146ecaa8d97e465419fb.json",
+      "large": false,
+      "filename": "observation-android-v35-full.json",
+      "published_bytes": 210336,
+      "published_sha256": "07f2146ecaa8d97e465419fbe4167f152623bb2dccd087aab766788ef4bc56f4"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/observation-android-v35-postchapter.json",
+      "bytes": 1092,
+      "sha256": "7cb0a4dfeb4800fced44a7db19807b1afb82ccd616ac7b75bffc80906c25b2f5",
+      "report_sha256": "7cb0a4dfeb4800fced44a7db19807b1afb82ccd616ac7b75bffc80906c25b2f5",
+      "source_changed_after_report": false,
+      "url": "files/7cb0a4dfeb4800fced44a7db.json",
+      "large": false,
+      "filename": "observation-android-v35-postchapter.json",
+      "published_bytes": 1092,
+      "published_sha256": "7cb0a4dfeb4800fced44a7db19807b1afb82ccd616ac7b75bffc80906c25b2f5"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/journey.md",
+      "bytes": 24045,
+      "sha256": "8863c7a2acbc2e4177b88e89456c519f65f9c21cade84e78e44c145ce6d1f431",
+      "report_sha256": "8863c7a2acbc2e4177b88e89456c519f65f9c21cade84e78e44c145ce6d1f431",
+      "source_changed_after_report": false,
+      "url": "files/8863c7a2acbc2e4177b88e89.md",
+      "large": false,
+      "filename": "journey.md",
+      "published_bytes": 22067,
+      "published_sha256": "4b62d59d2bac4bd28a6219c06c695ad0486d5ce18b1ee5dfc72b2663cec78850"
+    },
+    {
+      "path": "LocalOnly/ai-day-journey/android/v35/journey-audit.json",
+      "bytes": 5500,
+      "sha256": "8d0daa88e19566383c9d694fe35e0d5050c83e6287ef31f56c90778cb3739b37",
+      "report_sha256": "8d0daa88e19566383c9d694fe35e0d5050c83e6287ef31f56c90778cb3739b37",
+      "source_changed_after_report": false,
+      "url": "files/8d0daa88e19566383c9d694f.json",
+      "large": false,
+      "filename": "journey-audit.json",
+      "published_bytes": 5500,
+      "published_sha256": "8d0daa88e19566383c9d694fe35e0d5050c83e6287ef31f56c90778cb3739b37"
+    },
+    {
+      "path": "LocalOnly/ai-day-regression/snapshot-natural-20261119T045647708071Z/summary.json",
+      "bytes": 508,
+      "sha256": "8881ea22918e527c3c309b4bfe930400562488103f0fb6e0fa89d1e6eb4e207a",
+      "report_sha256": "8881ea22918e527c3c309b4bfe930400562488103f0fb6e0fa89d1e6eb4e207a",
+      "source_changed_after_report": false,
+      "url": "files/8881ea22918e527c3c309b4b.json",
+      "large": false,
+      "filename": "summary.json",
+      "published_bytes": 508,
+      "published_sha256": "8881ea22918e527c3c309b4bfe930400562488103f0fb6e0fa89d1e6eb4e207a"
+    },
+    {
+      "path": "docs/design-review/BOARD001-first-playable-20261119.md",
+      "bytes": 4193,
+      "sha256": "c67cd2159b15552994ff8d4b1defab4c36bf4b1afc634f069a2a379616cdf839",
+      "report_sha256": "c67cd2159b15552994ff8d4b1defab4c36bf4b1afc634f069a2a379616cdf839",
+      "source_changed_after_report": false,
+      "url": "files/c67cd2159b15552994ff8d4b.md",
+      "large": false,
+      "filename": "BOARD001-first-playable-20261119.md",
+      "published_bytes": 4192,
+      "published_sha256": "6665080c7cdc1c8a949acdf31970a3f31f856e467478ed8ada3e20be0b0c0419"
+    },
+    {
+      "path": "Start-Board001.cmd",
+      "bytes": 192,
+      "sha256": "faa238c63baa448186c440ca78af4bbcf4a1e45c02879af4f74c35b3ca1d6e1c",
+      "report_sha256": "faa238c63baa448186c440ca78af4bbcf4a1e45c02879af4f74c35b3ca1d6e1c",
+      "source_changed_after_report": false,
+      "url": "files/faa238c63baa448186c440ca.cmd",
+      "large": false,
+      "filename": "Start-Board001.cmd",
+      "published_bytes": 192,
+      "published_sha256": "faa238c63baa448186c440ca78af4bbcf4a1e45c02879af4f74c35b3ca1d6e1c"
+    },
+    {
+      "path": "docs/design-review/BOARD001-v35-qa-handoff-20261119.md",
+      "bytes": 3533,
+      "sha256": "fa2638c891ebf8f658ccfb2e7c9c1a422436858449d56241d3a3cc2b488e75b7",
+      "report_sha256": "fa2638c891ebf8f658ccfb2e7c9c1a422436858449d56241d3a3cc2b488e75b7",
+      "source_changed_after_report": false,
+      "url": "files/fa2638c891ebf8f658ccfb2e.md",
+      "large": false,
+      "filename": "BOARD001-v35-qa-handoff-20261119.md",
+      "published_bytes": 3398,
+      "published_sha256": "91c137ea57e2c49d4e4e9f8cd131d05bb25ad1ae7f4fb596f00363ef1c327b1b"
+    },
+    {
+      "path": "docs/cpp-source-stack.md",
+      "bytes": 4259,
+      "sha256": "554d89e5340e2c660d71273428369048453d6796349938c45a8bedf3aa57d4b0",
+      "report_sha256": "554d89e5340e2c660d71273428369048453d6796349938c45a8bedf3aa57d4b0",
+      "source_changed_after_report": false,
+      "url": "files/554d89e5340e2c660d712734.md",
+      "large": false,
+      "filename": "cpp-source-stack.md",
+      "published_bytes": 4557,
+      "published_sha256": "53e060de2e1e7a804a1d3d370d04ce27498b1454e6b96ff5993db4fdb9b797df"
+    },
+    {
+      "path": "MegoNative/README.md",
+      "bytes": 1677,
+      "sha256": "a641ab8a012eab7630e8db4193643a26162fdd144f9ed968536fc9d74f645490",
+      "report_sha256": "a641ab8a012eab7630e8db4193643a26162fdd144f9ed968536fc9d74f645490",
+      "source_changed_after_report": false,
+      "url": "files/a641ab8a012eab7630e8db41.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 2052,
+      "published_sha256": "6663c350f7b06bcaa0ccf9d2dc2c1befa6ab906422d48c0d31d9bd9e1435e213"
+    },
+    {
+      "path": "docs/server-capabilities.md",
+      "bytes": 11476,
+      "sha256": "fa3a1402cbff8aa7244920030807a76478c1a728c7e2a33d8a567088115e8310",
+      "report_sha256": "fa3a1402cbff8aa7244920030807a76478c1a728c7e2a33d8a567088115e8310",
+      "source_changed_after_report": false,
+      "url": "files/fa3a1402cbff8aa724492003.md",
+      "large": false,
+      "filename": "server-capabilities.md",
+      "published_bytes": 11832,
+      "published_sha256": "a76e61f7d530ce6d5fa0179d35e5c19e27037ba3ece6acbb7581fc8b135b628f"
+    },
+    {
+      "path": "LocalOnly/ai-day-v35-android/v35-chapter-end-cold-resume/returned-chapter.png",
+      "bytes": 1515360,
+      "sha256": "6f324a707c5dbd97b94f16a26865f1693c1c7ec8a1afd53fee019c693791f79f",
+      "report_sha256": "6f324a707c5dbd97b94f16a26865f1693c1c7ec8a1afd53fee019c693791f79f",
+      "source_changed_after_report": false,
+      "url": "files/6f324a707c5dbd97b94f16a2.png",
+      "large": false,
+      "filename": "returned-chapter.png",
+      "published_bytes": 1515360,
+      "published_sha256": "6f324a707c5dbd97b94f16a26865f1693c1c7ec8a1afd53fee019c693791f79f"
+    },
+    {
+      "path": "LocalOnly/ai-day-v35-android/second-order-review/second-order-three-states.jpg",
+      "bytes": 268201,
+      "sha256": "3a7664c6467a05d15a33f93a4c3372e327e683df2218df1e545690a66b44ccca",
+      "report_sha256": "3a7664c6467a05d15a33f93a4c3372e327e683df2218df1e545690a66b44ccca",
+      "source_changed_after_report": false,
+      "url": "files/3a7664c6467a05d15a33f93a.jpg",
+      "large": false,
+      "filename": "second-order-three-states.jpg",
+      "published_bytes": 268201,
+      "published_sha256": "3a7664c6467a05d15a33f93a4c3372e327e683df2218df1e545690a66b44ccca"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/state-review.jpg",
+      "bytes": 413050,
+      "sha256": "eb02a1d396e24ed8002e890d49b49c5dca9a62d364a576b805c840ff81ab670c",
+      "report_sha256": "eb02a1d396e24ed8002e890d49b49c5dca9a62d364a576b805c840ff81ab670c",
+      "source_changed_after_report": false,
+      "url": "files/eb02a1d396e24ed8002e890d.jpg",
+      "large": false,
+      "filename": "state-review.jpg",
+      "published_bytes": 413050,
+      "published_sha256": "eb02a1d396e24ed8002e890d49b49c5dca9a62d364a576b805c840ff81ab670c"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/internal-r04-r2/manifest.json",
+      "bytes": 92796,
+      "sha256": "1e867f35a85a71aac70f5552899232f8310857c6f16f72c8caee39d5126960c5",
+      "report_sha256": "1e867f35a85a71aac70f5552899232f8310857c6f16f72c8caee39d5126960c5",
+      "source_changed_after_report": false,
+      "url": "files/1e867f35a85a71aac70f5552.json",
+      "large": false,
+      "filename": "manifest.json",
+      "published_bytes": 92796,
+      "published_sha256": "1e867f35a85a71aac70f5552899232f8310857c6f16f72c8caee39d5126960c5"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/layered-studio/project.godot",
+      "bytes": 497,
+      "sha256": "fcfdf760debbdfdd105e8712f369c9e1c4905b5efcde94b736d2faa813e95428",
+      "report_sha256": "fcfdf760debbdfdd105e8712f369c9e1c4905b5efcde94b736d2faa813e95428",
+      "source_changed_after_report": false,
+      "url": "files/fcfdf760debbdfdd105e8712.godot",
+      "large": false,
+      "filename": "project.godot",
+      "published_bytes": 497,
+      "published_sha256": "fcfdf760debbdfdd105e8712f369c9e1c4905b5efcde94b736d2faa813e95428"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/scene-delivery.md",
+      "bytes": 7605,
+      "sha256": "61872f3207706f9b2c5249a6d3dbb6d1644500598048873340bacc664b266d72",
+      "report_sha256": "61872f3207706f9b2c5249a6d3dbb6d1644500598048873340bacc664b266d72",
+      "source_changed_after_report": false,
+      "url": "files/61872f3207706f9b2c5249a6.md",
+      "large": false,
+      "filename": "scene-delivery.md",
+      "published_bytes": 7793,
+      "published_sha256": "f4a25c74c4c57014ff0486c9edfcc1cc35dfb9ea23a5b789d7d8097a928104d0"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/portrait-review.jpg",
+      "bytes": 324052,
+      "sha256": "cae82e6ed8216aa7921b902f673f1705d99becb45466f2b0b242195d70d8762e",
+      "report_sha256": "cae82e6ed8216aa7921b902f673f1705d99becb45466f2b0b242195d70d8762e",
+      "source_changed_after_report": false,
+      "url": "files/cae82e6ed8216aa7921b902f.jpg",
+      "large": false,
+      "filename": "portrait-review.jpg",
+      "published_bytes": 324052,
+      "published_sha256": "cae82e6ed8216aa7921b902f673f1705d99becb45466f2b0b242195d70d8762e"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/story.md",
+      "bytes": 1886,
+      "sha256": "2f6c18983fea779f7a44dad350846ef771eeb10cc2aee44a7ca4a0b53ca9ffc5",
+      "report_sha256": "2f6c18983fea779f7a44dad350846ef771eeb10cc2aee44a7ca4a0b53ca9ffc5",
+      "source_changed_after_report": false,
+      "url": "files/2f6c18983fea779f7a44dad3.md",
+      "large": false,
+      "filename": "story.md",
+      "published_bytes": 2149,
+      "published_sha256": "274c99ec781cbcbfc04f6f5f15e7c215072f8c44b1e466c402b4aef0cc51c66d"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/workpoints.md",
+      "bytes": 11120,
+      "sha256": "aad13cc048567a88bcb02a68e1c483777ef7e7efedaf2aa923a89cda852d5db0",
+      "report_sha256": "aad13cc048567a88bcb02a68e1c483777ef7e7efedaf2aa923a89cda852d5db0",
+      "source_changed_after_report": false,
+      "url": "files/aad13cc048567a88bcb02a68.md",
+      "large": false,
+      "filename": "workpoints.md",
+      "published_bytes": 8730,
+      "published_sha256": "10ce6245764311784d7241b51439e16dc95bb366733c6131c35404d73976987d"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/ai-day/actors.md",
+      "bytes": 3903,
+      "sha256": "cb748ced2002e32eebd9388efe1c8bebc64a9e62250e9b55bbdb3986ae9ff20f",
+      "report_sha256": "cb748ced2002e32eebd9388efe1c8bebc64a9e62250e9b55bbdb3986ae9ff20f",
+      "source_changed_after_report": false,
+      "url": "files/cb748ced2002e32eebd9388e.md",
+      "large": false,
+      "filename": "actors.md",
+      "published_bytes": 3820,
+      "published_sha256": "9783ba7fe3d41bb610c802c780ed594e900a9f7994aa99bd416ffdc746c907f8"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/index.html",
+      "bytes": 3980,
+      "sha256": "a87471f964f7c8cd9956ad7e5da55e26fc240dee7df447fe8c92348030f47559",
+      "report_sha256": "a87471f964f7c8cd9956ad7e5da55e26fc240dee7df447fe8c92348030f47559",
+      "source_changed_after_report": false,
+      "url": "files/a87471f964f7c8cd9956ad7e.html",
+      "large": false,
+      "filename": "index.html",
+      "published_bytes": 3995,
+      "published_sha256": "979059d158acd24ec10fd9f01e6b69c1562780e083d0a804c720f92db7d849e5"
+    },
+    {
+      "path": "docs/art/projection-2to1-20261118/station-redraw/style-restoration-20261119/README.md",
+      "bytes": 4693,
+      "sha256": "6407f27c85ceb15f7021fb2b1fc0ac09489d280c3b80a4008580a60812890581",
+      "report_sha256": "6407f27c85ceb15f7021fb2b1fc0ac09489d280c3b80a4008580a60812890581",
+      "source_changed_after_report": false,
+      "url": "files/6407f27c85ceb15f7021fb2b.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 5269,
+      "published_sha256": "72e0187df6c77dda580a3430bdf4cc75b26d082f6568d954f6b1258b0ab95e91"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/feedback-review-override.json",
+      "bytes": 1270,
+      "sha256": "699ff0adff7bcdad653ba37c9bbf78e560a939c54f64dbd399ed0aef147df7ec",
+      "report_sha256": "699ff0adff7bcdad653ba37c9bbf78e560a939c54f64dbd399ed0aef147df7ec",
+      "source_changed_after_report": false,
+      "url": "files/699ff0adff7bcdad653ba37c.json",
+      "large": false,
+      "filename": "feedback-review-override.json",
+      "published_bytes": 1270,
+      "published_sha256": "699ff0adff7bcdad653ba37c9bbf78e560a939c54f64dbd399ed0aef147df7ec"
+    },
+    {
+      "path": "docs/art/projection-2to1-20261118/station-redraw/strict-native-final/current-status.json",
+      "bytes": 487,
+      "sha256": "f2b7cf73005129dc402c3a88f393a254df56fb4a4318d81ae9df2dc3f977bcb1",
+      "report_sha256": "f2b7cf73005129dc402c3a88f393a254df56fb4a4318d81ae9df2dc3f977bcb1",
+      "source_changed_after_report": false,
+      "url": "files/f2b7cf73005129dc402c3a88.json",
+      "large": false,
+      "filename": "current-status.json",
+      "published_bytes": 487,
+      "published_sha256": "f2b7cf73005129dc402c3a88f393a254df56fb4a4318d81ae9df2dc3f977bcb1"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/internal-r04-r2/reference/PR03.png",
+      "bytes": 2034080,
+      "sha256": "53d612b484bbe47584fdd11da02e02f8136d13b0336c71f1f29f37ca23a9efee",
+      "report_sha256": "53d612b484bbe47584fdd11da02e02f8136d13b0336c71f1f29f37ca23a9efee",
+      "source_changed_after_report": false,
+      "url": "files/53d612b484bbe47584fdd11d.png",
+      "large": false,
+      "filename": "PR03.png",
+      "published_bytes": 2034080,
+      "published_sha256": "53d612b484bbe47584fdd11da02e02f8136d13b0336c71f1f29f37ca23a9efee"
+    },
+    {
+      "path": "docs/art/flambe-r04-ai-day-20261119/internal-r04-r2/reference/BK10.png",
+      "bytes": 2180668,
+      "sha256": "ae206afb127fff22b4ec71e6330914d1bd089b57575d7900d68116dcb5bdd12a",
+      "report_sha256": "ae206afb127fff22b4ec71e6330914d1bd089b57575d7900d68116dcb5bdd12a",
+      "source_changed_after_report": false,
+      "url": "files/ae206afb127fff22b4ec71e6.png",
+      "large": false,
+      "filename": "BK10.png",
+      "published_bytes": 2180668,
+      "published_sha256": "ae206afb127fff22b4ec71e6330914d1bd089b57575d7900d68116dcb5bdd12a"
+    },
+    {
+      "path": "docs/art/projection-2to1-20261118/station-redraw/style-restoration-20261119/车站_D2原造型修复_2比1_R02.png",
+      "bytes": 2169951,
+      "sha256": "7221fc6cad02814abefd06d582a36b0c1c50c5985e5f1ec4eb3f75f01459d384",
+      "report_sha256": "7221fc6cad02814abefd06d582a36b0c1c50c5985e5f1ec4eb3f75f01459d384",
+      "source_changed_after_report": false,
+      "url": "files/7221fc6cad02814abefd06d5.png",
+      "large": false,
+      "filename": "车站_D2原造型修复_2比1_R02.png",
+      "published_bytes": 2169951,
+      "published_sha256": "7221fc6cad02814abefd06d582a36b0c1c50c5985e5f1ec4eb3f75f01459d384"
+    },
+    {
+      "path": "docs/design-review/board-reference-20261118/floating-layout-reference-20261119.md",
+      "bytes": 5667,
+      "sha256": "0102077db214dc09c4fae4fa2821c1ce40b0351f752c1da1b48e4d9eb3c58c61",
+      "report_sha256": "0102077db214dc09c4fae4fa2821c1ce40b0351f752c1da1b48e4d9eb3c58c61",
+      "source_changed_after_report": false,
+      "url": "files/0102077db214dc09c4fae4fa.md",
+      "large": false,
+      "filename": "floating-layout-reference-20261119.md",
+      "published_bytes": 5882,
+      "published_sha256": "bc492ec0b18de65bc139e4a3af42a287feffb3f305e6a99d0a70ad02009cf355"
+    },
+    {
+      "path": "docs/design-review/ux-construction-rewards-20261119.md",
+      "bytes": 5357,
+      "sha256": "b3d560828bb5a24c2f0e16475cc9e46fae9325f88d47cf567e03f8c72eefa4c6",
+      "report_sha256": "b3d560828bb5a24c2f0e16475cc9e46fae9325f88d47cf567e03f8c72eefa4c6",
+      "source_changed_after_report": false,
+      "url": "files/b3d560828bb5a24c2f0e1647.md",
+      "large": false,
+      "filename": "ux-construction-rewards-20261119.md",
+      "published_bytes": 5625,
+      "published_sha256": "885dff2386f65166bfc7aa0ca77c350c985f9c123bf204bfbefbdbea6748962a"
+    },
+    {
+      "path": "docs/design-review/ux-goal-acceptance-20261119.md",
+      "bytes": 6842,
+      "sha256": "ca2f38318adfe544623b2887a1f9ff7881557149f233ba0e72efffb25a10ce0c",
+      "report_sha256": "ca2f38318adfe544623b2887a1f9ff7881557149f233ba0e72efffb25a10ce0c",
+      "source_changed_after_report": false,
+      "url": "files/ca2f38318adfe544623b2887.md",
+      "large": false,
+      "filename": "ux-goal-acceptance-20261119.md",
+      "published_bytes": 7113,
+      "published_sha256": "a48a869c8b7d25773a3acb18406f2985ed710ffca08c5c9677b4b9664899341d"
+    },
+    {
+      "path": "docs/design-review/ux-customer-context-20261119.md",
+      "bytes": 4565,
+      "sha256": "c057e442ac85373050b10c97606ae85c51ce42c0a7de1bdae0150e6031411946",
+      "report_sha256": "c057e442ac85373050b10c97606ae85c51ce42c0a7de1bdae0150e6031411946",
+      "source_changed_after_report": false,
+      "url": "files/c057e442ac85373050b10c97.md",
+      "large": false,
+      "filename": "ux-customer-context-20261119.md",
+      "published_bytes": 4828,
+      "published_sha256": "195b61e700f77d0e7873d00f865134ac8a955fed14edd7fb3b5b3f84452440b3"
+    },
+    {
+      "path": "docs/design-review/board-performance-20261116.md",
+      "bytes": 7177,
+      "sha256": "8819b4b94fec747d12a9483842f0840dc8b5c22ab35717ebfd00a91dfaa002c6",
+      "report_sha256": "8819b4b94fec747d12a9483842f0840dc8b5c22ab35717ebfd00a91dfaa002c6",
+      "source_changed_after_report": false,
+      "url": "files/8819b4b94fec747d12a94838.md",
+      "large": false,
+      "filename": "board-performance-20261116.md",
+      "published_bytes": 7440,
+      "published_sha256": "933099cad1e43ea6d6324406a6ef54ba71180df08ee8d6930a7eacec5147f65c"
+    },
+    {
+      "path": "docs/design-review/onboarding-handoff-20261116.md",
+      "bytes": 4732,
+      "sha256": "ff7e76a8700fd69b48d163846cdb1da70b20ff289631bb60489710dad1dabaab",
+      "report_sha256": "ff7e76a8700fd69b48d163846cdb1da70b20ff289631bb60489710dad1dabaab",
+      "source_changed_after_report": false,
+      "url": "files/ff7e76a8700fd69b48d16384.md",
+      "large": false,
+      "filename": "onboarding-handoff-20261116.md",
+      "published_bytes": 4995,
+      "published_sha256": "1c93ddde14a50def9882c48fe1efd5247b182fde6dc0bfe55341c5bc039f6599"
+    },
+    {
+      "path": "docs/art/board-pixel-cleanup-20261119/source-before-after-native.png",
+      "bytes": 387037,
+      "sha256": "b4063fe483e8042dbab74ffdd02761bba83e9b7a98ef3c22bc42bb4fe91ca28e",
+      "report_sha256": "b4063fe483e8042dbab74ffdd02761bba83e9b7a98ef3c22bc42bb4fe91ca28e",
+      "source_changed_after_report": false,
+      "url": "files/b4063fe483e8042dbab74ffd.png",
+      "large": false,
+      "filename": "source-before-after-native.png",
+      "published_bytes": 387037,
+      "published_sha256": "b4063fe483e8042dbab74ffdd02761bba83e9b7a98ef3c22bc42bb4fe91ca28e"
+    },
+    {
+      "path": "docs/art/board-pixel-cleanup-20261119/sampler-before-after-native.png",
+      "bytes": 32298,
+      "sha256": "44a48cd4aa242b8a8427ccdb070589551f4b1874c3af4b963c55c59618f9e417",
+      "report_sha256": "44a48cd4aa242b8a8427ccdb070589551f4b1874c3af4b963c55c59618f9e417",
+      "source_changed_after_report": false,
+      "url": "files/44a48cd4aa242b8a8427ccdb.png",
+      "large": false,
+      "filename": "sampler-before-after-native.png",
+      "published_bytes": 32298,
+      "published_sha256": "44a48cd4aa242b8a8427ccdb070589551f4b1874c3af4b963c55c59618f9e417"
+    },
+    {
+      "path": "docs/art/board-pixel-cleanup-20261119/pieces-acceptance.csv",
+      "bytes": 479027,
+      "sha256": "720ac8ebaac2643104ac4787e8416176432bea109d69d44e87186a8b85370775",
+      "report_sha256": "720ac8ebaac2643104ac4787e8416176432bea109d69d44e87186a8b85370775",
+      "source_changed_after_report": false,
+      "url": "files/720ac8ebaac2643104ac4787.csv",
+      "large": false,
+      "filename": "pieces-acceptance.csv",
+      "published_bytes": 479027,
+      "published_sha256": "720ac8ebaac2643104ac4787e8416176432bea109d69d44e87186a8b85370775"
+    },
+    {
+      "path": "docs/art/board-pixel-cleanup-20261119/summary.json",
+      "bytes": 2133,
+      "sha256": "069a30dd96eb44325f4b0e7c35cbad7ad8687a3164a85cb637fae7a5cbee5d40",
+      "report_sha256": "069a30dd96eb44325f4b0e7c35cbad7ad8687a3164a85cb637fae7a5cbee5d40",
+      "source_changed_after_report": false,
+      "url": "files/069a30dd96eb44325f4b0e7c.json",
+      "large": false,
+      "filename": "summary.json",
+      "published_bytes": 2133,
+      "published_sha256": "069a30dd96eb44325f4b0e7c35cbad7ad8687a3164a85cb637fae7a5cbee5d40"
+    },
+    {
+      "path": "docs/art/board-pixel-cleanup-20261119/README.md",
+      "bytes": 7174,
+      "sha256": "ad42465ad0fb0e9f249b21a9cf5c9793cf583f6976ef80a5ebd91991cc9f4fa5",
+      "report_sha256": "ad42465ad0fb0e9f249b21a9cf5c9793cf583f6976ef80a5ebd91991cc9f4fa5",
+      "source_changed_after_report": false,
+      "url": "files/ad42465ad0fb0e9f249b21a9.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 7629,
+      "published_sha256": "d6b16bd73bfdf8424b992e2634f9ae80b1aba86db6f5e113042e58870109238d"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/D2_30位居民_每位唯一设定.zip",
+      "bytes": 52938717,
+      "sha256": "386f4d7198ce6378c38f509d2b0ce88325aea135b4a9a4404449ef83a4ba7c38",
+      "report_sha256": "386f4d7198ce6378c38f509d2b0ce88325aea135b4a9a4404449ef83a4ba7c38",
+      "source_changed_after_report": false,
+      "url": "downloads/386f4d7198ce6378c38f509d.html",
+      "large": true,
+      "filename": "D2_30位居民_每位唯一设定.zip",
+      "parts": [
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-000.bin",
+          "bytes": 8388608,
+          "sha256": "220fbab9bb4d6ad73ad90e1c4ad8c5536cb788d858458ff17970eb1e93965da9"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-001.bin",
+          "bytes": 8388608,
+          "sha256": "1e235b8d1586afd967ccc73e70c93516bee8f73d49acfd56fea14f8f9b4f6e7c"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-002.bin",
+          "bytes": 8388608,
+          "sha256": "cb303802fbea20bd3b2335f7b26d686c89c96a812632acc6bc84b67c45d58a59"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-003.bin",
+          "bytes": 8388608,
+          "sha256": "ca3063504ca51d67d89d8bfb5ccee67fc8d5c6a30cbfafa283dd13b97b83b70e"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-004.bin",
+          "bytes": 8388608,
+          "sha256": "ba741e4a87ec2d5b5d6dd053d93eb9f5daed1475ea80e09ed1dc091f8f638233"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-005.bin",
+          "bytes": 8388608,
+          "sha256": "9d6a64ba0026611be78bad9c29bacb31cdece837f6445f8cb9a02cd7d309bd9b"
+        },
+        {
+          "url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-006.bin",
+          "bytes": 2607069,
+          "sha256": "ff1f6b4588809809f76315db24881aa512fcb35db6e48da582c1238e4d6cc213"
+        }
+      ],
+      "published_bytes": 4644,
+      "published_sha256": "e64877f265d0e0a2de5cd077cd8f309baed895f278131a2d047e8ef784d28851"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/index.html",
+      "bytes": 10200,
+      "sha256": "7a18a294d511b36c81128c3cfe9a26fc22da10247a69f6aad1863140e45e68ca",
+      "report_sha256": "7a18a294d511b36c81128c3cfe9a26fc22da10247a69f6aad1863140e45e68ca",
+      "source_changed_after_report": false,
+      "url": "files/7a18a294d511b36c81128c3c.html",
+      "large": false,
+      "filename": "index.html",
+      "published_bytes": 11518,
+      "published_sha256": "00b2618e5f6cf7e7169b4e736629157eb2fc688fe3e713ea85b3ed58f3c33f8f"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/index.html",
+      "bytes": 6717,
+      "sha256": "23f7ca2ef53cead55f39c6c756d52cca897eae64c14c4eb01761cce78b4f9472",
+      "report_sha256": "23f7ca2ef53cead55f39c6c756d52cca897eae64c14c4eb01761cce78b4f9472",
+      "source_changed_after_report": false,
+      "url": "files/23f7ca2ef53cead55f39c6c7.html",
+      "large": false,
+      "filename": "index.html",
+      "published_bytes": 7069,
+      "published_sha256": "283871af34bd512473ed8a7ca460cad9d1bfdba6effa95e7862e3a27f4f7ce5f"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/README.md",
+      "bytes": 1266,
+      "sha256": "cb670769585b58305c632aa79defa6af4d6327faf02c6680a6e49a35bccfec3c",
+      "report_sha256": "cb670769585b58305c632aa79defa6af4d6327faf02c6680a6e49a35bccfec3c",
+      "source_changed_after_report": false,
+      "url": "files/cb670769585b58305c632aa7.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 1646,
+      "published_sha256": "b90ff80bf8894c8b3bbcff45c0308eb483a27cf05171b2cf389b6bee3535d544"
+    },
+    {
+      "path": "docs/art/resident-modern-20261117/README.md",
+      "bytes": 1034,
+      "sha256": "1f1e652b8ae0ab8930775f245ee366e1ab397b6f91095802a5cb38b82ece4cde",
+      "report_sha256": "1f1e652b8ae0ab8930775f245ee366e1ab397b6f91095802a5cb38b82ece4cde",
+      "source_changed_after_report": false,
+      "url": "files/1f1e652b8ae0ab8930775f24.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 1383,
+      "published_sha256": "9b0050702f17485a11e5919d483bb1fab6cc5222775c515f931948e5dd29dfa8"
+    },
+    {
+      "path": "docs/art/resident-eye-validation-20261118/README.md",
+      "bytes": 1069,
+      "sha256": "34530baf5d36b7a69268bc4e5d5cd78d6e2365b5014776b9a430833d6374359d",
+      "report_sha256": "34530baf5d36b7a69268bc4e5d5cd78d6e2365b5014776b9a430833d6374359d",
+      "source_changed_after_report": false,
+      "url": "files/34530baf5d36b7a69268bc4e.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 1432,
+      "published_sha256": "24fe56f2fd3e9cd8a5092d510d15ece5bfd80e4803f0d7f3467161fcdb9c6f5a"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/21-knot.png",
+      "bytes": 1729487,
+      "sha256": "a7f2b199e12b9d92bb91159e6bf01fea78cddf3a1e6a60a9e995d92f445d445b",
+      "report_sha256": "a7f2b199e12b9d92bb91159e6bf01fea78cddf3a1e6a60a9e995d92f445d445b",
+      "source_changed_after_report": false,
+      "url": "files/a7f2b199e12b9d92bb91159e.png",
+      "large": false,
+      "filename": "21-knot.png",
+      "published_bytes": 1729487,
+      "published_sha256": "a7f2b199e12b9d92bb91159e6bf01fea78cddf3a1e6a60a9e995d92f445d445b"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/01-snap.png",
+      "bytes": 1922622,
+      "sha256": "bbb8081139e2a74d2bef5636eb1ddc570d8e4379471371e4236ca3064a035d26",
+      "report_sha256": "bbb8081139e2a74d2bef5636eb1ddc570d8e4379471371e4236ca3064a035d26",
+      "source_changed_after_report": false,
+      "url": "files/bbb8081139e2a74d2bef5636.png",
+      "large": false,
+      "filename": "01-snap.png",
+      "published_bytes": 1922622,
+      "published_sha256": "bbb8081139e2a74d2bef5636eb1ddc570d8e4379471371e4236ca3064a035d26"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/02-brew.png",
+      "bytes": 1660806,
+      "sha256": "6e8b33d7f9ba9937b00cd464853f46ec0bd3b95aa517a169c37d29525f357b17",
+      "report_sha256": "6e8b33d7f9ba9937b00cd464853f46ec0bd3b95aa517a169c37d29525f357b17",
+      "source_changed_after_report": false,
+      "url": "files/6e8b33d7f9ba9937b00cd464.png",
+      "large": false,
+      "filename": "02-brew.png",
+      "published_bytes": 1660806,
+      "published_sha256": "6e8b33d7f9ba9937b00cd464853f46ec0bd3b95aa517a169c37d29525f357b17"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/03-dart.png",
+      "bytes": 1828248,
+      "sha256": "a400bf94831981c7e1dd30b53440b4b1298e7b445a4c73797a1e4379fb4a77df",
+      "report_sha256": "a400bf94831981c7e1dd30b53440b4b1298e7b445a4c73797a1e4379fb4a77df",
+      "source_changed_after_report": false,
+      "url": "files/a400bf94831981c7e1dd30b5.png",
+      "large": false,
+      "filename": "03-dart.png",
+      "published_bytes": 1828248,
+      "published_sha256": "a400bf94831981c7e1dd30b53440b4b1298e7b445a4c73797a1e4379fb4a77df"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/04-patch.png",
+      "bytes": 1971633,
+      "sha256": "f7f16f9fd5bb8774ed10423066a64d070b27db3c049406f2d4311c7e4c3afa2e",
+      "report_sha256": "f7f16f9fd5bb8774ed10423066a64d070b27db3c049406f2d4311c7e4c3afa2e",
+      "source_changed_after_report": false,
+      "url": "files/f7f16f9fd5bb8774ed104230.png",
+      "large": false,
+      "filename": "04-patch.png",
+      "published_bytes": 1971633,
+      "published_sha256": "f7f16f9fd5bb8774ed10423066a64d070b27db3c049406f2d4311c7e4c3afa2e"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/05-pippa.png",
+      "bytes": 1712429,
+      "sha256": "4ce16b48c455b3cddc76e380e858fa48a53e8a4da22079c9df8c223908d5a8c4",
+      "report_sha256": "4ce16b48c455b3cddc76e380e858fa48a53e8a4da22079c9df8c223908d5a8c4",
+      "source_changed_after_report": false,
+      "url": "files/4ce16b48c455b3cddc76e380.png",
+      "large": false,
+      "filename": "05-pippa.png",
+      "published_bytes": 1712429,
+      "published_sha256": "4ce16b48c455b3cddc76e380e858fa48a53e8a4da22079c9df8c223908d5a8c4"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/06-rolly.png",
+      "bytes": 1911577,
+      "sha256": "549a53c0daa8e4eea78797e5262062f4b2f373332575b152f73afc8bf8e23302",
+      "report_sha256": "549a53c0daa8e4eea78797e5262062f4b2f373332575b152f73afc8bf8e23302",
+      "source_changed_after_report": false,
+      "url": "files/549a53c0daa8e4eea78797e5.png",
+      "large": false,
+      "filename": "06-rolly.png",
+      "published_bytes": 1911577,
+      "published_sha256": "549a53c0daa8e4eea78797e5262062f4b2f373332575b152f73afc8bf8e23302"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/07-dot.png",
+      "bytes": 1822208,
+      "sha256": "653ab38e40a0274c4fb04c45019957c4d81f45a1bfc90b9b65f96d7fcdc34001",
+      "report_sha256": "653ab38e40a0274c4fb04c45019957c4d81f45a1bfc90b9b65f96d7fcdc34001",
+      "source_changed_after_report": false,
+      "url": "files/653ab38e40a0274c4fb04c45.png",
+      "large": false,
+      "filename": "07-dot.png",
+      "published_bytes": 1822208,
+      "published_sha256": "653ab38e40a0274c4fb04c45019957c4d81f45a1bfc90b9b65f96d7fcdc34001"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/08-tempo.png",
+      "bytes": 1628826,
+      "sha256": "6984fed20b6dc806e22c8e1e31ff51422dfc36d86a23a13b4a14db4028070054",
+      "report_sha256": "6984fed20b6dc806e22c8e1e31ff51422dfc36d86a23a13b4a14db4028070054",
+      "source_changed_after_report": false,
+      "url": "files/6984fed20b6dc806e22c8e1e.png",
+      "large": false,
+      "filename": "08-tempo.png",
+      "published_bytes": 1628826,
+      "published_sha256": "6984fed20b6dc806e22c8e1e31ff51422dfc36d86a23a13b4a14db4028070054"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/09-thump.png",
+      "bytes": 1725636,
+      "sha256": "c8266e052577536e5559da1401fab0297f18c9338bb76d1967f545c97c26c31b",
+      "report_sha256": "c8266e052577536e5559da1401fab0297f18c9338bb76d1967f545c97c26c31b",
+      "source_changed_after_report": false,
+      "url": "files/c8266e052577536e5559da14.png",
+      "large": false,
+      "filename": "09-thump.png",
+      "published_bytes": 1725636,
+      "published_sha256": "c8266e052577536e5559da1401fab0297f18c9338bb76d1967f545c97c26c31b"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/10-puff.png",
+      "bytes": 2064039,
+      "sha256": "c420b3cb617ea7f415c29e594b265d776f6ed4012473812f9c03ad8155be6cca",
+      "report_sha256": "c420b3cb617ea7f415c29e594b265d776f6ed4012473812f9c03ad8155be6cca",
+      "source_changed_after_report": false,
+      "url": "files/c420b3cb617ea7f415c29e59.png",
+      "large": false,
+      "filename": "10-puff.png",
+      "published_bytes": 2064039,
+      "published_sha256": "c420b3cb617ea7f415c29e594b265d776f6ed4012473812f9c03ad8155be6cca"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/11-skip.png",
+      "bytes": 1820409,
+      "sha256": "5a15ed07d9e5f579054f76014288d40faf33dffef2b88204a6be7ca15e680fc7",
+      "report_sha256": "5a15ed07d9e5f579054f76014288d40faf33dffef2b88204a6be7ca15e680fc7",
+      "source_changed_after_report": false,
+      "url": "files/5a15ed07d9e5f579054f7601.png",
+      "large": false,
+      "filename": "11-skip.png",
+      "published_bytes": 1820409,
+      "published_sha256": "5a15ed07d9e5f579054f76014288d40faf33dffef2b88204a6be7ca15e680fc7"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/12-vix.png",
+      "bytes": 1475823,
+      "sha256": "65a985878195e9b5d50052174fe26c6f3ffcc4bdb30865374240aab076ff4380",
+      "report_sha256": "65a985878195e9b5d50052174fe26c6f3ffcc4bdb30865374240aab076ff4380",
+      "source_changed_after_report": false,
+      "url": "files/65a985878195e9b5d5005217.png",
+      "large": false,
+      "filename": "12-vix.png",
+      "published_bytes": 1475823,
+      "published_sha256": "65a985878195e9b5d50052174fe26c6f3ffcc4bdb30865374240aab076ff4380"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/13-tock.png",
+      "bytes": 1624586,
+      "sha256": "d523f2453f61a50ffd243b6576a2f3115f98fe6871c4386712dfd89ded20ad73",
+      "report_sha256": "d523f2453f61a50ffd243b6576a2f3115f98fe6871c4386712dfd89ded20ad73",
+      "source_changed_after_report": false,
+      "url": "files/d523f2453f61a50ffd243b65.png",
+      "large": false,
+      "filename": "13-tock.png",
+      "published_bytes": 1624586,
+      "published_sha256": "d523f2453f61a50ffd243b6576a2f3115f98fe6871c4386712dfd89ded20ad73"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/14-morse.png",
+      "bytes": 1608839,
+      "sha256": "5c9202332883e3f0a979dce5dfad1da55c6bdf3c76f4f50741ac65ab8792171b",
+      "report_sha256": "5c9202332883e3f0a979dce5dfad1da55c6bdf3c76f4f50741ac65ab8792171b",
+      "source_changed_after_report": false,
+      "url": "files/5c9202332883e3f0a979dce5.png",
+      "large": false,
+      "filename": "14-morse.png",
+      "published_bytes": 1608839,
+      "published_sha256": "5c9202332883e3f0a979dce5dfad1da55c6bdf3c76f4f50741ac65ab8792171b"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/15-mochi.png",
+      "bytes": 1849036,
+      "sha256": "3cc3e3a424d9dfd2a6c9d18eb4d00a434513b53ceb3dc962ca51223bd213a71b",
+      "report_sha256": "3cc3e3a424d9dfd2a6c9d18eb4d00a434513b53ceb3dc962ca51223bd213a71b",
+      "source_changed_after_report": false,
+      "url": "files/3cc3e3a424d9dfd2a6c9d18e.png",
+      "large": false,
+      "filename": "15-mochi.png",
+      "published_bytes": 1849036,
+      "published_sha256": "3cc3e3a424d9dfd2a6c9d18eb4d00a434513b53ceb3dc962ca51223bd213a71b"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/16-twist.png",
+      "bytes": 1889583,
+      "sha256": "1768c0af4de0974def1b2f199d69df3b2be1f9e7916c7fec726c96fa578425bf",
+      "report_sha256": "1768c0af4de0974def1b2f199d69df3b2be1f9e7916c7fec726c96fa578425bf",
+      "source_changed_after_report": false,
+      "url": "files/1768c0af4de0974def1b2f19.png",
+      "large": false,
+      "filename": "16-twist.png",
+      "published_bytes": 1889583,
+      "published_sha256": "1768c0af4de0974def1b2f199d69df3b2be1f9e7916c7fec726c96fa578425bf"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/17-stash.png",
+      "bytes": 1983350,
+      "sha256": "cd2d3b6c14dba76c4f883f4ad95d82e640731c62e6ad99a1c14644e542829eb3",
+      "report_sha256": "cd2d3b6c14dba76c4f883f4ad95d82e640731c62e6ad99a1c14644e542829eb3",
+      "source_changed_after_report": false,
+      "url": "files/cd2d3b6c14dba76c4f883f4a.png",
+      "large": false,
+      "filename": "17-stash.png",
+      "published_bytes": 1983350,
+      "published_sha256": "cd2d3b6c14dba76c4f883f4ad95d82e640731c62e6ad99a1c14644e542829eb3"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/18-echo.png",
+      "bytes": 1701646,
+      "sha256": "0a09493c948d82a93edb96ea4b92dae16dd0c63ea974af464795ce41cf59f070",
+      "report_sha256": "0a09493c948d82a93edb96ea4b92dae16dd0c63ea974af464795ce41cf59f070",
+      "source_changed_after_report": false,
+      "url": "files/0a09493c948d82a93edb96ea.png",
+      "large": false,
+      "filename": "18-echo.png",
+      "published_bytes": 1701646,
+      "published_sha256": "0a09493c948d82a93edb96ea4b92dae16dd0c63ea974af464795ce41cf59f070"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/19-sidle.png",
+      "bytes": 1334786,
+      "sha256": "e0e96d29395e6e0d0bd17aa58352fe2e5752feae233aba87317fe21243a5870d",
+      "report_sha256": "e0e96d29395e6e0d0bd17aa58352fe2e5752feae233aba87317fe21243a5870d",
+      "source_changed_after_report": false,
+      "url": "files/e0e96d29395e6e0d0bd17aa5.png",
+      "large": false,
+      "filename": "19-sidle.png",
+      "published_bytes": 1334786,
+      "published_sha256": "e0e96d29395e6e0d0bd17aa58352fe2e5752feae233aba87317fe21243a5870d"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/20-floss.png",
+      "bytes": 1937484,
+      "sha256": "0eaf569a6e8e08d4c7b6fd170458d9b4306427bfe54e219ea71c2aef5935be32",
+      "report_sha256": "0eaf569a6e8e08d4c7b6fd170458d9b4306427bfe54e219ea71c2aef5935be32",
+      "source_changed_after_report": false,
+      "url": "files/0eaf569a6e8e08d4c7b6fd17.png",
+      "large": false,
+      "filename": "20-floss.png",
+      "published_bytes": 1937484,
+      "published_sha256": "0eaf569a6e8e08d4c7b6fd170458d9b4306427bfe54e219ea71c2aef5935be32"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/22-glint.png",
+      "bytes": 1587596,
+      "sha256": "28f8d87c3addb95bcb50141a839953bd1a8e0090ec60a03b90ccf8890f7cd31a",
+      "report_sha256": "28f8d87c3addb95bcb50141a839953bd1a8e0090ec60a03b90ccf8890f7cd31a",
+      "source_changed_after_report": false,
+      "url": "files/28f8d87c3addb95bcb50141a.png",
+      "large": false,
+      "filename": "22-glint.png",
+      "published_bytes": 1587596,
+      "published_sha256": "28f8d87c3addb95bcb50141a839953bd1a8e0090ec60a03b90ccf8890f7cd31a"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/23-shift.png",
+      "bytes": 1905513,
+      "sha256": "83d3490fa3eb342d973f4f5f652db697af92b774f38369cd597ae74d4508e56f",
+      "report_sha256": "83d3490fa3eb342d973f4f5f652db697af92b774f38369cd597ae74d4508e56f",
+      "source_changed_after_report": false,
+      "url": "files/83d3490fa3eb342d973f4f5f.png",
+      "large": false,
+      "filename": "23-shift.png",
+      "published_bytes": 1905513,
+      "published_sha256": "83d3490fa3eb342d973f4f5f652db697af92b774f38369cd597ae74d4508e56f"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/24-brio.png",
+      "bytes": 1916584,
+      "sha256": "6a9f11e8ab575ac53e175a32d9b7f98948e1c1a611a16a3242e778b75b3e7b7c",
+      "report_sha256": "6a9f11e8ab575ac53e175a32d9b7f98948e1c1a611a16a3242e778b75b3e7b7c",
+      "source_changed_after_report": false,
+      "url": "files/6a9f11e8ab575ac53e175a32.png",
+      "large": false,
+      "filename": "24-brio.png",
+      "published_bytes": 1916584,
+      "published_sha256": "6a9f11e8ab575ac53e175a32d9b7f98948e1c1a611a16a3242e778b75b3e7b7c"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/25-pico.png",
+      "bytes": 1661073,
+      "sha256": "caca676ba8561e1cd71fa5861c4491469b3958505bc79bcbec09e2336f5ddcf9",
+      "report_sha256": "caca676ba8561e1cd71fa5861c4491469b3958505bc79bcbec09e2336f5ddcf9",
+      "source_changed_after_report": false,
+      "url": "files/caca676ba8561e1cd71fa586.png",
+      "large": false,
+      "filename": "25-pico.png",
+      "published_bytes": 1661073,
+      "published_sha256": "caca676ba8561e1cd71fa5861c4491469b3958505bc79bcbec09e2336f5ddcf9"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/26-clasp.png",
+      "bytes": 2090077,
+      "sha256": "632c983395bd3ad0009850bee3be34495588e927fcd344825e4516080b1793b1",
+      "report_sha256": "632c983395bd3ad0009850bee3be34495588e927fcd344825e4516080b1793b1",
+      "source_changed_after_report": false,
+      "url": "files/632c983395bd3ad0009850be.png",
+      "large": false,
+      "filename": "26-clasp.png",
+      "published_bytes": 2090077,
+      "published_sha256": "632c983395bd3ad0009850bee3be34495588e927fcd344825e4516080b1793b1"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/27-ticket.png",
+      "bytes": 1917515,
+      "sha256": "2d5c455e56e9a1e5ff5bf3e0c317f47aa393a20f4f995029dac6ee1f0474d373",
+      "report_sha256": "2d5c455e56e9a1e5ff5bf3e0c317f47aa393a20f4f995029dac6ee1f0474d373",
+      "source_changed_after_report": false,
+      "url": "files/2d5c455e56e9a1e5ff5bf3e0.png",
+      "large": false,
+      "filename": "27-ticket.png",
+      "published_bytes": 1917515,
+      "published_sha256": "2d5c455e56e9a1e5ff5bf3e0c317f47aa393a20f4f995029dac6ee1f0474d373"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/28-plop.png",
+      "bytes": 1688613,
+      "sha256": "ea5995e95a054427c7ffa5fcd036d601d465b6240fc04147bd8ca78b2e082108",
+      "report_sha256": "ea5995e95a054427c7ffa5fcd036d601d465b6240fc04147bd8ca78b2e082108",
+      "source_changed_after_report": false,
+      "url": "files/ea5995e95a054427c7ffa5fc.png",
+      "large": false,
+      "filename": "28-plop.png",
+      "published_bytes": 1688613,
+      "published_sha256": "ea5995e95a054427c7ffa5fcd036d601d465b6240fc04147bd8ca78b2e082108"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/29-trail.png",
+      "bytes": 1596556,
+      "sha256": "d927becbc2e1eaf3a98e45d53e292c3c3abe92296590f67a7a5d7133062434c7",
+      "report_sha256": "d927becbc2e1eaf3a98e45d53e292c3c3abe92296590f67a7a5d7133062434c7",
+      "source_changed_after_report": false,
+      "url": "files/d927becbc2e1eaf3a98e45d5.png",
+      "large": false,
+      "filename": "29-trail.png",
+      "published_bytes": 1596556,
+      "published_sha256": "d927becbc2e1eaf3a98e45d53e292c3c3abe92296590f67a7a5d7133062434c7"
+    },
+    {
+      "path": "docs/art/resident-candidates-20261117/images/30-spring.png",
+      "bytes": 1836022,
+      "sha256": "c76a5334754aa72e3023c2abb6b4ef4815e79170c6fd29f49b5af88aac65bb77",
+      "report_sha256": "c76a5334754aa72e3023c2abb6b4ef4815e79170c6fd29f49b5af88aac65bb77",
+      "source_changed_after_report": false,
+      "url": "files/c76a5334754aa72e3023c2ab.png",
+      "large": false,
+      "filename": "30-spring.png",
+      "published_bytes": 1836022,
+      "published_sha256": "c76a5334754aa72e3023c2abb6b4ef4815e79170c6fd29f49b5af88aac65bb77"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/39-fizz.png",
+      "bytes": 1816687,
+      "sha256": "c6a429f212ce32c32555974b4f6b962818d2ac2964e82586c626e9ce92d5da91",
+      "report_sha256": "c6a429f212ce32c32555974b4f6b962818d2ac2964e82586c626e9ce92d5da91",
+      "source_changed_after_report": false,
+      "url": "files/c6a429f212ce32c32555974b.png",
+      "large": false,
+      "filename": "39-fizz.png",
+      "published_bytes": 1816687,
+      "published_sha256": "c6a429f212ce32c32555974b4f6b962818d2ac2964e82586c626e9ce92d5da91"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/40-crackle.png",
+      "bytes": 2039861,
+      "sha256": "8a8392fc8424aa9d0e19f307f72c2ecfa3b5da84295ccf12e1797ccf6ea970df",
+      "report_sha256": "8a8392fc8424aa9d0e19f307f72c2ecfa3b5da84295ccf12e1797ccf6ea970df",
+      "source_changed_after_report": false,
+      "url": "files/8a8392fc8424aa9d0e19f307.png",
+      "large": false,
+      "filename": "40-crackle.png",
+      "published_bytes": 2039861,
+      "published_sha256": "8a8392fc8424aa9d0e19f307f72c2ecfa3b5da84295ccf12e1797ccf6ea970df"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/41-hum.png",
+      "bytes": 1955388,
+      "sha256": "78365c453d05a0df08d3957c2bc8d5a75ab494ae8a098f8c9b202daee1b9c594",
+      "report_sha256": "78365c453d05a0df08d3957c2bc8d5a75ab494ae8a098f8c9b202daee1b9c594",
+      "source_changed_after_report": false,
+      "url": "files/78365c453d05a0df08d3957c.png",
+      "large": false,
+      "filename": "41-hum.png",
+      "published_bytes": 1955388,
+      "published_sha256": "78365c453d05a0df08d3957c2bc8d5a75ab494ae8a098f8c9b202daee1b9c594"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/42-still.png",
+      "bytes": 1830974,
+      "sha256": "b6869888a0b764ed792a6d2333b99f38c9c7b6f08723c13f81079463c1887888",
+      "report_sha256": "b6869888a0b764ed792a6d2333b99f38c9c7b6f08723c13f81079463c1887888",
+      "source_changed_after_report": false,
+      "url": "files/b6869888a0b764ed792a6d23.png",
+      "large": false,
+      "filename": "42-still.png",
+      "published_bytes": 1830974,
+      "published_sha256": "b6869888a0b764ed792a6d2333b99f38c9c7b6f08723c13f81079463c1887888"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/43-chatter.png",
+      "bytes": 1739249,
+      "sha256": "90b94dbc8c8598db8b0fd6bb71f86abc5900ea1dcf3ef25d375ae761dc2210c2",
+      "report_sha256": "90b94dbc8c8598db8b0fd6bb71f86abc5900ea1dcf3ef25d375ae761dc2210c2",
+      "source_changed_after_report": false,
+      "url": "files/90b94dbc8c8598db8b0fd6bb.png",
+      "large": false,
+      "filename": "43-chatter.png",
+      "published_bytes": 1739249,
+      "published_sha256": "90b94dbc8c8598db8b0fd6bb71f86abc5900ea1dcf3ef25d375ae761dc2210c2"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/44-tally.png",
+      "bytes": 2025849,
+      "sha256": "c6c39302380c2a6a021e7feb9e11f53fb6403483d9d78948c75528a2d94ad72a",
+      "report_sha256": "c6c39302380c2a6a021e7feb9e11f53fb6403483d9d78948c75528a2d94ad72a",
+      "source_changed_after_report": false,
+      "url": "files/c6c39302380c2a6a021e7feb.png",
+      "large": false,
+      "filename": "44-tally.png",
+      "published_bytes": 2025849,
+      "published_sha256": "c6c39302380c2a6a021e7feb9e11f53fb6403483d9d78948c75528a2d94ad72a"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/45-stud.png",
+      "bytes": 1926499,
+      "sha256": "d6eba51893c63faa5013bcf7ae1d6e78809fb9bd54646bbd8ee17a06dd409783",
+      "report_sha256": "d6eba51893c63faa5013bcf7ae1d6e78809fb9bd54646bbd8ee17a06dd409783",
+      "source_changed_after_report": false,
+      "url": "files/d6eba51893c63faa5013bcf7.png",
+      "large": false,
+      "filename": "45-stud.png",
+      "published_bytes": 1926499,
+      "published_sha256": "d6eba51893c63faa5013bcf7ae1d6e78809fb9bd54646bbd8ee17a06dd409783"
+    },
+    {
+      "path": "docs/art/resident-street-20261118/images/46-pause.png",
+      "bytes": 1832847,
+      "sha256": "08156512ff815b887bb098297ca1ab2e65590960c08a5ddbefbcb9fcef1878f2",
+      "report_sha256": "08156512ff815b887bb098297ca1ab2e65590960c08a5ddbefbcb9fcef1878f2",
+      "source_changed_after_report": false,
+      "url": "files/08156512ff815b887bb09829.png",
+      "large": false,
+      "filename": "46-pause.png",
+      "published_bytes": 1832847,
+      "published_sha256": "08156512ff815b887bb098297ca1ab2e65590960c08a5ddbefbcb9fcef1878f2"
+    },
+    {
+      "path": "docs/marketing/market-ua-v35/creatives/A-gate.mp4",
+      "bytes": 4232192,
+      "sha256": "d4aea99552ea0efd1c3f88fd7a95a40ea630dc752157aa2ded8cada694f8e9b8",
+      "report_sha256": "d4aea99552ea0efd1c3f88fd7a95a40ea630dc752157aa2ded8cada694f8e9b8",
+      "source_changed_after_report": false,
+      "url": "files/d4aea99552ea0efd1c3f88fd.mp4",
+      "large": false,
+      "filename": "A-gate.mp4",
+      "published_bytes": 4232192,
+      "published_sha256": "d4aea99552ea0efd1c3f88fd7a95a40ea630dc752157aa2ded8cada694f8e9b8"
+    },
+    {
+      "path": "docs/marketing/market-ua-v35/creatives/B-merge.mp4",
+      "bytes": 4236924,
+      "sha256": "a5a6bea2b5d0e8bcf8db1eadc450d70cb8f042eff963f9c8184abb7d884be9f9",
+      "report_sha256": "a5a6bea2b5d0e8bcf8db1eadc450d70cb8f042eff963f9c8184abb7d884be9f9",
+      "source_changed_after_report": false,
+      "url": "files/a5a6bea2b5d0e8bcf8db1ead.mp4",
+      "large": false,
+      "filename": "B-merge.mp4",
+      "published_bytes": 4236924,
+      "published_sha256": "a5a6bea2b5d0e8bcf8db1eadc450d70cb8f042eff963f9c8184abb7d884be9f9"
+    },
+    {
+      "path": "docs/marketing/market-ua-v35/README.md",
+      "bytes": 7022,
+      "sha256": "88ef24447c42e5224631f98d8ca2212eed771faef3dfc2e0cba68bb3698b7847",
+      "report_sha256": "88ef24447c42e5224631f98d8ca2212eed771faef3dfc2e0cba68bb3698b7847",
+      "source_changed_after_report": false,
+      "url": "files/88ef24447c42e5224631f98d.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 7193,
+      "published_sha256": "0eee425b06cfae81d1b14d708ba8906b7a26d3b308e0e0305f76cbb9caa4b033"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/market-ua-v35/安装链路.md",
+      "bytes": 9047,
+      "sha256": "08a7eaba57044b7bd8a6d46cffed364b03ffd63d338cb144e3b443ad55a91d4a",
+      "report_sha256": "08a7eaba57044b7bd8a6d46cffed364b03ffd63d338cb144e3b443ad55a91d4a",
+      "source_changed_after_report": false,
+      "url": "files/08a7eaba57044b7bd8a6d46c.md",
+      "large": false,
+      "filename": "安装链路.md",
+      "published_bytes": 8711,
+      "published_sha256": "f76c2747b3a4e5ab40de55f93665543ef2c16521618bec4256aec23bff5c681e"
+    },
+    {
+      "path": "LocalOnly/market-ua-v35/funnel/final-release-receipt.json",
+      "bytes": 5636,
+      "sha256": "2dc8c1a1d799508436b29b3d87e044cdd89042594b0075aa9493327da71c161c",
+      "report_sha256": "2dc8c1a1d799508436b29b3d87e044cdd89042594b0075aa9493327da71c161c",
+      "source_changed_after_report": false,
+      "url": "files/2dc8c1a1d799508436b29b3d.json",
+      "large": false,
+      "filename": "final-release-receipt.json",
+      "published_bytes": 5636,
+      "published_sha256": "2dc8c1a1d799508436b29b3d87e044cdd89042594b0075aa9493327da71c161c"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/tp2s_completion_20261119/preview_v27/动物小镇_两路家具合成长椅_纯音效完整版_v27.mp4",
+      "bytes": 6240024,
+      "sha256": "9b2c420f48856ae30fa569c4a1cf21820317814bb8eac03b8012f3b63a0aef6f",
+      "report_sha256": "9b2c420f48856ae30fa569c4a1cf21820317814bb8eac03b8012f3b63a0aef6f",
+      "source_changed_after_report": false,
+      "url": "files/9b2c420f48856ae30fa569c4.mp4",
+      "large": false,
+      "filename": "动物小镇_两路家具合成长椅_纯音效完整版_v27.mp4",
+      "published_bytes": 6240024,
+      "published_sha256": "9b2c420f48856ae30fa569c4a1cf21820317814bb8eac03b8012f3b63a0aef6f"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/multi_generator_20261119/preview_v28/动物小镇_三源合成与长椅高潮_v28_轻BGM.mp4",
+      "bytes": 9166252,
+      "sha256": "9c6cd6e771abc59c942180e9736509a4d7740e408a473ae2bb36c719ecd13b7d",
+      "report_sha256": "9c6cd6e771abc59c942180e9736509a4d7740e408a473ae2bb36c719ecd13b7d",
+      "source_changed_after_report": false,
+      "url": "files/9c6cd6e771abc59c942180e9.mp4",
+      "large": false,
+      "filename": "动物小镇_三源合成与长椅高潮_v28_轻BGM.mp4",
+      "published_bytes": 9166252,
+      "published_sha256": "9c6cd6e771abc59c942180e9736509a4d7740e408a473ae2bb36c719ecd13b7d"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/tp2s_completion_20261119/preview_v27/README.md",
+      "bytes": 3538,
+      "sha256": "66d06ab7ad6c33cdd68a8e68efacc2364f79cb84c1262f3d455563a5c22e60ac",
+      "report_sha256": "66d06ab7ad6c33cdd68a8e68efacc2364f79cb84c1262f3d455563a5c22e60ac",
+      "source_changed_after_report": false,
+      "url": "files/66d06ab7ad6c33cdd68a8e68.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 3855,
+      "published_sha256": "42f1386796a27b2340cb671f934332e81fd82a5cbfc065f0bc67829e64cd0543"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/multi_generator_20261119/preview_v28/delivery_manifest.json",
+      "bytes": 12590,
+      "sha256": "de4868ca93800efc1480527809b641afb41cd93746593877724150a5623e2a2e",
+      "report_sha256": "de4868ca93800efc1480527809b641afb41cd93746593877724150a5623e2a2e",
+      "source_changed_after_report": false,
+      "url": "files/de4868ca93800efc14805278.json",
+      "large": false,
+      "filename": "delivery_manifest.json",
+      "published_bytes": 12590,
+      "published_sha256": "de4868ca93800efc1480527809b641afb41cd93746593877724150a5623e2a2e"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/multi_generator_20261119/README.md",
+      "bytes": 4705,
+      "sha256": "e0d851f65f868b042b5d8d1f44f84082a7692b5e6c259d0dab0c584ca4ba1e0f",
+      "report_sha256": "e0d851f65f868b042b5d8d1f44f84082a7692b5e6c259d0dab0c584ca4ba1e0f",
+      "source_changed_after_report": false,
+      "url": "files/e0d851f65f868b042b5d8d1f.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 4951,
+      "published_sha256": "6978d1550b2327141f4aecb344550d32ea1dd830ca405024010a3b8e67fa28e2"
+    },
+    {
+      "path": "docs/marketing/ua_storyboards_abc_20261116/gameplay_A_20261117/gameplay_only_preview_9s.mp4",
+      "bytes": 1842313,
+      "sha256": "54fa6f91167e9227eda3be5fa716edf785376c6025523a4407f9cef5a79d9cea",
+      "report_sha256": "54fa6f91167e9227eda3be5fa716edf785376c6025523a4407f9cef5a79d9cea",
+      "source_changed_after_report": false,
+      "url": "files/54fa6f91167e9227eda3be5f.mp4",
+      "large": false,
+      "filename": "gameplay_only_preview_9s.mp4",
+      "published_bytes": 1842313,
+      "published_sha256": "54fa6f91167e9227eda3be5fa716edf785376c6025523a4407f9cef5a79d9cea"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/joint_ua_preview_20261118/v21_readable_edit_r3/动物小镇_Gameplay_操作与回报清晰版_v21.mp4",
+      "bytes": 1758456,
+      "sha256": "2787a6ebd9714de0ce94508c92226c9cde297d95484c599ee01643f88f22c32d",
+      "report_sha256": "2787a6ebd9714de0ce94508c92226c9cde297d95484c599ee01643f88f22c32d",
+      "source_changed_after_report": false,
+      "url": "files/2787a6ebd9714de0ce94508c.mp4",
+      "large": false,
+      "filename": "动物小镇_Gameplay_操作与回报清晰版_v21.mp4",
+      "published_bytes": 1758456,
+      "published_sha256": "2787a6ebd9714de0ce94508c92226c9cde297d95484c599ee01643f88f22c32d"
+    },
+    {
+      "path": "docs/marketing/ua_storyboards_abc_20261116/gameplay_A_20261117/README.md",
+      "bytes": 8388,
+      "sha256": "c1c1bb89b1c34853021330b32e02d3958e10f937480cd1698e317bebc7bc159e",
+      "report_sha256": "c1c1bb89b1c34853021330b32e02d3958e10f937480cd1698e317bebc7bc159e",
+      "source_changed_after_report": false,
+      "url": "files/c1c1bb89b1c34853021330b3.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 8850,
+      "published_sha256": "bd6fb786c05c97571dda66e8585868a5137f6cdb06d335a2c2ebb63c5254b02c"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/joint_ua_preview_20261118/v21_readable_edit_r3/镜头与节拍说明.md",
+      "bytes": 3858,
+      "sha256": "cdf189eef368805de4625ebde8b41b17ea6d48f5e78ff605eb6b9d5e8e092fc3",
+      "report_sha256": "cdf189eef368805de4625ebde8b41b17ea6d48f5e78ff605eb6b9d5e8e092fc3",
+      "source_changed_after_report": false,
+      "url": "files/cdf189eef368805de4625ebd.md",
+      "large": false,
+      "filename": "镜头与节拍说明.md",
+      "published_bytes": 4247,
+      "published_sha256": "75b63c1fa50d039a31743dbd2f3ed85441ed4a6facd86dc886a023bcc712b9d6"
+    },
+    {
+      "path": "docs/marketing/ua_storyboards_abc_20261116/README.md",
+      "bytes": 3339,
+      "sha256": "d3fd5d4c12104ee4427422ac31ab1025062750db2084e8f3e0ec6aafb4552bdd",
+      "report_sha256": "d3fd5d4c12104ee4427422ac31ab1025062750db2084e8f3e0ec6aafb4552bdd",
+      "source_changed_after_report": false,
+      "url": "files/d3fd5d4c12104ee4427422ac.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 3749,
+      "published_sha256": "c83f9551e6c0eed29f1a807484e20881512cd52157cfbcaf7a41c4e660776140"
+    },
+    {
+      "path": "docs/marketing/fire_rescue_reskin_20261116/动物小镇_火场救Tilly_6秒样片.mp4",
+      "bytes": 2558815,
+      "sha256": "d2485440eff0bc7e1a8dcc0beccd9fbb7bd85b03a77c1a292c98f7e32150bd79",
+      "report_sha256": "d2485440eff0bc7e1a8dcc0beccd9fbb7bd85b03a77c1a292c98f7e32150bd79",
+      "source_changed_after_report": false,
+      "url": "files/d2485440eff0bc7e1a8dcc0b.mp4",
+      "large": false,
+      "filename": "动物小镇_火场救Tilly_6秒样片.mp4",
+      "published_bytes": 2558815,
+      "published_sha256": "d2485440eff0bc7e1a8dcc0beccd9fbb7bd85b03a77c1a292c98f7e32150bd79"
+    },
+    {
+      "path": "docs/marketing/fire_rescue_reskin_20261116/README.md",
+      "bytes": 3963,
+      "sha256": "916b2b3ebd47b754fa6983cc7ad7606c90a7ec869aea74bed5d606a045ea2951",
+      "report_sha256": "916b2b3ebd47b754fa6983cc7ad7606c90a7ec869aea74bed5d606a045ea2951",
+      "source_changed_after_report": false,
+      "url": "files/916b2b3ebd47b754fa6983cc.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 4345,
+      "published_sha256": "6759ba403957d2c9f4d4964304aa86bb4951d5184973782911abe032823a63e5"
+    },
+    {
+      "path": "docs/marketing/ua_video_chair_20261116/channel_status.json",
+      "bytes": 728,
+      "sha256": "892342e4b9cdb2f0ca647721a39d65b3940b4c359f12edf9721b093abbaf713b",
+      "report_sha256": "892342e4b9cdb2f0ca647721a39d65b3940b4c359f12edf9721b093abbaf713b",
+      "source_changed_after_report": false,
+      "url": "files/892342e4b9cdb2f0ca647721.json",
+      "large": false,
+      "filename": "channel_status.json",
+      "published_bytes": 728,
+      "published_sha256": "892342e4b9cdb2f0ca647721a39d65b3940b4c359f12edf9721b093abbaf713b"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-01.jpg",
+      "bytes": 34811,
+      "sha256": "380622d0afca79896ccf58d46438268cc1cbb8ecfe190abef42d553afe55ffe0",
+      "report_sha256": "380622d0afca79896ccf58d46438268cc1cbb8ecfe190abef42d553afe55ffe0",
+      "source_changed_after_report": false,
+      "url": "files/380622d0afca79896ccf58d4.jpg",
+      "large": false,
+      "filename": "video-01.jpg",
+      "published_bytes": 34811,
+      "published_sha256": "380622d0afca79896ccf58d46438268cc1cbb8ecfe190abef42d553afe55ffe0"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-02.jpg",
+      "bytes": 35427,
+      "sha256": "f25b442b18506bf685488942edf4879b23f1e7821f9c0b87922872f6feda071f",
+      "report_sha256": "f25b442b18506bf685488942edf4879b23f1e7821f9c0b87922872f6feda071f",
+      "source_changed_after_report": false,
+      "url": "files/f25b442b18506bf685488942.jpg",
+      "large": false,
+      "filename": "video-02.jpg",
+      "published_bytes": 35427,
+      "published_sha256": "f25b442b18506bf685488942edf4879b23f1e7821f9c0b87922872f6feda071f"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-03.jpg",
+      "bytes": 36240,
+      "sha256": "f73f864ece36364b2e9f2d51158c062b536cb77a538dad55039cc41a17556bfd",
+      "report_sha256": "f73f864ece36364b2e9f2d51158c062b536cb77a538dad55039cc41a17556bfd",
+      "source_changed_after_report": false,
+      "url": "files/f73f864ece36364b2e9f2d51.jpg",
+      "large": false,
+      "filename": "video-03.jpg",
+      "published_bytes": 36240,
+      "published_sha256": "f73f864ece36364b2e9f2d51158c062b536cb77a538dad55039cc41a17556bfd"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-04.jpg",
+      "bytes": 40575,
+      "sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208",
+      "report_sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208",
+      "source_changed_after_report": false,
+      "url": "files/ef1811400455f529851f8ce8.jpg",
+      "large": false,
+      "filename": "video-04.jpg",
+      "published_bytes": 40575,
+      "published_sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208"
+    },
+    {
+      "path": "docs/marketing/ua_satisfying_merge_20261118/multi_generator_20261119/preview_v28/动物小镇_三源合成与长椅高潮_v28_纯音效对照.mp4",
+      "bytes": 8661835,
+      "sha256": "a8a9ed99fea588d6c14de7676e60df3edcb20a4b59c5ce2a3c21d62192f0d6cb",
+      "report_sha256": "a8a9ed99fea588d6c14de7676e60df3edcb20a4b59c5ce2a3c21d62192f0d6cb",
+      "source_changed_after_report": false,
+      "url": "files/a8a9ed99fea588d6c14de767.mp4",
+      "large": false,
+      "filename": "动物小镇_三源合成与长椅高潮_v28_纯音效对照.mp4",
+      "published_bytes": 8661835,
+      "published_sha256": "a8a9ed99fea588d6c14de7676e60df3edcb20a4b59c5ce2a3c21d62192f0d6cb"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-05.jpg",
+      "bytes": 40575,
+      "sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208",
+      "report_sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208",
+      "source_changed_after_report": false,
+      "url": "files/ef1811400455f529851f8ce8.jpg",
+      "large": false,
+      "filename": "video-05.jpg",
+      "published_bytes": 40575,
+      "published_sha256": "ef1811400455f529851f8ce8786de8b2e198c100b83cc01622cfa04edef9a208"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-06.jpg",
+      "bytes": 30518,
+      "sha256": "b4eb0e925fe8c51661d95bcbacfa9d9acaa1f5fab09968cf456a67b10b91c3e6",
+      "report_sha256": "b4eb0e925fe8c51661d95bcbacfa9d9acaa1f5fab09968cf456a67b10b91c3e6",
+      "source_changed_after_report": false,
+      "url": "files/b4eb0e925fe8c51661d95bcb.jpg",
+      "large": false,
+      "filename": "video-06.jpg",
+      "published_bytes": 30518,
+      "published_sha256": "b4eb0e925fe8c51661d95bcbacfa9d9acaa1f5fab09968cf456a67b10b91c3e6"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-07.jpg",
+      "bytes": 24915,
+      "sha256": "dc2ba58bc8b2c188a53e13666b59f829ceaba64205313c6545db5a82898c75b6",
+      "report_sha256": "dc2ba58bc8b2c188a53e13666b59f829ceaba64205313c6545db5a82898c75b6",
+      "source_changed_after_report": false,
+      "url": "files/dc2ba58bc8b2c188a53e1366.jpg",
+      "large": false,
+      "filename": "video-07.jpg",
+      "published_bytes": 24915,
+      "published_sha256": "dc2ba58bc8b2c188a53e13666b59f829ceaba64205313c6545db5a82898c75b6"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/web/posters/video-08.jpg",
+      "bytes": 44626,
+      "sha256": "ee9339d3fcb6be362c2891761bce63ba855d2eab00e3c75df3d7eacb9271f1b8",
+      "report_sha256": "ee9339d3fcb6be362c2891761bce63ba855d2eab00e3c75df3d7eacb9271f1b8",
+      "source_changed_after_report": false,
+      "url": "files/ee9339d3fcb6be362c289176.jpg",
+      "large": false,
+      "filename": "video-08.jpg",
+      "published_bytes": 44626,
+      "published_sha256": "ee9339d3fcb6be362c2891761bce63ba855d2eab00e3c75df3d7eacb9271f1b8"
+    },
+    {
+      "path": "docs/product-analysis/merge2-daniu/runs/20261119_at-six-tier-v1/方案.md",
+      "bytes": 15042,
+      "sha256": "f36da2a427d638184e54abe74785a52d799929ce979bb3ae21d59d6bcc09db0e",
+      "report_sha256": "f36da2a427d638184e54abe74785a52d799929ce979bb3ae21d59d6bcc09db0e",
+      "source_changed_after_report": false,
+      "url": "files/f36da2a427d638184e54abe7.md",
+      "large": false,
+      "filename": "方案.md",
+      "published_bytes": 15388,
+      "published_sha256": "538492876dd3fd4ade2c1e4e9bec9c8752197a2c845fda8158c0dd8d7bbdccd3"
+    },
+    {
+      "path": "docs/product-analysis/merge2-daniu/README.md",
+      "bytes": 4637,
+      "sha256": "b23f3d9b5a534ca414611f58fc4753aff38cc6cae6696c0076a4c2a4011d6899",
+      "report_sha256": "b23f3d9b5a534ca414611f58fc4753aff38cc6cae6696c0076a4c2a4011d6899",
+      "source_changed_after_report": false,
+      "url": "files/b23f3d9b5a534ca414611f58.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 4737,
+      "published_sha256": "bb4fdd67e9c002355328a2c43f57ee5e939eae50adcc4b7ee02901affd0b2d46"
+    },
+    {
+      "path": "docs/skills/README.md",
+      "bytes": 2229,
+      "sha256": "6b4c0c64a067924b488e848c4f0bd49979e3e6590735894e128ede2893ffb321",
+      "report_sha256": "6b4c0c64a067924b488e848c4f0bd49979e3e6590735894e128ede2893ffb321",
+      "source_changed_after_report": false,
+      "url": "files/6b4c0c64a067924b488e848c.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 2673,
+      "published_sha256": "44546465c9fd1815b20f419a2bd922847d5341853159e981ae04d8658f96bc35"
+    },
+    {
+      "path": "docs/product-analysis/merge2-daniu/runs/20261119_at-six-tier-v1/validation.json",
+      "bytes": 13154,
+      "sha256": "f844aa4bca054b8611544777c4474bdfb67da2c75d3904f312e0c0d82655727c",
+      "report_sha256": "f844aa4bca054b8611544777c4474bdfb67da2c75d3904f312e0c0d82655727c",
+      "source_changed_after_report": false,
+      "url": "files/f844aa4bca054b8611544777.json",
+      "large": false,
+      "filename": "validation.json",
+      "published_bytes": 13154,
+      "published_sha256": "f844aa4bca054b8611544777c4474bdfb67da2c75d3904f312e0c0d82655727c"
+    },
+    {
+      "path": "docs/production/merge2-producer/README.md",
+      "bytes": 6006,
+      "sha256": "cd84f6d16599fc962e8c9f11695692706e63437818a696dd78ba5970801bbaae",
+      "report_sha256": "8ff641c5bb67851ba57821c678138a3dd516aa5bfbb7fc88937ead878c2244f1",
+      "source_changed_after_report": true,
+      "url": "files/cd84f6d16599fc962e8c9f11.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 6526,
+      "published_sha256": "ee57c366ac118db03c7736442af7677b8a881da505ca9e431e1f25716edcb43b"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/cross-workstation-20261119/pet-supplies-evidence.md",
+      "bytes": 9109,
+      "sha256": "5a66422b8366841c4e58d33b66d460753d762dca073e42f302a51ece94efb581",
+      "report_sha256": "5a66422b8366841c4e58d33b66d460753d762dca073e42f302a51ece94efb581",
+      "source_changed_after_report": false,
+      "url": "files/5a66422b8366841c4e58d33b.md",
+      "large": false,
+      "filename": "pet-supplies-evidence.md",
+      "published_bytes": 9372,
+      "published_sha256": "039e6684f8a2dc1be0ee565f8aa00f9f0f3cd8e67a6bc55934af36f507abbf4f"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/cross-workstation-20261119/补查结论.md",
+      "bytes": 6278,
+      "sha256": "7a40132be3c15924065e557947a85b7640881ebffb8e4921f969f175cfa75657",
+      "report_sha256": "7a40132be3c15924065e557947a85b7640881ebffb8e4921f969f175cfa75657",
+      "source_changed_after_report": false,
+      "url": "files/7a40132be3c15924065e5579.md",
+      "large": false,
+      "filename": "补查结论.md",
+      "published_bytes": 6720,
+      "published_sha256": "bd5835fcaeace2adf93e6d761605d3bf7084a5e48970d8333b53d5102bb30c67"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/cross-workstation-20261119/ios-evidence.md",
+      "bytes": 8406,
+      "sha256": "e9151520913036bc63a32c9fbac0f6bd0e36ee0da3a40287a74a05862ef95753",
+      "report_sha256": "e9151520913036bc63a32c9fbac0f6bd0e36ee0da3a40287a74a05862ef95753",
+      "source_changed_after_report": false,
+      "url": "files/e9151520913036bc63a32c9f.md",
+      "large": false,
+      "filename": "ios-evidence.md",
+      "published_bytes": 8669,
+      "published_sha256": "ac26788d67606902a51b5e775957aeebffdd86b6a45efadf9c16e54582b2e63a"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/cross-workstation-20261119/mac-readcheck-evidence.txt",
+      "bytes": 9581,
+      "sha256": "697a25cf3b2454171512c594dbd8fe01cf18ea3f357d700d3711dd63ccf1caaa",
+      "report_sha256": "697a25cf3b2454171512c594dbd8fe01cf18ea3f357d700d3711dd63ccf1caaa",
+      "source_changed_after_report": false,
+      "url": "files/697a25cf3b2454171512c594.txt",
+      "large": false,
+      "filename": "mac-readcheck-evidence.txt",
+      "published_bytes": 9581,
+      "published_sha256": "697a25cf3b2454171512c594dbd8fe01cf18ea3f357d700d3711dd63ccf1caaa"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/P_车站_植物参考修订_R04.png",
+      "bytes": 2028100,
+      "sha256": "3fd7a9f6f93759359847c81bb9170e7b261ac7cb5ae17f8a410a52748c63e2df",
+      "gallery_dependency": true,
+      "report_sha256": "3fd7a9f6f93759359847c81bb9170e7b261ac7cb5ae17f8a410a52748c63e2df",
+      "source_changed_after_report": false,
+      "url": "files/3fd7a9f6f93759359847c81b.png",
+      "large": false,
+      "filename": "P_车站_植物参考修订_R04.png",
+      "published_bytes": 2028100,
+      "published_sha256": "3fd7a9f6f93759359847c81bb9170e7b261ac7cb5ae17f8a410a52748c63e2df"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/C1_晚灯客栈_植物参考修订_R04.png",
+      "bytes": 2213976,
+      "sha256": "3be8d457f807fad1f4afddee81b1d5fd04d7420e5a08e30434ecc993807181f1",
+      "gallery_dependency": true,
+      "report_sha256": "3be8d457f807fad1f4afddee81b1d5fd04d7420e5a08e30434ecc993807181f1",
+      "source_changed_after_report": false,
+      "url": "files/3be8d457f807fad1f4afddee.png",
+      "large": false,
+      "filename": "C1_晚灯客栈_植物参考修订_R04.png",
+      "published_bytes": 2213976,
+      "published_sha256": "3be8d457f807fad1f4afddee81b1d5fd04d7420e5a08e30434ecc993807181f1"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/C2_米洛早餐亭_植物参考修订_R04.png",
+      "bytes": 2174169,
+      "sha256": "0a901b67bf7850bbb9634adbb739512e426fa7be905f3faad16442c893c6a8bd",
+      "gallery_dependency": true,
+      "report_sha256": "0a901b67bf7850bbb9634adbb739512e426fa7be905f3faad16442c893c6a8bd",
+      "source_changed_after_report": false,
+      "url": "files/0a901b67bf7850bbb9634adb.png",
+      "large": false,
+      "filename": "C2_米洛早餐亭_植物参考修订_R04.png",
+      "published_bytes": 2174169,
+      "published_sha256": "0a901b67bf7850bbb9634adbb739512e426fa7be905f3faad16442c893c6a8bd"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/P-ambient-R04.mp4",
+      "bytes": 9299483,
+      "sha256": "23ba81680241265a78c8f2529eebc54b98938c01629ade6613ff52746d8705ea",
+      "gallery_dependency": true,
+      "report_sha256": "23ba81680241265a78c8f2529eebc54b98938c01629ade6613ff52746d8705ea",
+      "source_changed_after_report": false,
+      "url": "files/23ba81680241265a78c8f252.mp4",
+      "large": false,
+      "filename": "P-ambient-R04.mp4",
+      "published_bytes": 9299483,
+      "published_sha256": "23ba81680241265a78c8f2529eebc54b98938c01629ade6613ff52746d8705ea"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/C1-ambient-R04.mp4",
+      "bytes": 4849438,
+      "sha256": "91daf75c07a587d544514827aad12eed36d7e9aa08979d066bfeca19f869a276",
+      "gallery_dependency": true,
+      "report_sha256": "91daf75c07a587d544514827aad12eed36d7e9aa08979d066bfeca19f869a276",
+      "source_changed_after_report": false,
+      "url": "files/91daf75c07a587d544514827.mp4",
+      "large": false,
+      "filename": "C1-ambient-R04.mp4",
+      "published_bytes": 4849438,
+      "published_sha256": "91daf75c07a587d544514827aad12eed36d7e9aa08979d066bfeca19f869a276"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/renders/C2-ambient-R04.mp4",
+      "bytes": 5324844,
+      "sha256": "d46dfafcc9d701c19590ddaf35651d30485c12c38655ce66d862cced52a888c5",
+      "gallery_dependency": true,
+      "report_sha256": "d46dfafcc9d701c19590ddaf35651d30485c12c38655ce66d862cced52a888c5",
+      "source_changed_after_report": false,
+      "url": "files/d46dfafcc9d701c19590ddaf.mp4",
+      "large": false,
+      "filename": "C2-ambient-R04.mp4",
+      "published_bytes": 5324844,
+      "published_sha256": "d46dfafcc9d701c19590ddaf35651d30485c12c38655ce66d862cced52a888c5"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/README.md",
+      "bytes": 3425,
+      "sha256": "a33bd394ab40b59e3b4bd2a3bc5c32682626cc00bef790d33b11d3f25e3c2f14",
+      "gallery_dependency": true,
+      "report_sha256": "a33bd394ab40b59e3b4bd2a3bc5c32682626cc00bef790d33b11d3f25e3c2f14",
+      "source_changed_after_report": false,
+      "url": "files/a33bd394ab40b59e3b4bd2a3.md",
+      "large": false,
+      "filename": "README.md",
+      "published_bytes": 3974,
+      "published_sha256": "89f0e48154bb09468323a2063a0f4ab37300c128676b5933aabed942740d1fe3"
+    },
+    {
+      "path": "docs/art/chapters-D2-2to1-20261119/plant-reference-20261119/qa/三处场景_修改前后对照.png",
+      "bytes": 3583512,
+      "sha256": "7cf9b39d1fb1c3f27dca575b9a2bdfb6915bac4fd90a8b09ac2feeaab8573e29",
+      "gallery_dependency": true,
+      "report_sha256": "7cf9b39d1fb1c3f27dca575b9a2bdfb6915bac4fd90a8b09ac2feeaab8573e29",
+      "source_changed_after_report": false,
+      "url": "files/7cf9b39d1fb1c3f27dca575b.png",
+      "large": false,
+      "filename": "三处场景_修改前后对照.png",
+      "published_bytes": 3583512,
+      "published_sha256": "7cf9b39d1fb1c3f27dca575b9a2bdfb6915bac4fd90a8b09ac2feeaab8573e29"
+    }
+  ],
+  "unbundled_markdown_references": [
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "E:/MegoNew-training/AnimalTownClient/docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/证据索引.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/mumu-instance.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/boot/result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/guest-package-proof.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/second-order-review/receipt.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/opening-inn/actions.jsonl"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/c1-first-actual-claim/result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/campaign/result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/actual-touch-summary.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/earned-BK10-before-force-stop.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/v35-sampling/result.json"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "../../../../.agents/skills/mego-world-map-art/references/strict-isometric-2to1.md"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "../../art/projection-2to1-20261118/audit.md"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "evidence/chapter-flow.png"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "evidence/P0-layout.png"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "evidence/C1-layout.png"
+    },
+    {
+      "source": "docs\\version\\P0C1C2_Flambe_20261117",
+      "target": "evidence/C2-layout.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "regression.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-device-qa/device-inventory.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-build/v35-repro/v34-v35-source-differences.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-producer/apk-v35-contents.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "android-build.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-v35-android/opening-inn/transition-0020/frame-002.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "observation-android-v35-upgrade.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "device-qa.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/builds/android/20261119-124409-4baa9c1b/AnimalTownReskin-debug.apk"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "device-qa.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-producer/apk-v34-contents.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/builds/android/20261119-124409-4baa9c1b/build-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-regression/process-recovery-20261119T042736075059Z/summary.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-runtime.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "regression.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "observation.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "observation-audio.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "observation.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "android-build.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-economy/runtime/LocalOnly/flambe23-integration/test-20261119-041819-317/stdout.txt"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-economy/runtime/LocalOnly/flambe23-integration/test-20261119-041801-920/stdout.txt"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-flow-receipt.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-flow-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-runtime.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-ledgers.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy_audit.py"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-flow-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "economy-flow-receipt.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/pointer-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/technical-evidence.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/opening_cover_pair.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/opening_station_orders_paid.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/PR02_payment_preview.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/PR02_receipt.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/opening_innkeeper_order.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/IN01_before.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/tutorial_short/IN01_receipt.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/cold/pointer-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/cold/cold_chapter.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/cold-initial-pointer-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/cold/stdout.txt"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind/frame015.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../client/features/merge_board/merge_board_screen.gd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-verify/frame015.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-verify/frame023.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind/frame029.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind/first-process-godot.log"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind/frame035.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind2"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind3"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind4"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-lamp/frame027.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-lamp/frame032.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-lamp/frame035.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-lamp"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind5"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind6"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind7"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/journey-audit.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind3/frame023.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-final/frame023.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind/frame041.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-final/frame033.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-final/frame034.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-layout-720/frame006.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-layout-720/frame007.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-layout-936/frame011.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-layout-936/frame012.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-layout-720/godot.log"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-station-cycle/frame003.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/blind-station-cycle/godot.log"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/installed.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/guest.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/guest-offline.txt"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample01/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample01/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample02/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample02/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample01/visual/frame023.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample01/visual/frame024.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/sample01/visual/frame054.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/installed.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/guest4-install.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/builds/android/20261119-125521-cdde0e59/source-manifest.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample01/visual/frame024.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35-guidance-check/fresh-02/result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35-guidance-check/legacy-02/result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35-guidance-check/receipt.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample01/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample01/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample02/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample02/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample03/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample03/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample04/visual/frame025.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample04/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample04/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample05/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample05/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample06/visual"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample06/ended.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample04/actual-game-shape.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample04/resume-game-shape.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-journey/android/v35/sample06/actual-game-shape.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/pointer-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/diagnostics.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/BOARD001_facade_receipt_reward.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/BOARD001_facade_reward_pending.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/BOARD001_mixed_practice.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054928-730/BOARD001_level_two.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-054242-152/stdout.txt"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/builds/android/20261119-141251-5aaae673/AnimalTownReskin-debug.apk"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/builds/android/20261119-141251-5aaae673/build-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061352-816/pointer-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061352-816/BOARD001_facade_reward_pending.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061352-816/BOARD001_level_two.png"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061523-701/pointer-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061536-259/pointer-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061547-149/pointer-result.json"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "../../LocalOnly/flambe23-integration/test-20261119-061557-335/pointer-result.json"
+    },
+    {
+      "source": "docs",
+      "target": "../MegoServer/vcpkg-configuration.json"
+    },
+    {
+      "source": "docs",
+      "target": "../MegoServer/vcpkg.json"
+    },
+    {
+      "source": "docs",
+      "target": "../workspace.json"
+    },
+    {
+      "source": "MegoNative",
+      "target": "PORTING.md"
+    },
+    {
+      "source": "MegoNative",
+      "target": "BUILD_VERIFICATION.md"
+    },
+    {
+      "source": "docs",
+      "target": "skills/animaltown-account-sync/SKILL.md"
+    },
+    {
+      "source": "docs",
+      "target": "skills/animaltown-package/SKILL.md#android-账号接入与构建档位"
+    },
+    {
+      "source": "docs",
+      "target": "../client/app/main.gd"
+    },
+    {
+      "source": "docs",
+      "target": "../client/features/story/story_session.gd"
+    },
+    {
+      "source": "docs",
+      "target": "../client/core/storage/local_json_store.gd"
+    },
+    {
+      "source": "docs",
+      "target": "android-remote-content-plan.md"
+    },
+    {
+      "source": "docs",
+      "target": "../client/tests/test_flambe23_pointer.gd"
+    },
+    {
+      "source": "docs",
+      "target": "../MegoNative/PORTING.md"
+    },
+    {
+      "source": "docs",
+      "target": "skills/animaltown-account-sync/scripts/cpp_runtime.py"
+    },
+    {
+      "source": "docs",
+      "target": "skills/animaltown-account-sync/scripts/verify_cpp.py"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/qa/baseline.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../client/features/story/flambe_scene_art.gd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../tools/mainline/freeze_r04.py"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../tools/mainline/import_art.py"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "scene-geometry.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "scene-station.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "scene-inn.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "scene-breakfast.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/qa/final-import.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/qa/final-core-live.out"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../art/flambe-r04-ai-day-20261119/layered-studio/README.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/qa/layered/verified.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../art/flambe-r04-ai-day-20261119/evidence/ambient-gpu.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../art/flambe-r04-ai-day-20261119/evidence/surround-v2.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../art/flambe-r04-ai-day-20261119/release-assets.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../art/flambe-r04-ai-day-20261119/evidence/inn-terrace-final.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/independent-geometry/inn-seam/README.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "android-build.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "device-qa.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041414-821"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041508-306"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041534-072"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041551-376"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041613-036"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041631-489"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041808-947"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041653-152"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041756-690"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041913-655"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041928-906"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-041904-909"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042738-043/PR02_plank_contact.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042738-043/PR02_exit_cleared.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042738-043/PR02_walk_through_gate.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042738-043/pointer-result.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042756-644"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042814-965"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042831-465"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042850-987/BK04_oven_draw.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042850-987/BK04_tray_on_bench.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042911-534"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-042807-861"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/bk04-r04/验收.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-734-4934cc5f53214acba8d7582150af8944/IN06_basket_pickup.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-734-4934cc5f53214acba8d7582150af8944/IN06_blanket_contact.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-743-e3678089bab64abf87c9578daaaba257"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043025-712-283be7fd00cf4fd1b6af65c51ac76ef3/IN08_chair_pulled.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043025-712-283be7fd00cf4fd1b6af65c51ac76ef3/IN08_both_seated.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043026-542-4999ef51f3db4118b2546dea5e3d11d1"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043020-744-c1087d4501834a2c979b5bd5e439cabc"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-679-8403776742444980a108e9c0dc8b5b19/IN10_guest_at_door.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-679-8403776742444980a108e9c0dc8b5b19/BK00_open_after_IN10.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043004-717-64e8e3136fc841bb83c3cc3dc157e68b"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/adopted-workpoints.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/package-inputs.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/perimeter-final-sha.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043224-020-18e42a3602f6496eb86d2e5a7212fbbd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/station-black-frame-comparison.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043531-939-7bd0dae11f944cd6bf651eb933bc1961/PR02_receipt.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/inn-r04/README.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043314-028-6f2d8484fd0d46d99ece2690f8a1c98a/IN06_blanket_contact.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/input-repeat-1-outcomes.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/input-repeat-2-outcomes.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/input-repeat-3-outcomes.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043848-001-1490a9e7a27749c5b05a2e31a5bb205d"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043907-588-bd1c30fa428e4a099385b7fd600c33ae"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043928-143-ab39cd0854f94fcd847648d6d26b52c0"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043224-020-be83629d9dc34a2385078b8e74a678a6/IN08_both_seated.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-044328-872-dcc0f775165c4fe3802b0a9eaa5922b3/IN08_both_seated.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-scene/independent-geometry/inn-seam/final.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../ai_corrections.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../version/P0C1C2_Flambe_20261117/integration-20261117/早餐分享取景与接触反馈_20261118.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/art/asset-validation.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../client/features/story/flambe_breakfast_sharing.gd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../client/features/story/flambe_sharing_arms.gd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/runtime/r04-v2-native-crops.jpg"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/runtime/r04-signed-native-crops.jpg"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/flambe23-integration/test-20261119-043833-165-5ae6542252654a4787886ef366defe52/BK10-real-time-window.mp4"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/perimeter-final-sha.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/runtime/final-evidence.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/runtime/package-inputs.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "../../../../../LocalOnly/ai-day-actors/workpoints/adopted-workpoints.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\ai-day",
+      "target": "device-qa.md"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-reference-comparison-office.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-reference-comparison-tree.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-access-detail.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-office.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-gate.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-projection-check.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-reviewed-projection-overlay.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-projection-measurements.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-square-observations.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-normal-768.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-thumbnail-384.png"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "quality-review-r02.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/r02-quality-record-validation.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "quality-contract.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "requests/r01-prompt.txt"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "requests/r01.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "requests/r02-prompt.txt"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "requests/r02.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "requests/r02-result.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "selected-files.json"
+    },
+    {
+      "source": "docs\\art\\projection-2to1-20261118\\station-redraw\\style-restoration-20261119",
+      "target": "qa/final-validation.json"
+    },
+    {
+      "source": "docs\\design-review\\board-reference-20261118",
+      "target": "../../art/board-reference-20261118/layout-reference-20261119.png"
+    },
+    {
+      "source": "docs\\design-review\\board-reference-20261118",
+      "target": "../../art/board-reference-20261118/source/full-height-background/record.md"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "ux-late-modal-handoff-20261119.md"
+    },
+    {
+      "source": "docs\\design-review",
+      "target": "ux-full-flow-audit-20261119.md"
+    },
+    {
+      "source": "docs\\art\\board-pixel-cleanup-20261119",
+      "target": "ui-and-dependencies-review.csv"
+    },
+    {
+      "source": "docs\\art\\board-pixel-cleanup-20261119",
+      "target": "source/329-original-master.png"
+    },
+    {
+      "source": "docs\\art\\board-pixel-cleanup-20261119",
+      "target": "source/329-before.png"
+    },
+    {
+      "source": "docs\\art\\resident-candidates-20261117",
+      "target": "youyou-design.md"
+    },
+    {
+      "source": "docs\\art\\resident-candidates-20261117",
+      "target": "selected-files.json"
+    },
+    {
+      "source": "docs\\art\\resident-modern-20261117",
+      "target": "index.html"
+    },
+    {
+      "source": "docs\\art\\resident-modern-20261117",
+      "target": "review-withdrawal.json"
+    },
+    {
+      "source": "docs\\art\\resident-modern-20261117",
+      "target": "作者检查.md"
+    },
+    {
+      "source": "docs\\art\\resident-modern-20261117",
+      "target": "SOURCES.md"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "images/47-rongpai.png"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "images/48-manlei.png"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "index.html"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "residents-eye-validation-3-current.zip"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "selected-files.json"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "qinghua-verification.md"
+    },
+    {
+      "source": "docs\\art\\resident-eye-validation-20261118",
+      "target": "review-withdrawal.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "creatives/preview-grid.jpg"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../ua_satisfying_merge_20261118/tp2s_data_joint_20261118/TP2S_素材与实际买量数据联合分析.md"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/ai-day-journey/android/v35/sample05/visual/frame033.raw.png"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/market-ua-v35/review/compare/d4aea99552-a5a6bea2b5.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/market-ua-v35/creatives/capture/station-story-v35.mp4"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/market-ua-v35/creatives/capture/receipt.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../ua_video_chair_20261116/render_ua.py"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/market-ua-v35/creatives/source-sha256.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "../../../LocalOnly/market-ua-v35/creatives/qa.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "edit.json"
+    },
+    {
+      "source": "docs\\marketing\\market-ua-v35",
+      "target": "render_creatives.py"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r02-merge-play.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r03-merge-landing.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r05-gate-play.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r06-gate-landing.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r07-download.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r09-download-complete.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r10-installer.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r11-installing.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r12-installed.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r14-first-open.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/release-repair/after-21.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/release-repair/after-25.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/release-repair/after-27.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/release-repair/actions.jsonl"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../marketing/market-ua-v35/creatives/"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r10-installer.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/screens/r14-first-open.png"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../client/features/dev_login/dev_login_screen.gd"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "../../../../../LocalOnly/market-ua-v35/funnel/cleanup.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\market-ua-v35",
+      "target": "funnel/replay.py"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../gameplay/pilot08/principal_silent_1x.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../compare_current.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../gameplay/pilot08/ending_semantics.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../需求与验收.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../进度与返修.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "作者复核.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\tp2s_completion_20261119\\preview_v27",
+      "target": "../gameplay/pilot08/v27分工复核与评分.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "preview_v28/player.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "compare/reel_v28_bgm/三发射器新版_TP2S_四项并排对照.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "compare/reel_v27/v27_TP2S_四项并排对照.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "xiaoyun_inventory/发射器与最新资产盘点.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "source_integration/integration_receipt.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "compare/index.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "reviews/root_pilot03_and_final_review.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "preview_v28/bgm_mix/bgm_mix_manifest.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "gameplay/pilot03/拍摄交接.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\multi_generator_20261119",
+      "target": "gameplay/pilot03/final_v28_visual_review.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "../iterations/r3/A_storyboard.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "index.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG1_AG3_camera_4s.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG1_AG3_full_4s.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG4_Tilly_clean_5s.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG4_Tilly_CTA_5s.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG1_AG3_with_handles.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "clips/AG4_with_handles.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "source/gameplay_native.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "source/gameplay_native.avi"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "source/native_audio.wav"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "delivery_manifest.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "evidence/initial-state-and-differences.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "evidence/browser-playback.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116\\gameplay_A_20261117",
+      "target": "脚本到玩法素材流程.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "shot_plan.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "source_to_output_frames.csv"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "Gameplay_v21_phone_432x768.mp4"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "preview.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "edit_manifest.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "source_receipt/receipt.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_satisfying_merge_20261118\\joint_ua_preview_20261118\\v21_readable_edit_r3",
+      "target": "technical_review.json"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "iterations/r4_scripts/README.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "iterations/r4_scripts/自查与头部逐项对照.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "iterations/r3/index.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "iterations/r3/reviews/受众共鸣与体验反馈复审_20261117.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "reviews/自查评分_20261116.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "../../../../.agents/skills/merge-ua-creative/references/self-review-and-submission.md"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "index.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "A_storyboard.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "A_keyframes_v2.png"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "A_storyboard_overview.jpg"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "B_storyboard.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "B_keyframes_v2.png"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "B_storyboard_overview.jpg"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "C_storyboard.html"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "C_keyframes_v2.png"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "C_storyboard_overview.jpg"
+    },
+    {
+      "source": "docs\\marketing\\ua_storyboards_abc_20261116",
+      "target": "分镜制作稿.md"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "opening-frame-v3-dry.png"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "ladder-frame-v1.png"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "rescue-frame-v2-no-sparks.png"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "end-frame-v1.png"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "免费替代方案核查_20261116.md"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "source-manifest.json"
+    },
+    {
+      "source": "docs\\marketing\\fire_rescue_reskin_20261116",
+      "target": "generation-blockers.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu\\runs\\20261119_at-six-tier-v1",
+      "target": "../20261119_tt-segmentation-design-v1/analysis.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu\\runs\\20261119_at-six-tier-v1",
+      "target": "proposal.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu\\runs\\20261119_at-six-tier-v1",
+      "target": "verify_proposal.py"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "../../production/merge2-producer/runs/ai-day/observation.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "project-profile.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261119_at-six-tier-v1/proposal.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261119_tt-segmentation-design-v1/analysis.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/核心循环与优先验证假设.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/问题与验证计划.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/evidence-index.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/metrics.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/decisions.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/handoff.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/audit-receipt.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/archive-validation.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "../../../../.agents/skills/merge2-daniu/SKILL.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261119_tt-segmentation-design-v1/analysis.md"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165801344015+0800_d528e190/audit-receipt.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "runs/20261118T165726419687+0800_d5aa1943/audit-receipt.json"
+    },
+    {
+      "source": "docs\\product-analysis\\merge2-daniu",
+      "target": "tools/audit_core_loop.py"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "../../AGENTS.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "animaltown-scene-art/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-feedback-loop/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-ux-review/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-ui-design/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-visual-language/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-onboarding-tuning/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "game-art-director/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "ui-art-replacement/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "animaltown-pixel-perfect/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "godot-client-optimization/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "codegraph-before-change/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "animaltown-package/SKILL.md"
+    },
+    {
+      "source": "docs\\skills",
+      "target": "animaltown-account-sync/SKILL.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../../../.codex/agents/merge2_producer.toml"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../../../.agents/skills/merge2-producer/references/producer-charter.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../../AGENTS.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../ai_corrections.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../version/P0C1C2_Flambe_20261117/integration-20261117/README.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../art/scene-content-workflow.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "现状审查与接管计划_20261119T120329+0800.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "runs/market-ua-v35/制作人决策.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "runs/ai-day/android-build.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "runs/ai-day/device-qa.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "runs/weekly-20261116-20261119-1438/web/index.html"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "runs/weekly-20261116-20261119-1438/web/README.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer",
+      "target": "../../../../.agents/skills/project-progress-report/SKILL.md"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\weekly-20261116-20261119-1438\\cross-workstation-20261119",
+      "target": "dispatcher-articles.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\weekly-20261116-20261119-1438\\cross-workstation-20261119",
+      "target": "platform-observations.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\weekly-20261116-20261119-1438\\cross-workstation-20261119",
+      "target": "planner-articles.json"
+    },
+    {
+      "source": "docs\\production\\merge2-producer\\runs\\weekly-20261116-20261119-1438\\cross-workstation-20261119",
+      "target": "dispatcher-articles.json"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "qa/final-review.md"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "../../iggchat-feedback-20261118/工作流与反馈处理.md"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "../../../skills/animaltown-scene-art/SKILL.md"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "requests/P-r01-prompt.txt"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "requests/P-r02-prompt.txt"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "requests/C1-r01-prompt.txt"
+    },
+    {
+      "source": "docs\\art\\chapters-D2-2to1-20261119\\plant-reference-20261119",
+      "target": "requests/C2-r01-prompt.txt"
+    }
+  ],
+  "original_gaps": [
+    {
+      "path": "LocalOnly/builds/android/20261119-141251-5aaae673/AnimalTownReskin-debug.apk",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/builds/android/20261119-141251-5aaae673/build-result.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/account-sync/cpp-source/windows-source-20261119/clients/20261119-133429-15a5f4f1/cpp-client-report.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/board-performance-20261116/summary.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/onboarding-handoff-20261116/browser-936/result.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/ux-acceptance-audit-20261119/verification.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/flambe23-integration/test-20261119-043345-672/pointer-result.json",
+      "label": "原文记载，当前工作区未取得原件"
+    },
+    {
+      "path": "LocalOnly/flambe23-integration/test-20261119-061352-816/pointer-result.json",
+      "label": "原文记载，当前工作区未取得原件"
+    }
+  ],
+  "item_count": 21,
+  "hosting": {
+    "provider": "GitHub Pages",
+    "project_path": "/animal-town-weekly-20261119/",
+    "prepared_at_utc": "2026-11-19T09:40:00.759354+00:00",
+    "source_manifest_sha256": "406f9963625a0fd4f1458d1db825dbdb44843fcc92aae08830b86c998bc19c84",
+    "note": "Hosting copy only; source cutoff, original artifacts and original SHA256 are retained."
+  }
+}
