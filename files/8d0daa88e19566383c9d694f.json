@@ -1,0 +1,205 @@
+{
+  "apk_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+  "cohort": "v35 independent Android offline visual AI play",
+  "independent_samples": 6,
+  "samples": [
+    {
+      "sample": "sample01",
+      "wave": 1,
+      "guest": 2,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:04:48.7531743+08:00",
+      "native_pixels_at_repair": [
+        900,
+        1600
+      ],
+      "first_repair_frame": 29,
+      "first_repair_ms": 186815,
+      "inn_receipt_frame": 55,
+      "inn_receipt_ms": 351344,
+      "next_construction_last_observed_frame": 57,
+      "last_observed_ms": 363402,
+      "display_technical_pause_ms": 0,
+      "taps_or_drags": 49,
+      "process_reopens": 0,
+      "gold": 0,
+      "energy": 119,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "C38EFB79F9D6156A9C14141354567D4C5B5F4418E97BAE2C7E15B19B40AAEB18",
+      "passed": true
+    },
+    {
+      "sample": "sample02",
+      "wave": 1,
+      "guest": 2,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:10:28.2733001+08:00",
+      "native_pixels_at_repair": [
+        900,
+        1600
+      ],
+      "first_repair_frame": 28,
+      "first_repair_ms": 165180,
+      "inn_receipt_frame": 54,
+      "inn_receipt_ms": 303567,
+      "next_construction_last_observed_frame": 56,
+      "last_observed_ms": 313866,
+      "display_technical_pause_ms": 0,
+      "taps_or_drags": 48,
+      "process_reopens": 0,
+      "gold": 0,
+      "energy": 119,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "329D54FC9572D83F5FE6C377AF4724EC14CAD190A45A4E31D819F2E6832302D6",
+      "passed": true
+    },
+    {
+      "sample": "sample03",
+      "wave": 1,
+      "guest": 2,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:18:41.9391906+08:00",
+      "native_pixels_at_repair": [
+        900,
+        1600
+      ],
+      "first_repair_frame": 28,
+      "first_repair_ms": 260546,
+      "inn_receipt_frame": 54,
+      "inn_receipt_ms": 459454,
+      "next_construction_last_observed_frame": 57,
+      "last_observed_ms": 477317,
+      "display_technical_pause_ms": 0,
+      "taps_or_drags": 49,
+      "process_reopens": 0,
+      "gold": 0,
+      "energy": 120,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "8F890B34747537F5D2E69E5F6737F2FF3A205BCE5DB8EA88416626779593C07B",
+      "passed": true
+    },
+    {
+      "sample": "sample04",
+      "wave": 2,
+      "guest": 2,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:25:05.460756+08:00",
+      "native_pixels_at_repair": [
+        864,
+        1440
+      ],
+      "first_repair_frame": 35,
+      "first_repair_ms": 230490,
+      "inn_receipt_frame": 59,
+      "inn_receipt_ms": 356375,
+      "next_construction_last_observed_frame": 61,
+      "last_observed_ms": 366616,
+      "display_technical_pause_ms": 44061,
+      "taps_or_drags": 48,
+      "process_reopens": 1,
+      "gold": 0,
+      "energy": 119,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "9920FB6DAA97D5A5041A2CF3101883623602FA8256FD709F3D11818BED8B7819",
+      "passed": true
+    },
+    {
+      "sample": "sample05",
+      "wave": 2,
+      "guest": 2,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:31:28.3810471+08:00",
+      "native_pixels_at_repair": [
+        900,
+        1600
+      ],
+      "first_repair_frame": 28,
+      "first_repair_ms": 179304,
+      "inn_receipt_frame": 54,
+      "inn_receipt_ms": 351173,
+      "next_construction_last_observed_frame": 56,
+      "last_observed_ms": 366616,
+      "display_technical_pause_ms": 0,
+      "taps_or_drags": 48,
+      "process_reopens": 0,
+      "gold": 0,
+      "energy": 119,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "17288B2D95C9B588E5A4BCCD2BC558E9F893360278562FA028AB6D603F335066",
+      "passed": true
+    },
+    {
+      "sample": "sample06",
+      "wave": 2,
+      "guest": 4,
+      "fresh_empty_before_launch": true,
+      "sealed_at": "2026-11-19T13:25:11.6264596+08:00",
+      "native_pixels_at_repair": [
+        864,
+        1872
+      ],
+      "first_repair_frame": 29,
+      "first_repair_ms": 208647,
+      "inn_receipt_frame": 56,
+      "inn_receipt_ms": 362107,
+      "next_construction_last_observed_frame": 58,
+      "last_observed_ms": 373443,
+      "display_technical_pause_ms": 34817,
+      "taps_or_drags": 48,
+      "process_reopens": 0,
+      "gold": 0,
+      "energy": 119,
+      "experience": 10,
+      "orders": [
+        2100100,
+        2100001,
+        2100002
+      ],
+      "completed": [
+        "IN01"
+      ],
+      "main_save_sha256": "7967DB2CCB499A6ABBCB763FCA5EE5AE4DEF1A0C06C4CEE8B3E176BC41CB8252",
+      "passed": true
+    }
+  ]
+}

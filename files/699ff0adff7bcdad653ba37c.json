@@ -1,0 +1,24 @@
+{
+  "schema": "animaltown-feedback-review-override-1",
+  "observed_at_utc": "2026-11-19T06:00:20.912851+00:00",
+  "source": "AIM可见12:13—12:14反馈节选；私有来源见heartbeat-20261119-1343.json",
+  "feedback_ids": [
+    "art-observed20261119-1214-material-overcorrection",
+    "art-observed20261119-1214-old-station-perspective",
+    "art-observed20261119-1214-old-station-rest"
+  ],
+  "revision": "R04",
+  "status": "material_color_detail_review_reopened_visual_repair_pending",
+  "affected_dimensions": [
+    "material_and_detail_balance",
+    "color_and_contrast_balance"
+  ],
+  "old_scores_are_historical": true,
+  "current_overall_quality_gate": false,
+  "geometry_and_function_not_automatically_revoked": true,
+  "new_image_calls": 0,
+  "reason": "最新反馈认为当前修正有些过度，要求向旧车站的细节质感靠拢。旧参考仅承担外观职责；2:1和功能合同继续。采集遇到群切换而停止，11:33旧锚点未读到，完整覆盖尚有缺口。",
+  "next_action": "下一次安全目标群读取补齐上下文后，以车站作代表性材质／色彩返修，重测新PNG；样板通过后再按确认范围扩章并重绑动态。",
+  "user_adoption": false,
+  "client_modified": false
+}

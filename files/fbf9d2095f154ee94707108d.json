@@ -1,0 +1,19 @@
+{
+  "checked_at_beijing": "2026-11-19T14:42:22+08:00",
+  "passed": true,
+  "checks": {
+    "all_report_local_links_exist": true,
+    "four_known_deliverable_hashes_match": true,
+    "piece_csv_582_unique_ids": true,
+    "resident_pack_has_30_pngs": true,
+    "recorded_android_v35_cold_resume_passed_12_checks": true,
+    "six_ai_samples_bound_to_the_same_apk": true,
+    "recorded_economy_36_orders_279_productions_968_income_and_spend": true,
+    "recorded_desktop_1560_checks_passed": true,
+    "segmentation_56_checks_6_fixtures_static_only": true
+  },
+  "unique_local_links": 73,
+  "broken_local_links": [],
+  "known_missing_raw_paths": 8,
+  "qualification": "This verifies report references and arithmetic, not fresh gameplay, user adoption, physical-device QA, or business outcomes."
+}

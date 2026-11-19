@@ -1,0 +1,26 @@
+{
+  "manifest_sha256": "42b6ba2c6e0cb13a6343ce552489b9dc47c34925611281d57e740e8c3dcdeb95",
+  "checks": 1560,
+  "failures": [],
+  "diagnostics": {
+    "code": 0,
+    "errors": [],
+    "warnings": []
+  },
+  "income": 968,
+  "spent": 968,
+  "elapsed": 726.364,
+  "wait_seconds": 116,
+  "inputs": 807,
+  "end": {
+    "at_ms": 726353,
+    "energy": 28,
+    "gold": 0,
+    "gold_before": 0,
+    "orders": 36,
+    "produced": 279,
+    "spent": 0,
+    "stage": "BK10"
+  },
+  "passed": true
+}

@@ -1,0 +1,190 @@
+{
+  "scope": "release 23.50s clips; local QA only; browser and package installer taps; one reinstall following complete uninstall on this isolated guest; no public store or ad impression counted",
+  "browser_events": [
+    {
+      "utc": "2026-11-19T06:10:09.207819+00:00",
+      "method": "GET",
+      "event": "creative_request",
+      "creative": "merge",
+      "video_available": true
+    },
+    {
+      "utc": "2026-11-19T06:10:09.366584+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:09.403714+00:00",
+      "method": "GET",
+      "event": "video_response",
+      "creative": "merge",
+      "start": 0,
+      "end": 4236923,
+      "total_bytes": 4236924,
+      "sent_bytes": 4236924,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:09.455085+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:17.816619+00:00",
+      "method": "GET",
+      "event": "video_response",
+      "creative": "merge",
+      "start": 622592,
+      "end": 4236923,
+      "total_bytes": 4236924,
+      "sent_bytes": 3614332,
+      "complete_response": true,
+      "complete_file_in_response": false
+    },
+    {
+      "utc": "2026-11-19T06:10:21.232838+00:00",
+      "method": "GET",
+      "event": "landing_request",
+      "creative": "merge",
+      "video_available": true
+    },
+    {
+      "utc": "2026-11-19T06:10:21.250426+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:24.379699+00:00",
+      "method": "GET",
+      "event": "creative_request",
+      "creative": "gate",
+      "video_available": true
+    },
+    {
+      "utc": "2026-11-19T06:10:24.502819+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:24.536042+00:00",
+      "method": "GET",
+      "event": "video_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 4232191,
+      "total_bytes": 4232192,
+      "sent_bytes": 4232192,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:24.590763+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:34.192827+00:00",
+      "method": "GET",
+      "event": "video_response",
+      "creative": "gate",
+      "start": 131072,
+      "end": 4232191,
+      "total_bytes": 4232192,
+      "sent_bytes": 4101120,
+      "complete_response": true,
+      "complete_file_in_response": false
+    },
+    {
+      "utc": "2026-11-19T06:10:37.602986+00:00",
+      "method": "GET",
+      "event": "landing_request",
+      "creative": "gate",
+      "video_available": true
+    },
+    {
+      "utc": "2026-11-19T06:10:37.652452+00:00",
+      "method": "GET",
+      "event": "poster_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 554472,
+      "total_bytes": 554473,
+      "sent_bytes": 554473,
+      "complete_response": true,
+      "complete_file_in_response": true
+    },
+    {
+      "utc": "2026-11-19T06:10:53.219966+00:00",
+      "method": "GET",
+      "event": "apk_response",
+      "creative": "gate",
+      "start": 0,
+      "end": 279517704,
+      "total_bytes": 279517705,
+      "sent_bytes": 279517705,
+      "complete_response": true,
+      "complete_file_in_response": true
+    }
+  ],
+  "media": {
+    "gate": {
+      "bytes": 4232192,
+      "served_sha256": "d4aea99552ea0efd1c3f88fd7a95a40ea630dc752157aa2ded8cada694f8e9b8",
+      "independent_digest_probe": true
+    },
+    "merge": {
+      "bytes": 4236924,
+      "served_sha256": "a5a6bea2b5d0e8bcf8db1eadc450d70cb8f042eff963f9c8184abb7d884be9f9",
+      "independent_digest_probe": true
+    }
+  },
+  "time": "2026-11-19T14:11:46.405326+08:00",
+  "package": {
+    "name": "org.mego.animaltownreskin.a20preview",
+    "version": "versionName=0.3.0-flambe23-v35-internal",
+    "code": "versionCode=35 minSdk=24 targetSdk=36",
+    "installed_by": "installerPackageName=com.android.packageinstaller",
+    "when": "firstInstallTime=2026-11-19 14:11:05",
+    "bytes": 279517705,
+    "downloaded_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+    "installed_base_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+    "browser_file": "/sdcard/Download/AnimalTown-v35 (2).apk"
+  },
+  "first_screen": "r14-first-open.png"
+}

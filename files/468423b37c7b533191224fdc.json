@@ -1,0 +1,105 @@
+{
+  "status": "succeeded",
+  "run_id": "20261119-125521-cdde0e59",
+  "project": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\ai-day-build\\v35-repro\\AnimalTownClient\\client",
+  "steps": [
+    {
+      "name": "engine-version",
+      "exit_code": 0,
+      "log": "engine-version.log",
+      "passed": true
+    },
+    {
+      "name": "project-check",
+      "exit_code": 0,
+      "log": "project-check.log",
+      "passed": true
+    },
+    {
+      "name": "java-version",
+      "exit_code": 0,
+      "log": "java-version.log",
+      "passed": true
+    },
+    {
+      "name": "configure",
+      "exit_code": 0,
+      "log": "configure.log",
+      "passed": true
+    },
+    {
+      "name": "import",
+      "exit_code": 0,
+      "log": "import.log",
+      "passed": true
+    },
+    {
+      "name": "import-spine",
+      "exit_code": 0,
+      "log": "import-spine.log",
+      "passed": true
+    },
+    {
+      "name": "startup",
+      "exit_code": 0,
+      "log": "startup.log",
+      "passed": true
+    },
+    {
+      "name": "export",
+      "exit_code": 0,
+      "log": "export.log",
+      "passed": true
+    },
+    {
+      "name": "signature",
+      "exit_code": 0,
+      "log": "signature.log",
+      "passed": true
+    },
+    {
+      "name": "alignment",
+      "exit_code": 0,
+      "log": "alignment.log",
+      "passed": true
+    },
+    {
+      "name": "badging",
+      "exit_code": 0,
+      "log": "badging.log",
+      "passed": true
+    }
+  ],
+  "dependency_lock_sha256": "c57c39862b35d8371d244753bb7dfb40c9d6e2d5f1fea418cd1ebe60d0c46185",
+  "mode": "debug",
+  "size_optimization": false,
+  "engine_version": "4.7.2.stable.official.ed1daf0bf",
+  "java_version": "openjdk version \"17.0.20.1\" 2026-08-18",
+  "dependencies": {
+    "jdk": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\jdk17",
+    "build_tools": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\sdk\\build-tools\\36.0.0",
+    "platform_tools": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\sdk\\platform-tools",
+    "spine": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\spine-4.2-godot-4.4.1",
+    "sdk": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\sdk",
+    "templates": "E:\\MegoNew-training\\AnimalTownClient\\LocalOnly\\build-tools\\android\\cache\\templates"
+  },
+  "spine_note": "Spine 4.2 / Godot 4.4.1 candidate; x86_64 emulator evidence only; ARM64 devices pending",
+  "source_manifest_sha256": "42b6ba2c6e0cb13a6343ce552489b9dc47c34925611281d57e740e8c3dcdeb95",
+  "snapshot_files": 3415,
+  "spine_android_sha256": {
+    "libspine_godot.android.template_debug.arm64.so": "5ef6c2bfaa2ee53bc690bebc44befee97334332589d4fb1b11fc1ee9357c38cf",
+    "libspine_godot.android.template_debug.x86_64.so": "0b8c3103e8377da36b86be2f4b04308ad1947c89c623aa0ce69d9cc89c779644"
+  },
+  "spine_atlases_imported": 5,
+  "apk_metadata": [
+    "package: name='org.mego.animaltownreskin.a20preview' versionCode='35' versionName='0.3.0-flambe23-v35-internal' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "sdkVersion:'24'",
+    "targetSdkVersion:'36'",
+    "native-code: 'arm64-v8a' 'x86_64'"
+  ],
+  "apk": "LocalOnly/builds/android/20261119-125521-cdde0e59/AnimalTownReskin-debug.apk",
+  "apk_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142",
+  "apk_bytes": 279517705,
+  "device_validation": "not_run",
+  "optimizations": "none"
+}

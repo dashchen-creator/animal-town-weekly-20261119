@@ -1,0 +1,35 @@
+{
+  "scope": "existing completed campaign on upgraded v35 guest #1; independently separated from v35 fresh campaign",
+  "guest": "127.0.0.1:16416",
+  "version_code": 35,
+  "upgrade_receipt_sha256": "5c64f4af1215b7e5cfc767d2372d043facf9dc4d6310f0a6b0a5d5f0ca5cd150",
+  "source_sha256": {
+    "open": "5577712ecf5ec9d040a4d7c217a69fc2c659894e05eeda2dcd818c27fc14ea4f",
+    "board_result": "d599212b330cc509306f17f5afaea288ca3107a6f5567b87c079f08c2f68f725",
+    "board_trace": "c6d7baf8bb083d22834f299bf1bcfb3e5c76830d350e81769f376d35b52ca570",
+    "return": "7ab5694d020eade67b4b37031d909398f922bbaabbb559b31150b5ceb471a9c7",
+    "continue": "84e77c37647e18ad72b9cceed6ba5b6e662fb425be6a670df3157bf823e153d6"
+  },
+  "status": "reconciled",
+  "board_commands": [
+    "produce",
+    "produce",
+    "merge",
+    "claim"
+  ],
+  "order_id": 2200000,
+  "gold_before_after": [
+    0,
+    6
+  ],
+  "cycle_serial_before_after": [
+    0,
+    1
+  ],
+  "fixed_order_counts_before_after": [
+    36,
+    36
+  ],
+  "gold_after_return_to_map": 6,
+  "chapter_experience": 160
+}

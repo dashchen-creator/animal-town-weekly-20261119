@@ -1,0 +1,493 @@
+{
+  "created_at": "2026-11-19T10:26:31.766476+08:00",
+  "rule_version": "AT-SEG-0.1-draft",
+  "scope": "static source arithmetic and authored decision contracts",
+  "runtime_or_real_player_test": false,
+  "player_calibrated": false,
+  "economy": [
+    {
+      "chapter": 0,
+      "orders": 1,
+      "base_gold": 12,
+      "construction_cost": 12,
+      "normalized_progress": 12,
+      "L1_demand_equivalent": 4,
+      "other_reward_sources_excluded": true
+    },
+    {
+      "chapter": 1,
+      "orders": 13,
+      "base_gold": 286,
+      "construction_cost": 286,
+      "normalized_progress": 216,
+      "L1_demand_equivalent": 72,
+      "other_reward_sources_excluded": true
+    },
+    {
+      "chapter": 2,
+      "orders": 21,
+      "base_gold": 670,
+      "construction_cost": 670,
+      "normalized_progress": 612,
+      "L1_demand_equivalent": 204,
+      "other_reward_sources_excluded": true
+    }
+  ],
+  "cycle": {
+    "gold": 42,
+    "L1_demand_equivalent": 14,
+    "normalization_rate": 3
+  },
+  "author_workbook_hash_matches_generated": true,
+  "source_snapshots": [
+    {
+      "path": "AnimalTownClient/client/features/prologue/station_order.gd",
+      "sha256": "a2d1697c16ee717b584b0113745e2ecdfcdbda74c0863d4e68efa8a4cc24f7ce",
+      "snapshot": "inputs\\AT-Q01.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/assets/generated/config/flambe_mainline.json",
+      "sha256": "7338af0ecae12031bde42606d73efebccea66bfd5d0d441b8863323a754e3e1c",
+      "snapshot": "inputs\\AT-Q02.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/assets/generated/config/story/merge_board.json",
+      "sha256": "aebed8b222e2c62e916a7950624558fdd876170fa78dd6b8ce324327837bf1cf",
+      "snapshot": "inputs\\AT-Q03.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/features/story/story_session.gd",
+      "sha256": "6e9d4b7909ff2da557d76b5f3a5269d91be637c05078272ef042de8c6b484f5a",
+      "snapshot": "inputs\\AT-Q04.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/features/merge_board/merge_board_session.gd",
+      "sha256": "7f9a5aa7b7fcad25eb562dba5d93f663a222c0b51a6bb8127b04d671d58fd0ad",
+      "snapshot": "inputs\\AT-Q05.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/features/story/mainline_progress.gd",
+      "sha256": "aa1b744de5cfbe7ca2f186a7a85cf5d47dfa15da2595f0186a1b94007cad32b3",
+      "snapshot": "inputs\\AT-Q06.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/core/storage/local_json_store.gd",
+      "sha256": "0b6c1ef5f69acd5aeac4cc1beed59b2d03e49fef53dbd99f132d13b976c840bc",
+      "snapshot": "inputs\\AT-Q07.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/client/project.godot",
+      "sha256": "b0556f7288074b2a2e3c30cf2dbfca2de07625d1042285e6456d34a4e45ebe56",
+      "snapshot": "inputs\\AT-Q08.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/docs/server-capabilities.md",
+      "sha256": "699d31c5438914e36727c35cc9a87da230bbf2e06a09afea6e2a2a6d75f6938a",
+      "snapshot": "inputs\\AT-Q09.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    },
+    {
+      "path": "AnimalTownClient/docs/ai_corrections.md",
+      "sha256": "71e6da8db84e2477bffd668db80a92a7ee3a9bd17b784fed1f4223f001b1a57d",
+      "snapshot": "inputs\\AT-Q10.txt",
+      "reading_scope": "selected task-relevant fields/functions; full byte snapshot is not full semantic review"
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "周悦",
+      "H_fixture": 1,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 1,
+      "raw_base_gold": 12,
+      "G_star": 12,
+      "first_window": {
+        "grade": 1,
+        "candidate": 1,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "second_window_G_star_fixture": null,
+      "final": {
+        "grade": 1,
+        "candidate": 1,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "content": "A",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    },
+    {
+      "name": "陈浩",
+      "H_fixture": 2,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 3,
+      "raw_base_gold": 40,
+      "G_star": 30,
+      "first_window": {
+        "grade": 2,
+        "candidate": 2,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "second_window_G_star_fixture": null,
+      "final": {
+        "grade": 2,
+        "candidate": 2,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "content": "A",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    },
+    {
+      "name": "许蔓",
+      "H_fixture": 2,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 4,
+      "raw_base_gold": 66,
+      "G_star": 54,
+      "first_window": {
+        "grade": 3,
+        "candidate": 3,
+        "C": 2,
+        "reason": "up",
+        "low_streak": 0
+      },
+      "second_window_G_star_fixture": null,
+      "final": {
+        "grade": 3,
+        "candidate": 3,
+        "C": 2,
+        "reason": "up",
+        "low_streak": 0
+      },
+      "content": "B",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    },
+    {
+      "name": "赵磊",
+      "H_fixture": 3,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 5,
+      "raw_base_gold": 85,
+      "G_star": 66,
+      "first_window": {
+        "grade": 4,
+        "candidate": 4,
+        "C": 2,
+        "reason": "up",
+        "low_streak": 0
+      },
+      "second_window_G_star_fixture": null,
+      "final": {
+        "grade": 4,
+        "candidate": 4,
+        "C": 2,
+        "reason": "up",
+        "low_streak": 0
+      },
+      "content": "B",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    },
+    {
+      "name": "林岚",
+      "H_fixture": 6,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 7,
+      "raw_base_gold": 133,
+      "G_star": 102,
+      "first_window": {
+        "grade": 6,
+        "candidate": 5,
+        "C": 0,
+        "reason": "low_window_pending",
+        "low_streak": 1
+      },
+      "second_window_G_star_fixture": 114,
+      "final": {
+        "grade": 5,
+        "candidate": 5,
+        "C": 0,
+        "reason": "down",
+        "low_streak": 0
+      },
+      "content": "C",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    },
+    {
+      "name": "周岚",
+      "H_fixture": 6,
+      "chapter_fixture": 1,
+      "C1_prefix_order_count": 8,
+      "raw_base_gold": 163,
+      "G_star": 126,
+      "first_window": {
+        "grade": 6,
+        "candidate": 6,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "second_window_G_star_fixture": null,
+      "final": {
+        "grade": 6,
+        "candidate": 6,
+        "C": 1,
+        "reason": "stable",
+        "low_streak": 0
+      },
+      "content": "C",
+      "limits": "successful claims, timing, source quality and prior H are external fixtures; not whole-game feasibility"
+    }
+  ],
+  "checks": [
+    {
+      "id": "scope_23_nodes_35_orders",
+      "passed": true
+    },
+    {
+      "id": "verified_same_chain_levels",
+      "passed": true
+    },
+    {
+      "id": "chapter_0_base_reward_cost",
+      "passed": true
+    },
+    {
+      "id": "chapter_1_base_reward_cost",
+      "passed": true
+    },
+    {
+      "id": "chapter_2_base_reward_cost",
+      "passed": true
+    },
+    {
+      "id": "cycle_anchor_42_14",
+      "passed": true
+    },
+    {
+      "id": "base_gold_totals_968",
+      "passed": true
+    },
+    {
+      "id": "history_cuts_derived",
+      "passed": true
+    },
+    {
+      "id": "absolute_boundary_21",
+      "passed": true
+    },
+    {
+      "id": "absolute_boundary_42",
+      "passed": true
+    },
+    {
+      "id": "absolute_boundary_63",
+      "passed": true
+    },
+    {
+      "id": "absolute_boundary_84",
+      "passed": true
+    },
+    {
+      "id": "absolute_boundary_126",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H1",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H2",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H3",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H4",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H5",
+      "passed": true
+    },
+    {
+      "id": "matrix_clamp_equivalence_H6",
+      "passed": true
+    },
+    {
+      "id": "fixture_周悦",
+      "passed": true
+    },
+    {
+      "id": "fixture_陈浩",
+      "passed": true
+    },
+    {
+      "id": "fixture_许蔓",
+      "passed": true
+    },
+    {
+      "id": "fixture_赵磊",
+      "passed": true
+    },
+    {
+      "id": "first_low_does_not_downgrade",
+      "passed": true
+    },
+    {
+      "id": "fixture_林岚",
+      "passed": true
+    },
+    {
+      "id": "fixture_周岚",
+      "passed": true
+    },
+    {
+      "id": "bootstrap_all_six_possible",
+      "passed": true
+    },
+    {
+      "id": "valid_zero_is_low_not_missing",
+      "passed": true
+    },
+    {
+      "id": "partial_is_unassessed",
+      "passed": true
+    },
+    {
+      "id": "partial_retains_H_and_breaks_streak",
+      "passed": true
+    },
+    {
+      "id": "wait_180_freezes",
+      "passed": true
+    },
+    {
+      "id": "quality_missing_not_grade1",
+      "passed": true
+    },
+    {
+      "id": "prologue_not_scored",
+      "passed": true
+    },
+    {
+      "id": "content_complete_not_downgraded",
+      "passed": true
+    },
+    {
+      "id": "history_expires_168h",
+      "passed": true
+    },
+    {
+      "id": "new_chapter_not_old_H",
+      "passed": true
+    },
+    {
+      "id": "return_breaks_low_streak",
+      "passed": true
+    },
+    {
+      "id": "recovery_resets_low_streak",
+      "passed": true
+    },
+    {
+      "id": "confirmation_before_affordable",
+      "passed": true
+    },
+    {
+      "id": "affordable_before_tier",
+      "passed": true
+    },
+    {
+      "id": "receipt_before_tier",
+      "passed": true
+    },
+    {
+      "id": "block_recovery_shared",
+      "passed": true
+    },
+    {
+      "id": "six_tiers_three_plans",
+      "passed": true
+    },
+    {
+      "id": "neutral_is_not_grade3",
+      "passed": true
+    },
+    {
+      "id": "economy_not_changed_by_policy",
+      "passed": true
+    },
+    {
+      "id": "dedup_and_half_open_contract",
+      "passed": true
+    },
+    {
+      "id": "source_stable_orders",
+      "passed": true
+    },
+    {
+      "id": "source_stable_mainline",
+      "passed": true
+    },
+    {
+      "id": "source_stable_board",
+      "passed": true
+    },
+    {
+      "id": "source_stable_session",
+      "passed": true
+    },
+    {
+      "id": "source_stable_board_session",
+      "passed": true
+    },
+    {
+      "id": "source_stable_mainline_consumer",
+      "passed": true
+    },
+    {
+      "id": "source_stable_storage",
+      "passed": true
+    },
+    {
+      "id": "source_stable_project",
+      "passed": true
+    },
+    {
+      "id": "source_stable_server_status",
+      "passed": true
+    },
+    {
+      "id": "source_stable_corrections",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "fingerprints": {
+    "script": "fbe727194bd63fa71bfb69ecca7911eac2ff4c8369032063293a13d0dfdbd976",
+    "proposal": "9d48b7c0ea47feb496ed083e223ccefb0207152d3b216fbeb35d616f0660d0f8"
+  },
+  "preserved_unknowns": [
+    "real time/energy/board feasibility",
+    "real threshold distribution",
+    "UI implementation/effect",
+    "SDK/cloud/authority beyond source status"
+  ]
+}

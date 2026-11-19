@@ -1,0 +1,3895 @@
+{
+  "schema": "animal-town-fixed-camera-art/1",
+  "version": "internal-r04-r2",
+  "scene_revision": "r04-ai-day",
+  "status": "frozen_art_integration_candidate",
+  "canvas": [
+    1536,
+    1024
+  ],
+  "formal_contract": {
+    "sha256": "7338af0ecae12031bde42606d73efebccea66bfd5d0d441b8863323a754e3e1c"
+  },
+  "art_adoption": "2026-11-19 producer decision: R04 three-location design approved for internal build",
+  "chapters": [
+    {
+      "chapter": 0,
+      "scene": "P",
+      "name": "神秘车站",
+      "initial": "P00",
+      "previous_complete": "",
+      "last_node": "PR03"
+    },
+    {
+      "chapter": 1,
+      "scene": "C1",
+      "name": "晚灯客栈",
+      "initial": "IN00",
+      "previous_complete": "PR03",
+      "last_node": "IN10"
+    },
+    {
+      "chapter": 2,
+      "scene": "C2",
+      "name": "米洛早餐亭",
+      "initial": "BK00",
+      "previous_complete": "IN10",
+      "last_node": "BK10"
+    }
+  ],
+  "nodes": {
+    "P00": {
+      "id": "P00",
+      "kind": "initial",
+      "previous": null,
+      "chapter": "P",
+      "cost": null,
+      "xp": 0,
+      "title": "神秘车站初态",
+      "result": "场所初态",
+      "formal_zone": "全场",
+      "semantic_regions": [
+        "P.all"
+      ],
+      "walkable_connections": [
+        "P.arrivals_to_waiting"
+      ],
+      "construction": null,
+      "audio": null,
+      "focus_point": [
+        768,
+        512
+      ],
+      "focus_rect": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "task_pin": [
+        650,
+        678
+      ],
+      "role_work_points": [],
+      "parts": [],
+      "reference": {
+        "file": "reference/P00.png",
+        "sha256": "d05677d06ceeb933367705ffce33f00e765c77af5410ccce6c68785c333d5170",
+        "bytes": 2041271
+      },
+      "base": "reference/P00.png"
+    },
+    "PR01": {
+      "id": "PR01",
+      "kind": "environment",
+      "previous": "P00",
+      "chapter": "P",
+      "cost": 0,
+      "xp": 0,
+      "title": "准备维修工具",
+      "result": "教学结果、工具准备保存；出站门仍阻路，灯仍暗",
+      "formal_zone": "维修角",
+      "semantic_regions": [
+        "P.waiting",
+        "P.maintenance"
+      ],
+      "walkable_connections": [
+        "P.arrivals_to_waiting"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        668,
+        686
+      ],
+      "focus_rect": [
+        458,
+        514,
+        406,
+        320
+      ],
+      "task_pin": [
+        647,
+        616
+      ],
+      "role_work_points": [
+        {
+          "role": "wuni",
+          "feet": [
+            680,
+            772
+          ],
+          "facing": "workbench",
+          "interaction": [
+            650,
+            700
+          ],
+          "interaction_kind": "bench_target",
+          "verification": "registered source pixels; physical reaching requires animation QA"
+        }
+      ],
+      "parts": [
+        {
+          "file": "parts/PR01.png",
+          "sha256": "83c8f32a6e4aeb437842e19a6e17acf5f84e586bd05e8aea26f0ce1987f15734",
+          "bytes": 26848,
+          "offset": [
+            572,
+            651
+          ],
+          "size": [
+            145,
+            97
+          ],
+          "mask_sha256": "b3c4b9e9297a52e717facfbf7b84ad8d25d3ed337ae8ded8521ee326da9c53bc",
+          "id": "PR01_r04",
+          "slot": "PR01",
+          "source_state": "P00",
+          "target_state": "PR01",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "P.waiting",
+            "P.maintenance"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/PR01.png",
+        "sha256": "428a48e7a139f37fcedc7a677b16563ae8497eac8b2b42cca3df26dc8dbfc9d2",
+        "bytes": 2039333
+      }
+    },
+    "PR02": {
+      "id": "PR02",
+      "kind": "environment",
+      "previous": "PR01",
+      "chapter": "P",
+      "cost": 12,
+      "xp": 0,
+      "title": "修好出站门",
+      "result": "从阻断到可通行，入口与搬运路线不被门扇挡住",
+      "formal_zone": "出站门与接续路面",
+      "semantic_regions": [
+        "P.exit",
+        "P.service"
+      ],
+      "walkable_connections": [
+        "P.ticket_to_exit",
+        "P.exit_to_town"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        877,
+        752
+      ],
+      "focus_rect": [
+        700,
+        618,
+        360,
+        250
+      ],
+      "task_pin": [
+        874,
+        685
+      ],
+      "role_work_points": [
+        {
+          "role": "organizer",
+          "feet": [
+            859,
+            701
+          ],
+          "facing": "open_exit",
+          "interaction": [
+            899,
+            708
+          ],
+          "interaction_kind": "plank_hand_contact",
+          "verification": "projected left/right hand source landmarks; actual animation QA separate"
+        }
+      ],
+      "parts": [
+        {
+          "file": "parts/PR02.png",
+          "sha256": "6344b7995b93afab48eae6556f7b97becbbe2d0823ea615ff9952ffed3046953",
+          "bytes": 30990,
+          "offset": [
+            820,
+            683
+          ],
+          "size": [
+            133,
+            137
+          ],
+          "mask_sha256": "bfe1f279ec9395fe937038d40e559c80a3c3c6db7d812704cf272fc0ab235ded",
+          "id": "PR02_r04",
+          "slot": "PR02",
+          "source_state": "PR01",
+          "target_state": "PR02",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "P.exit",
+            "P.service"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/PR02.png",
+        "sha256": "772355597467bc7f940f2cd534d70cea7631e51cec67bbc2f35c358772f417a2",
+        "bytes": 2027926
+      }
+    },
+    "PR03": {
+      "id": "PR03",
+      "kind": "environment",
+      "previous": "PR02",
+      "chapter": "P",
+      "cost": 0,
+      "xp": 0,
+      "title": "沿灯光进镇",
+      "result": "暖光通路常驻；P0完成并开放C1章节卡",
+      "formal_zone": "出站灯路",
+      "semantic_regions": [
+        "P.exit_lights",
+        "P.luggage",
+        "P.maintenance_roof"
+      ],
+      "walkable_connections": [
+        "P.luggage_to_exit",
+        "P.exit_to_town"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        905,
+        767
+      ],
+      "focus_rect": [
+        681,
+        582,
+        491,
+        354
+      ],
+      "task_pin": [
+        914,
+        668
+      ],
+      "role_work_points": [
+        {
+          "role": "wuni",
+          "feet": [
+            1006,
+            845
+          ],
+          "facing": "town_exit",
+          "interaction": [
+            1138,
+            897
+          ],
+          "interaction_kind": "town_route_direction",
+          "verification": "route centre from open gate to outside"
+        }
+      ],
+      "parts": [
+        {
+          "file": "parts/PR03.png",
+          "sha256": "1e92360e741527f93d5772de7c4185b72eb65db52bfa13d7a20c0e8242b38738",
+          "bytes": 353385,
+          "offset": [
+            667,
+            226
+          ],
+          "size": [
+            343,
+            640
+          ],
+          "mask_sha256": "220335c966066fe769b194c5e82bc0ebd75ff86dad42d5df4ffed34e03665211",
+          "id": "PR03_r04",
+          "slot": "PR03",
+          "source_state": "PR02",
+          "target_state": "PR03",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "P.exit_lights",
+            "P.luggage",
+            "P.maintenance_roof"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/PR03.png",
+        "sha256": "53d612b484bbe47584fdd11da02e02f8136d13b0336c71f1f29f37ca23a9efee",
+        "bytes": 2034080
+      }
+    },
+    "IN00": {
+      "id": "IN00",
+      "kind": "initial",
+      "previous": null,
+      "chapter": "C1",
+      "cost": null,
+      "xp": 0,
+      "title": "晚灯客栈初态",
+      "result": "场所初态",
+      "formal_zone": "全场",
+      "semantic_regions": [
+        "C1.all"
+      ],
+      "walkable_connections": [],
+      "construction": null,
+      "audio": null,
+      "focus_point": [
+        752,
+        448
+      ],
+      "focus_rect": [
+        124,
+        83,
+        1250,
+        745
+      ],
+      "task_pin": [
+        478,
+        198
+      ],
+      "role_work_points": [],
+      "parts": [],
+      "reference": {
+        "file": "reference/IN00.png",
+        "sha256": "4f0307e441e3f7588cf0cddbc1c47f7eac8d5a7575dfbf9b27e1b3ea717794a2",
+        "bytes": 2179058
+      },
+      "base": "reference/IN00.png"
+    },
+    "IN01": {
+      "id": "IN01",
+      "kind": "environment",
+      "previous": "IN00",
+      "chapter": "C1",
+      "cost": 12,
+      "xp": 10,
+      "title": "恢复客栈门脸",
+      "result": "暖杏木构与弧形屋顶恢复，入口身份成立，完整床铺图牌可读",
+      "formal_zone": "A主楼",
+      "semantic_regions": [
+        "C1.A.main_facade",
+        "C1.A.upper_facade_completed"
+      ],
+      "walkable_connections": [],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-stone",
+      "focus_point": [
+        452,
+        275
+      ],
+      "focus_rect": [
+        162,
+        62,
+        552,
+        515
+      ],
+      "task_pin": [
+        489,
+        183
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN01.png",
+          "sha256": "18e87a6ed2481f46d29ce3f2e5bf0f1607d92f5461deea6571d7e553a40107af",
+          "bytes": 48616,
+          "offset": [
+            405,
+            119
+          ],
+          "size": [
+            133,
+            183
+          ],
+          "mask_sha256": "dc1f17c85d58ab4b32fb9e2a8016bca4cdef80b09b180cbf4f03af8ca97d7e06",
+          "id": "IN01_r04",
+          "slot": "IN01",
+          "source_state": "IN00",
+          "target_state": "IN01",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.A.main_facade",
+            "C1.A.upper_facade_completed"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN01.png",
+        "sha256": "d27a55e4f6775fa8729d652f76aeb8889d3cd89d4176c33cf33eb2aac34ccaaf",
+        "bytes": 2177218
+      }
+    },
+    "IN02": {
+      "id": "IN02",
+      "kind": "environment",
+      "previous": "IN01",
+      "chapter": "C1",
+      "cost": 16,
+      "xp": 10,
+      "title": "修复客房侧翼",
+      "result": "卡窗变完整窗扇与帘布，挡风遮光；床与被褥仍未备妥",
+      "formal_zone": "B客房附翼",
+      "semantic_regions": [
+        "C1.B.guest_window"
+      ],
+      "walkable_connections": [],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        1139,
+        315
+      ],
+      "focus_rect": [
+        884,
+        142,
+        488,
+        374
+      ],
+      "task_pin": [
+        1241,
+        256
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN02.png",
+          "sha256": "eda579b83f2932fa199e3d2690707f86e30da5a7b2a333fee84a0efe222e8e90",
+          "bytes": 155202,
+          "offset": [
+            995,
+            205
+          ],
+          "size": [
+            339,
+            266
+          ],
+          "mask_sha256": "188a6537c2337ba84da9c2954d2c582872910b187e9a31008ddc723d03161fc7",
+          "id": "IN02_r04",
+          "slot": "IN02",
+          "source_state": "IN01",
+          "target_state": "IN02",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.B.guest_window"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN02.png",
+        "sha256": "48cb7ca91006347ece8ebdb81e2ce1ae279af00855cb1b3dd6493d1b97d14e50",
+        "bytes": 2174003
+      }
+    },
+    "IN03": {
+      "id": "IN03",
+      "kind": "environment",
+      "previous": "IN02",
+      "chapter": "C1",
+      "cost": 29,
+      "xp": 10,
+      "title": "整修到店院落",
+      "result": "裂阶/阻路物移除，补齐通行面与行李停靠边，庭院接入接待廊",
+      "formal_zone": "C到达庭院",
+      "semantic_regions": [
+        "C1.C.arrival_court"
+      ],
+      "walkable_connections": [
+        "C1.entry_to_reception",
+        "C1.luggage_arrival"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-stone",
+      "focus_point": [
+        505,
+        523
+      ],
+      "focus_rect": [
+        145,
+        335,
+        570,
+        420
+      ],
+      "task_pin": [
+        514,
+        449
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN03.png",
+          "sha256": "62fb8625d4c82786ba942a6fc96f63533a54bf9d31598c339a05655588596d31",
+          "bytes": 145628,
+          "offset": [
+            343,
+            402
+          ],
+          "size": [
+            315,
+            309
+          ],
+          "mask_sha256": "a8ba10ad140f4b47c3899e7656da862ce6a4805dc32b431893a2d9cf63091888",
+          "id": "IN03_r04",
+          "slot": "IN03",
+          "source_state": "IN02",
+          "target_state": "IN03",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.C.arrival_court"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN03.png",
+        "sha256": "f2840455d52a3b954e9b10ed9e9c1f0614882ff2e6a834c1633fd0b2a9e056bf",
+        "bytes": 2168534
+      }
+    },
+    "IN04": {
+      "id": "IN04",
+      "kind": "environment",
+      "previous": "IN03",
+      "chapter": "C1",
+      "cost": 37,
+      "xp": 10,
+      "title": "点亮接待连廊",
+      "result": "成对暖灯及必要支撑恢复，照到真实到店路径和接待入口",
+      "formal_zone": "D连廊",
+      "semantic_regions": [
+        "C1.D.arrival_lights"
+      ],
+      "walkable_connections": [
+        "C1.entry_to_reception"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-metal",
+      "focus_point": [
+        641,
+        324
+      ],
+      "focus_rect": [
+        340,
+        184,
+        545,
+        320
+      ],
+      "task_pin": [
+        644,
+        226
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN04.png",
+          "sha256": "1e2f161a01446a86c4135b079b805c4572d05d9d911b2bb683a1321ce1b12695",
+          "bytes": 421362,
+          "offset": [
+            190,
+            244
+          ],
+          "size": [
+            639,
+            390
+          ],
+          "mask_sha256": "d2625e73186911b2c1531246c7b461ace1d40079273664d4a8037a8aa4392e22",
+          "id": "IN04_r04",
+          "slot": "IN04",
+          "source_state": "IN03",
+          "target_state": "IN04",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.D.arrival_lights"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN04.png",
+        "sha256": "261dfbd5cd3388ef22c8e31eb3cff73f88a63e8a36ee2be567e89359c348ba7c",
+        "bytes": 2177630
+      }
+    },
+    "IN05": {
+      "id": "IN05",
+      "kind": "environment",
+      "previous": "IN04",
+      "chapter": "C1",
+      "cost": 44,
+      "xp": 10,
+      "title": "整理开放接待柜",
+      "result": "柜面、钥匙、毯篮和双方交接站位可用，形成接待服务区",
+      "formal_zone": "D接待廊",
+      "semantic_regions": [
+        "C1.D.reception"
+      ],
+      "walkable_connections": [
+        "C1.entry_to_reception",
+        "C1.staff_blanket_to_handover"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        758,
+        351
+      ],
+      "focus_rect": [
+        568,
+        212,
+        360,
+        300
+      ],
+      "task_pin": [
+        739,
+        270
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN05.png",
+          "sha256": "ca73d759356bed057943eed11ede9723d44926cec21efe22271d543d921b00db",
+          "bytes": 100018,
+          "offset": [
+            610,
+            220
+          ],
+          "size": [
+            236,
+            228
+          ],
+          "mask_sha256": "e9eefbbd4bb35942163a8bf13d8b0a935446dad4cdc6dff426a5b44c70433ed2",
+          "id": "IN05_r04",
+          "slot": "IN05",
+          "source_state": "IN04",
+          "target_state": "IN05",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.D.reception"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN05.png",
+        "sha256": "7146c3d0d0e14ed4d5677a2cd6d82b3c7d69d7553f06713b66d3f03a4f72d4d8",
+        "bytes": 2178242
+      }
+    },
+    "IN06": {
+      "id": "IN06",
+      "kind": "relationship",
+      "previous": "IN05",
+      "chapter": "C1",
+      "cost": 0,
+      "xp": 0,
+      "title": "与眠婶确认合作",
+      "result": "玩家明确确认后保存合作；取毯/试坐或交接动作承接已完成区域",
+      "formal_zone": "D接待廊",
+      "semantic_regions": [
+        "C1.D.reception_handover"
+      ],
+      "walkable_connections": [
+        "C1.staff_blanket_to_handover",
+        "C1.entry_to_reception"
+      ],
+      "construction": null,
+      "audio": "relationship",
+      "focus_point": [
+        764,
+        414
+      ],
+      "focus_rect": [
+        570,
+        231,
+        400,
+        335
+      ],
+      "task_pin": [
+        793,
+        289
+      ],
+      "role_work_points": [
+        {
+          "role": "keeper",
+          "feet": [
+            799,
+            481
+          ],
+          "facing": "guest",
+          "interaction": [
+            768,
+            414
+          ],
+          "interaction_kind": "planned_folded_linen_handoff",
+          "recommended_source_sprite_height": 144
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            727,
+            471
+          ],
+          "facing": "keeper",
+          "interaction": [
+            768,
+            414
+          ],
+          "interaction_kind": "planned_folded_linen_handoff",
+          "recommended_source_sprite_height": 144
+        }
+      ],
+      "parts": [],
+      "reference": {
+        "file": "reference/IN06.png",
+        "sha256": "7146c3d0d0e14ed4d5677a2cd6d82b3c7d69d7553f06713b66d3f03a4f72d4d8",
+        "bytes": 2178242
+      }
+    },
+    "IN07": {
+      "id": "IN07",
+      "kind": "environment",
+      "previous": "IN06",
+      "chapter": "C1",
+      "cost": 44,
+      "xp": 10,
+      "title": "挂好入住说明",
+      "result": "欢迎/出发说明清楚，告示和等候位置避开通路；不烘焙正式UI文案",
+      "formal_zone": "D入口说明",
+      "semantic_regions": [
+        "C1.D.welcome_edge"
+      ],
+      "walkable_connections": [
+        "C1.entry_to_reception"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        679,
+        422
+      ],
+      "focus_rect": [
+        548,
+        306,
+        304,
+        262
+      ],
+      "task_pin": [
+        679,
+        360
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN07.png",
+          "sha256": "bcc4a790bacecbed16af17e93d3ea4304001c580c4a36a4581a6799fd18edcd3",
+          "bytes": 11940,
+          "offset": [
+            644,
+            380
+          ],
+          "size": [
+            64,
+            82
+          ],
+          "mask_sha256": "85ef1e9e9b75e99d8d218a88841d7cf0e32ad67ad3635ef3d961961f455579c4",
+          "id": "IN07_r04",
+          "slot": "IN07",
+          "source_state": "IN06",
+          "target_state": "IN07",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.D.welcome_edge"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN07.png",
+        "sha256": "16bdb3f8aa42118f60ae5e495664a607089d01379144b71b13472bd668d8a7c9",
+        "bytes": 2181857
+      }
+    },
+    "IN08": {
+      "id": "IN08",
+      "kind": "environment",
+      "previous": "IN07",
+      "chapter": "C1",
+      "cost": 52,
+      "xp": 10,
+      "title": "布置早餐露台",
+      "result": "台面/铺装、桌椅、杯盘、面包篮成组落定，两人可坐可离开",
+      "formal_zone": "E早餐露台",
+      "semantic_regions": [
+        "C1.E.breakfast_terrace"
+      ],
+      "walkable_connections": [
+        "C1.reception_to_terrace"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        915,
+        630
+      ],
+      "focus_rect": [
+        638,
+        414,
+        543,
+        388
+      ],
+      "task_pin": [
+        933,
+        528
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN08.png",
+          "sha256": "504828fcd49d3d4a12917841d4797034b60fde35e86b0de0f6e326ec87511e05",
+          "bytes": 58413,
+          "offset": [
+            809,
+            584
+          ],
+          "size": [
+            202,
+            158
+          ],
+          "mask_sha256": "4cb2ac9e79821589555741c58d701b384f1cb41f271778a98cc005d54f8809cc",
+          "id": "IN08_r04",
+          "slot": "IN08",
+          "source_state": "IN07",
+          "target_state": "IN08",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.E.breakfast_terrace"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN08.png",
+        "sha256": "03a62251ab6242517d80516689872fbdfa0847da263622a1331ce15ca83386d2",
+        "bytes": 2194350
+      }
+    },
+    "IN09": {
+      "id": "IN09",
+      "kind": "environment",
+      "previous": "IN08",
+      "chapter": "C1",
+      "cost": 52,
+      "xp": 10,
+      "title": "整理晒毯庭院",
+      "result": "床、被褥、脚凳就位，小园晒毯架与洁净布篮呼应安顿；原缺件消失",
+      "formal_zone": "B客房与F晒毯园",
+      "semantic_regions": [
+        "C1.B.guestroom",
+        "C1.F.drying_garden"
+      ],
+      "walkable_connections": [
+        "C1.reception_to_guestroom",
+        "C1.guestroom_to_drying"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        1192,
+        440
+      ],
+      "focus_rect": [
+        950,
+        203,
+        544,
+        486
+      ],
+      "task_pin": [
+        1145,
+        270
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/IN09.png",
+          "sha256": "5247061f700db14eecf7857d24ca77f03034a5de5ba4140adc22f1ab62ff4aa4",
+          "bytes": 342319,
+          "offset": [
+            995,
+            205
+          ],
+          "size": [
+            470,
+            438
+          ],
+          "mask_sha256": "d5b992e537546921915aded3b481b82db431a907ea4e616a38911bb5bcc62d3f",
+          "id": "IN09_r04",
+          "slot": "IN09",
+          "source_state": "IN08",
+          "target_state": "IN09",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C1.B.guestroom",
+            "C1.F.drying_garden"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/IN09.png",
+        "sha256": "a38fba13e1b9bf9109e1e46c37ae79aebe0f805d33028a60dedad054f869f04e",
+        "bytes": 2217575
+      }
+    },
+    "IN10": {
+      "id": "IN10",
+      "kind": "relationship",
+      "previous": "IN09",
+      "chapter": "C1",
+      "cost": 0,
+      "xp": 0,
+      "title": "确认客房安排",
+      "result": "眠婶先问，女主选择暂住；递钥匙与接钥匙成立，客房启用，C1完章",
+      "formal_zone": "B客房与D接待廊",
+      "semantic_regions": [
+        "C1.D.key_handover",
+        "C1.B.guestroom"
+      ],
+      "walkable_connections": [
+        "C1.entry_to_reception",
+        "C1.reception_to_guestroom"
+      ],
+      "construction": null,
+      "audio": "relationship",
+      "focus_point": [
+        764,
+        401
+      ],
+      "focus_rect": [
+        566,
+        229,
+        438,
+        348
+      ],
+      "task_pin": [
+        793,
+        285
+      ],
+      "role_work_points": [
+        {
+          "role": "keeper",
+          "feet": [
+            805,
+            465
+          ],
+          "facing": "guest",
+          "interaction": [
+            764,
+            401
+          ],
+          "interaction_kind": "planned_key_handoff",
+          "recommended_source_sprite_height": 144
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            725,
+            473
+          ],
+          "facing": "keeper",
+          "interaction": [
+            764,
+            401
+          ],
+          "interaction_kind": "planned_key_handoff",
+          "recommended_source_sprite_height": 144
+        }
+      ],
+      "parts": [],
+      "reference": {
+        "file": "reference/IN10.png",
+        "sha256": "a38fba13e1b9bf9109e1e46c37ae79aebe0f805d33028a60dedad054f869f04e",
+        "bytes": 2217575
+      }
+    },
+    "BK00": {
+      "id": "BK00",
+      "kind": "initial",
+      "previous": null,
+      "chapter": "C2",
+      "cost": null,
+      "xp": 0,
+      "title": "米洛早餐亭初态",
+      "result": "场所初态",
+      "formal_zone": "全场",
+      "semantic_regions": [
+        "C2.all"
+      ],
+      "walkable_connections": [],
+      "construction": null,
+      "audio": null,
+      "focus_point": [
+        768,
+        512
+      ],
+      "focus_rect": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "task_pin": [
+        681,
+        170
+      ],
+      "role_work_points": [],
+      "parts": [],
+      "reference": {
+        "file": "reference/BK00.png",
+        "sha256": "ddef34cb348b6186bce284264ad7cd6e29c188d29b9288e55ee8de46a1543f96",
+        "bytes": 2140610
+      },
+      "base": "reference/BK00.png"
+    },
+    "BK01": {
+      "id": "BK01",
+      "kind": "environment",
+      "previous": "BK00",
+      "chapter": "C2",
+      "cost": 58,
+      "xp": 10,
+      "title": "支起早餐亭",
+      "result": "开敞棚亭与基础台面恢复，上方面包图牌可读，后续区域保持未完成",
+      "formal_zone": "A主亭",
+      "semantic_regions": [
+        "C2.A.kiosk"
+      ],
+      "walkable_connections": [],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        617,
+        286
+      ],
+      "focus_rect": [
+        317,
+        32,
+        607,
+        524
+      ],
+      "task_pin": [
+        610,
+        35
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK01.png",
+          "sha256": "1364013d5ccaacc7db07c4a4b9f6c4aa1e76b121b92dd63511657d6a2d802b5b",
+          "bytes": 279813,
+          "offset": [
+            387,
+            105
+          ],
+          "size": [
+            423,
+            386
+          ],
+          "mask_sha256": "3e3f834d618794948ffe2ae42427ebe150f576e1f6bd3f0bc6bb10bde642875c",
+          "id": "BK01_r04",
+          "slot": "BK01",
+          "source_state": "BK00",
+          "target_state": "BK01",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.A.kiosk"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK01.png",
+        "sha256": "29e3f662b60c1a5a720148f47deaa950cc4a4f7c5ab94127b4611573f28b9513",
+        "bytes": 2125837
+      }
+    },
+    "BK02": {
+      "id": "BK02",
+      "kind": "environment",
+      "previous": "BK01",
+      "chapter": "C2",
+      "cost": 58,
+      "xp": 10,
+      "title": "打开售卖窗",
+      "result": "翻折窗、干净交接面与内外站位成立，可以面对面递食物",
+      "formal_zone": "A售卖窗",
+      "semantic_regions": [
+        "C2.A.service_window"
+      ],
+      "walkable_connections": [],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-metal",
+      "focus_point": [
+        522,
+        396
+      ],
+      "focus_rect": [
+        315,
+        214,
+        387,
+        346
+      ],
+      "task_pin": [
+        556,
+        239
+      ],
+      "role_work_points": [
+        {
+          "role": "customer",
+          "feet": [
+            527,
+            524
+          ],
+          "facing": "counter",
+          "interaction": [
+            527,
+            443
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 129,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "milo",
+          "feet": [
+            570,
+            449
+          ],
+          "facing": "customer",
+          "interaction": [
+            532,
+            430
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 135,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        }
+      ],
+      "parts": [
+        {
+          "file": "parts/BK02.png",
+          "sha256": "daff2a00ba338302d20557ff826fcde2c2869b83f7c5e3eb15ba15afa2754089",
+          "bytes": 194509,
+          "offset": [
+            327,
+            230
+          ],
+          "size": [
+            358,
+            325
+          ],
+          "mask_sha256": "e6968c9dc11067e14aa5d0e1bf721740ab7a7f4328f098029354cc9be492cbf9",
+          "id": "BK02_r04",
+          "slot": "BK02",
+          "source_state": "BK01",
+          "target_state": "BK02",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.A.service_window"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK02.png",
+        "sha256": "509a4b1ff14dd1fa562f66bdde97cd729c1e7b66ca39826ce6be9b43731ac812",
+        "bytes": 2100459
+      }
+    },
+    "BK03": {
+      "id": "BK03",
+      "kind": "environment",
+      "previous": "BK02",
+      "chapter": "C2",
+      "cost": 75,
+      "xp": 10,
+      "title": "接通取餐动线",
+      "result": "清除阻路物，补公共铺装、边缘与接续处，通到窗口且避开后场",
+      "formal_zone": "C公共取餐路",
+      "semantic_regions": [
+        "C2.C.public_path"
+      ],
+      "walkable_connections": [
+        "C2.entry_to_counter"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-stone",
+      "focus_point": [
+        616,
+        676
+      ],
+      "focus_rect": [
+        400,
+        543,
+        409,
+        251
+      ],
+      "task_pin": [
+        607,
+        550
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK03.png",
+          "sha256": "8c9a639e4e689c21db606b2d0558bd059ac65954d174bf52591529e9c4c4567e",
+          "bytes": 37111,
+          "offset": [
+            509,
+            607
+          ],
+          "size": [
+            211,
+            144
+          ],
+          "mask_sha256": "46b35d7716b9d37a6851e488c7b0870d499ce973a0c832afde063ddfb4d6792a",
+          "id": "BK03_r04",
+          "slot": "BK03",
+          "source_state": "BK02",
+          "target_state": "BK03",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.C.public_path"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK03.png",
+        "sha256": "d50ce01d0ed1c32199ede263505321902239ff2a90e1ea0e31a29137b49dc967",
+        "bytes": 2077859
+      }
+    },
+    "BK04": {
+      "id": "BK04",
+      "kind": "environment",
+      "previous": "BK03",
+      "chapter": "C2",
+      "cost": 75,
+      "xp": 10,
+      "title": "修复烘焙后院",
+      "result": "炉身、炉门、操作台与置物成组恢复，工作位和员工通道连贯",
+      "formal_zone": "B烘焙院",
+      "semantic_regions": [
+        "C2.B.baking_yard"
+      ],
+      "walkable_connections": [
+        "C2.staff_gate_to_oven",
+        "C2.staff_gate_to_counter",
+        "C2.baking_cooperation_front"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-stone",
+      "focus_point": [
+        1085,
+        267
+      ],
+      "focus_rect": [
+        895,
+        43,
+        490,
+        426
+      ],
+      "task_pin": [
+        1107,
+        136
+      ],
+      "role_work_points": [
+        {
+          "role": "milo",
+          "feet": [
+            1003,
+            287
+          ],
+          "facing": "worktop",
+          "interaction": [
+            970,
+            200
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 138,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "milo_oven",
+          "feet": [
+            1055,
+            327
+          ],
+          "facing": "oven",
+          "interaction": [
+            1102,
+            291
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 138,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        }
+      ],
+      "parts": [
+        {
+          "file": "parts/BK04.png",
+          "sha256": "9efb1cbc9b9bd04bc326f679088b5e055e8063debcf7c4067076a8d42ef00f94",
+          "bytes": 229453,
+          "offset": [
+            913,
+            43
+          ],
+          "size": [
+            394,
+            372
+          ],
+          "mask_sha256": "04afc5671ac641cda3b373b3608cf40a75cb234df460a50663d18ef6c741b702",
+          "id": "BK04_r04",
+          "slot": "BK04",
+          "source_state": "BK03",
+          "target_state": "BK04",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.B.baking_yard"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK04.png",
+        "sha256": "c2382d1f88a7a8d41901b2364d7bc65b0d08975d74f1927b874b923220cb878c",
+        "bytes": 2076502
+      }
+    },
+    "BK05": {
+      "id": "BK05",
+      "kind": "relationship",
+      "previous": "BK04",
+      "chapter": "C2",
+      "cost": 0,
+      "xp": 0,
+      "title": "与米洛确认合作",
+      "result": "玩家确认后保存合作；米洛在已可用工作面操作，分享区尚未完成",
+      "formal_zone": "A售卖与B操作院",
+      "semantic_regions": [
+        "C2.B.baking_yard_handover"
+      ],
+      "walkable_connections": [
+        "C2.baking_cooperation_front"
+      ],
+      "construction": null,
+      "audio": "relationship",
+      "focus_point": [
+        927,
+        445
+      ],
+      "focus_rect": [
+        715,
+        264,
+        459,
+        270
+      ],
+      "task_pin": [
+        939,
+        356
+      ],
+      "role_work_points": [
+        {
+          "role": "milo",
+          "feet": [
+            955,
+            437
+          ],
+          "facing": "worktop",
+          "interaction": [
+            940,
+            378
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 138,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            866,
+            476
+          ],
+          "facing": "milo",
+          "interaction": [
+            900,
+            417
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 161,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        }
+      ],
+      "parts": [],
+      "reference": {
+        "file": "reference/BK05.png",
+        "sha256": "c2382d1f88a7a8d41901b2364d7bc65b0d08975d74f1927b874b923220cb878c",
+        "bytes": 2076502
+      }
+    },
+    "BK06": {
+      "id": "BK06",
+      "kind": "environment",
+      "previous": "BK05",
+      "chapter": "C2",
+      "cost": 87,
+      "xp": 10,
+      "title": "整理面包陈列",
+      "result": "低玻璃柜、货架/托盘和分组面包落定；主体、人物与取餐口仍可见",
+      "formal_zone": "D陈列角",
+      "semantic_regions": [
+        "C2.D.low_display"
+      ],
+      "walkable_connections": [
+        "C2.entry_to_counter"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        310,
+        400
+      ],
+      "focus_rect": [
+        134,
+        278,
+        327,
+        249
+      ],
+      "task_pin": [
+        302,
+        281
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK06.png",
+          "sha256": "a1b4ad0ef2938f13a86cde1074b42f77d3c101ac168b6aa9a564a6d064f90b23",
+          "bytes": 260996,
+          "offset": [
+            132,
+            274
+          ],
+          "size": [
+            546,
+            282
+          ],
+          "mask_sha256": "4103a5224599eb1f6047d4475869d537cc558d52cd227ed6516d5855cc9f1250",
+          "id": "BK06_r04",
+          "slot": "BK06",
+          "source_state": "BK05",
+          "target_state": "BK06",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.D.low_display"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK06.png",
+        "sha256": "e5c3280efeefe8b6dbac89806d174e2188775864015ef36e55a0e494cb34c896",
+        "bytes": 2096743
+      }
+    },
+    "BK07": {
+      "id": "BK07",
+      "kind": "environment",
+      "previous": "BK06",
+      "chapter": "C2",
+      "cost": 87,
+      "xp": 10,
+      "title": "完善菜单与香草角",
+      "result": "菜单可读、花箱和短休憩边形成等候用途，保留排队与通行宽度",
+      "formal_zone": "F入口休憩边",
+      "semantic_regions": [
+        "C2.F.menu_herb_rest"
+      ],
+      "walkable_connections": [
+        "C2.menu_waiting",
+        "C2.entry_to_counter"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-metal",
+      "focus_point": [
+        348,
+        613
+      ],
+      "focus_rect": [
+        197,
+        473,
+        377,
+        300
+      ],
+      "task_pin": [
+        294,
+        484
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK07.png",
+          "sha256": "e463cd1587bd837b86b841a10279d23c612959757ff2cc5304d38f35ba993d24",
+          "bytes": 161000,
+          "offset": [
+            198,
+            486
+          ],
+          "size": [
+            356,
+            267
+          ],
+          "mask_sha256": "37fc2a60772ac640a9205d570dc3faf7c26cdbbf6dc084ebfc64182a1d473d33",
+          "id": "BK07_r04",
+          "slot": "BK07",
+          "source_state": "BK06",
+          "target_state": "BK07",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.F.menu_herb_rest"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK07.png",
+        "sha256": "b25dbc368a6f5014d5fc127dcdb85caa466764f07f88d7b7b5536f9feee6d29d",
+        "bytes": 2136438
+      }
+    },
+    "BK08": {
+      "id": "BK08",
+      "kind": "environment",
+      "previous": "BK07",
+      "chapter": "C2",
+      "cost": 115,
+      "xp": 10,
+      "title": "布置分享露台",
+      "result": "平台/接续、桌、圆凳、托盘与来客位置齐全，坐下及离开路线成立",
+      "formal_zone": "E分享平台",
+      "semantic_regions": [
+        "C2.E.sharing_platform"
+      ],
+      "walkable_connections": [
+        "C2.counter_to_sharing",
+        "C2.sharing_front_approach"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        1053,
+        611
+      ],
+      "focus_rect": [
+        714,
+        338,
+        711,
+        510
+      ],
+      "task_pin": [
+        1002,
+        445
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK08.png",
+          "sha256": "c02c573670fab09652d34c8052506c064f689c73aee2dc9c7f93b8d79fadc9ce",
+          "bytes": 539221,
+          "offset": [
+            714,
+            350
+          ],
+          "size": [
+            721,
+            486
+          ],
+          "mask_sha256": "e2b949d6a59284f26b911bfdb22099b73c763f7dbf80589ef20ebfa801f14608",
+          "id": "BK08_r04",
+          "slot": "BK08",
+          "source_state": "BK07",
+          "target_state": "BK08",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.E.sharing_platform"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK08.png",
+        "sha256": "9a32231c3ea0c98b4d1c9d4908f02f80a9ec093bdc37d649e5f589f0e8ee0d4f",
+        "bytes": 2171546
+      }
+    },
+    "BK09": {
+      "id": "BK09",
+      "kind": "environment",
+      "previous": "BK08",
+      "chapter": "C2",
+      "cost": 115,
+      "xp": 10,
+      "title": "装好面包顶饰",
+      "result": "编辫面包顶饰、遮檐/门头及入口支撑完善，不与主功能图牌抢识别",
+      "formal_zone": "A门头与F入口",
+      "semantic_regions": [
+        "C2.A.finished_roof",
+        "C2.F.entrance_edge"
+      ],
+      "walkable_connections": [
+        "C2.entry_to_counter"
+      ],
+      "construction": {
+        "duration_seconds": 3.6,
+        "old_out": "The retained before plate is covered by organic dust; no fabricated hidden floor or physical demolition.",
+        "old_occlusion_growth": [
+          0.18,
+          0.78
+        ],
+        "old_occlusion_release": [
+          1.75,
+          2.8
+        ],
+        "tools_rise": [
+          0.55,
+          0.72
+        ],
+        "tools_fall": [
+          1.68,
+          1.98
+        ],
+        "new_in": [
+          1.65,
+          2.4
+        ],
+        "settle_rise": [
+          2.4,
+          2.52
+        ],
+        "settle_fall": [
+          2.52,
+          3.12
+        ],
+        "target_must_not_show_before": 1.65,
+        "visual_kind": "2D organic dust/tool overlay; no physical building dismantling"
+      },
+      "audio": "build-wood",
+      "focus_point": [
+        563,
+        196
+      ],
+      "focus_rect": [
+        395,
+        69,
+        308,
+        263
+      ],
+      "task_pin": [
+        570,
+        75
+      ],
+      "role_work_points": [],
+      "parts": [
+        {
+          "file": "parts/BK09.png",
+          "sha256": "fcf8c4e06fa5f4240d8935563d36b0e1d67f66ffee1d8f0935b05b01a1cb6dca",
+          "bytes": 192387,
+          "offset": [
+            385,
+            97
+          ],
+          "size": [
+            283,
+            384
+          ],
+          "mask_sha256": "a80f027780b080758b1f9d57d846c7f0641adf167a7dc744a740df50764b75da",
+          "id": "BK09_r04",
+          "slot": "BK09",
+          "source_state": "BK08",
+          "target_state": "BK09",
+          "operation": "fixed_camera_replace",
+          "semantic_regions": [
+            "C2.A.finished_roof",
+            "C2.F.entrance_edge"
+          ]
+        }
+      ],
+      "reference": {
+        "file": "reference/BK09.png",
+        "sha256": "ae206afb127fff22b4ec71e6330914d1bd089b57575d7900d68116dcb5bdd12a",
+        "bytes": 2180668
+      }
+    },
+    "BK10": {
+      "id": "BK10",
+      "kind": "relationship",
+      "previous": "BK09",
+      "chapter": "C2",
+      "cost": 0,
+      "xp": 0,
+      "title": "米洛切开并分享",
+      "result": "完整故事面包变切片，邻居实际接到并使用；C2和本版完成",
+      "formal_zone": "E分享平台",
+      "semantic_regions": [
+        "C2.E.sharing_table"
+      ],
+      "walkable_connections": [
+        "C2.sharing_front_approach"
+      ],
+      "construction": null,
+      "audio": "relationship",
+      "focus_point": [
+        983,
+        631
+      ],
+      "focus_rect": [
+        705,
+        423,
+        658,
+        419
+      ],
+      "task_pin": [
+        971,
+        462
+      ],
+      "role_work_points": [
+        {
+          "role": "milo",
+          "feet": [
+            865,
+            649
+          ],
+          "facing": "table_left_end",
+          "interaction": [
+            898,
+            594
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 153,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "tilly",
+          "feet": [
+            852,
+            710
+          ],
+          "facing": "milo",
+          "interaction": [
+            877,
+            657
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 125,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "pip",
+          "feet": [
+            1023,
+            721
+          ],
+          "facing": "milo",
+          "interaction": [
+            991,
+            673
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 131,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            1166,
+            646
+          ],
+          "facing": "sharing_group",
+          "interaction": [
+            1134,
+            583
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 182,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        }
+      ],
+      "parts": [],
+      "reference": {
+        "file": "reference/BK10.png",
+        "sha256": "ae206afb127fff22b4ec71e6330914d1bd089b57575d7900d68116dcb5bdd12a",
+        "bytes": 2180668
+      }
+    }
+  },
+  "interactions": {
+    "IN06": {
+      "coordinate_space": "1536x1024 C1 R04 candidate source pixels",
+      "roles": [
+        {
+          "role": "keeper",
+          "feet": [
+            799,
+            481
+          ],
+          "facing": "guest",
+          "interaction": [
+            768,
+            414
+          ],
+          "interaction_kind": "planned_folded_linen_handoff",
+          "recommended_source_sprite_height": 144
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            727,
+            471
+          ],
+          "facing": "keeper",
+          "interaction": [
+            768,
+            414
+          ],
+          "interaction_kind": "planned_folded_linen_handoff",
+          "recommended_source_sprite_height": 144
+        }
+      ],
+      "anchor": [
+        768,
+        414
+      ],
+      "contact": [
+        768,
+        414
+      ],
+      "use_authored_reception": true,
+      "generated_stool": false,
+      "guest_entry": [
+        705,
+        523
+      ],
+      "foreground_layers": [],
+      "verification": "Manually retargeted on candidate source; confirm in the gameplay consumer.",
+      "blanket_pickup": [
+        779,
+        344
+      ],
+      "pickup_feet": [
+        785,
+        449
+      ]
+    },
+    "IN10": {
+      "coordinate_space": "1536x1024 C1 R04 candidate source pixels",
+      "roles": [
+        {
+          "role": "keeper",
+          "feet": [
+            805,
+            465
+          ],
+          "facing": "guest",
+          "interaction": [
+            764,
+            401
+          ],
+          "interaction_kind": "planned_key_handoff",
+          "recommended_source_sprite_height": 144
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            725,
+            473
+          ],
+          "facing": "keeper",
+          "interaction": [
+            764,
+            401
+          ],
+          "interaction_kind": "planned_key_handoff",
+          "recommended_source_sprite_height": 144
+        }
+      ],
+      "anchor": [
+        764,
+        401
+      ],
+      "contact": [
+        764,
+        401
+      ],
+      "use_authored_reception": true,
+      "generated_stool": false,
+      "guest_entry": [
+        705,
+        523
+      ],
+      "foreground_layers": [],
+      "verification": "Manually retargeted on candidate source; confirm in the gameplay consumer.",
+      "key_contact": [
+        764,
+        401
+      ],
+      "guestroom_entry": [
+        952,
+        407
+      ],
+      "door_path": [
+        [
+          725,
+          473
+        ],
+        [
+          767,
+          489
+        ],
+        [
+          845,
+          475
+        ],
+        [
+          875,
+          454
+        ],
+        [
+          914,
+          438
+        ],
+        [
+          952,
+          407
+        ]
+      ],
+      "old_key_offer_offset": [
+        -41,
+        -64
+      ],
+      "old_guest_palm_offset": [
+        39,
+        -72
+      ]
+    },
+    "BK10": {
+      "anchor": [
+        919,
+        582
+      ],
+      "coordinate_space": "C2 R04 source pixels",
+      "use_authored_table": true,
+      "generated_table": false,
+      "hide_authored_table": {
+        "supported": false,
+        "reason": "Sharing table belongs to stage BK08."
+      },
+      "tabletop": {
+        "polygon": [
+          [
+            861,
+            579
+          ],
+          [
+            1021,
+            498
+          ],
+          [
+            1123,
+            551
+          ],
+          [
+            975,
+            638
+          ]
+        ],
+        "chef_hand_contact": [
+          898,
+          594
+        ],
+        "chef_hand_contact_radius": 8,
+        "story_loaf_placement": [
+          919,
+          582
+        ],
+        "existing_decorative_food": "Baked bread basket on rear half of wooden table."
+      },
+      "anchor_kind": "story_loaf_placement_not_hand_contact",
+      "roles": [
+        {
+          "role": "milo",
+          "feet": [
+            865,
+            649
+          ],
+          "facing": "table_left_end",
+          "interaction": [
+            898,
+            594
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 153,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "tilly",
+          "feet": [
+            852,
+            710
+          ],
+          "facing": "milo",
+          "interaction": [
+            877,
+            657
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 125,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "pip",
+          "feet": [
+            1023,
+            721
+          ],
+          "facing": "milo",
+          "interaction": [
+            991,
+            673
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 131,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        },
+        {
+          "role": "organizer",
+          "feet": [
+            1166,
+            646
+          ],
+          "facing": "sharing_group",
+          "interaction": [
+            1134,
+            583
+          ],
+          "interaction_kind": "R04_source_pixel_design_target",
+          "recommended_source_sprite_height": 182,
+          "verification": "Fixed-camera visual annotation; animated reach and clearance need runtime checks."
+        }
+      ],
+      "role_sort_order": [
+        "Table edge, seated/standing sprites and recipient hands require occlusion checks."
+      ],
+      "foreground_layers": [],
+      "verification": "R04 geometry authored; check timed knife/food/hand and approach on actual sprites."
+    }
+  },
+  "walkable_graphs": {
+    "P": {
+      "verification": "Source-space route centre lines over matching R04 paving. Navmesh and swept collisions require runtime proof.",
+      "connections": [
+        {
+          "id": "P.arrivals_to_waiting",
+          "kind": "pedestrian",
+          "open_from": "P00",
+          "points": [
+            [
+              298,
+              440
+            ],
+            [
+              377,
+              452
+            ],
+            [
+              439,
+              442
+            ],
+            [
+              476,
+              426
+            ],
+            [
+              524,
+              410
+            ]
+          ],
+          "restriction": "Only landside of platform edge; no rail crossing."
+        },
+        {
+          "id": "P.ticket_to_exit",
+          "kind": "pedestrian",
+          "open_from": "PR02",
+          "points": [
+            [
+              775,
+              387
+            ],
+            [
+              792,
+              421
+            ],
+            [
+              826,
+              467
+            ],
+            [
+              887,
+              503
+            ],
+            [
+              946,
+              542
+            ],
+            [
+              1006,
+              577
+            ],
+            [
+              951,
+              618
+            ],
+            [
+              912,
+              659
+            ],
+            [
+              879,
+              707
+            ],
+            [
+              879,
+              782
+            ],
+            [
+              937,
+              813
+            ]
+          ],
+          "restriction": "Use clear lower forecourt via ramp; gate stays obstructed until PR02."
+        },
+        {
+          "id": "P.luggage_to_exit",
+          "kind": "loaded_trolley",
+          "open_from": "PR03",
+          "points": [
+            [
+              1148,
+              589
+            ],
+            [
+              1104,
+              619
+            ],
+            [
+              1028,
+              662
+            ],
+            [
+              982,
+              687
+            ],
+            [
+              948,
+              707
+            ],
+            [
+              895,
+              743
+            ],
+            [
+              879,
+              782
+            ],
+            [
+              939,
+              813
+            ],
+            [
+              1013,
+              851
+            ]
+          ],
+          "restriction": "Start at ground-level luggage shelter; no track or stairs."
+        },
+        {
+          "id": "P.exit_to_town",
+          "kind": "pedestrian_and_trolley",
+          "open_from": "PR02",
+          "points": [
+            [
+              879,
+              740
+            ],
+            [
+              879,
+              782
+            ],
+            [
+              936,
+              813
+            ],
+            [
+              1006,
+              846
+            ],
+            [
+              1092,
+              888
+            ],
+            [
+              1204,
+              941
+            ]
+          ],
+          "restriction": "Depart between two cream gateposts along the pink path. Lamps energize at PR03 only."
+        }
+      ]
+    },
+    "C1": {
+      "verification": "Observed walks on paved ground and actual steps in authored image; agent body/passing clearance to be tested in consumer.",
+      "connections": [
+        {
+          "id": "C1.entry_to_reception",
+          "kind": "guest",
+          "open_from": "IN03",
+          "points": [
+            [
+              1088,
+              957
+            ],
+            [
+              884,
+              841
+            ],
+            [
+              655,
+              747
+            ],
+            [
+              552,
+              652
+            ],
+            [
+              603,
+              552
+            ],
+            [
+              696,
+              491
+            ],
+            [
+              725,
+              473
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        },
+        {
+          "id": "C1.luggage_arrival",
+          "kind": "guest_with_suitcase",
+          "open_from": "IN03",
+          "points": [
+            [
+              1088,
+              957
+            ],
+            [
+              872,
+              839
+            ],
+            [
+              616,
+              725
+            ],
+            [
+              529,
+              661
+            ],
+            [
+              467,
+              616
+            ],
+            [
+              372,
+              590
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        },
+        {
+          "id": "C1.staff_blanket_to_handover",
+          "kind": "keeper_carrying_blanket",
+          "open_from": "IN05",
+          "points": [
+            [
+              785,
+              449
+            ],
+            [
+              804,
+              467
+            ],
+            [
+              799,
+              481
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        },
+        {
+          "id": "C1.reception_to_guestroom",
+          "kind": "guest",
+          "open_from": "IN09",
+          "points": [
+            [
+              725,
+              473
+            ],
+            [
+              767,
+              489
+            ],
+            [
+              845,
+              475
+            ],
+            [
+              875,
+              454
+            ],
+            [
+              914,
+              438
+            ],
+            [
+              952,
+              407
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        },
+        {
+          "id": "C1.reception_to_terrace",
+          "kind": "guest",
+          "open_from": "IN08",
+          "points": [
+            [
+              725,
+              473
+            ],
+            [
+              678,
+              506
+            ],
+            [
+              644,
+              559
+            ],
+            [
+              624,
+              609
+            ],
+            [
+              626,
+              662
+            ],
+            [
+              659,
+              685
+            ],
+            [
+              695,
+              704
+            ],
+            [
+              728,
+              720
+            ],
+            [
+              762,
+              701
+            ],
+            [
+              809,
+              680
+            ],
+            [
+              830,
+              674
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        },
+        {
+          "id": "C1.guestroom_to_drying",
+          "kind": "linen_carrier",
+          "open_from": "IN09",
+          "points": [
+            [
+              952,
+              407
+            ],
+            [
+              931,
+              430
+            ],
+            [
+              947,
+              452
+            ],
+            [
+              1018,
+              440
+            ],
+            [
+              1115,
+              461
+            ],
+            [
+              1150,
+              490
+            ],
+            [
+              1180,
+              491
+            ],
+            [
+              1215,
+              481
+            ],
+            [
+              1310,
+              450
+            ],
+            [
+              1354,
+              435
+            ]
+          ],
+          "restriction": "Target route keyed to the new art; runtime swept width and foreground exposure are independent."
+        }
+      ]
+    },
+    "C2": {
+      "verification": "R04 floor/step/door source annotations; door leaf rotation, occlusion and actor swept widths await native test.",
+      "connections": [
+        {
+          "id": "C2.entry_to_counter",
+          "kind": "customer",
+          "open_from": "BK03",
+          "points": [
+            [
+              1032,
+              923
+            ],
+            [
+              846,
+              837
+            ],
+            [
+              687,
+              802
+            ],
+            [
+              619,
+              765
+            ],
+            [
+              623,
+              669
+            ],
+            [
+              592,
+              592
+            ],
+            [
+              527,
+              524
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.staff_gate_to_oven",
+          "kind": "employee",
+          "open_from": "BK04",
+          "points": [
+            [
+              939,
+              437
+            ],
+            [
+              986,
+              400
+            ],
+            [
+              981,
+              355
+            ],
+            [
+              1022,
+              320
+            ],
+            [
+              1055,
+              327
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.staff_gate_to_counter",
+          "kind": "employee",
+          "open_from": "BK04",
+          "points": [
+            [
+              939,
+              437
+            ],
+            [
+              843,
+              480
+            ],
+            [
+              741,
+              520
+            ],
+            [
+              650,
+              572
+            ],
+            [
+              592,
+              548
+            ],
+            [
+              527,
+              524
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.baking_cooperation_front",
+          "kind": "cooperation_dialogue",
+          "open_from": "BK04",
+          "points": [
+            [
+              710,
+              571
+            ],
+            [
+              785,
+              513
+            ],
+            [
+              866,
+              476
+            ],
+            [
+              955,
+              437
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.counter_to_sharing",
+          "kind": "customer",
+          "open_from": "BK08",
+          "points": [
+            [
+              527,
+              524
+            ],
+            [
+              614,
+              591
+            ],
+            [
+              698,
+              635
+            ],
+            [
+              733,
+              668
+            ],
+            [
+              781,
+              696
+            ],
+            [
+              824,
+              679
+            ],
+            [
+              845,
+              661
+            ],
+            [
+              865,
+              649
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.menu_waiting",
+          "kind": "waiting_customer",
+          "open_from": "BK07",
+          "points": [
+            [
+              619,
+              765
+            ],
+            [
+              584,
+              708
+            ],
+            [
+              485,
+              697
+            ],
+            [
+              436,
+              663
+            ],
+            [
+              363,
+              618
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        },
+        {
+          "id": "C2.sharing_front_approach",
+          "kind": "guest",
+          "open_from": "BK08",
+          "points": [
+            [
+              1233,
+              762
+            ],
+            [
+              1190,
+              738
+            ],
+            [
+              1155,
+              705
+            ],
+            [
+              1115,
+              688
+            ],
+            [
+              1070,
+              709
+            ],
+            [
+              1023,
+              721
+            ],
+            [
+              978,
+              727
+            ],
+            [
+              918,
+              708
+            ],
+            [
+              852,
+              710
+            ]
+          ],
+          "restriction": "Check all feet and body widths on actual sprites, including rear gate and both deck stairs."
+        }
+      ]
+    }
+  },
+  "shared": [
+    {
+      "file": "effects/canopy-twig.png",
+      "sha256": "76842fe381b16e2a381bfcb7cfe21e7696ec3c9957897e08532f8c4550b4310b",
+      "bytes": 1516300
+    },
+    {
+      "file": "effects/leaf.png",
+      "sha256": "6aa1b15eb9a6e839a0cc31db6075b7a53c30fb809c490143a79329aabc8a63e5",
+      "bytes": 286698
+    },
+    {
+      "file": "effects/smoke.png",
+      "sha256": "4bea1c88a8c727b9c67868ad27ef37814bac2d074935f9283fba1dbb4f36e8fa",
+      "bytes": 7141
+    },
+    {
+      "file": "effects/hammer.png",
+      "sha256": "7b0e51413335c5e4625333eb8ff5023b932a09c25675c1545f7bf4da153be593",
+      "bytes": 526814
+    },
+    {
+      "file": "effects/wrench.png",
+      "sha256": "5b85a67d1890014ce3b56e77e7e8c0f9d00903e818b194a96993c8d86752624f",
+      "bytes": 448236
+    },
+    {
+      "file": "audio/build-wood.wav",
+      "sha256": "069622d27384f84dfbd5ed07c32cb8af580dabf323acfdf79431c6fdac9b89c5",
+      "bytes": 345644
+    },
+    {
+      "file": "audio/build-stone.wav",
+      "sha256": "f98e0db82f1a2dc9a4c11e02ef8721238ab3902edb25a62da479df8c8a181f7a",
+      "bytes": 345644
+    },
+    {
+      "file": "audio/build-metal.wav",
+      "sha256": "aa14009a407c7e4e7baa98df0a6538355154f2c3898e8301ea7c08e30873759d",
+      "bytes": 345644
+    },
+    {
+      "file": "audio/relationship.wav",
+      "sha256": "d3e579162e5990e57462d3673bbb2995baf32ded920ea94f1daef9e685af70fe",
+      "bytes": 345644
+    },
+    {
+      "file": "audio/manifest.json",
+      "sha256": "a2981c15acc1f26d33aa32907cf8b77b7507a8cba9a31df24084838a01d6d17a",
+      "bytes": 2474
+    },
+    {
+      "file": "effects/construction-effect.js",
+      "sha256": "ed5ff22a3b240949ce64243b36e19e61391a1e947bdfc64aeff16ac9515d3764",
+      "bytes": 8469
+    }
+  ],
+  "unverified": [
+    "Use actual graphics, device, input and actor review receipts for their respective verification status."
+  ],
+  "station_repair": {
+    "active_on_state_sha256": "428a48e7a139f37fcedc7a677b16563ae8497eac8b2b42cca3df26dc8dbfc9d2",
+    "station_exit_frame": [
+      671,
+      1117
+    ],
+    "approach_feet": [
+      901,
+      643
+    ],
+    "contact_feet": [
+      859,
+      701
+    ],
+    "gate_feet": [
+      879,
+      782
+    ],
+    "path_feet": [
+      936,
+      813
+    ],
+    "outside_feet": [
+      1006,
+      846
+    ],
+    "sprite_anchor": [
+      460,
+      1043
+    ],
+    "sprite_scale": 0.093,
+    "contact_source_points": [
+      [
+        845,
+        1100
+      ],
+      [
+        1134,
+        1035
+      ]
+    ],
+    "projected_contact_points": [
+      [
+        895,
+        706
+      ],
+      [
+        922,
+        700
+      ]
+    ],
+    "push_world_vector": [
+      112,
+      56
+    ],
+    "removable_front_plank_polygon": [
+      [
+        848,
+        776
+      ],
+      [
+        872,
+        741
+      ],
+      [
+        891,
+        721
+      ],
+      [
+        906,
+        694
+      ],
+      [
+        912,
+        688
+      ],
+      [
+        921,
+        692
+      ],
+      [
+        924,
+        706
+      ],
+      [
+        907,
+        728
+      ],
+      [
+        895,
+        741
+      ],
+      [
+        869,
+        770
+      ],
+      [
+        850,
+        791
+      ],
+      [
+        847,
+        792
+      ]
+    ],
+    "exit_ground_patch": [
+      [
+        819,
+        681
+      ],
+      [
+        932,
+        680
+      ],
+      [
+        954,
+        750
+      ],
+      [
+        956,
+        822
+      ],
+      [
+        867,
+        826
+      ],
+      [
+        818,
+        803
+      ]
+    ],
+    "debris_shadow_rect": [
+      840,
+      776,
+      113,
+      47
+    ],
+    "debris_layer_file": "layers/debris-before.png",
+    "debris_layer_offset": [
+      820,
+      683
+    ],
+    "relocation_note": "Two crossed planks and a red crate are distinct fixed-view facets. During the push animate only the visible diagonal plank silhouette (or exact PNG with verified per-object mask); fade remaining debris against PR02 within its exact difference rectangle. Preserve both original gateposts and empty exit after the move.",
+    "gate_occluders": [
+      {
+        "id": "right_gate_leaf_post_lamp",
+        "from_state": "PR02",
+        "source_state": "PR02",
+        "front_foot_y": 765,
+        "foot_baseline": [
+          [
+            868,
+            736
+          ],
+          [
+            930,
+            765
+          ],
+          [
+            950,
+            755
+          ]
+        ],
+        "polygon": [
+          [
+            867,
+            670
+          ],
+          [
+            870,
+            669
+          ],
+          [
+            908,
+            689
+          ],
+          [
+            906,
+            684
+          ],
+          [
+            906,
+            676
+          ],
+          [
+            930,
+            665
+          ],
+          [
+            955,
+            676
+          ],
+          [
+            955,
+            686
+          ],
+          [
+            951,
+            691
+          ],
+          [
+            956,
+            694
+          ],
+          [
+            957,
+            699
+          ],
+          [
+            963,
+            705
+          ],
+          [
+            968,
+            709
+          ],
+          [
+            968,
+            713
+          ],
+          [
+            964,
+            717
+          ],
+          [
+            963,
+            729
+          ],
+          [
+            965,
+            731
+          ],
+          [
+            965,
+            735
+          ],
+          [
+            962,
+            737
+          ],
+          [
+            958,
+            737
+          ],
+          [
+            957,
+            742
+          ],
+          [
+            952,
+            742
+          ],
+          [
+            950,
+            740
+          ],
+          [
+            950,
+            755
+          ],
+          [
+            931,
+            764
+          ],
+          [
+            928,
+            765
+          ],
+          [
+            907,
+            757
+          ],
+          [
+            899,
+            755
+          ],
+          [
+            867,
+            736
+          ],
+          [
+            867,
+            723
+          ],
+          [
+            865,
+            722
+          ],
+          [
+            865,
+            718
+          ],
+          [
+            867,
+            717
+          ],
+          [
+            867,
+            692
+          ],
+          [
+            865,
+            690
+          ],
+          [
+            865,
+            686
+          ],
+          [
+            867,
+            685
+          ]
+        ]
+      },
+      {
+        "id": "left_gate_leaf_post_lamp",
+        "from_state": "PR02",
+        "source_state": "PR02",
+        "front_foot_y": 814,
+        "foot_baseline": [
+          [
+            777,
+            776
+          ],
+          [
+            801,
+            804
+          ],
+          [
+            827,
+            814
+          ],
+          [
+            845,
+            805
+          ]
+        ],
+        "polygon": [
+          [
+            777,
+            714
+          ],
+          [
+            780,
+            711
+          ],
+          [
+            783,
+            711
+          ],
+          [
+            791,
+            719
+          ],
+          [
+            799,
+            729
+          ],
+          [
+            800,
+            729
+          ],
+          [
+            824,
+            717
+          ],
+          [
+            849,
+            729
+          ],
+          [
+            849,
+            739
+          ],
+          [
+            846,
+            741
+          ],
+          [
+            846,
+            804
+          ],
+          [
+            844,
+            807
+          ],
+          [
+            829,
+            814
+          ],
+          [
+            826,
+            814
+          ],
+          [
+            805,
+            805
+          ],
+          [
+            800,
+            805
+          ],
+          [
+            798,
+            804
+          ],
+          [
+            778,
+            777
+          ],
+          [
+            777,
+            774
+          ],
+          [
+            777,
+            765
+          ],
+          [
+            775,
+            763
+          ],
+          [
+            775,
+            760
+          ],
+          [
+            777,
+            759
+          ],
+          [
+            777,
+            730
+          ],
+          [
+            775,
+            727
+          ],
+          [
+            775,
+            724
+          ],
+          [
+            777,
+            724
+          ]
+        ]
+      }
+    ]
+  },
+  "inn_landmarks": {
+    "terrace_table": [
+      908,
+      633
+    ],
+    "terrace_chair_left_seat": [
+      855,
+      650
+    ],
+    "terrace_chair_right_seat": [
+      958,
+      684
+    ],
+    "terrace_steps": [
+      711,
+      713
+    ],
+    "terrace_has_foreground_rail": false,
+    "clean_terrace": "states/IN07.png",
+    "guestroom_bed": [
+      1124,
+      338
+    ],
+    "blankets": [
+      1347,
+      512
+    ],
+    "sign_top_left": [
+      644,
+      380
+    ],
+    "reception_counter": [
+      656,
+      315,
+      170,
+      121
+    ],
+    "drying_route_note": "The planted boundary behind terrace and the narrow annex lip require actor-scale sweep before enabling the guestroom-to-drying path."
+  },
+  "baking": {
+    "oven_cavity": [
+      1107,
+      247
+    ],
+    "oven_sill": [
+      1102,
+      291
+    ],
+    "oven_feet": [
+      1055,
+      327
+    ],
+    "worktop": [
+      970,
+      200
+    ],
+    "worktop_feet": [
+      1003,
+      287
+    ],
+    "gate": [
+      951,
+      398
+    ],
+    "outside_gate": [
+      939,
+      437
+    ],
+    "tested_gate_pass": [
+      986,
+      400
+    ],
+    "runtime_verified": "GPU actor test: pan settled on shelf, feet on ground; AI action QA"
+  },
+  "lighting": {
+    "file": "lighting/contract.json",
+    "sha256": "d15455608324d92332ae57ddd947f3550d3d0e467c30d04fd7266d17d91c7616",
+    "bytes": 63535
+  }
+}

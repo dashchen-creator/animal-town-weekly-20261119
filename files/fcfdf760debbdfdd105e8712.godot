@@ -1,0 +1,18 @@
+config_version=5
+
+[application]
+config/name="动物小镇 R04 场景图层"
+run/main_scene="res://studio.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1536
+window/size/viewport_height=1024
+window/size/window_width_override=960
+window/size/window_height_override=640
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0

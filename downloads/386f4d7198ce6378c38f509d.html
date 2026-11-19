@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>下载交付物</title><style>body{margin:0;background:#eef3f5;color:#18363b;font:16px/1.7 system-ui,sans-serif}main{max-width:760px;margin:8vh auto;padding:30px;background:white;border-radius:20px;box-shadow:0 12px 60px #16363b13}h1{font-size:26px;overflow-wrap:anywhere}a{color:#176859}button{border:0;border-radius:10px;padding:12px 22px;font:inherit;background:#1d4b40;color:white;cursor:pointer}button:disabled{opacity:.5}button.secondary{background:#e4ece9;color:#1d4b40}progress{width:100%;height:18px}code{overflow-wrap:anywhere;font-size:14px}#save{display:inline-block;margin-top:18px}p{overflow-wrap:anywhere}@media(max-width:800px){main{margin:20px;padding:22px}}</style></head><body><main><a href="/animal-town-weekly-20261119/">返回汇报</a><h1>D2_30位居民_每位唯一设定.zip</h1><p id="size"></p><p>点击开始下载，完成后保存原文件。</p><button id="start">开始下载</button> <button id="cancel" class="secondary" disabled>取消</button><p id="status" role="status">尚未开始</p><progress id="progress" value="0" max="100"></progress><a id="save" hidden>保存文件</a><p>原文件 SHA256：<br><code id="hash"></code></p></main><script>
+const file={"filename": "D2_30位居民_每位唯一设定.zip", "bytes": 52938717, "sha256": "386f4d7198ce6378c38f509d2b0ce88325aea135b4a9a4404449ef83a4ba7c38", "parts": [{"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-000.bin", "bytes": 8388608, "sha256": "220fbab9bb4d6ad73ad90e1c4ad8c5536cb788d858458ff17970eb1e93965da9"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-001.bin", "bytes": 8388608, "sha256": "1e235b8d1586afd967ccc73e70c93516bee8f73d49acfd56fea14f8f9b4f6e7c"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-002.bin", "bytes": 8388608, "sha256": "cb303802fbea20bd3b2335f7b26d686c89c96a812632acc6bc84b67c45d58a59"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-003.bin", "bytes": 8388608, "sha256": "ca3063504ca51d67d89d8bfb5ccee67fc8d5c6a30cbfafa283dd13b97b83b70e"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-004.bin", "bytes": 8388608, "sha256": "ba741e4a87ec2d5b5d6dd053d93eb9f5daed1475ea80e09ed1dc091f8f638233"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-005.bin", "bytes": 8388608, "sha256": "9d6a64ba0026611be78bad9c29bacb31cdece837f6445f8cb9a02cd7d309bd9b"}, {"url": "/animal-town-weekly-20261119/files/386f4d7198ce6378c38f509d-006.bin", "bytes": 2607069, "sha256": "ff1f6b4588809809f76315db24881aa512fcb35db6e48da582c1238e4d6cc213"}]};
+const $=id=>document.getElementById(id);
+$('size').textContent=(file.bytes/1048576).toFixed(2)+' MiB';$('hash').textContent=file.sha256;
+let abort,objectUrl;
+$('cancel').onclick=()=>abort?.abort();
+$('start').onclick=async()=>{
+  abort=new AbortController();$('start').disabled=true;$('cancel').disabled=false;$('save').hidden=true;
+  if(objectUrl){URL.revokeObjectURL(objectUrl);objectUrl=null;}
+  const buffers=[];let done=0;
+  try{
+    for(const part of file.parts){
+      $('status').textContent='正在下载 '+Math.floor(done/file.bytes*100)+'%';
+      const response=await fetch(part.url,{signal:abort.signal});
+      if(!response.ok)throw new Error('文件暂不可用，请重试');
+      const buffer=await response.arrayBuffer();
+      if(buffer.byteLength!==part.bytes)throw new Error('文件长度校验未通过，请重试');
+      const digest=[...new Uint8Array(await crypto.subtle.digest('SHA-256',buffer))].map(x=>x.toString(16).padStart(2,'0')).join('');
+      if(digest!==part.sha256)throw new Error('文件校验未通过，请重试');
+      buffers.push(buffer);done+=buffer.byteLength;$('progress').value=done/file.bytes*100;
+    }
+    if(abort.signal.aborted)throw new DOMException('Cancelled','AbortError');
+    if(done!==file.bytes)throw new Error('文件不完整，请重试');
+    const blob=new Blob(buffers,{type:file.filename.endsWith('.apk')?'application/vnd.android.package-archive':'application/zip'});
+    objectUrl=URL.createObjectURL(blob);$('save').href=objectUrl;$('save').download=file.filename;$('save').textContent='保存 '+file.filename;$('save').hidden=false;$('save').click();$('status').textContent='下载与校验完成。未自动保存时，请点击保存文件。';
+  }catch(error){$('status').textContent=error.name==='AbortError'?'已取消，可以重新下载。':error.message;}
+  finally{$('start').disabled=false;$('start').textContent='重新下载';$('cancel').disabled=true;}
+};
+addEventListener('pagehide',()=>{abort?.abort();if(objectUrl)URL.revokeObjectURL(objectUrl);});
+</script></body></html>

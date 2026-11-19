@@ -1,0 +1,19 @@
+{
+  "state": "deferred_by_user_waiting_api",
+  "heygen_attempt": {
+    "status_code": 402,
+    "reason": "本月免费视频次数已用尽",
+    "video_id": null,
+    "automatic_retry": false
+  },
+  "local_art_engine": {
+    "version": "9.0.2",
+    "configured_providers": []
+  },
+  "user_choice": "指定其他已有的视频生成渠道",
+  "missing_input": null,
+  "reference_upload_batch": "47228ca613224316a0a6782ab75d5316",
+  "story_video_files_created": [],
+  "user_instruction": "2026-11-16：文生/图生视频工作流暂等API；当前先完善素材脚本与创意。",
+  "next_action": "API到位且用户恢复制作时，复用现有分镜、录屏及剪辑源接续；本轮推进脚本。"
+}
