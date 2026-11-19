@@ -1875,6 +1875,21 @@
       "filename": "三处场景_修改前后对照.png",
       "published_bytes": 3583512,
       "published_sha256": "7cf9b39d1fb1c3f27dca575b9a2bdfb6915bac4fd90a8b09ac2feeaab8573e29"
+    },
+    {
+      "path": "LocalOnly/ai-day-v35-android/opening-inn/transition-0020/before.png",
+      "bytes": 1076295,
+      "sha256": "ddc2c8f4d2bfbda1d56bbcdfa80288a311600cf6d94c27cee39ec757b54a3e8e",
+      "url": "files/ddc2c8f4d2bfbda1d56bbcdf.png",
+      "large": false,
+      "filename": "before.png",
+      "published_bytes": 1076295,
+      "published_sha256": "ddc2c8f4d2bfbda1d56bbcdfa80288a311600cf6d94c27cee39ec757b54a3e8e",
+      "evidence": {
+        "record": "LocalOnly/ai-day-v35-android/second-order-review/receipt.json",
+        "version_code": 35,
+        "apk_sha256": "a958a19dfd588de3244b75f0ab0c2b0a5d40ecfbc31e13a7317b73ffb0116142"
+      }
     }
   ],
   "unbundled_markdown_references": [
@@ -3647,10 +3662,15 @@
   },
   "presentation": {
     "audience": "executive",
-    "revision": "plain-language-20261119",
-    "built_at_utc": "2026-11-19T10:45:37.215238+00:00",
-    "previous_html_sha256": "cdd7a76d7d9944fe5be98d5b825bc39a6a2a62be13b245ca9ca028a56636fdb7",
-    "html_sha256": "8aab99a0ce0639595157b54af99f7cb91afee640bfc3c34916b24378ae20d6fb",
-    "original_statuses_and_urls_retained": true
+    "revision": "visual-curation",
+    "built_at_utc": "2026-11-19T12:37:55.453866+00:00",
+    "previous_html_sha256": "8aab99a0ce0639595157b54af99f7cb91afee640bfc3c34916b24378ae20d6fb",
+    "html_sha256": "8b58d62ab474ca5220b660faf4d58e1ef5ebc4ad9703b2bb5ef0a8862405d827",
+    "original_statuses_and_urls_retained": true,
+    "visual_revision": {
+      "baseline_commit": "6df6f660606e1951594b8855836e85591146cec0",
+      "preserved_original_urls": 129,
+      "new_picture": "files/ddc2c8f4d2bfbda1d56bbcdf.png"
+    }
   }
 }
