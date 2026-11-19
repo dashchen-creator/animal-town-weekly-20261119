@@ -3662,15 +3662,19 @@
   },
   "presentation": {
     "audience": "executive",
-    "revision": "visual-curation",
-    "built_at_utc": "2026-11-19T12:37:55.453866+00:00",
-    "previous_html_sha256": "8aab99a0ce0639595157b54af99f7cb91afee640bfc3c34916b24378ae20d6fb",
-    "html_sha256": "8b58d62ab474ca5220b660faf4d58e1ef5ebc4ad9703b2bb5ef0a8862405d827",
+    "revision": "next-week-timeline",
+    "built_at_utc": "2026-11-19T13:22:27.845Z",
+    "previous_html_sha256": "8b58d62ab474ca5220b660faf4d58e1ef5ebc4ad9703b2bb5ef0a8862405d827",
+    "html_sha256": "9c10140ed70ee1970a5617eb76d802cb5af6be27fb07aaf910a18c4236867da0",
     "original_statuses_and_urls_retained": true,
     "visual_revision": {
       "baseline_commit": "6df6f660606e1951594b8855836e85591146cec0",
       "preserved_original_urls": 129,
       "new_picture": "files/ddc2c8f4d2bfbda1d56bbcdf.png"
+    },
+    "next_week_revision": {
+      "baseline_commit": "7437842c1e6d1c6c28f6dcf8fef06f84136e7b8d",
+      "plan_sha256": "52d9eb671a9a44ac378b6f482433cd067247c034f7b8b8d1c11508bbdd02e80a"
     }
   }
 }
