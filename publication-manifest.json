@@ -3644,5 +3644,13 @@
     "prepared_at_utc": "2026-11-19T09:40:00.759354+00:00",
     "source_manifest_sha256": "406f9963625a0fd4f1458d1db825dbdb44843fcc92aae08830b86c998bc19c84",
     "note": "Hosting copy only; source cutoff, original artifacts and original SHA256 are retained."
+  },
+  "presentation": {
+    "audience": "executive",
+    "revision": "plain-language-20261119",
+    "built_at_utc": "2026-11-19T10:45:37.215238+00:00",
+    "previous_html_sha256": "cdd7a76d7d9944fe5be98d5b825bc39a6a2a62be13b245ca9ca028a56636fdb7",
+    "html_sha256": "8aab99a0ce0639595157b54af99f7cb91afee640bfc3c34916b24378ae20d6fb",
+    "original_statuses_and_urls_retained": true
   }
 }
