@@ -1948,6 +1948,16 @@
       "sha256": "9d9cd0df30f61516681770fe321d75c56f7eae8999d7d867d9b53222542f7f3f",
       "published_bytes": 1959,
       "published_sha256": "9d9cd0df30f61516681770fe321d75c56f7eae8999d7d867d9b53222542f7f3f"
+    },
+    {
+      "path": "docs/production/merge2-producer/runs/weekly-20261116-20261119-1438/ai-first-20261120/五条流程与证据.md",
+      "filename": "五条流程与证据.md",
+      "url": "files/95ac60de2f763e3248dcbdd5.md",
+      "large": false,
+      "bytes": 2176,
+      "sha256": "95ac60de2f763e3248dcbdd5e8aba6458fd8d9913e2a820751af49322948eea5",
+      "published_bytes": 2176,
+      "published_sha256": "95ac60de2f763e3248dcbdd5e8aba6458fd8d9913e2a820751af49322948eea5"
     }
   ],
   "unbundled_markdown_references": [
@@ -3720,10 +3730,10 @@
   },
   "presentation": {
     "audience": "executive",
-    "revision": "ai-workflow",
-    "built_at_utc": "2026-11-20T01:10:58.581Z",
-    "previous_html_sha256": "1e076c29baa71e3065ccfe2c637e0fe3b9b04874bc6700e3811d797317a7a666",
-    "html_sha256": "c7a1104fbba3dea26306df24bcf3880306ac9a8eb96fcf35ec4ca0cf3deee7b6",
+    "revision": "ai-workflows-first",
+    "built_at_utc": "2026-11-20T01:59:49.951Z",
+    "previous_html_sha256": "c7a1104fbba3dea26306df24bcf3880306ac9a8eb96fcf35ec4ca0cf3deee7b6",
+    "html_sha256": "7251a3ef5c03728842022f1967022b6ea838125d3e470309ab56c89a7ea482e4",
     "original_statuses_and_urls_retained": true,
     "visual_revision": {
       "baseline_commit": "6df6f660606e1951594b8855836e85591146cec0",
@@ -3747,6 +3757,11 @@
       "baseline_commit": "68b5aba3ba7b43a8d4bd3fcd465382184c0f0e21",
       "supplement_date": "2026-11-20",
       "notes": "files/9d9cd0df30f61516681770fe.md"
+    },
+    "ai_first": {
+      "baseline_commit": "64e574039faabf51be79684bd9a25810e24aa75c",
+      "snapshot": "files/95ac60de2f763e3248dcbdd5.md",
+      "scope": "2026-11-16 to 2026-11-20"
     }
   }
 }
