@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="report-edition" content="20261126">
-<meta name="report-revision" content="ai-role-report-r469-cluster">
+<meta name="report-revision" content="ai-six-workflows-r471">
 <title>动物小镇 · AI 工作周报</title>
 <style>
 :root{color:#20342c;background:#f6f6ee;font:15px/1.55 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
@@ -135,62 +135,38 @@ dialog::backdrop{background:#152b22bb}
 .delta-table th,.delta-table td{padding:5px 8px}
 @media(max-width:760px){.delta-visual{grid-template-columns:1fr;gap:8px}.delta-pair button{height:92px}}
 
-.report-lead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:0 0 10px;font-size:14px}
-.report-lead span{white-space:nowrap;color:#536256;font-size:12px}
-.with-proof{display:grid;grid-template-columns:minmax(0,1fr) minmax(114px,29%);gap:10px;align-items:start}
-.thumb{min-width:0;margin:0;background:#edf1e6;border:1px solid #dce5d8;border-radius:8px;overflow:hidden}
-.thumb button{padding:0;border:0;background:transparent;width:100%;height:118px;display:block}
-.thumb img{display:block;width:100%;height:100%;object-fit:contain}
-.thumb figcaption{padding:3px 6px;color:#435749;text-align:center;font-size:11px}
-.thumb.landscape img{object-fit:cover}
-.main-clips{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
-.main-clips .clip video,.main-clips .thumb button{height:121px}
-.card-copy{margin:9px 0 0;color:#435749;font-size:13px}
-.design-steps{display:flex;gap:5px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-.design-steps li{background:#e8efe0;color:#295c44;border-radius:6px;padding:4px 7px;font-size:12px;font-weight:650}
-.design-steps li+li::before{content:"→";margin-right:5px;color:#4d6c55}
-.qa-paths{display:grid;gap:6px;margin:0}
-.qa-paths div{display:grid;grid-template-columns:4.5em minmax(0,1fr);gap:5px;padding:4px 6px;background:#edf2e6;border-radius:6px;font-size:12px}
-.qa-paths div:last-child{background:#f6eee0}
-.qa-paths dt{font-weight:700}
-.qa-paths dd{margin:0;color:#435749}
-.market-history{margin-top:14px}
-.market-history .clips{max-width:700px}
-@media(max-width:760px){.report-lead{flex-wrap:wrap}.with-proof{grid-template-columns:minmax(0,1fr) minmax(94px,30%)}}
-@media(max-width:410px){.main-clips .clip video,.main-clips .thumb button{height:106px}.qa-paths div{grid-template-columns:1fr;gap:0}}
 
-.flow-grid{gap:10px}
-.flow-grid .card{padding:8px 10px 7px}
-.flow-grid .card-head{margin-bottom:6px}
-.flow-grid h2{font-size:18px}
-.flow-grid .thumb button,.flow-grid .clip video{height:94px}
-.flow-grid .thumb figcaption{line-height:1.35;padding:2px 3px}
-.flow-grid details{margin-top:5px;padding-top:4px}
-.flow-grid summary{font-size:12px}
-.ua-card{grid-column:1/-1}
-.ua-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:12px}
-.role-lines{display:grid;gap:3px;margin:0;color:#354f3f;font-size:12px}
-.role-lines div{display:grid;grid-template-columns:5.3em minmax(0,1fr);align-items:baseline;gap:3px;padding:3px 6px;background:#edf2e6;border-radius:5px}
-.role-lines dt,.flow-copy b{font-weight:700;color:#2d5740}
-.role-lines dd{margin:0}
-.flow-copy{font-size:13px;line-height:1.5;color:#435749;margin:1px 0 6px}
-.flow-copy b{margin-right:6px}
-.role-skills{font-size:11px;margin:4px 0 0;color:#53665a;line-height:1.4}
-.dev-proof{grid-template-columns:minmax(0,1.2fr) minmax(130px,1fr)}
-.art-proof{grid-template-columns:minmax(0,1.12fr) minmax(130px,1fr)}
-.art-main img{object-fit:cover}
-.collaboration{margin:7px 0 0;padding:4px 2px 0}
-.collaboration .with-proof{margin-top:4px;max-width:565px}
-@media(max-width:760px){.ua-layout{grid-template-columns:1fr}.ua-roles{min-width:0}.flow-grid h2{font-size:17px}.art-proof,.dev-proof{grid-template-columns:minmax(0,1fr) minmax(120px,40%)}}
-@media(min-width:1050px){
-  .flow-grid{grid-template-columns:minmax(0,1.12fr) repeat(2,minmax(0,1fr))}
-  .flow-grid .ua-card{grid-column:1;grid-row:span 2;align-self:stretch}
-  .ua-layout{grid-template-columns:1fr;gap:9px}
-  .flow-grid .ua-clips video{height:136px}
-  .flow-grid .ua-card .role-skills{margin-top:8px}
-  .flow-grid .with-proof{grid-template-columns:minmax(0,1fr) minmax(105px,36%)}
-  .flow-grid .art-proof,.flow-grid .dev-proof{grid-template-columns:minmax(0,1fr) minmax(105px,39%)}
-}
+.report-lead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:0 0 8px;font-size:15px}
+.report-lead span{color:#536256;font-size:12px;text-align:right}
+.flow-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:10px}
+.workflow-card{display:flex;flex-direction:column;gap:5px;padding:9px 10px 7px}
+.workflow-card .card-head{margin:0}
+.workflow-card .card-head h2{font-size:20px;color:#244634}
+.workflow-roles,.workflow-links{display:grid;gap:3px;margin:0;min-width:0;font-size:12px;line-height:1.35}
+.workflow-roles div,.workflow-links div{display:grid;grid-template-columns:42px minmax(0,1fr);align-items:baseline;gap:6px}
+.workflow-roles dt,.workflow-links dt{font-weight:700;color:#385d47}
+.workflow-roles dd,.workflow-links dd{margin:0;overflow-wrap:anywhere;color:#3f5446}
+.workflow-result{margin:0;color:#304b3b;font-size:13px;line-height:1.42;min-height:2.84em}
+.workflow-content{display:grid;grid-template-columns:minmax(0,1.24fr) minmax(0,1fr);gap:8px;align-items:start}
+.workflow-copy{min-width:0}
+.workflow-content .workflow-result{margin-top:5px;min-height:0}
+.workflow-media{width:100%;min-width:0}
+.workflow-media .clips{gap:4px}
+.workflow-media .clips figcaption{display:grid;justify-items:start;gap:2px;padding:2px 4px}
+.workflow-media .clips figcaption button{padding:1px 5px}
+.thumb{min-width:0;margin:0;background:#edf1e6;border:1px solid #dce5d8;border-radius:8px;overflow:hidden}
+.thumb button{padding:0;border:0;background:transparent;width:100%;height:94px;display:block}
+.thumb img{display:block;width:100%;height:100%;object-fit:contain}
+.thumb figcaption{padding:2px 5px;font-size:11px;line-height:1.4;color:#435749;text-align:center}
+.workflow-media .thumb button,.workflow-media .clip video{height:96px}
+.workflow-media .clip figcaption{min-height:24px}
+.workflow-media .clip strong{font-size:11px}
+.workflow-links{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:auto;padding-top:1px}
+.workflow-links div{grid-template-columns:26px minmax(0,1fr);gap:3px}
+.workflow-card details{margin:0;padding-top:3px}
+.workflow-card summary{font-size:12px}
+@media(max-width:1000px){.flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:660px){.flow-grid{grid-template-columns:minmax(0,1fr)}.workflow-content{grid-template-columns:minmax(0,1fr)}.workflow-result{min-height:0}.workflow-media .thumb button,.workflow-media .clip video{height:138px}}
 </style>
 </head>
 <body>
@@ -202,117 +178,151 @@ dialog::backdrop{background:#152b22bb}
   <main>
 
 
-    <p class="report-lead"><strong>五条工作流 · 谁做了什么，交出了什么</strong><span>11 月 26 日 21:49 · 本机正式工程</span></p>
+
+    <p class="report-lead"><strong>六条工作流</strong><span>11 月 26 日 23:51 · r471 开局取证</span></p>
     <div class="grid flow-grid">
-      <section class="card ua-card" aria-labelledby="ua-title">
-        <header class="card-head"><span class="topic">自动 UA</span><h2 id="ua-title">从产品定方向到运营接手</h2></header>
-        <div class="ua-layout">
-          <dl class="role-lines ua-roles">
-            <div><dt>产品</dt><dd>试制玩法型、角色故事型两种广告。</dd></div>
-            <div><dt>制作人</dt><dd>复审面包短片 R16，列入小流量测试候选。</dd></div>
-            <div><dt>UA 素材</dt><dd>产出玩法实录和剧情样片，保留可编辑工程。</dd></div>
-            <div><dt>运营小云</dt><dd>接收竞品研究，整理核对项。尚未核到试投回执。</dd></div>
-          </dl>
-          <div class="clips ua-clips">
-            <figure class="clip"><video id="uaGameplay" controls playsinline preload="none" src="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" poster="weekly/20261126/files/final-contact-5b5b5f686558.jpg" aria-label="玩法实录 v46 · 内审"></video><figcaption><strong>玩法实录 v46 · 内审</strong><button type="button" data-play="uaGameplay">播放</button></figcaption></figure>
-            <figure class="clip"><video id="uaStory" controls playsinline preload="none" src="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" poster="weekly/20261126/files/r25-final-review-7c556da8e42c.jpg" aria-label="面包剧情 R25 · 内审"></video><figcaption><strong>面包剧情 R25 · 内审</strong><button type="button" data-play="uaStory">播放</button></figcaption></figure>
-          </div>
+      <section class="card workflow-card" aria-labelledby="ua-title">
+        <header class="card-head"><h2 id="ua-title">自动 UA</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>产品、二合制作人、UA 素材、运营小云</dd></div>
+          <div><dt>Skill</dt><dd>买量创意、玩法拍摄与剪辑、运营核对</dd></div>
+        </dl>
+        <p class="workflow-result">确定玩法与剧情两类广告，制作人审候选，素材出样片，运营接研究。试投待核。</p>
         </div>
-        <p class="role-skills">Skill · 二合制作人、买量创意、玩法拍摄与剪辑、运营核对</p>
+        <div class="workflow-media"><div class="clips"><figure class="clip"><video id="uaGameplay" controls playsinline preload="none" src="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" poster="weekly/20261126/files/final-contact-5b5b5f686558.jpg" aria-label="玩法 v46 · 内审"></video><figcaption><strong>玩法 v46 · 内审</strong><button type="button" data-play="uaGameplay">播放</button></figcaption></figure><figure class="clip"><video id="uaStory" controls playsinline preload="none" src="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" poster="weekly/20261126/files/r25-final-review-7c556da8e42c.jpg" aria-label="剧情 R25 · 内审"></video><figcaption><strong>剧情 R25 · 内审</strong><button type="button" data-play="uaStory">播放</button></figcaption></figure></div></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">样片可编辑工程</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">样片制作与复核</a></dd></div>
+        </dl>
         <details><summary>产品决策、样片和运营承接</summary>
           <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">素材制作归档</a><a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">同版可编辑工程</a><a href="weekly/20261126/files/readme-6062166159b2.md" data-document target="_blank" rel="noopener">本地化 Skill 发布回执</a><a href="weekly/20261126/files/readme-14a8df8893bf.md" data-document target="_blank" rel="noopener">换皮流程验证</a></div>
         </details>
       </section>
-
-      <section class="card" aria-labelledby="design-title">
-        <header class="card-head"><span class="topic">自动设计</span><h2 id="design-title">策划把开局规则写成可交接的表</h2></header>
-        <div class="with-proof">
-          <div>
-            <p class="flow-copy"><b>二合大牛</b>拆解竞品如何安排接单、升级和建设，整理 12 条可复用结论。</p>
-            <p class="flow-copy"><b>主策与数值策划</b>整理订单、奖励、解锁条件。现版读回 52 条订单。</p>
-            <p class="role-skills">Skill · Foodstars 新手研究、新手引导调优</p>
-          </div>
-          <figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-build-design.png" aria-label="放大游戏规则 · 修门需要 12 金币"><img src="weekly/20261126/files/r469-build-design.png" alt="游戏规则 · 修门需要 12 金币"></button><figcaption>游戏规则 · 修门需要 12 金币</figcaption></figure>
+      <section class="card workflow-card" aria-labelledby="design-title">
+        <header class="card-head"><h2 id="design-title">自动设计</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>二合大牛、主策与数值策划</dd></div>
+          <div><dt>Skill</dt><dd>Foodstars 新手研究、新手引导调优</dd></div>
+        </dl>
+        <p class="workflow-result">拆解竞品开局，把订单、奖励和解锁条件写成策划表。</p>
         </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r471-design-proof.png" aria-label="放大r471 · 修门需要 12 金币"><img src="weekly/20261126/files/r471-design-proof.png" alt="r471 · 修门需要 12 金币"></button><figcaption>r471 · 修门需要 12 金币</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx" target="_blank" rel="noopener">可编辑策划源表</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">数值交接与核对</a></dd></div>
+        </dl>
         <details><summary>策划表与竞品拆解</summary><div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">下午交接表</a><a href="weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx" target="_blank" rel="noopener">可编辑策划源表</a><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">数值交接说明</a><a href="weekly/20261126/files/material-e4a6e4d4de7f.md" data-document target="_blank" rel="noopener">竞品逐单拆解</a></div></details>
       </section>
-
-      <section class="card" aria-labelledby="production-title">
-        <header class="card-head"><span class="topic">自动制作</span><h2 id="production-title">客户端开发把玩法接进工程</h2></header>
-        <div class="with-proof dev-proof">
-          <div>
-            <p class="flow-copy"><b>客户端研发</b>接入订单、合成和修缮。新增材料来源提示，提前准备棋盘画面。</p>
-            <p class="flow-copy">r469 的场景已接入动物巡游。本版开局可试玩。</p>
-            <p class="role-skills">相关 Skill · 客户端代码审核、出包校验</p>
-          </div>
-          <figure class="clip"><video id="currentGame" controls playsinline preload="none" src="weekly/20261126/files/r469-game-opening.mp4" poster="weekly/20261126/files/r469-town-frame.png" aria-label="21:49 · 工程实录"></video><figcaption><strong>21:49 · 工程实录</strong><button type="button" data-play="currentGame">播放</button></figcaption></figure>
+      <section class="card workflow-card" aria-labelledby="production-title">
+        <header class="card-head"><h2 id="production-title">自动制作</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>客户端研发，实例名待核</dd></div>
+          <div><dt>Skill</dt><dd>客户端代码审核、出包校验</dd></div>
+        </dl>
+        <p class="workflow-result">接入合成、交单和修缮。r471 新增风铃花园，整章试玩待验。</p>
         </div>
+        <div class="workflow-media"><figure class="clip"><video id="currentGame" controls playsinline preload="none" src="weekly/20261126/files/r471-opening.mp4" poster="weekly/20261126/files/r471-game-poster.png" aria-label="r471 · 开局实录"></video><figcaption><strong>r471 · 开局实录</strong><button type="button" data-play="currentGame">播放</button></figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">客户端交接</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/r471-opening-and-garden-check.md" data-document target="_blank" rel="noopener">开局与花园复测</a></dd></div>
+        </dl>
         <details><summary>工程证据和出包核验</summary>
           <div class="inline-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/current-material-source.png" aria-label="放大此前 r465 · 材料来源弹窗"><img src="weekly/20261126/files/current-material-source.png" loading="lazy" alt="此前 r465 · 材料来源弹窗"></button><figcaption>此前 r465 · 材料来源弹窗</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-board-frame.png" aria-label="放大r469 · 正式棋盘"><img src="weekly/20261126/files/r469-board-frame.png" loading="lazy" alt="r469 · 正式棋盘"></button><figcaption>r469 · 正式棋盘</figcaption></figure></div>
           <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">客户端交接</a><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">出包核验记录</a><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">棋盘整理修复回执</a></div>
         </details>
       </section>
-
-      <section class="card" aria-labelledby="art-title">
-        <header class="card-head"><span class="topic">自动美术</span><h2 id="art-title">场景和角色能按反馈逐轮返修</h2></header>
-        <div class="with-proof art-proof">
-          <div>
-            <p class="flow-copy"><b>场景美术</b>做出松湾修复前、过渡、繁荣三态，并调整屋瓦、树冠和铺砖。</p>
-            <p class="flow-copy"><b>角色美术</b>复查九位角色入景的体积感、比例和脚底投影。</p>
-            <p class="role-skills">Skill · 动物小镇场景、Gemini 出图、D2 角色</p>
-          </div>
-          <figure class="thumb art-main"><button type="button" data-image="weekly/20261126/files/scene-art-r05-candidate.jpg" aria-label="放大26 日场景与角色返修 · 美术候选"><img src="weekly/20261126/files/scene-art-r05-candidate.jpg" alt="26 日场景与角色返修 · 美术候选"></button><figcaption>26 日场景与角色返修 · 美术候选</figcaption></figure>
+      <section class="card workflow-card" aria-labelledby="art-title">
+        <header class="card-head"><h2 id="art-title">自动美术</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>场景和角色美术</dd></div>
+          <div><dt>Skill</dt><dd>动物小镇场景、Gemini 出图、D2 角色</dd></div>
+        </dl>
+        <p class="workflow-result">做出松湾三种建设状态，复核九位角色入景。现为美术候选。</p>
         </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-candidate.jpg" aria-label="放大场景与角色返修 · 候选"><img src="weekly/20261126/files/scene-art-r05-candidate.jpg" alt="场景与角色返修 · 候选"></button><figcaption>场景与角色返修 · 候选</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景 Skill 与资产归档</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾返修与自查</a></dd></div>
+        </dl>
         <details><summary>候选图、前后对照与 Skill 归档</summary>
           <div class="inline-shots candidate-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-three-stage-candidate.jpg" aria-label="放大松湾三态 · 候选"><img src="weekly/20261126/files/pinebay-three-stage-candidate.jpg" loading="lazy" alt="松湾三态 · 候选"></button><figcaption>松湾三态 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-changes.jpg" aria-label="放大场景修改对照 · 候选"><img src="weekly/20261126/files/scene-art-r05-changes.jpg" loading="lazy" alt="场景修改对照 · 候选"></button><figcaption>场景修改对照 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-characters.jpg" aria-label="放大角色入景对照 · 候选"><img src="weekly/20261126/files/scene-art-r05-characters.jpg" loading="lazy" alt="角色入景对照 · 候选"></button><figcaption>角色入景对照 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png" aria-label="放大松湾调整前 · 候选"><img src="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png" loading="lazy" alt="松湾调整前 · 候选"></button><figcaption>松湾调整前 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" aria-label="放大松湾调整后 · 候选"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="松湾调整后 · 候选"></button><figcaption>松湾调整后 · 候选</figcaption></figure></div>
           <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾制作记录</a><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景 Skill 与米洛资产归档</a></div>
         </details>
       </section>
-
-      <section class="card" aria-labelledby="qa-title">
-        <header class="card-head"><span class="topic">自动测试与迭代</span><h2 id="qa-title">QA 报问题，修完重跑同一操作</h2></header>
-        <div class="with-proof">
-          <div>
-            <p class="flow-copy"><b>小Q</b>独立检查面包短片 R16 的关键画面和音轨。手机实听待确认。</p>
-            <p class="flow-copy"><b>客户端 QA</b>复跑交单和修门。棋盘加载中可返回，重进可继续。</p>
-            <p class="role-skills">Skill · 历史缺陷回归。首局体力与手机实测待确认。</p>
-          </div>
-          <figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-repair-receipt.png" aria-label="放大r469 复测 · 两单到账，修门完成"><img src="weekly/20261126/files/r469-repair-receipt.png" alt="r469 复测 · 两单到账，修门完成"></button><figcaption>r469 复测 · 两单到账，修门完成</figcaption></figure>
+      <section class="card workflow-card" aria-labelledby="qa-title">
+        <header class="card-head"><h2 id="qa-title">自动测试与迭代</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>小Q、客户端 QA</dd></div>
+          <div><dt>Skill</dt><dd>历史缺陷回归</dd></div>
+        </dl>
+        <p class="workflow-result">小Q 独立审片。r471 复跑交单、修门和花园规则，手机待验。</p>
         </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r471-qa-repair.png" aria-label="放大r471 桌面复测 · 修门完成"><img src="weekly/20261126/files/r471-qa-repair.png" alt="r471 桌面复测 · 修门完成"></button><figcaption>r471 桌面复测 · 修门完成</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">25 日问题报告</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/r471-opening-and-garden-check.md" data-document target="_blank" rel="noopener">开局与花园复测</a></dd></div>
+        </dl>
         <details><summary>复测画面、问题单与待确认项</summary>
           <div class="inline-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-loading-cancel.png" aria-label="放大r469 复测 · 棋盘加载中可返回"><img src="weekly/20261126/files/r469-loading-cancel.png" loading="lazy" alt="r469 复测 · 棋盘加载中可返回"></button><figcaption>r469 复测 · 棋盘加载中可返回</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-board-frame.png" aria-label="放大r469 复测 · 进入棋盘"><img src="weekly/20261126/files/r469-board-frame.png" loading="lazy" alt="r469 复测 · 进入棋盘"></button><figcaption>r469 复测 · 进入棋盘</figcaption></figure></div>
-          <p class="capt">早期自动试玩有一条路线在早餐亭用完体力。点材料提示的旧检查、安卓手机和公司内测总结果待确认。</p>
+          <p class="capt">此前 r469 复测保留在下方。早期自动试玩有一条路线在早餐亭用完体力。点材料提示的旧检查、安卓手机和公司内测总结果待确认。</p>
           <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">25 日新档 QA</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">25 日旧安卓包 QA</a><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">问题处理与复测</a><a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">首局路线与体力</a><a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷回归 Skill</a><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">历史模拟器卡顿对照</a></div>
         </details>
       </section>
+      <section class="card workflow-card" aria-labelledby="cluster-title">
+        <header class="card-head"><h2 id="cluster-title">集群工作流</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>制作、独立复验和整合岗位</dd></div>
+          <div><dt>Skill</dt><dd>相关方法为角色 Spine、二合回归。调用待核。</dd></div>
+        </dl>
+        <p class="workflow-result">Pip 动画跨机接力已复验。五套棋盘已整合，独立验收尚缺。</p>
+        </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" aria-label="放大工作站调度看板 · 历史实拍"><img src="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" alt="工作站调度看板 · 历史实拍"></button><figcaption>工作站调度看板 · 历史实拍</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">Pip 与棋盘交付记录</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站回执（原件需内网）</a></dd></div>
+        </dl>
+        <details><summary>派单、整合与复验</summary><p class="capt">Pip 两项任务已回传，另一台工作站按同版复验。五套棋盘已有整合候选，最后一项独立复验仍缺。</p><div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">Pip 与棋盘交付记录</a><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站回执（原件需内网）</a></div></details>
+      </section>
     </div>
 
-    <details class="collaboration">
-      <summary>集群工作流</summary>
-      <div class="with-proof"><p class="flow-copy">Pip 动画由不同工作站接力制作和复验。五套棋盘完成整合，最后一项独立验收尚缺。</p><figure class="thumb landscape"><button type="button" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" aria-label="放大工作站看板 · 历史实拍"><img src="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" loading="lazy" alt="工作站看板 · 历史实拍"></button><figcaption>工作站看板 · 历史实拍</figcaption></figure></div>
-      <div class="links"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站任务回执（原始记录需公司内网）</a></div>
-    </details>
-
     <details class="delta" id="weekly-delta">
-      <summary>每周项目增量对比 <span>11 月 19 日 → 26 日 · 28 项</span></summary>
+      <summary>每周项目增量对比 <span>11 月 19 日 → 26 日 · 29 项</span></summary>
       <div class="delta-content">
         <div class="delta-visual">
           <div>
             <h3>版本录屏对照</h3>
             <figure class="delta-motion">
-              <div class="recording-labels"><span>11 月 16 日内测版</span><span>11 月 26 日 21:49 · r469</span></div>
-              <img id="delta-gif" src="weekly/20261126/files/r469-opening-compare-poster.jpg" data-poster="weekly/20261126/files/r469-opening-compare-poster.jpg" data-animated="weekly/20261126/files/r469-opening-compare.gif" alt="实际开局录屏。左为车厢教学和合成，右为到车站领取委托、打开棋盘和合成。" width="576" height="480" loading="lazy">
+              <div class="recording-labels"><span>11 月 16 日内测版</span><span>11 月 26 日 23:51 · r471</span></div>
+              <img id="delta-gif" src="weekly/20261126/files/r471-opening-compare-poster.jpg" data-poster="weekly/20261126/files/r471-opening-compare-poster.jpg" data-animated="weekly/20261126/files/r471-opening-compare.gif" alt="实际开局录屏。左为车厢教学和合成，右为到车站领取委托、打开棋盘和合成。" width="576" height="480" loading="lazy">
               <figcaption><button type="button" id="delta-gif-toggle">播放 GIF</button><span>车厢教学 → 车站接单与棋盘合成</span></figcaption>
             </figure>
           </div>
           <div>
             <h3>两版实跑 · 场景不同</h3>
-            <div class="delta-pair"><figure><button type="button" aria-label="放大上周 · 安卓模拟器" data-image="files/ddc2c8f4d2bfbda1d56bbcdf.png"><img loading="lazy" src="files/ddc2c8f4d2bfbda1d56bbcdf.png" alt="上周 · 安卓模拟器"></button><figcaption>上周 · 安卓模拟器</figcaption></figure><figure><button type="button" aria-label="放大本周晚间 · 车站棋盘" data-image="weekly/20261126/files/r469-board-frame.png"><img loading="lazy" src="weekly/20261126/files/r469-board-frame.png" alt="本周晚间 · 车站棋盘"></button><figcaption>本周晚间 · 车站棋盘</figcaption></figure></div>
+            <div class="delta-pair"><figure><button type="button" aria-label="放大上周 · 安卓模拟器" data-image="files/ddc2c8f4d2bfbda1d56bbcdf.png"><img loading="lazy" src="files/ddc2c8f4d2bfbda1d56bbcdf.png" alt="上周 · 安卓模拟器"></button><figcaption>上周 · 安卓模拟器</figcaption></figure><figure><button type="button" aria-label="放大本周 · r471 车站棋盘" data-image="weekly/20261126/files/r471-board-proof.png"><img loading="lazy" src="weekly/20261126/files/r471-board-proof.png" alt="本周 · r471 车站棋盘"></button><figcaption>本周 · r471 车站棋盘</figcaption></figure></div>
             <h3>盖布解锁 · 26 日下午交接记录</h3>
             <div class="delta-pair"><figure><button type="button" aria-label="放大解锁前" data-image="weekly/20261126/files/01-0b56a0bee134.png"><img loading="lazy" src="weekly/20261126/files/01-0b56a0bee134.png" alt="解锁前"></button><figcaption>解锁前</figcaption></figure><figure><button type="button" aria-label="放大解锁后 · 奖励到账" data-image="weekly/20261126/files/02-43bdc4c61107.png"><img loading="lazy" src="weekly/20261126/files/02-43bdc4c61107.png" alt="解锁后 · 奖励到账"></button><figcaption>解锁后 · 奖励到账</figcaption></figure></div>
           </div>
         </div>
-        <details id="delta-1" class="delta-group"><summary>正式工程与功能 <span>· 19 项</span></summary><table class="delta-table" aria-label="正式工程与功能"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">默认玩法与出包<span class="delta-status">模拟器已复验</span></th><td><span class="delta-side">上周</span><p>内测车站版，备选开场并行</p></td><td><span class="delta-side">本周</span><p>统一车站版，出包可拦错</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">参考包与出包验证</a></div></details></td></tr>
+        <details id="delta-1" class="delta-group"><summary>正式工程与功能 <span>· 20 项</span></summary><table class="delta-table" aria-label="正式工程与功能"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">默认玩法与出包<span class="delta-status">模拟器已复验</span></th><td><span class="delta-side">上周</span><p>内测车站版，备选开场并行</p></td><td><span class="delta-side">本周</span><p>统一车站版，出包可拦错</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">参考包与出包验证</a></div></details></td></tr>
 <tr><th scope="row">序章开场和续玩<span class="delta-status">桌面已实点</span></th><td><span class="delta-side">上周</span><p>车厢教学后进车站</p></td><td><span class="delta-side">本周</span><p>5 秒片头可跳过，旧档可续</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">片头、跳过与旧档</a></div></details></td></tr>
 <tr><th scope="row">章节入口与场景<span class="delta-status">桌面已复验</span></th><td><span class="delta-side">上周</span><p>三处场景已能试玩</p></td><td><span class="delta-side">本周</span><p>进早餐亭后首项建设会弹出</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-chapter-entry.md" data-document target="_blank" rel="noopener">跨章走查</a></div></details></td></tr>
 <tr><th scope="row">订单与续单<span class="delta-status">正式工程交接</span></th><td><span class="delta-side">上周</span><p>主线与续单已走通</p></td><td><span class="delta-side">本周</span><p>晚间工程有 36 个固定单、6 个循环模板、10 个副单</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">下午交接表</a> <a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">可运行规则</a></div></details></td></tr>
@@ -329,6 +339,7 @@ dialog::backdrop{background:#152b22bb}
 <tr><th scope="row">订单材料怎么获得<span class="delta-status">晚间工程 · 已见弹窗</span></th><td><span class="delta-side">上周</span><p>能查看材料合成关系</p></td><td><span class="delta-side">本周</span><p>点订单材料，直接显示来源和合成链</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a></div></details></td></tr>
 <tr><th scope="row">进棋盘等待与返回<span class="delta-status">晚间工程 · 桌面复测</span></th><td><span class="delta-side">上周</span><p>进入棋盘时等待资源</p></td><td><span class="delta-side">本周</span><p>提前准备画面，加载能返回，重进可用</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a></div></details></td></tr>
 <tr><th scope="row">场景内动物巡游<span class="delta-status">r469 · 工程已接入</span></th><td><span class="delta-side">上周</span><p>有场景常驻角色动作</p></td><td><span class="delta-side">本周</span><p>补入巡游路径、步幅与贴地动作</p></td></tr>
+<tr><th scope="row">风铃花园<span class="delta-status">r471 · 规则通过</span></th><td><span class="delta-side">上周</span><p>范围到早餐亭</p></td><td><span class="delta-side">本周</span><p>新增章节和 32 份委托。整章试玩待验。</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/r471-opening-and-garden-check.md" data-document target="_blank" rel="noopener">开局与花园复测</a></div></details></td></tr>
 <tr><th scope="row">章节资源下载<span class="delta-status">桌面限速与分包验证</span></th><td><span class="delta-side">上周</span><p>试过早餐分享单项分包</p></td><td><span class="delta-side">本周</span><p>首次进客栈 188 → 19.9 MB</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-chapter-priority.md" data-document target="_blank" rel="noopener">首场景下载和恢复</a> <a href="weekly/20261126/files/delta-download-progress.md" data-document target="_blank" rel="noopener">提前下载和进度显示</a></div></details></td></tr>
 <tr><th scope="row">旅行等待、棋盘伙伴与触感<span class="delta-status">源码记录 · 待实测</span></th><td><span class="delta-side">上周</span><p>已有进章等待和触感候选</p></td><td><span class="delta-side">本周</span><p>盖章、伙伴和触感有改动，待实跑</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-engine-scope.md" data-document target="_blank" rel="noopener">工程变更取证范围</a></div></details></td></tr></tbody></table></details><details id="delta-2" class="delta-group"><summary>内容产出与候选 <span>· 5 项</span></summary><table class="delta-table" aria-label="内容产出与候选"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">前 20 级玩法候选<span class="delta-status">独立候选</span></th><td><span class="delta-side">上周</span><p>已能试玩前三处场景</p></td><td><span class="delta-side">本周</span><p>独立候选跑到晨市开张</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-20-level-candidate.md" data-document target="_blank" rel="noopener">候选版复测</a> <a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">原集群需求</a></div></details></td></tr>
 <tr><th scope="row">场景素材与返修<span class="delta-status">美术候选与归档</span></th><td><span class="delta-side">上周</span><p>已有实景和待改场景图</p></td><td><span class="delta-side">本周</span><p>松湾做出三态；米洛恢复 16 张选图</p><div class="inline-shots"><figure><button type="button" aria-label="放大松湾候选返修图" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="松湾候选返修图"></button><figcaption>松湾候选返修图</figcaption></figure></div><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态</a>  <a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">米洛资产归档</a></div></details></td></tr>
@@ -348,7 +359,7 @@ dialog::backdrop{background:#152b22bb}
       <div class="milestone"><b>25–27 日</b><span>公司内部功能测试整批结果待确认</span></div>
     </section>
   </main>
-  <footer class="footer"><a href="weekly/20261126/files/readme-4ff384c16681.md" data-document target="_blank" rel="noopener">下午报告存档</a><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a><span>晚间工程录于 26 日 21:49</span></footer>
+  <footer class="footer"><a href="weekly/20261126/files/readme-4ff384c16681.md" data-document target="_blank" rel="noopener">下午报告存档</a><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a><span>r471 开局录于 11 月 26 日 23:51</span></footer>
 </div>
 
 <dialog id="preview" aria-labelledby="preview-title">
@@ -356,7 +367,7 @@ dialog::backdrop{background:#152b22bb}
   <div class="dialog-body"></div>
   <div class="dialog-foot"><a target="_blank" rel="noopener">打开原文件</a></div>
 </dialog>
-<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/r469-board-frame.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"},{"url":"weekly/20261126/files/delta-scroll-and-drag.md"},{"url":"weekly/20261126/files/delta-order-animation.md"},{"url":"weekly/20261126/files/delta-order-idle.md"},{"url":"weekly/20261126/files/delta-level-and-reward.md"},{"url":"weekly/20261126/files/delta-button-and-screen.md"},{"url":"weekly/20261126/files/delta-chapter-priority.md"},{"url":"weekly/20261126/files/delta-download-progress.md"},{"url":"weekly/20261126/files/delta-20-level-candidate.md"},{"url":"weekly/20261126/files/delta-chapter-entry.md"},{"url":"weekly/20261126/files/delta-six-resident-candidates.jpg"},{"url":"weekly/20261126/files/delta-previous-week-baseline.md"},{"url":"files/ddc2c8f4d2bfbda1d56bbcdf.png"},{"url":"weekly/20261126/files/delta-engine-scope.md"},{"url":"weekly/20261126/files/current-engine-opening-stream.mp4"},{"url":"weekly/20261126/files/r469-opening-compare.gif"},{"url":"weekly/20261126/files/r469-opening-compare-poster.jpg"},{"url":"weekly/20261126/files/current-build-payment.png"},{"url":"weekly/20261126/files/current-build-receipt.png"},{"url":"weekly/20261126/files/current-station-scene.png"},{"url":"weekly/20261126/files/current-material-source.png"},{"url":"weekly/20261126/files/current-board-wait.png"},{"url":"weekly/20261126/files/current-inn-scene.png"},{"url":"weekly/20261126/files/pinebay-three-stage-candidate.jpg"},{"url":"weekly/20261126/files/current-engine-record.md"},{"url":"weekly/20261126/files/r469-game-opening.mp4"},{"url":"weekly/20261126/files/r469-build-design.png"},{"url":"weekly/20261126/files/r469-repair-receipt.png"},{"url":"weekly/20261126/files/r469-town-frame.png"},{"url":"weekly/20261126/files/r469-loading-cancel.png"},{"url":"weekly/20261126/files/scene-art-r05-candidate.jpg"},{"url":"weekly/20261126/files/scene-art-r05-changes.jpg"},{"url":"weekly/20261126/files/scene-art-r05-characters.jpg"},{"url":"weekly/20261126/files/ai-role-workflow-record.md"}]}</script>
+<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/r469-board-frame.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"},{"url":"weekly/20261126/files/delta-scroll-and-drag.md"},{"url":"weekly/20261126/files/delta-order-animation.md"},{"url":"weekly/20261126/files/delta-order-idle.md"},{"url":"weekly/20261126/files/delta-level-and-reward.md"},{"url":"weekly/20261126/files/delta-button-and-screen.md"},{"url":"weekly/20261126/files/delta-chapter-priority.md"},{"url":"weekly/20261126/files/delta-download-progress.md"},{"url":"weekly/20261126/files/delta-20-level-candidate.md"},{"url":"weekly/20261126/files/delta-chapter-entry.md"},{"url":"weekly/20261126/files/delta-six-resident-candidates.jpg"},{"url":"weekly/20261126/files/delta-previous-week-baseline.md"},{"url":"files/ddc2c8f4d2bfbda1d56bbcdf.png"},{"url":"weekly/20261126/files/delta-engine-scope.md"},{"url":"weekly/20261126/files/current-engine-opening-stream.mp4"},{"url":"weekly/20261126/files/r471-opening-compare.gif"},{"url":"weekly/20261126/files/r471-opening-compare-poster.jpg"},{"url":"weekly/20261126/files/current-build-payment.png"},{"url":"weekly/20261126/files/current-build-receipt.png"},{"url":"weekly/20261126/files/current-station-scene.png"},{"url":"weekly/20261126/files/current-material-source.png"},{"url":"weekly/20261126/files/current-board-wait.png"},{"url":"weekly/20261126/files/current-inn-scene.png"},{"url":"weekly/20261126/files/pinebay-three-stage-candidate.jpg"},{"url":"weekly/20261126/files/current-engine-record.md"},{"url":"weekly/20261126/files/r469-game-opening.mp4"},{"url":"weekly/20261126/files/r469-build-design.png"},{"url":"weekly/20261126/files/r469-repair-receipt.png"},{"url":"weekly/20261126/files/r469-town-frame.png"},{"url":"weekly/20261126/files/r469-loading-cancel.png"},{"url":"weekly/20261126/files/scene-art-r05-candidate.jpg"},{"url":"weekly/20261126/files/scene-art-r05-changes.jpg"},{"url":"weekly/20261126/files/scene-art-r05-characters.jpg"},{"url":"weekly/20261126/files/ai-role-workflow-record.md"},{"url":"weekly/20261126/files/r471-opening.mp4"},{"url":"weekly/20261126/files/r471-design-proof.png"},{"url":"weekly/20261126/files/r471-game-poster.png"},{"url":"weekly/20261126/files/r471-qa-repair.png"},{"url":"weekly/20261126/files/r471-board-proof.png"},{"url":"weekly/20261126/files/r471-opening-and-garden-check.md"}]}</script>
 <script>
 
 const comparePanel=document.querySelector('#weekly-delta');
