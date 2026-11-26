@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="report-edition" content="20261126">
-<meta name="report-revision" content="weekly-gif">
+<meta name="report-revision" content="version-recording">
 <title>动物小镇 · AI 工作周报</title>
 <style>
 :root{color:#20342c;background:#f6f6ee;font:15px/1.55 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
@@ -61,7 +61,18 @@ h2{letter-spacing:-.035em;font-size:21px;line-height:1.22;margin:0;color:#223b2e
 details{margin-top:8px;padding:7px 0 0;border-top:1px solid #dce3d7}
 summary{width:fit-content;color:#295b42;font-weight:650;font-size:13px;cursor:pointer}
 .links{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:7px 0;font-size:12px}
-.image-link{color:#255b40;padding:0;border:0;background:transparent;text-decoration:underline;text-underline-offset:3px}
+.module-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(145px,36%);gap:9px;align-items:start}
+.inline-shots{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.inline-shots figure{margin:0;min-width:0;flex:1 1 64px;max-width:200px;border:1px solid #dce5d8;border-radius:7px;overflow:hidden;background:#eff3e8}
+.inline-shots button{display:block;width:100%;height:90px;border:0;background:transparent;padding:0}
+.inline-shots img{display:block;width:100%;height:100%;object-fit:contain}
+.inline-shots figcaption{text-align:center;padding:3px 4px;font-size:11px;color:#435749}
+.module-split .inline-shots{margin:0}
+.qa-shots button,.cluster-shot button{height:84px}
+.cluster-shot figure{max-width:none}
+.candidate-shots button,.delta-table .inline-shots button{height:104px}
+.dialog-foot[hidden]{display:none}
+@media(max-width:400px){.module-split{grid-template-columns:1fr}.module-split .inline-shots{margin:4px 0}.cluster-shot button{height:136px}}
 .schedule{margin-top:13px;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));gap:10px;align-items:start;border-top:1px solid #d6ded1;padding-top:11px}
 .schedule h2{font-size:15px;padding-top:1px;margin-right:4px}
 .milestone{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px;padding-left:9px;border-left:2px solid #d6ded1;line-height:1.45}
@@ -108,7 +119,9 @@ dialog::backdrop{background:#152b22bb}
 .delta-visual{display:grid;grid-template-columns:minmax(0,1.36fr) minmax(0,1fr);gap:12px;margin:9px 0 12px;align-items:start}
 .delta-visual h3{margin:0 0 5px;font-size:15px;color:#294d38}
 .delta-motion{min-width:0;margin:0;border:1px solid #d6ded1;border-radius:9px;overflow:hidden;background:#edf1e5}
-.delta-motion img{display:block;width:100%;height:auto;aspect-ratio:880 / 490;object-fit:contain}
+.delta-motion img{display:block;width:100%;height:auto;max-height:410px;aspect-ratio:576 / 480;object-fit:contain}
+.recording-labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));text-align:center;gap:6px;padding:4px 4px 0;color:#294d38;font-size:12px;font-weight:700}
+.recording-labels span{white-space:normal}
 .delta-motion figcaption{display:flex;gap:10px;align-items:center;padding:5px 9px;font-size:12px}
 .delta-motion button{border:1px solid #b9ccba;border-radius:5px;background:#fffef8;color:#2a5740;padding:2px 8px;font-size:12px}
 .delta-pair{max-width:none;margin:0 0 7px}
@@ -164,35 +177,39 @@ dialog::backdrop{background:#152b22bb}
         <p class="scopes">内部审阅样例 · 已归档</p>
         <details><summary>打开制作交付和场景返修</summary>
           <div class="links"><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">制作留档</a><a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">可编辑工程</a><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景制作 Skill</a><a href="weekly/20261126/files/readme-6062166159b2.md" data-document target="_blank" rel="noopener">广告本地化发布回执</a><a href="weekly/20261126/files/readme-14a8df8893bf.md" data-document target="_blank" rel="noopener">视频换皮验证</a><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态制作记录</a></div>
-          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png">美术候选 · 修前</button> <button class="image-link" type="button" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png">美术候选 · 屋瓦与树冠返修</button></div>
+          <div class="inline-shots candidate-shots"><figure><button type="button" aria-label="放大美术候选 · 修前" data-image="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"><img src="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png" loading="lazy" alt="美术候选 · 修前"></button><figcaption>美术候选 · 修前</figcaption></figure><figure><button type="button" aria-label="放大美术候选 · 屋瓦与树冠返修" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="美术候选 · 屋瓦与树冠返修"></button><figcaption>美术候选 · 屋瓦与树冠返修</figcaption></figure></div>
           <div class="links"><a href="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" target="_blank" rel="noopener">实录原片</a><a href="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" target="_blank" rel="noopener">剧情原片</a></div>
         </details>
       </section>
 
       <section class="card" aria-labelledby="qa-title">
         <header class="card-head"><span class="topic">自动测试与迭代</span><h2 id="qa-title">合成卡顿修完有对照</h2></header>
+        <div class="module-split">
+          <div>
         <div class="compare">
           <div class="count"><b>11</b><span>次 · 修前</span></div>
           <div class="count after"><b>0</b><span>次 · 修后</span></div>
         </div>
         <p class="capt">同一模拟器上，超过 100 毫秒的操作。另已通过内网更新恢复棋盘整理。</p>
         <p class="limit">正式安卓包待手机复测。</p>
+          </div>
+          <div class="inline-shots qa-shots"><figure><button type="button" aria-label="放大解锁前" data-image="weekly/20261126/files/01-0b56a0bee134.png"><img src="weekly/20261126/files/01-0b56a0bee134.png" alt="解锁前"></button><figcaption>解锁前</figcaption></figure><figure><button type="button" aria-label="放大奖励到账" data-image="weekly/20261126/files/02-43bdc4c61107.png"><img src="weekly/20261126/files/02-43bdc4c61107.png" alt="奖励到账"></button><figcaption>奖励到账</figcaption></figure></div>
+        </div>
         <details><summary>打开复测对照和两份测试报告</summary>
           <div class="links"><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">卡顿修前修后</a><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">棋盘整理回执</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">新档测试报告</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">旧安卓包测试报告</a><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">问题处理与复测</a><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">打包拦截复验</a><a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷案例</a></div>
-          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/01-0b56a0bee134.png">盖布打开前</button> <button class="image-link" type="button" data-image="weekly/20261126/files/02-43bdc4c61107.png">桌面实跑 · 奖励只发一次</button></div>
         </details>
       </section>
 
       <section class="card" aria-labelledby="workstations-title">
         <header class="card-head"><span class="topic">多台电脑分工</span><h2 id="workstations-title">从单项接力到五套并行</h2></header>
-        <dl class="status-rows">
+        <div class="module-split">
+          <dl class="status-rows">
           <div class="status-row"><dt>Pip 动画</dt><dd class="ratio">2/2</dd><dd>两项任务回传，另一台电脑完成复验。</dd></div>
           <div class="status-row"><dt>五套棋盘</dt><dd class="ratio">16/17</dd><dd>已整合，最后一项独立检查取消。</dd></div>
-        </dl>
+          </dl>
+          <div class="inline-shots cluster-shot"><figure><button type="button" aria-label="放大调度看板 · 历史实拍" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg"><img src="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" alt="调度看板 · 历史实拍"></button><figcaption>调度看板 · 历史实拍</figcaption></figure></div>
+        </div>
         <p class="status-link"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站任务回执</a> · 原始任务需公司内网</p>
-        <details><summary>查看工作站历史照片</summary>
-          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg">集群调度界面 · 历史照片</button></div>
-        </details>
       </section>
     </div>
     
@@ -202,10 +219,11 @@ dialog::backdrop{background:#152b22bb}
       <div class="delta-content">
         <div class="delta-visual">
           <div>
-            <h3>重点变化</h3>
+            <h3>版本录屏对照</h3>
             <figure class="delta-motion">
-              <img id="delta-gif" src="weekly/20261126/files/delta-highlight-poster.jpg" data-poster="weekly/20261126/files/delta-highlight-poster.jpg" data-animated="weekly/20261126/files/delta-highlight.gif" alt="四组增量概述。棋盘实跑、盖布解锁、合成卡顿 11 次降至 0 次、首次进客栈的资源从 188 MB 降至 19.9 MB。" width="880" height="490" loading="lazy">
-              <figcaption><button type="button" id="delta-gif-toggle">播放 GIF</button><a href="weekly/20261126/files/delta-highlight.gif" target="_blank" rel="noopener">GIF 原件</a></figcaption>
+              <div class="recording-labels"><span>11 月 16 日内测版</span><span>11 月 26 日正式工程</span></div>
+              <img id="delta-gif" src="weekly/20261126/files/delta-version-recording-poster.jpg" data-poster="weekly/20261126/files/delta-version-recording-poster.jpg" data-animated="weekly/20261126/files/delta-version-recording.gif" alt="实际开局录屏。左为车厢教学和合成，右为到车站领取委托、打开棋盘和合成。" width="576" height="480" loading="lazy">
+              <figcaption><button type="button" id="delta-gif-toggle">播放 GIF</button><span>车厢教学 → 车站接单与棋盘合成</span></figcaption>
             </figure>
           </div>
           <div>
@@ -221,7 +239,7 @@ dialog::backdrop{background:#152b22bb}
 <tr><th scope="row">订单与续单<span class="delta-status">正式工程交接</span></th><td><span class="delta-side">上周</span><p>主线与续单已走通</p></td><td><span class="delta-side">本周</span><p>36 个固定单、6 个循环模板、14 个副单</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">当前数值表</a> <a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">可运行规则</a></div></details></td></tr>
 <tr><th scope="row">生产器与补货<span class="delta-status">正式工程交接</span></th><td><span class="delta-side">上周</span><p>基础合成和交单已测</p></td><td><span class="delta-side">本周</span><p>六个设备每 45 秒补货</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">供给规则</a> <a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">运行复测</a></div></details></td></tr>
 <tr><th scope="row">建设与体力节奏<span class="delta-status">自动路线已有结果</span></th><td><span class="delta-side">上周</span><p>三处场景、23 步建设</p></td><td><span class="delta-side">本周</span><p>补低体力，早餐亭第 8 步发现卡点</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">两条自动路线</a> <a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">建设数值表</a></div></details></td></tr>
-<tr><th scope="row">初始棋盘与解锁奖励<span class="delta-status">桌面实跑</span></th><td><span class="delta-side">上周</span><p>已有开局棋盘和解锁</p></td><td><span class="delta-side">本周</span><p>初始盘重排，盖布奖励只发一次</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><button class="image-link" type="button" data-image="weekly/20261126/files/01-0b56a0bee134.png">本周操作前</button> <button class="image-link" type="button" data-image="weekly/20261126/files/02-43bdc4c61107.png">本周到账后</button></div></details></td></tr>
+<tr><th scope="row">初始棋盘与解锁奖励<span class="delta-status">桌面实跑</span></th><td><span class="delta-side">上周</span><p>已有开局棋盘和解锁</p></td><td><span class="delta-side">本周</span><p>初始盘重排，盖布奖励只发一次</p><div class="inline-shots"><figure><button type="button" aria-label="放大本周操作前" data-image="weekly/20261126/files/01-0b56a0bee134.png"><img src="weekly/20261126/files/01-0b56a0bee134.png" loading="lazy" alt="本周操作前"></button><figcaption>本周操作前</figcaption></figure><figure><button type="button" aria-label="放大本周到账后" data-image="weekly/20261126/files/02-43bdc4c61107.png"><img src="weekly/20261126/files/02-43bdc4c61107.png" loading="lazy" alt="本周到账后"></button><figcaption>本周到账后</figcaption></figure></div></td></tr>
 <tr><th scope="row">棋盘整理<span class="delta-status">内网更新已发</span></th><td><span class="delta-side">上周</span><p>已验常用棋盘操作</p></td><td><span class="delta-side">本周</span><p>v96 内网补回整理</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">补丁与实点记录</a></div></details></td></tr>
 <tr><th scope="row">棋盘拖拽与订单横滑<span class="delta-status">桌面已复验</span></th><td><span class="delta-side">上周</span><p>已调整订单显示</p></td><td><span class="delta-side">本周</span><p>拖走棋子后原格恢复，顾客跟随横滑</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-scroll-and-drag.md" data-document target="_blank" rel="noopener">拖拽和横滑复测</a></div></details></td></tr>
 <tr><th scope="row">仓库、售价与撤销<span class="delta-status">规则及事务回归</span></th><td><span class="delta-side">上周</span><p>已有资产收支检查</p></td><td><span class="delta-side">本周</span><p>先用盘面再扣仓库，70 种材料卖出换体力</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">交单、仓库与撤销</a> <a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">材料售价口径</a></div></details></td></tr>
@@ -231,8 +249,8 @@ dialog::backdrop{background:#152b22bb}
 <tr><th scope="row">合成操作卡顿<span class="delta-status">模拟器候选</span></th><td><span class="delta-side">上周</span><p>已减少重复刷新</p></td><td><span class="delta-side">本周</span><p>同机卡顿 11 → 0，待真机验</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">同机会话实测</a></div></details></td></tr>
 <tr><th scope="row">章节资源下载<span class="delta-status">桌面限速与分包验证</span></th><td><span class="delta-side">上周</span><p>试过早餐分享单项分包</p></td><td><span class="delta-side">本周</span><p>首次进客栈 188 → 19.9 MB</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-chapter-priority.md" data-document target="_blank" rel="noopener">首场景下载和恢复</a> <a href="weekly/20261126/files/delta-download-progress.md" data-document target="_blank" rel="noopener">提前下载和进度显示</a></div></details></td></tr>
 <tr><th scope="row">旅行等待、棋盘伙伴与触感<span class="delta-status">源码记录 · 待实测</span></th><td><span class="delta-side">上周</span><p>已有进章等待和触感候选</p></td><td><span class="delta-side">本周</span><p>盖章、伙伴和触感有改动，待实跑</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-engine-scope.md" data-document target="_blank" rel="noopener">工程变更取证范围</a></div></details></td></tr></tbody></table></details><details id="delta-2" class="delta-group"><summary>内容产出与候选 <span>· 5 项</span></summary><table class="delta-table" aria-label="内容产出与候选"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">前 20 级玩法候选<span class="delta-status">独立候选</span></th><td><span class="delta-side">上周</span><p>已能试玩前三处场景</p></td><td><span class="delta-side">本周</span><p>独立候选跑到晨市开张</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-20-level-candidate.md" data-document target="_blank" rel="noopener">候选版复测</a> <a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">原集群需求</a></div></details></td></tr>
-<tr><th scope="row">场景素材与返修<span class="delta-status">美术候选与归档</span></th><td><span class="delta-side">上周</span><p>已有实景和待改场景图</p></td><td><span class="delta-side">本周</span><p>松湾做出三态；米洛恢复 16 张选图</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态</a> <button class="image-link" type="button" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png">松湾候选返修图</button> <a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">米洛资产归档</a></div></details></td></tr>
-<tr><th scope="row">居民概念<span class="delta-status">概念候选</span></th><td><span class="delta-side">上周</span><p>已有居民草图</p></td><td><span class="delta-side">本周</span><p>新增六位角色概念，待采用</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><button class="image-link" type="button" data-image="weekly/20261126/files/delta-six-resident-candidates.jpg">六位居民候选图</button></div></details></td></tr>
+<tr><th scope="row">场景素材与返修<span class="delta-status">美术候选与归档</span></th><td><span class="delta-side">上周</span><p>已有实景和待改场景图</p></td><td><span class="delta-side">本周</span><p>松湾做出三态；米洛恢复 16 张选图</p><div class="inline-shots"><figure><button type="button" aria-label="放大松湾候选返修图" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="松湾候选返修图"></button><figcaption>松湾候选返修图</figcaption></figure></div><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态</a>  <a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">米洛资产归档</a></div></details></td></tr>
+<tr><th scope="row">居民概念<span class="delta-status">概念候选</span></th><td><span class="delta-side">上周</span><p>已有居民草图</p></td><td><span class="delta-side">本周</span><p>新增六位角色概念，待采用</p><div class="inline-shots"><figure><button type="button" aria-label="放大六位居民候选图" data-image="weekly/20261126/files/delta-six-resident-candidates.jpg"><img src="weekly/20261126/files/delta-six-resident-candidates.jpg" loading="lazy" alt="六位居民候选图"></button><figcaption>六位居民候选图</figcaption></figure></div></td></tr>
 <tr><th scope="row">五套棋盘主题<span class="delta-status">整合候选</span></th><td><span class="delta-side">上周</span><p>试玩盘检查过 582 件物品</p></td><td><span class="delta-side">本周</span><p>五套棋盘已合版，16/17 项完成</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">派单与交回记录</a></div></details></td></tr>
 <tr><th scope="row">宣传短片<span class="delta-status">内部样例归档</span></th><td><span class="delta-side">上周</span><p>有修门、合成及救援样片</p></td><td><span class="delta-side">本周</span><p>归档两段成片与编辑工程，待投放</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">实录与剧情归档</a> <a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">可编辑工程</a> <a href="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" target="_blank" rel="noopener">三条产线实录</a> <a href="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" target="_blank" rel="noopener">面包剧情样例</a></div></details></td></tr></tbody></table></details><details id="delta-3" class="delta-group"><summary>AI 与交付流程 <span>· 4 项</span></summary><table class="delta-table" aria-label="AI 与交付流程"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">自动设计<span class="delta-status">设计到实跑</span></th><td><span class="delta-side">上周</span><p>开局和订单方案已复算</p></td><td><span class="delta-side">本周</span><p>交付 13 张表，实跑两条路线</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/material-e4a6e4d4de7f.md" data-document target="_blank" rel="noopener">实录拆解</a> <a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">数值交付</a> <a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">自动复跑</a></div></details></td></tr>
 <tr><th scope="row">自动 QA 与缺陷复盘<span class="delta-status">两份专项报告</span></th><td><span class="delta-side">上周</span><p>已跑过 23 步和六份 AI 首玩</p></td><td><span class="delta-side">本周</span><p>新增两份专项报告和缺陷回归记录</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">工程新档报告</a> <a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">安卓包报告</a> <a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷回归</a></div></details></td></tr>
@@ -256,7 +274,7 @@ dialog::backdrop{background:#152b22bb}
   <div class="dialog-body"></div>
   <div class="dialog-foot"><a target="_blank" rel="noopener">打开原文件</a></div>
 </dialog>
-<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"},{"url":"weekly/20261126/files/delta-scroll-and-drag.md"},{"url":"weekly/20261126/files/delta-order-animation.md"},{"url":"weekly/20261126/files/delta-order-idle.md"},{"url":"weekly/20261126/files/delta-level-and-reward.md"},{"url":"weekly/20261126/files/delta-button-and-screen.md"},{"url":"weekly/20261126/files/delta-chapter-priority.md"},{"url":"weekly/20261126/files/delta-download-progress.md"},{"url":"weekly/20261126/files/delta-20-level-candidate.md"},{"url":"weekly/20261126/files/delta-chapter-entry.md"},{"url":"weekly/20261126/files/delta-six-resident-candidates.jpg"},{"url":"weekly/20261126/files/delta-previous-week-baseline.md"},{"url":"files/ddc2c8f4d2bfbda1d56bbcdf.png"},{"url":"weekly/20261126/files/delta-engine-scope.md"},{"url":"weekly/20261126/files/delta-highlight.gif"},{"url":"weekly/20261126/files/delta-highlight-poster.jpg"}]}</script>
+<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"},{"url":"weekly/20261126/files/delta-scroll-and-drag.md"},{"url":"weekly/20261126/files/delta-order-animation.md"},{"url":"weekly/20261126/files/delta-order-idle.md"},{"url":"weekly/20261126/files/delta-level-and-reward.md"},{"url":"weekly/20261126/files/delta-button-and-screen.md"},{"url":"weekly/20261126/files/delta-chapter-priority.md"},{"url":"weekly/20261126/files/delta-download-progress.md"},{"url":"weekly/20261126/files/delta-20-level-candidate.md"},{"url":"weekly/20261126/files/delta-chapter-entry.md"},{"url":"weekly/20261126/files/delta-six-resident-candidates.jpg"},{"url":"weekly/20261126/files/delta-previous-week-baseline.md"},{"url":"files/ddc2c8f4d2bfbda1d56bbcdf.png"},{"url":"weekly/20261126/files/delta-engine-scope.md"},{"url":"weekly/20261126/files/delta-version-recording.gif"},{"url":"weekly/20261126/files/delta-version-recording-poster.jpg"}]}</script>
 <script>
 
 const comparePanel=document.querySelector('#weekly-delta');
@@ -278,11 +296,13 @@ const previewBody=dialog.querySelector('.dialog-body');
 const players=[...document.querySelectorAll('video')];
 let activeRequest;
 function pauseVideos(except){for(const video of players){if(video!==except)video.pause();}}
-function preview(title,url){
+function preview(title,url,showSource=true){
   activeRequest?.abort();
   pauseVideos();
   dialog.querySelector('h2').textContent=title;
-  dialog.querySelector('a').href=url;
+  const source=dialog.querySelector('.dialog-foot');
+  source.hidden=!showSource;
+  if(showSource)source.querySelector('a').href=url;
   previewBody.replaceChildren();
   dialog.showModal();
 }
@@ -294,7 +314,7 @@ document.addEventListener('click',async event=>{
   const photo=event.target.closest('[data-image]');
   if(photo){
     const title=photo.getAttribute('aria-label')||photo.textContent;
-    preview(title,photo.dataset.image);
+    preview(title,photo.dataset.image,false);
     const image=document.createElement('img');
     image.alt=title;
     image.src=photo.dataset.image;
