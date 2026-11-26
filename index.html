@@ -1,265 +1,232 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <title>动物小镇 · 本周 AI 工作进展</title>
-  <meta name="report-edition" content="20261126">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d4b40'/%3E%3Cpath d='M8 27V15l12-7 12 7v12H8' fill='%23f3b45a'/%3E%3C/svg%3E">
-  <style>:root{--ink:#182e2a;--muted:#60746e;--green:#245747;--green-soft:#e8f1ec;--line:#dce5df;--paper:#f4f7f4;--orange:#bc572c;--orange-soft:#fff0e5;--blue:#325d8a;--radius:14px;font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);font-size:16px;background:var(--paper)}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:default;opacity:.4}a{color:var(--green);text-underline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d78d42;outline-offset:4px}button{border:1px solid var(--line);border-radius:8px;padding:10px 16px;font-weight:600;color:var(--ink);background:#fff}button:hover{border-color:#829e8e}.primary{background:var(--green);border-color:var(--green);color:white}.primary:hover{background:#193f34}.quiet{background:transparent}.skip{position:fixed;top:-100px;left:250px;background:white;padding:12px;z-index:20}.skip:focus{top:10px}.sidebar{position:fixed;inset:0 auto 0 0;width:220px;background:#fff;border-right:1px solid var(--line);padding:30px 20px;display:flex;flex-direction:column;z-index:5}.brand{display:flex;gap:11px;align-items:center}.brand-mark{display:grid;place-items:center;width:44px;height:44px;background:var(--green);color:#fff1ce;font-family:serif;font-size:24px;border-radius:11px}.brand b{font-size:20px;letter-spacing:1px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.6px;margin-top:5px}.nav-label{font-size:13px;color:var(--muted);margin:45px 10px 12px}nav{display:grid;gap:7px}nav button{display:flex;align-items:center;gap:12px;text-align:left;border:0;background:transparent;color:var(--muted);font-size:15px;padding:12px 14px;font-weight:500}nav button.active{background:var(--green-soft);color:var(--green);font-weight:700}nav .nav-icon{width:18px;font-size:18px}.sidebar-foot{margin-top:auto;border-top:1px solid var(--line);padding-top:22px;font-size:13px;line-height:1.8;color:var(--muted)}.sidebar-foot small{display:block;font-size:12px}.sidebar-foot a{display:inline-block;margin-top:12px}.workspace{margin-left:220px}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid var(--line);background:rgba(244,247,244,.97);position:sticky;top:0;z-index:4}.topbar>div:first-child{display:flex;align-items:center;gap:20px}.eyebrow{font-size:12px;letter-spacing:1.5px;color:var(--muted);font-weight:700}.topbar #period{font-size:14px;color:var(--muted)}.top-actions{display:flex;gap:12px}main{max-width:1510px;margin:auto;padding:28px 40px 40px}.stage{margin-bottom:52px;scroll-margin-top:100px}.overview-heading{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:21px}.overview-heading h1{font-size:34px;letter-spacing:-1px;margin:5px 0 0;line-height:1.25}.edition{font-size:13px;color:var(--muted)}.hero{display:grid;grid-template-columns:1.08fr 1fr;min-height:295px;background:#173e33;border-radius:16px;overflow:hidden;color:#fff}.hero-copy{padding:30px 32px;display:flex;flex-direction:column;justify-content:center}.hero-copy .eyebrow{color:#b6d1be}.hero-copy h2{font-size:30px;line-height:1.35;margin:14px 0;letter-spacing:-.5px}.hero-copy p{font-size:15px;color:#d5e2da;line-height:1.8;margin:0}.hero-status{font-size:12px;border:1px solid #6c9580;border-radius:4px;padding:5px 9px;display:inline-block;margin-top:22px;align-self:flex-start;color:#e4efdf}.hero-picture{padding:0;border:0;border-radius:0;overflow:hidden;position:relative;background:#638d5d;min-width:0}.hero-picture img{width:100%;height:100%;object-fit:cover;display:block}.hero-picture span{position:absolute;bottom:12px;right:12px;background:#12382bcf;border:1px solid #ffffff45;color:white;padding:6px 10px;border-radius:4px;font-size:12px}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:18px 0}.kpi{background:#fff;border:1px solid var(--line);border-radius:10px;padding:17px 20px}.kpi strong{font-size:35px;font-weight:650;line-height:1.2;display:block;letter-spacing:-1px}.kpi b{display:block;font-size:14px;margin-top:5px}.kpi small{display:block;font-size:12px;color:var(--muted);margin-top:5px}.overview-bottom{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}.overview-bottom>div{padding:17px 20px;border-radius:9px;border:1px solid var(--line);background:#fff}.overview-bottom h3{font-size:14px;margin:0 0 9px}.overview-bottom p{font-size:14px;line-height:1.8;margin:0;color:var(--muted)}.overview-bottom .boundaries{background:var(--orange-soft);border-color:#efd9c8}.boundary-line{font-size:13px;color:#865130;line-height:1.8}.section-top{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin:0 0 22px}.section-top h2{font-size:28px;margin:6px 0 9px}.section-top p{font-size:15px;line-height:1.8;color:var(--muted);margin:0;max-width:790px}.section-tag{font-size:13px;color:var(--muted);white-space:nowrap}.filter-bar{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;margin:32px 0}.filter-chips{display:flex;gap:6px;flex-wrap:wrap}.filter-chips button{border:0;font-size:14px;padding:9px 12px;font-weight:500}.filter-chips button.active{color:#fff;background:var(--green)}.filter-chips button span{margin-left:6px;opacity:.7}.search-box{display:flex;align-items:center;gap:8px;min-width:220px}.search-box input{width:220px;max-width:100%;border:1px solid var(--line);border-radius:6px;background:var(--paper);padding:9px 12px;font-size:14px;color:var(--ink)}#clear-search{border:0;padding:8px;font-size:13px;color:var(--muted)}.filter-result{font-size:13px;color:var(--muted);width:100%;margin:0}.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.work-card{padding:22px;background:#fff;border:1px solid var(--line);border-radius:10px;min-width:0}.work-title{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.work-title h3{font-size:18px;line-height:1.5;margin:0 0 11px}.badge{padding:4px 8px;border-radius:4px;font-size:12px;white-space:nowrap;display:inline-block;font-weight:600}.badge.verified{background:var(--green-soft);color:var(--green)}.badge.candidate{background:var(--orange-soft);color:#995124}.badge.recorded{background:#eaf0f9;color:var(--blue)}.badge.proposal{background:#edf0f1;color:#5d6872}.work-summary{font-size:15px;line-height:1.85;margin:0 0 15px;color:#435c53}.link-group{display:flex;gap:7px;align-items:baseline;flex-wrap:wrap;margin:9px 0}.link-group b{font-size:12px;color:var(--muted);min-width:48px;font-weight:500}.artifact-link{font-size:13px;text-decoration:none;border-bottom:1px solid #b4cbbc;padding-bottom:2px;margin-right:6px;line-height:1.7}.work-note{font-size:13px;line-height:1.75;color:var(--muted);margin:15px 0 0;padding-top:12px;border-top:1px dashed var(--line)}.media-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:20px 0}.media-card{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;min-width:0}.media-card .image-button{width:100%;display:block;border:0;padding:0;border-radius:0;overflow:hidden;background:#e7eee8;height:205px}.media-card img{width:100%;height:100%;object-fit:contain;display:block}.media-card.portrait .image-button{height:235px;background:linear-gradient(140deg,#f0f4f0,#e2eae2)}.media-card.video video{display:block;width:100%;height:300px;background:#15251f;object-fit:contain}.media-copy{padding:14px 16px}.media-copy b{font-size:15px;line-height:1.5;display:block}.media-copy small{font-size:12px;line-height:1.7;display:block;color:var(--muted);margin-top:5px}.media-copy .media-status{font-size:12px;margin-bottom:6px;color:var(--orange)}.media-actions{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:11px}.media-actions button,.media-actions a{font-size:13px;padding:6px 10px}.media-actions a{padding:0}.show-more{margin:8px 0 18px}.media-error{font-size:13px;color:#a33d2f;padding:10px;display:block}.next-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.next-card{padding:24px;border:1px solid var(--line);border-radius:10px;background:#fff}.next-card b{font-size:17px;line-height:1.6}.next-card p{font-size:14px;line-height:1.9;color:var(--muted);margin:10px 0 0}.gap-panel{margin:24px 0;background:var(--orange-soft);border:1px solid #ecd6c4;border-radius:10px;padding:20px}.gap-panel summary{font-size:15px;font-weight:600;cursor:pointer}.gap-panel li{font-size:13px;line-height:1.8;margin:8px 0;overflow-wrap:anywhere;color:#775440}.gap-panel p{font-size:14px;line-height:1.8}.page-footer{max-width:1510px;margin:auto;padding:0 40px 34px;color:var(--muted);font-size:12px;line-height:1.8}.page-footer a{display:block;margin-top:6px}.empty{padding:30px;border:1px dashed #c4d3c8;border-radius:10px;text-align:center;color:var(--muted)}[hidden]{display:none!important}dialog{width:min(1100px,94vw);max-height:93vh;padding:0;border:1px solid #aec3b4;border-radius:14px;background:#fff;color:var(--ink);box-shadow:0 30px 110px #0005}dialog::backdrop{background:#0c211cbb;backdrop-filter:blur(4px)}.dialog-head{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;position:sticky;top:0;background:white;z-index:2}.dialog-head h2{font-size:20px;margin:6px 0 0}.dialog-head .eyebrow{font-size:11px}.dialog-foot{padding:16px 22px;border-top:1px solid var(--line);font-size:13px;line-height:1.8;display:flex;gap:20px;justify-content:space-between;align-items:flex-start}.dialog-foot span{color:var(--muted);overflow-wrap:anywhere}.dialog-foot a{white-space:nowrap}#dialog-body{min-height:150px;max-height:70vh;overflow:auto;background:#f4f7f4}#dialog-body img{display:block;max-width:100%;max-height:68vh;width:auto;height:auto;object-fit:contain;margin:auto}#dialog-body video{display:block;width:100%;max-height:68vh;background:#14281f}#dialog-body pre{font:14px/1.9 Consolas,"Microsoft YaHei",monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:24px;margin:0}#dialog-body .loading{padding:24px}.presentation-controls{position:fixed;bottom:17px;left:50%;transform:translateX(-50%);z-index:8;border:1px solid #b6c8b9;border-radius:12px;box-shadow:0 5px 24px #173e3320;background:#fff;padding:8px 12px;display:flex;align-items:center;gap:18px;white-space:nowrap}.presentation-controls #stage-counter{font-size:14px;min-width:115px;text-align:center}.key-hint{font-size:12px;color:var(--muted)}body.presenting .sidebar,body.presenting .filter-bar,body.presenting .page-footer{display:none}body.presenting .workspace{margin-left:0}body.presenting main{padding-bottom:100px;max-width:1320px}body.presenting .stage:not(.active){display:none}body.presenting .stage{margin-bottom:0}body.presenting .topbar{height:64px}body.presenting .overview-heading{margin-top:6px}body.presenting .hero{min-height:305px}body.presenting .work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}body.presenting .section-top{margin-top:10px}body.presenting #print-report{display:none}@media(min-width:1650px){.hero{min-height:340px}.hero-copy h2{font-size:36px}.hero-copy p{font-size:16px}.hero-copy{padding:38px}.kpi{padding:22px}.media-card.video video{height:350px}}@media(max-width:1150px){.sidebar{width:185px;padding:24px 14px}.workspace{margin-left:185px}.topbar{padding:0 25px}.topbar .eyebrow{display:none}main{padding:25px}.hero-copy{padding:25px}.hero-copy h2{font-size:26px}.kpi{padding:15px}.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.next-grid{grid-template-columns:1fr 1fr}.overview-heading h1{font-size:29px}}@media(max-width:760px){html{scroll-padding-top:80px}.sidebar{position:static;width:auto;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.brand small,.nav-label,.sidebar-foot{display:none}.brand-mark{height:34px;width:34px;font-size:20px}.brand b{font-size:18px}.sidebar nav{display:flex;overflow:auto;margin-top:14px;gap:6px}.sidebar nav button{white-space:nowrap;padding:9px 11px;font-size:13px}.nav-icon{display:none}.workspace{margin-left:0}.topbar{padding:0 18px;height:64px}.topbar #period{font-size:12px}.top-actions{gap:8px}.top-actions button{font-size:13px;padding:8px 10px}main{padding:23px 18px}.overview-heading{display:block}.overview-heading h1{font-size:27px}.edition{display:block;margin-top:10px;font-size:12px}.hero{grid-template-columns:1fr}.hero-copy{padding:25px}.hero-copy h2{font-size:28px}.hero-picture{height:220px}.hero-status{margin-top:17px}.kpis{grid-template-columns:1fr 1fr;gap:10px;margin:13px 0}.kpi strong{font-size:29px}.overview-bottom{grid-template-columns:1fr;gap:10px}.work-grid,.next-grid{grid-template-columns:1fr}.media-grid{grid-template-columns:1fr 1fr;gap:10px}.media-card .image-button{height:145px}.media-card.portrait .image-button{height:190px}.media-card.video{grid-column:1/-1}.media-card.video video{height:340px}.media-copy{padding:12px}.media-copy b{font-size:14px}.section-top{display:block}.section-top h2{font-size:25px}.section-tag{display:block;margin-top:10px}.filter-bar{padding:12px}.search-box{width:100%}.search-box input{flex:1;min-width:0;width:100%}.work-card{padding:19px}.work-title{gap:8px}.work-title h3{font-size:17px}.badge{font-size:11px}.page-footer{padding:0 18px 30px}.key-hint{display:none}.presentation-controls{gap:10px;padding:7px 9px;bottom:10px;max-width:96vw}.presentation-controls button{font-size:13px;padding:8px 11px}body.presenting .work-grid{grid-template-columns:1fr}body.presenting .hero{min-height:0}.dialog-head{padding:14px}.dialog-head h2{font-size:17px}.dialog-foot{padding:14px;display:block}.dialog-foot a{display:block;margin-top:8px}#dialog-body pre{font-size:12px;padding:14px}.filter-chips button{padding:9px 8px;font-size:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}@media print{.sidebar,.topbar,.filter-bar,.page-footer,dialog,.presentation-controls,.module,.next-stage{display:none!important}.workspace{margin:0}main{padding:0;max-width:none}.overview{display:block!important;margin:0}.hero{min-height:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}.hero-copy{padding:20px}.hero-copy h2{font-size:24px}.hero-copy p{font-size:13px}.hero-picture{max-height:240px}.kpi{padding:12px}.kpi strong{font-size:28px}.overview-bottom>div{padding:12px}.overview-heading h1{font-size:27px}.overview-bottom p,.boundary-line{font-size:12px}@page{size:A4 landscape;margin:12mm}}
-
-.hero-copy h2{white-space:pre-line}
-@media(min-width:761px) and (max-height:800px){.topbar{height:62px}main{padding-top:18px}.overview-heading{margin-bottom:14px}.overview-heading h1{font-size:28px}.hero{min-height:230px}.hero-copy{padding:23px 28px}.hero-copy h2{font-size:27px;line-height:1.35;margin:10px 0}.hero-copy p{font-size:14px;line-height:1.7}.hero-status{margin-top:15px}.kpis{margin:13px 0;gap:12px}.kpi{padding:12px 17px}.kpi strong{font-size:29px}.kpi b{font-size:13px}.overview-bottom>div{padding:12px 17px}.overview-bottom p{font-size:13px;line-height:1.7}.overview-bottom h3{margin-bottom:6px}.boundary-line{font-size:12px;line-height:1.7}}
-
-body.executive{background:#f7f8f3;color:#203b35;font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
-.executive .sidebar{width:200px;background:#fffefb}.executive .workspace{margin-left:200px}.executive .brand small{letter-spacing:2px}.executive .sidebar-foot{font-size:12px}.executive .topbar{min-height:58px;padding:10px 32px;background:#f7f8f3f2}.executive main{padding:18px 32px 40px;max-width:1500px;margin:auto}.executive .stage{scroll-margin-top:0}.executive .overview{min-height:0;margin-bottom:42px}.executive .eyebrow{font-size:12px;letter-spacing:1px;color:#748479}.executive-heading{display:flex;justify-content:space-between;align-items:end;gap:20px}.executive-heading h1{font-size:23px;margin:4px 0 0}.executive-heading .edition{font-size:12px;white-space:nowrap}.executive-lead{margin:13px 0 16px;display:flex;align-items:end;justify-content:space-between;gap:25px}.executive-lead h2{font-size:29px;line-height:1.3;max-width:55%;margin:0;white-space:pre-line;letter-spacing:-.5px}.executive-lead p{max-width:40%;font-size:13px;line-height:1.7;margin:0;color:#62736a}
-.town-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.town-card{padding:0;border:1px solid #dde4d9;background:#fff;border-radius:13px;overflow:hidden;text-align:left;box-shadow:0 4px 15px #173f2e07;transition:transform .16s}.town-card:hover{transform:translateY(-3px)}.town-card img{width:100%;height:166px;object-fit:contain;display:block;background:#dce9cb}.town-copy{display:grid;grid-template-columns:1fr auto;padding:11px 13px;gap:3px 8px}.town-copy b{font-size:16px}.town-copy small{font-size:11px;color:#778476;grid-column:1}.town-copy em{font-size:11px;font-style:normal;color:#28664a;background:#e7f2df;padding:3px 7px;border-radius:6px;grid-column:2;grid-row:1/3;align-self:center}
-.outcome-strip{display:grid;grid-template-columns:repeat(4,1fr);margin:14px 0;padding:13px 0;border-top:1px solid #dfe6dc;border-bottom:1px solid #dfe6dc;gap:10px}.outcome-strip>div{display:flex;gap:10px;align-items:center;border-right:1px solid #dfe6dc;padding-right:8px}.outcome-strip>div:last-child{border:0}.outcome-strip strong{font-size:30px;line-height:1;color:#275a42;font-weight:750}.outcome-strip span{display:flex;flex-direction:column;gap:4px}.outcome-strip b{font-size:12px}.outcome-strip small{font-size:10px;line-height:1.5;color:#7b867b}
-.readiness{display:grid;grid-template-columns:105px repeat(3,1fr);gap:12px;align-items:center;padding:13px 16px;background:#edf1e6;border-radius:10px}.readiness-label{font-size:12px;color:#65735f}.readiness-step{display:flex;gap:8px;align-items:center;position:relative}.readiness-step>span{height:26px;width:26px;flex:0 0 26px;display:grid;place-items:center;border-radius:50%;border:1px solid #c9d1c4;background:#f9fbf6;color:#83917a;font-size:11px}.readiness-step.done>span{background:#2f6749;color:white;border-color:#2f6749}.readiness-step.progress>span{background:#fae9c1;color:#8b641b;border-color:#e5ca83}.readiness-step b{font-size:12px}.readiness-step small{display:block;color:#7a8574;font-size:10px;margin-top:3px}.executive-boundary{font-size:11px;color:#8b7046;margin:10px 1px 0;line-height:1.6}
-.executive .module{margin:0 0 46px;padding-top:12px}.executive .section-top{margin-bottom:17px}.executive .section-top h2{font-size:27px;margin:4px 0 6px}.executive .section-top p{font-size:14px;line-height:1.7;max-width:850px}.executive-media{display:grid;gap:14px;margin-bottom:17px;grid-template-columns:repeat(3,minmax(0,1fr))}.executive-media.phone,.executive-media.videos{grid-template-columns:repeat(2,minmax(0,1fr))}.executive-media.mosaic{grid-template-columns:repeat(6,minmax(0,1fr))}.executive .executive-media .media-card{margin:0;border-radius:13px;border:1px solid #e0e6da;overflow:hidden;background:#fff}.executive .executive-media .image-button{width:100%;height:210px;background:#edf1e3}.executive .executive-media .image-button img{width:100%;height:100%;object-fit:contain}.executive .executive-media.phone .image-button{height:270px}.executive .executive-media.mosaic .image-button{height:185px;background:#f0f4e8}.executive .executive-media.videos .media-card{display:grid;grid-template-columns:170px 1fr;align-items:center;background:#fff}.executive .executive-media.videos video{height:300px;width:170px;background:#18382d;object-fit:contain}.executive .media-copy{padding:12px 13px}.executive .media-copy b{font-size:13px;line-height:1.6}.executive .media-copy small{font-size:11px;line-height:1.6}.executive .media-status{font-size:10px;line-height:1.5;color:#8f733c}.executive .executive-media.mosaic .media-copy{padding:8px}.executive .executive-media.mosaic .media-copy b{font-size:11px}.executive .executive-media.mosaic .media-copy small{display:none}.executive .media-actions{gap:8px;flex-wrap:wrap}.executive .media-actions button{font-size:11px;padding:6px 9px}.executive .media-actions a{font-size:11px}
-.takeaways{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:15px 0}.takeaway{background:#fff;border:1px solid #e1e7dc;border-radius:10px;padding:13px 14px;display:flex;gap:9px;align-items:flex-start}.takeaway>span{font-size:15px;color:#89917e}.takeaway.done>span{color:#42805d}.takeaway.blocked{background:#fff4e8;border-color:#eed7b9}.takeaway.blocked>span{color:#aa733c}.takeaway p{font-size:13px;line-height:1.7;margin:0}.records-panel,.gallery-panel,.find-panel{border-top:1px solid #dce4d7;margin:13px 0;padding:12px 0}.records-panel>summary,.gallery-panel>summary,.find-panel>summary{font-size:12px;color:#55705b;cursor:pointer;width:fit-content;padding:5px 0}.executive .work-grid{margin-top:15px}.executive .work-card{box-shadow:none;background:#fff;border-color:#e2e7dd;padding:17px}.executive .work-title h3{font-size:15px}.executive .work-summary{font-size:13px;line-height:1.8}.executive .work-note{font-size:11px;line-height:1.7}.original-note{font-size:11px;line-height:1.8;color:#7b857c;margin-top:10px}.original-note>summary{cursor:pointer}.original-note p{font-size:11px;line-height:1.8}.executive .badge{font-size:10px}.executive .link-group{flex-wrap:wrap}.executive .artifact-link{font-size:11px}.executive .filter-bar{margin:10px 0;padding:14px;background:#fff}.executive #executive-search-hint{font-size:11px;color:#82907d}.executive .find-panel{margin-top:0;margin-bottom:38px}.executive .filter-result{font-size:11px}
-.visual-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;min-height:240px}.visual-note{border:1px solid #dce4d7;border-radius:14px;background:#edf2e4;padding:28px 23px;display:flex;flex-direction:column;justify-content:center}.visual-note>span{font-size:42px;font-weight:700;line-height:1;color:#719352;margin-bottom:21px}.visual-note>b{font-size:18px}.visual-note p{font-size:13px;color:#6a7e63;line-height:1.8;margin:10px 0 0}.visual-note.blocked{background:#fbf0e2;border-color:#eaddc8}.visual-note.blocked>span{color:#bc9052}.visual-note.pending{background:#eef0ee}.visual-note.pending>span{color:#98a397}.executive .next-grid{grid-template-columns:repeat(3,1fr);gap:16px}.executive .next-card{background:#fff;border:1px solid #dfe6d9;border-radius:14px;padding:24px;min-height:205px}.executive .next-card>b{font-size:18px;display:block}.executive .next-card p{font-size:13px;line-height:1.8}.step-number{display:block;font-size:32px;color:#9ab47c;margin-bottom:20px}.next-reminder{background:#fff5e7;border:1px solid #edddc2;padding:18px 22px;border-radius:12px;margin:22px 0;font-size:13px}.next-reminder p{font-size:12px;margin:7px 0}.executive .page-footer{font-size:10px;padding:15px 32px 28px}.executive.presenting .overview{margin-bottom:0}.executive.presenting main{padding-top:15px}.executive.presenting .module{padding-top:0;margin-bottom:0}.executive.presenting .executive-media.phone .image-button{height:235px}.executive.presenting .executive-media.videos video{height:260px}.executive.presenting .visual-notes{min-height:220px}.executive.presenting .find-panel{display:none}
-@media(min-width:1500px){.town-card img{height:180px}.executive-lead h2{font-size:34px}.executive-media .image-button{height:270px}}
-@media(max-width:1100px) and (min-width:901px){.executive main{padding-left:24px;padding-right:24px}.executive-media.mosaic{grid-template-columns:repeat(3,1fr)}.readiness{grid-template-columns:1fr 1fr 1fr}.readiness-label{display:none}.town-copy{padding:9px}.town-copy b{font-size:14px}.town-copy em{padding:3px 4px}.executive .executive-media.videos .media-card{grid-template-columns:135px 1fr}.executive .executive-media.videos video{width:135px}}
-@media(max-width:900px){.executive .sidebar{position:static;width:100%;height:auto;padding:15px 18px;bottom:auto}.executive .brand{margin-bottom:10px}.executive .brand-mark{width:34px;height:34px}.executive .nav-label,.executive .sidebar-foot{display:none}.executive nav{display:flex;overflow:auto;gap:5px;padding-bottom:4px}.executive nav button{white-space:nowrap;width:auto;min-width:fit-content;font-size:12px;padding:9px 10px}.executive .workspace{margin-left:0}.executive .topbar{padding:9px 18px;min-height:50px;position:sticky;top:0;z-index:12}.executive main{padding:18px}.executive-lead h2{font-size:26px}.executive .executive-media.mosaic{grid-template-columns:repeat(3,1fr)}.executive .executive-media.mosaic .image-button{height:170px}.readiness{grid-template-columns:1fr 1fr 1fr}.readiness-label{display:none}.executive .executive-media.videos .media-card{grid-template-columns:125px 1fr}.executive .executive-media.videos video{width:125px}.executive.presenting .sidebar{display:none}}
-@media(max-width:600px){.executive-heading h1{font-size:21px}.executive-heading{align-items:start;gap:10px}.executive-heading .edition{font-size:10px}.executive-lead{display:block}.executive-lead h2{max-width:100%;font-size:28px}.executive-lead p{max-width:100%;margin-top:11px;font-size:13px}.town-grid{grid-template-columns:1fr}.town-card{display:grid;grid-template-columns:48% 1fr}.town-card img{height:130px}.town-copy{display:flex;flex-direction:column;justify-content:center;padding:14px}.town-copy b{font-size:16px}.town-copy em{width:fit-content;margin-top:7px;font-size:10px}.outcome-strip{grid-template-columns:1fr 1fr;gap:17px 13px;padding:17px 0}.outcome-strip>div:nth-child(2){border:0}.outcome-strip strong{font-size:29px}.outcome-strip b{font-size:12px}.readiness{grid-template-columns:1fr;gap:13px;padding:16px}.readiness-label{display:block}.readiness-step small{font-size:11px}.executive-boundary{font-size:11px}.executive .topbar .eyebrow{display:none}.executive .topbar #period{font-size:10px}.executive .top-actions{gap:5px}.executive .top-actions button{font-size:11px;padding:8px 10px}.executive .section-top h2{font-size:25px}.executive .section-top p{font-size:13px}.executive-media,.executive-media.phone,.executive-media.videos{grid-template-columns:1fr}.executive .executive-media.mosaic{grid-template-columns:repeat(2,1fr)}.executive .executive-media.mosaic .image-button{height:185px}.executive .executive-media .image-button{height:210px}.executive .executive-media.phone .image-button{height:250px}.executive .executive-media.videos .media-card{grid-template-columns:145px 1fr}.executive .executive-media.videos video{width:145px;height:260px}.takeaways,.visual-notes,.executive .next-grid{grid-template-columns:1fr}.takeaway{padding:12px}.visual-notes{gap:10px;min-height:0}.visual-note{padding:22px;display:grid;grid-template-columns:55px 1fr;gap:6px 13px}.visual-note>span{grid-row:1/3;font-size:30px;margin:0;align-self:center}.visual-note>b{font-size:16px}.visual-note p{font-size:12px;margin:0}.executive .next-card{min-height:0;padding:22px}.step-number{font-size:25px;margin-bottom:12px}.executive .media-grid{grid-template-columns:1fr 1fr}.executive .work-grid{grid-template-columns:1fr}.executive .work-title{gap:8px}.executive .page-footer{padding:18px}.executive .presentation-controls{padding:9px 12px;gap:9px}.executive .presentation-controls button{padding:9px 12px;font-size:12px}.executive .key-hint{display:none}.executive #stage-counter{font-size:11px}}
-
-.executive .play-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:0 0 16px;padding:12px 18px;background:#e8efe0;border-radius:10px}.play-flow>div{display:flex;gap:8px;align-items:center;position:relative}.play-flow>div:not(:last-child):after{content:"→";position:absolute;right:0;color:#98ad86}.play-flow span{display:grid;place-items:center;background:#d5e4c5;color:#52753a;width:25px;height:25px;border-radius:50%;font-size:11px}.play-flow b{font-size:12px}@media(max-width:600px){.executive .play-flow{padding:12px 8px;gap:7px}.play-flow>div{display:block;text-align:center}.play-flow span{margin:0 auto 5px}.play-flow b{font-size:10px}.play-flow>div:not(:last-child):after{top:6px;right:-6px}}
-
-@media(min-width:1101px){.town-card img{height:190px}.outcome-strip b{font-size:13px}.outcome-strip small{font-size:11px}.readiness-label,.readiness-step b{font-size:13px}.readiness-step small{font-size:11px}.executive-boundary{font-size:13px;line-height:1.8}.executive-lead p{font-size:14px}}
-/* A portrait gameplay screenshot with room for a readable caption. */
-.executive .executive-media.snapshot{grid-template-columns:1fr}
-.executive .executive-media.snapshot .media-card{display:grid;grid-template-columns:minmax(250px,36%) minmax(180px,1fr);align-items:center}
-.executive .executive-media.snapshot .image-button{height:420px}
-.executive .executive-media.snapshot .media-copy{padding:24px 28px;max-width:510px}
-.executive .executive-media.snapshot .media-copy b{font-size:17px}
-.executive .executive-media.snapshot .media-copy small{font-size:13px}
-.executive.presenting .executive-media.snapshot .image-button{height:355px}
-@media(max-width:600px){
-  .executive .executive-media.snapshot .media-card{display:block}
-  .executive .executive-media.snapshot .image-button{height:420px}
-  .executive .executive-media.snapshot .media-copy{padding:14px}
-}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="report-edition" content="20261126">
+<meta name="report-revision" content="evidence">
+<title>动物小镇 · AI 工作周报</title>
+<style>
+:root{color:#20342c;background:#f6f6ee;font:15px/1.55 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0}
+button,a,summary{touch-action:manipulation}
+button{font:inherit;cursor:pointer}
+a{color:#255b40;text-underline-offset:3px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #437550;outline-offset:3px}
+.wrap{max-width:1280px;margin:auto;padding:0 24px 18px}
+.header{display:flex;align-items:end;justify-content:space-between;gap:18px;padding:23px 0 15px;border-bottom:1px solid #d6ded1;margin-bottom:14px}
+h1{font-size:clamp(24px,3vw,38px);line-height:1.12;letter-spacing:-.055em;margin:0;color:#18382a}
+.period{white-space:nowrap;font-size:13px;color:#506154;margin:0 0 1px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;align-items:start}
+.card{background:#fffef8;border:1px solid #d6ded1;border-radius:14px;padding:13px 15px 9px;min-width:0}
+.card-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-bottom:10px}
+.topic{color:#4b6851;font-size:12px;font-weight:700;white-space:nowrap}
+h2{letter-spacing:-.035em;font-size:21px;line-height:1.22;margin:0;color:#223b2e}
+.feature{display:grid;grid-template-columns:126px minmax(0,1fr);gap:12px;align-items:stretch}
+.game{margin:0;display:grid;grid-template-rows:1fr auto;text-align:center;border-radius:9px;background:#e6ebde;overflow:hidden}
+.game button{display:block;width:100%;height:151px;padding:0;border:0;background:transparent}
+.game img{width:100%;height:100%;display:block;object-fit:contain;object-position:top center}
+.game figcaption{padding:4px;font-size:11px;color:#435749}
+.routes{display:grid;gap:7px}
+.route{display:grid;grid-template-columns:minmax(88px,.7fr) minmax(0,1fr);align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:#edf2e6}
+.route.risk{background:#f9ecda}
+.route strong{display:block;font-size:14px}
+.route span{font-size:12px;color:#46594d}
+.route b{font-size:22px;color:#2d5b41;line-height:1.3;white-space:nowrap}
+.route.risk b{color:#83552b}
+.capt{font-size:12px;color:#4d6054;margin:6px 0 0}
+.clips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.clip{margin:0;min-width:0;border-radius:8px;overflow:hidden;background:#edf1e6}
+.clip video{width:100%;height:131px;display:block;object-fit:contain;background:#1b3128}
+.clip figcaption{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:4px 6px 4px 8px}
+.clip strong{font-size:13px;overflow-wrap:anywhere}
+.clip button,.close{background:#285940;color:white;border:0;border-radius:5px;padding:3px 9px;font-size:12px}
+.clip button:disabled{opacity:.65;cursor:wait}
+.scopes{font-size:12px;color:#536256;margin:5px 0 0}
+.compare{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px;margin:4px 0 7px}
+.count{padding:7px 10px;border-radius:8px;background:#f3e8d8}
+.count.after{background:#e8efe0}
+.count b{font-size:32px;line-height:1.02;font-weight:750;letter-spacing:-.045em}
+.count span{font-size:12px;margin-left:7px;color:#4a5a50}
+.limit{font-size:12px;color:#754a2b;margin:3px 0 0}
+.status-rows{margin:0}
+.status-row{padding:5px 0;border-bottom:1px solid #e3e8dc;display:grid;grid-template-columns:minmax(63px,.54fr) 58px minmax(0,1.8fr);gap:7px;align-items:center}
+.status-row:last-child{border:0}
+.status-row dt{font-weight:700;font-size:13px}
+.status-row dd{margin:0;font-size:12px;color:#495b50}
+.status-row .ratio{color:#295c44;font-size:20px;font-weight:750;white-space:nowrap;line-height:1.12}
+.status-link{font-size:12px;margin:5px 0 0}
+details{margin-top:8px;padding:7px 0 0;border-top:1px solid #dce3d7}
+summary{width:fit-content;color:#295b42;font-weight:650;font-size:13px;cursor:pointer}
+.links{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:7px 0;font-size:12px}
+.image-link{color:#255b40;padding:0;border:0;background:transparent;text-decoration:underline;text-underline-offset:3px}
+.schedule{margin-top:13px;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));gap:10px;align-items:start;border-top:1px solid #d6ded1;padding-top:11px}
+.schedule h2{font-size:15px;padding-top:1px;margin-right:4px}
+.milestone{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px;padding-left:9px;border-left:2px solid #d6ded1;line-height:1.45}
+.milestone b{white-space:nowrap;font-size:12px}
+.milestone span{font-size:12px;color:#526456}
+.footer{margin-top:10px;font-size:12px;color:#59695b;display:flex;gap:12px;align-items:center}
+dialog{width:min(740px,calc(100% - 28px));max-height:90vh;overflow:auto;border:1px solid #cedbd0;border-radius:12px;padding:15px;background:#fffef8;color:inherit}
+dialog::backdrop{background:#152b22bb}
+.dialog-head,.dialog-foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.dialog-head h2{font-size:17px}
+.dialog-body{margin:10px 0}
+.dialog-body img{width:100%;max-height:66vh;object-fit:contain;display:block}
+.dialog-body pre{font:inherit;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;padding:10px;background:#f1f4ea}
+@media(max-width:760px){.wrap{padding:0 14px 18px}.header{align-items:start;flex-direction:column;gap:5px;padding-top:18px}.grid{grid-template-columns:1fr}.schedule{grid-template-columns:1fr}.milestone{grid-template-columns:65px minmax(0,1fr)}}
+@media(max-width:380px){.feature{grid-template-columns:88px minmax(0,1fr);gap:8px}.route{grid-template-columns:1fr}.clip strong{font-size:11px}}
 </style>
 </head>
 <body>
-  <a class="skip" href="#overview">跳到概览</a>
-  <aside class="sidebar">
-    <div class="brand"><span class="brand-mark" aria-hidden="true">镇</span><div><b id="project-name"></b><small>本周进展</small></div></div>
-    <p class="nav-label">本期汇报</p><nav id="navigation" aria-label="报告模块"></nav>
-    <div class="sidebar-foot"><span>做成了什么，还差什么。</span><small id="side-period"></small><a id="source-link" target="_blank" rel="noopener">完整工作记录</a></div>
-  </aside>
-  <div class="workspace">
-    <header class="topbar"><div><span class="eyebrow">本周工作进展</span><span id="period"></span></div><div class="top-actions"><button id="read-source" class="quiet">完整资料</button><button id="presentation" class="primary">开始汇报</button></div></header>
-    <main id="main"></main>
-    <footer class="page-footer">按本期资料汇总；试玩版、待确认内容和下一步分别说明。<a id="verification-link" target="_blank" rel="noopener">查看资料依据</a></footer>
-  </div>
-  <div class="presentation-controls" hidden><button id="prev-stage" class="quiet">上一页</button><span id="stage-counter" aria-live="polite"></span><button id="next-stage" class="primary">下一页</button><span class="key-hint">左右键翻页 · Esc退出</span></div>
-  <dialog id="preview-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><div><span id="dialog-kind" class="eyebrow"></span><h2 id="dialog-title"></h2></div><button id="close-preview" class="quiet" aria-label="关闭预览">关闭</button></div><div id="dialog-body"></div><div class="dialog-foot"><span id="dialog-caption"></span><a id="dialog-original" target="_blank" rel="noopener">打开原文件</a></div></dialog>
-  <script id="report-data" type="application/json">{"title": "动物小镇 · 本周 AI 工作进展", "project": "动物小镇", "period": "2026.11.23–11.26", "cutoff": "资料截至 11 月 26 日 14:11（北京时间）", "audience": "executive", "lead": "AI 能做玩法、找问题、改完再测", "summary": "本周把玩法规则接进游戏，多台电脑也能接力做同一项工作。", "hero": {"label": "客栈实际棋盘", "type": "image", "status": "11 月 25 日工程实跑", "caption": "交完两张订单后的客栈棋盘。", "url": "weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png", "available": true}, "source": {"label": "完整工作记录", "url": "weekly/20261126/files/readme-4ff384c16681.md", "available": true}, "verification": {"label": "查看资料依据", "url": "weekly/20261126/files/readme-1299eba797fc.md", "available": true}, "executive": {"scenes": [{"module": "design", "index": 0, "title": "玩法已进游戏", "caption": "客栈棋盘与订单", "status": "工程实跑"}, {"module": "iteration", "index": 0, "title": "修完能看结果", "caption": "开盖布，奖励到账", "status": "桌面实跑"}, {"module": "cluster", "index": 0, "title": "多台电脑能接力", "caption": "查看工作站调度画面", "status": "历史照片"}], "readiness": [{"title": "玩法能做能测", "text": "规则进游戏后，跑两条开局路线。", "tone": "done"}, {"title": "多人分工已跑过", "text": "角色动画已回传，五套棋盘已有整合版。", "tone": "done"}, {"title": "最后还要签收", "text": "安卓真机、五套棋盘和公司内部测试。", "tone": "progress"}], "boundary": "待确认正式安卓包的真机表现，以及 24 日是否启动试投。"}, "kpis": [{"value": "56", "label": "条订单记录", "scope": "随玩法数值表交付"}, {"value": "2", "label": "份测试报告", "scope": "可以交给策划和研发"}, {"value": "2/2", "label": "项动画任务回传", "scope": "两台工作站接力"}, {"value": "16/17", "label": "项棋盘任务完成", "scope": "最后一项独立检查取消"}], "modules": [{"id": "design", "title": "自动设计", "kicker": "玩法怎么做出来", "intro": "把设计写成游戏能读取的表，再用两种玩法跑一遍。", "flow": ["拆解实玩录像", "写成玩法表", "导入游戏", "对比两条路线"], "media": [{"label": "客栈实际棋盘", "type": "image", "status": "11 月 25 日工程实跑", "caption": "交完两张订单后的客栈棋盘。", "url": "weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png", "available": true}], "featured": [], "layout": "phone", "visuals": [{"value": "23", "title": "步建设", "text": "车站、客栈到早餐亭。", "tone": "done"}, {"value": "第 8 步", "title": "先做长椅", "text": "到了早餐亭，攒钱时体力用光。", "tone": "blocked"}, {"value": "第 10 步", "title": "跳过捷径", "text": "完成早餐亭建设，最低剩 6 点体力。", "tone": "done"}], "highlights": [{"text": "同一套规则能反复跑，问题能定位到具体一步。", "tone": "done"}, {"text": "还需让没玩过的人试一次，确认是否容易卡住。", "tone": "pending"}], "items": [{"id": "design-config", "title": "玩法表可以直接交给策划和程序", "summary": "从 Foodstars 的实录里拆解开局节奏，用在动物小镇的规则设计和复测上。", "status": "verified", "badge": "已交付", "deliverables": [{"label": "当前数值表", "url": "weekly/20261126/files/material-2564ed2a5caf.xlsx", "available": true}, {"label": "可编辑的策划源表", "url": "weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx", "available": true}], "evidence": [{"label": "正式工程交接", "url": "weekly/20261126/files/readme-2228b0661384.md", "available": true}, {"label": "竞品实录拆解", "url": "weekly/20261126/files/material-e4a6e4d4de7f.md", "available": true}], "technical": {"summary": "26 日从正式客户端新档读出 23 步建设、56 条订单及 582 个棋子。"}}, {"id": "design-energy", "title": "首局体力找到一个卡点", "summary": "两条自动路线结果不同。后续重点看先做长椅的人，走到早餐亭时体力够不够。", "status": "verified", "badge": "自动试玩已有结果", "deliverables": [], "evidence": [{"label": "两条路线与复测记录", "url": "weekly/20261126/files/readme-1299eba797fc.md", "available": true}], "technical": {"summary": "两条路线是同一方案的历史自动回放。26 日另复跑新档和旧档规则。"}}]}, {"id": "production", "title": "自动生产", "kicker": "本周交出了什么", "intro": "场景能按步骤出图、局部返修，宣传素材的录制和剪辑方法已归档。", "layout": "videos", "featured": [0, 1], "media": [{"label": "三条生产线实录", "type": "video", "status": "历史内部审阅版", "caption": "25 日归档。24.9 秒，包含游戏实录和片尾。", "url": "weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4", "available": true, "poster_url": "weekly/20261126/files/final-contact-5b5b5f686558.jpg"}, {"label": "面包剧情样例", "type": "video", "status": "历史制作样例", "caption": "约 24 秒，游戏烘焙与剧情镜头混剪。", "url": "weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4", "available": true, "poster_url": "weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"}], "highlights": [{"text": "松湾镇同一视角做出修前、过渡、修好三种状态。", "tone": "done"}, {"text": "场景返修、玩法录制和广告本地化做法已写进 Skill。", "tone": "done"}, {"text": "广告实际试投仍待核实。", "tone": "pending"}], "items": [{"id": "prod-scenery", "title": "同一场景能分阶段做，也能只改局部", "summary": "屋瓦和树冠做了局部返修；步骤和案例已归档。", "status": "candidate", "badge": "美术样例 · 待工程核验", "deliverables": [{"label": "场景制作 Skill 归档", "url": "weekly/20261126/files/readme-288c27901ec8.md", "available": true}], "evidence": [{"label": "松湾三态制作记录", "url": "weekly/20261126/files/readme-c2f1bc872ba3.md", "available": true}, {"label": "修前效果", "type": "image", "url": "weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png", "available": true}, {"label": "屋瓦与树冠修改效果", "type": "image", "url": "weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png", "available": true}], "technical": {"summary": "松湾是美术样例，米洛的 16 张选图来自已有原件恢复。"}}, {"id": "prod-video", "title": "录制和剪辑材料能交给下一位继续做", "summary": "归档 20 件已有实物，连同素材出处、试听意见和采用状态一起保留。", "status": "verified", "badge": "已有交接材料", "deliverables": [{"label": "宣传工作流与素材归档", "url": "weekly/20261126/files/readme-a454a3fdb866.md", "available": true}, {"label": "同版可编辑工程", "url": "weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip", "available": true}], "evidence": [{"label": "广告本地化发布回执", "url": "weekly/20261126/files/readme-6062166159b2.md", "available": true}, {"label": "视频换皮流程验证", "url": "weekly/20261126/files/readme-14a8df8893bf.md", "available": true}], "technical": {"summary": "25 日做的是结果归档和校验。本轮没有新的投放回执。"}}]}, {"id": "qa", "title": "自动测试", "kicker": "问题怎么找出来", "intro": "用新档和旧安卓包分别走一遍，报告里写清问题是在哪个版本、怎么遇到的。", "visuals": [{"value": "2 份", "title": "专项测试报告", "text": "工程新档、旧安卓包各一份。", "tone": "done"}, {"value": "出包", "title": "错版本会拦下", "text": "避免打包后启动到旧玩法。", "tone": "done"}, {"value": "真机", "title": "正式安卓包待测", "text": "手机上还要实际走一遍。", "tone": "pending"}], "highlights": [{"text": "报告和证据可以直接交给策划、研发。", "tone": "done"}, {"text": "公司内部测试的整批结果还没出。", "tone": "pending"}], "items": [{"id": "qa-briefs", "title": "两份报告已出", "summary": "分别记录工程新档和历史安卓包的专项检查。", "status": "verified", "badge": "报告可查", "deliverables": [{"label": "工程新档报告", "url": "weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html", "available": true}, {"label": "安卓包报告", "url": "weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html", "available": true}], "evidence": [{"label": "问题处理与复测", "url": "weekly/20261126/files/qa-a0a995305fb0.md", "available": true}]}, {"id": "qa-guard", "title": "打包时能检查玩法版本", "summary": "已用错误参考包跑过检查，能发现安装包默认进的是旧玩法。", "status": "verified", "badge": "已有拦截记录", "deliverables": [], "evidence": [{"label": "出包检查与复验", "url": "weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md", "available": true}, {"label": "历史缺陷案例", "url": "weekly/20261126/files/readme-f6278337024f.md", "available": true}]}]}, {"id": "iteration", "title": "自动迭代", "kicker": "改完怎么确认", "intro": "用同一台设备、同一个存档测两遍，看体验改善了多少。", "media": [{"label": "揭开盖布，奖励到账", "type": "image", "status": "11 月 26 日桌面实跑", "caption": "盖布打开后，奖励进入待领取区。重开游戏不会多发。", "url": "weekly/20261126/files/02-43bdc4c61107.png", "available": true}], "featured": [], "visuals": [{"value": "11 → 0", "title": "明显卡顿次数", "text": "同一模拟器上，超过 100 毫秒的操作。", "tone": "done"}, {"value": "已恢复", "title": "棋盘整理", "text": "已发内网更新，复测整理前后的棋子。", "tone": "done"}, {"value": "待测", "title": "手机实跑", "text": "卡顿修复还要随正式安卓包复测。", "tone": "pending"}], "highlights": [{"text": "棋子和资源的结果前后一致。", "tone": "done"}, {"text": "开盖布的奖励在桌面实跑，重开后不会再发。", "tone": "done"}], "items": [{"id": "iter-stutter", "title": "合成卡顿有修前修后对照", "summary": "模拟器上的明显卡顿减少，仍有一次合成达到 100 毫秒。", "status": "candidate", "badge": "模拟器已测 · 真机待测", "deliverables": [], "evidence": [{"label": "同机对照数据", "url": "weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md", "available": true}]}, {"id": "iter-board", "title": "棋盘整理已恢复，奖励也测过", "summary": "整理恢复后可正常确认、取消并读回棋盘。盖布奖励在本周桌面工程单独验证。", "status": "verified", "badge": "内网更新与桌面证据", "deliverables": [], "evidence": [{"label": "棋盘整理发布回执", "url": "weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md", "available": true}, {"label": "盖布打开前", "type": "image", "url": "weekly/20261126/files/01-0b56a0bee134.png", "available": true}, {"label": "盖布打开后", "type": "image", "url": "weekly/20261126/files/02-43bdc4c61107.png", "available": true}]}]}, {"id": "cluster", "title": "多台电脑分工", "kicker": "集群化生产", "intro": "一台交素材，另一台按同一版本复验。五套棋盘也走了一轮并行制作和整合。", "media": [{"label": "工作站调度界面", "type": "image", "status": "历史照片", "caption": "用户提供的集群总览。照片里的数字对应拍摄当时，本周情况以任务回执为准。", "url": "weekly/20261126/files/cluster-overview-ed7b30392569.jpg", "available": true}], "featured": [0], "layout": "snapshot", "highlights": [{"text": "Pip 动画两项任务都回传，平台已有整合记录。", "tone": "done"}, {"text": "五套棋盘完成 16/17 项，已有统一测试版。", "tone": "done"}, {"text": "五套棋盘的最后一项独立检查被取消。", "tone": "blocked"}], "items": [{"id": "cluster-spine", "title": "两台电脑接力完成一次动画任务", "summary": "先读取生产素材并整理证据，再由另一台开窗口复验。", "status": "verified", "badge": "2/2 已回传", "deliverables": [], "evidence": [{"label": "工作站原始任务链接", "url": "weekly/20261126/files/workstation-records-ea584c82aad4.html", "available": true}]}, {"id": "cluster-board", "title": "五套棋盘已有统一测试版", "summary": "制作、返修和整合已有回传，最后一项独立检查还没做完。", "status": "candidate", "badge": "16/17，最终验收待补", "deliverables": [], "evidence": [{"label": "工作站原始任务链接", "url": "weekly/20261126/files/workstation-records-ea584c82aad4.html", "available": true}], "technical": {"summary": "原前 20 级集群任务的 23 项均已取消。历史本机候选单独留档。"}}]}, {"id": "timeline", "title": "计划节点", "kicker": "这几天实际走到哪了", "intro": "按 26 日下午能看到的结果更新。", "visuals": [{"value": "23 日", "title": "计划验收", "text": "候选版已有分段复测，完整签收待确认。", "tone": "pending"}, {"value": "24 日", "title": "暂定试投", "text": "尚未查到广告投放回执。", "tone": "pending"}, {"value": "25–27 日", "title": "公司内部功能测试", "text": "已出专项报告，整批结果待确认。", "tone": "done"}], "highlights": [{"text": "先拿正式安卓包在手机上测。", "tone": "pending"}, {"text": "补齐五套棋盘的独立检查。", "tone": "pending"}], "items": [{"id": "timeline-check", "title": "原计划与实际记录", "summary": "本页使用 26 日的周中记录。后续回执按对应版本核对。", "status": "recorded", "badge": "待补最终结果", "deliverables": [], "evidence": [{"label": "完整记录与出处", "url": "weekly/20261126/files/readme-4ff384c16681.md", "available": true}]}]}], "next": [{"title": "确认首局会不会卡体力", "text": "请没玩过的人分别走长椅和跳过捷径两条路线。"}, {"title": "用正式安卓包跑一遍", "text": "在手机上重测启动、合成、交单和两章切换，拿到内部测试结论。"}, {"title": "补齐棋盘最终检查", "text": "用同一个整合版检查五套棋盘，记录最终签收。"}], "cautions": ["首局有一条自动路线会卡体力。", "模拟器已对照，正式安卓包真机待测。", "24 日是否启动试投仍待核实。"], "gaps": [{"label": "11 月 24 日早餐亭截图原件未随工作区提供。概览使用已有的 25–26 日工程实跑截图。"}], "item_count": 11}</script>
-  <script>function renderExecutiveReport({data,esc,media,link,mediaLookup,filters}) {
-  const ex=data.executive;
-  const artwork=(moduleId,index,changes={})=>({...data.modules.find(m=>m.id===moduleId).media[index],...changes});
-  function sceneCard(scene,index) {
-    const asset=artwork(scene.module,scene.index,{label:scene.title,status:scene.status,caption:scene.caption});
-    const key='overview-scene-'+index;mediaLookup.set(key,asset);
-    return `<button class="town-card" data-image="${key}" aria-label="放大：${esc(scene.title)}"><img src="${esc(asset.url)}" alt="${esc(scene.title)}"><span class="town-copy"><b>${esc(scene.title)}</b><small>${esc(scene.caption)}</small><em>${esc(scene.status)}</em></span></button>`;
-  }
-  const overview=`<section id="overview" class="stage overview active"><div class="executive-heading"><div><span class="eyebrow">本周工作，一页看懂</span><h1>${esc(data.title)}</h1></div><span class="edition">${esc(data.period)}</span></div><div class="executive-lead"><h2>${esc(data.lead)}</h2><p>${esc(data.summary)}</p></div><div class="town-grid">${ex.scenes.map(sceneCard).join('')}</div><div class="outcome-strip">${data.kpis.map(k=>`<div><strong>${esc(k.value)}</strong><span><b>${esc(k.label)}</b><small>${esc(k.scope)}</small></span></div>`).join('')}</div><div class="readiness"><span class="readiness-label">目前走到哪一步</span>${ex.readiness.map((s,i)=>`<div class="readiness-step ${esc(s.tone)}"><span>${i===0?'✓':i+1}</span><div><b>${esc(s.title)}</b><small>${esc(s.text)}</small></div></div>`).join('')}</div><p class="executive-boundary">${esc(ex.boundary)}</p></section>`;
-  function record(item) {
-    const raw=item.technical||item;
-    return `<article class="work-card" data-item="${esc(item.id)}" data-status="${esc(item.status)}"><div class="work-title"><h3>${esc(item.title)}</h3><span class="badge ${esc(item.status)}">${esc(item.badge||'本周进展')}</span></div><p class="work-summary">${esc(item.summary)}</p>${item.note?`<p class="work-note">${esc(item.note)}</p>`:''}<div class="link-group">${(item.deliverables||[]).map(link).join('')}${(item.evidence||[]).map(link).join('')}</div><details class="original-note"><summary>原始说明与版本</summary><p>${esc(raw.title)}</p><p>${esc(raw.summary)}</p><p>${esc(raw.note)}</p></details></article>`;
-  }
-  function moduleView(m) {
-    const assets=m.media||[];
-    const featured=m.featured||[];
-    const primary=featured.map(index=>media(assets[index],index,m.id)).join('');
-    const others=assets.map((a,i)=>({a,i})).filter(x=>!featured.includes(x.i));
-    const visual=primary?`<div class="executive-media ${esc(m.layout||'wide')}">${primary}</div>`:`<div class="visual-notes">${(m.visuals||[]).map(v=>`<div class="visual-note ${esc(v.tone||'pending')}"><span>${esc(v.value)}</span><b>${esc(v.title)}</b><p>${esc(v.text)}</p></div>`).join('')}</div>`;
-    const flow=m.flow?`<div class="play-flow" aria-label="游玩过程">${m.flow.map((s,i)=>`<div><span>${i+1}</span><b>${esc(s)}</b></div>`).join('')}</div>`:'';
-    return `<section id="${esc(m.id)}" class="stage module"><div class="section-top"><div><span class="eyebrow">${esc(m.kicker||'本周进展')}</span><h2>${esc(m.title)}</h2><p>${esc(m.intro)}</p></div></div>${flow}${visual}<div class="takeaways">${m.highlights.map(h=>`<div class="takeaway ${esc(h.tone)}"><span aria-hidden="true">${h.tone==='done'?'✓':h.tone==='blocked'?'!':'·'}</span><p>${esc(h.text)}</p></div>`).join('')}</div><details class="records-panel"><summary>查看 ${m.items.length} 项具体进展与材料</summary><div class="work-grid">${m.items.map(record).join('')}</div></details>${others.length?`<details class="gallery-panel"><summary>查看更多画面（${others.length}${m.media[0]?.type==='video'?'段':'张'}）</summary><div class="media-grid">${others.map(({a,i})=>media(a,i,m.id)).join('')}</div></details>`:''}</section>`;
-  }
-  const modules=data.modules.map(moduleView).join('');
-  const next=`<section id="next" class="stage next-stage"><div class="section-top"><div><span class="eyebrow">下一步建议</span><h2>接下来，先把体验验证做好</h2><p>先确认玩家玩得明白、手机运行稳定，再决定推广和后续内容投入。</p></div></div><div class="next-grid">${data.next.map((n,i)=>`<div class="next-card"><span class="step-number">0${i+1}</span><b>${esc(n.title)}</b><p>${esc(n.text)}</p></div>`).join('')}</div><div class="next-reminder"><b>汇报时带上这三句话</b>${data.cautions.map(s=>`<p>· ${esc(s)}</p>`).join('')}</div><details class="gap-panel"><summary>还有哪些材料没带齐</summary><p>部分原件仍在其他电脑或历史目录；本页保留已取得的记录。</p><ul>${data.gaps.map(g=>`<li>${esc(g.label)}</li>`).join('')}</ul></details><p class="work-note">${esc(data.cutoff)}。${esc(data.cost||'')}</p></section>`;
-  return {overview,modules,next,filters:`<details class="find-panel"><summary>查找具体工作</summary>${filters}<div id="executive-search-hint">输入关键词可展开相应进展与资料。</div></details>`};
-}
+<div class="wrap">
+  <header class="header">
+    <h1>动物小镇 · AI 工作周报</h1>
+    <p class="period"><time datetime="2026-11-23">11 月 23 日</time> – <time datetime="2026-11-26">26 日</time></p>
+  </header>
+  <main>
+    <div class="grid">
+      <section class="card" aria-labelledby="design-title">
+        <header class="card-head"><span class="topic">自动设计</span><h2 id="design-title">试玩找到了卡体力的位置</h2></header>
+        <div class="feature">
+          <figure class="game">
+            <button type="button" data-image="weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png" aria-label="放大客栈实跑截图"><img src="weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png" alt="客栈交完两张订单后的游戏棋盘"></button>
+            <figcaption>客栈 · 工程实跑</figcaption>
+          </figure>
+          <div class="routes">
+            <div class="route risk"><div><strong>先做长椅</strong><span>早餐亭攒钱时</span></div><div><b>第 8 步</b><span>　用光体力</span></div></div>
+            <div class="route"><div><strong>跳过捷径</strong><span>早餐亭建设</span></div><div><b>第 10 步</b><span>　最低余 6 体力</span></div></div>
+          </div>
+        </div>
+        <p class="capt">同一套规则跑了两条路线，待真人首玩验证。</p>
+        <details><summary>打开数值表和两条试玩记录</summary>
+          <div class="links"><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">当前数值表</a><a href="weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx" target="_blank" rel="noopener">策划源表</a><a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">两条路线与新旧档复测</a><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">工程交接</a><a href="weekly/20261126/files/material-e4a6e4d4de7f.md" data-document target="_blank" rel="noopener">竞品实录拆解</a></div>
+        </details>
+      </section>
 
-(() => {
-  'use strict';
-  const data = JSON.parse(document.getElementById('report-data').textContent);
-  const executive = data.audience === 'executive';
-  document.body.classList.toggle('executive', executive);
-  const $ = (id) => document.getElementById(id);
-  const esc = (s = '') => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const labels = executive ? {verified:'已有检查记录',candidate:'还在打磨',recorded:'资料待补齐',proposal:'方案待实施'} : {verified:'已验证',candidate:'候选 / 待评审',recorded:'记录待补齐',proposal:'方案 / 未实施'};
-  const icons = ['▦','▤','◈','◇','♧','▷','≡','☷'];
-  const allItems = data.modules.flatMap(m => m.items);
-  let status = 'all', query = '', presenting = false, current = 0, request = null;
-  const mediaLookup = new Map();
-  const linkLookup = new Map();
-  let counter = 0;
-  function link(entry) {
-    const key = 'l' + counter++;
-    linkLookup.set(key, entry);
-    return `<a class="artifact-link" href="${esc(entry.url)}" data-document="${key}" target="_blank" rel="noopener">${esc(entry.label)}</a>`;
+      <section class="card" aria-labelledby="production-title">
+        <header class="card-head"><span class="topic">自动制作</span><h2 id="production-title">从实录到剪辑</h2></header>
+        <div class="clips">
+          <figure class="clip">
+        <video id="gameplay" controls playsinline preload="none" src="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" poster="weekly/20261126/files/final-contact-5b5b5f686558.jpg" aria-label="三条生产线实录"></video>
+        <figcaption><strong>三条生产线实录</strong><button type="button" data-play="gameplay">播放</button></figcaption>
+      </figure>
+          <figure class="clip">
+        <video id="story" controls playsinline preload="none" src="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" poster="weekly/20261126/files/r25-final-review-7c556da8e42c.jpg" aria-label="面包剧情样例"></video>
+        <figcaption><strong>面包剧情样例</strong><button type="button" data-play="story">播放</button></figcaption>
+      </figure>
+        </div>
+        <p class="scopes">内部审阅样例 · 已归档</p>
+        <details><summary>打开制作交付和场景返修</summary>
+          <div class="links"><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">制作留档</a><a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">可编辑工程</a><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景制作 Skill</a><a href="weekly/20261126/files/readme-6062166159b2.md" data-document target="_blank" rel="noopener">广告本地化发布回执</a><a href="weekly/20261126/files/readme-14a8df8893bf.md" data-document target="_blank" rel="noopener">视频换皮验证</a><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态制作记录</a></div>
+          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png">美术候选 · 修前</button> <button class="image-link" type="button" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png">美术候选 · 屋瓦与树冠返修</button></div>
+          <div class="links"><a href="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" target="_blank" rel="noopener">实录原片</a><a href="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" target="_blank" rel="noopener">剧情原片</a></div>
+        </details>
+      </section>
+
+      <section class="card" aria-labelledby="qa-title">
+        <header class="card-head"><span class="topic">自动测试与迭代</span><h2 id="qa-title">合成卡顿修完有对照</h2></header>
+        <div class="compare">
+          <div class="count"><b>11</b><span>次 · 修前</span></div>
+          <div class="count after"><b>0</b><span>次 · 修后</span></div>
+        </div>
+        <p class="capt">同一模拟器上，超过 100 毫秒的操作。另已通过内网更新恢复棋盘整理。</p>
+        <p class="limit">正式安卓包待手机复测。</p>
+        <details><summary>打开复测对照和两份测试报告</summary>
+          <div class="links"><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">卡顿修前修后</a><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">棋盘整理回执</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">新档测试报告</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">旧安卓包测试报告</a><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">问题处理与复测</a><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">打包拦截复验</a><a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷案例</a></div>
+          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/01-0b56a0bee134.png">盖布打开前</button> <button class="image-link" type="button" data-image="weekly/20261126/files/02-43bdc4c61107.png">桌面实跑 · 奖励只发一次</button></div>
+        </details>
+      </section>
+
+      <section class="card" aria-labelledby="workstations-title">
+        <header class="card-head"><span class="topic">多台电脑分工</span><h2 id="workstations-title">从单项接力到五套并行</h2></header>
+        <dl class="status-rows">
+          <div class="status-row"><dt>Pip 动画</dt><dd class="ratio">2/2</dd><dd>两项任务回传，另一台电脑完成复验。</dd></div>
+          <div class="status-row"><dt>五套棋盘</dt><dd class="ratio">16/17</dd><dd>已整合，最后一项独立检查取消。</dd></div>
+        </dl>
+        <p class="status-link"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站任务回执</a> · 原始任务需公司内网</p>
+        <details><summary>查看工作站历史照片</summary>
+          <div class="links"><button class="image-link" type="button" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg">集群调度界面 · 历史照片</button></div>
+        </details>
+      </section>
+    </div>
+    <section class="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">计划节点</h2>
+      <div class="milestone"><b>23 日</b><span>候选版已分段复测，验收待确认</span></div>
+      <div class="milestone"><b>24 日</b><span>试投未见回执</span></div>
+      <div class="milestone"><b>25–27 日</b><span>公司内部功能测试整批结果待确认</span></div>
+    </section>
+  </main>
+  <footer class="footer"><a href="weekly/20261126/files/readme-4ff384c16681.md" data-document target="_blank" rel="noopener">完整记录与出处</a><span>资料截至 26 日 14:11</span></footer>
+</div>
+
+<dialog id="preview" aria-labelledby="preview-title">
+  <div class="dialog-head"><h2 id="preview-title"></h2><button type="button" class="close">关闭</button></div>
+  <div class="dialog-body"></div>
+  <div class="dialog-foot"><a target="_blank" rel="noopener">打开原文件</a></div>
+</dialog>
+<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/after-two-deliveries-5bfbc85919b7.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"}]}</script>
+<script>
+const dialog=document.querySelector('#preview');
+const previewBody=dialog.querySelector('.dialog-body');
+const players=[...document.querySelectorAll('video')];
+let activeRequest;
+function pauseVideos(except){for(const video of players){if(video!==except)video.pause();}}
+function preview(title,url){
+  activeRequest?.abort();
+  pauseVideos();
+  dialog.querySelector('h2').textContent=title;
+  dialog.querySelector('a').href=url;
+  previewBody.replaceChildren();
+  dialog.showModal();
+}
+for(const video of players){video.addEventListener('play',()=>pauseVideos(video));}
+document.querySelector('.close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('close',()=>{activeRequest?.abort();previewBody.replaceChildren();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseVideos();});
+document.addEventListener('click',async event=>{
+  const photo=event.target.closest('[data-image]');
+  if(photo){
+    const title=photo.getAttribute('aria-label')||photo.textContent;
+    preview(title,photo.dataset.image);
+    const image=document.createElement('img');
+    image.alt=title;
+    image.src=photo.dataset.image;
+    previewBody.append(image);
+    return;
   }
-  function work(item) {
-    return `<article class="work-card" data-item="${esc(item.id)}" data-status="${item.status}"><div class="work-title"><h3>${esc(item.title)}</h3><span class="badge ${item.status}">${labels[item.status]}</span></div><p class="work-summary">${esc(item.summary)}</p>${item.deliverables?.length ? `<div class="link-group"><b>交付物</b>${item.deliverables.map(link).join('')}</div>` : ''}${item.evidence?.length ? `<div class="link-group"><b>验收证据</b>${item.evidence.map(link).join('')}</div>` : ''}<p class="work-note">${esc(item.note)}</p></article>`;
-  }
-  function media(asset, index, moduleId) {
-    const key = `${moduleId}-${index}`;
-    mediaLookup.set(key, asset);
-    const classes = ['media-card',asset.type,asset.portrait?'portrait':''].join(' ');
-    const extra = !executive && index >= 8 ? ' data-extra="true" hidden' : '';
-    const visual = asset.type === 'image'
-      ? `<button class="image-button" data-image="${key}" aria-label="放大：${esc(asset.label)}"><img loading="lazy" decoding="async" src="${esc(asset.url)}" alt="${esc(asset.label)}"></button>`
-      : `<video id="video-${key}" controls playsinline preload="none" ${asset.poster_url ? `poster="${esc(asset.poster_url)}"`:''} src="${esc(asset.url)}" aria-label="${esc(asset.label)}"></video>`;
-    return `<figure class="${classes}"${extra}>${visual}<figcaption class="media-copy"><span class="media-status">${esc(asset.status || '本期成果')}</span><b>${esc(asset.label)}</b><small>${esc(asset.caption || '')}</small><div class="media-actions">${asset.type === 'video' ? `<button data-play="${key}">播放视频</button><button data-video="${key}" aria-label="放大播放：${esc(asset.label)}">放大播放</button>` : `<span></span><a href="${esc(asset.url)}" target="_blank" rel="noopener">原图</a>`}</div></figcaption></figure>`;
-  }
-  document.title = data.title;
-  $('project-name').textContent = data.project;
-  $('period').textContent = data.period;
-  $('side-period').textContent = data.period;
-  $('source-link').href = data.source.url;
-  $('verification-link').href = data.verification.url;
-  mediaLookup.set('hero',data.hero);
-  const overview = `<section id="overview" class="stage overview active"><div class="overview-heading"><div><span class="eyebrow">本周成果 · WEEKLY REVIEW</span><h1>${esc(data.title)}</h1></div><span class="edition">${esc(data.cutoff)}</span></div><div class="hero"><div class="hero-copy"><span class="eyebrow">本期核心进展</span><h2>${esc(data.lead)}</h2><p>${esc(data.summary)}</p><span class="hero-status">${esc(data.hero.status || '已交付内部体验')}</span></div><button class="hero-picture" data-image="hero" aria-label="放大：${esc(data.hero.label)}"><img src="${esc(data.hero.url)}" alt="${esc(data.hero.label)}"><span>查看成果原图</span></button></div><div class="kpis">${data.kpis.map(k=>`<div class="kpi"><strong>${esc(k.value)}</strong><b>${esc(k.label)}</b><small>${esc(k.scope)}</small></div>`).join('')}</div><div class="overview-bottom"><div><h3>本周做成了什么</h3><p>${esc(data.overview)}</p></div><div class="boundaries"><h3>汇报时需要说明的边界</h3>${data.cautions.map(t=>`<div class="boundary-line">${esc(t)}</div>`).join('')}</div></div></section>`;
-  const filters = `<div class="filter-bar"><div class="filter-chips" role="group" aria-label="成果状态筛选"><button data-filter="all" class="active" aria-pressed="true">全部记录<span>${allItems.length}</span></button>${Object.entries(labels).map(([key,label])=>`<button data-filter="${key}" aria-pressed="false">${label}<span>${allItems.filter(i=>i.status===key).length}</span></button>`).join('')}</div><div class="search-box"><input id="search" type="search" placeholder="搜索成果、版本或关键词" aria-label="搜索成果"><button id="clear-search">清空</button></div><p id="filter-result" class="filter-result" aria-live="polite">按${allItems.length}项工作记录归并，多轮返修不重复计数。</p></div><div id="empty-result" class="empty" hidden>没有匹配的成果。调整状态或清空搜索后继续查看。</div>`;
-  const modules = data.modules.map(m=>`<section id="${esc(m.id)}" class="stage module"><div class="section-top"><div><span class="eyebrow">${esc(m.kicker || '模块成果')}</span><h2>${esc(m.title)}</h2><p>${esc(m.intro)}</p></div><span class="section-tag">${m.items.length}项工作记录</span></div><div class="work-grid">${m.items.map(work).join('')}</div>${m.media?.length?`<div class="media-grid">${m.media.map((a,i)=>media(a,i,m.id)).join('')}</div>${m.media.length>8?`<button class="show-more quiet" data-expand="${esc(m.id)}" aria-expanded="false">展开全部${m.media.length}张作品</button>`:''}`:''}</section>`).join('');
-  const next = `<section id="next" class="stage next-stage"><div class="section-top"><div><span class="eyebrow">下一批重点</span><h2>${esc(data.nextTitle || '下一阶段的重点工作')}</h2><p>优先补齐影响交付判断的证据，再根据实际结果安排投入。</p></div></div><div class="next-grid">${data.next.map(n=>`<div class="next-card"><b>${esc(n.title)}</b><p>${esc(n.text)}</p></div>`).join('')}</div><details class="gap-panel"><summary>${data.gaps.length}处指定原始文件当前未带齐</summary><p>已有文档记录仍保留。当前工作区缺件，不代表原执行失败；这些文件没有显示为可下载交付。</p><ul>${data.gaps.map(g=>`<li>${esc(g.label)}<br>${esc(g.path)}</li>`).join('')}</ul></details><p class="work-note">本页来自既有周报快照。后续反馈、源代码与新包可能继续变化，按完整版本及指纹重新绑定验收。<br>${esc(data.cost || '')}</p></section>`;
-  const view = executive ? renderExecutiveReport({data,esc,media,link,mediaLookup,filters}) : null;
-  $('main').innerHTML = view ? view.overview + view.filters + view.modules + view.next : overview + filters + modules + next;
-  const stages = [$('overview'),...data.modules.map(m=>$(m.id)),$('next')];
-  const names = ['一页概览',...data.modules.map(m=>m.title),executive?'接下来做什么':'风险与下一步'];
-  $('navigation').innerHTML = stages.map((stage,i)=>`<button data-stage="${i}" class="${i===0?'active':''}" ${i===0?'aria-current="location"':''}><span class="nav-icon" aria-hidden="true">${icons[i % icons.length]}</span>${esc(names[i])}</button>`).join('');
-  function pauseAll(except) {
-    document.querySelectorAll('video').forEach(v=>{if(v!==except)v.pause();});
-  }
-  document.addEventListener('play', event=>{if(event.target.tagName==='VIDEO')pauseAll(event.target);},true);
-  function updateStage(index,scroll=true) {
-    current = Math.max(0,Math.min(stages.length-1,index));
-    if(scroll && stages[current].hidden){resetFilters();filter();}
-    stages.forEach((s,i)=>s.classList.toggle('active',i===current));
-    document.querySelectorAll('[data-stage]').forEach((b,i)=>{b.classList.toggle('active',i===current);if(i===current)b.setAttribute('aria-current','location');else b.removeAttribute('aria-current');});
-    $('stage-counter').textContent = `${current+1} / ${stages.length} · ${names[current]}`;
-    $('prev-stage').disabled = current===0;
-    $('next-stage').disabled = current===stages.length-1;
-    if(scroll){
-      pauseAll();
-      if(presenting)window.scrollTo({top:0,behavior:'instant'});
-      else if(executive){
-        const header=document.querySelector('.topbar').getBoundingClientRect().height;
-        const top=stages[current].getBoundingClientRect().top+window.scrollY-header-18;
-        window.scrollTo({top:Math.max(0,top),behavior:'instant'});
-      }else stages[current].scrollIntoView({behavior:'instant'});
-    }
-  }
-  function filter() {
-    let count = 0;
-    data.modules.forEach(module=>{
-      let matched=0;
-      module.items.forEach(item=>{
-        const text=[item.title,item.summary,item.note,item.technical?.title,item.technical?.summary,item.technical?.note,...(item.deliverables||[]).map(l=>l.label)].join(' ').toLowerCase();
-        const show=(status==='all'||status===item.status)&&(!query||text.includes(query));
-        document.querySelector(`[data-item="${item.id}"]`).hidden=!show;
-        if(show){matched++;count++;}
-      });
-      $(module.id).hidden=matched===0;
-      if(executive && matched && (query || status!=='all'))$(module.id).querySelector('.records-panel').open=true;
-    });
-    $('filter-result').textContent = executive ? `找到 ${count} 项相关进展。` : `显示 ${count} / ${allItems.length} 项记录。状态只描述各项材料，不表示项目整体完成比例。`;
-    $('empty-result').hidden=count!==0;
-  }
-  $('search').addEventListener('input',e=>{query=e.target.value.trim().toLowerCase();filter();});
-  $('clear-search').addEventListener('click',()=>{$('search').value='';query='';filter();$('search').focus();});
-  function resetFilters(){status='all';query='';$('search').value='';document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b.dataset.filter==='all');b.setAttribute('aria-pressed',String(b.dataset.filter==='all'));});}
-  function presentation() {
-    presenting=!presenting;
-    if(presenting){resetFilters();filter();}
-    document.body.classList.toggle('presenting',presenting);
-    document.querySelector('.presentation-controls').hidden=!presenting;
-    $('presentation').textContent=presenting?'退出汇报':'开始汇报';
-    updateStage(presenting?0:current);
-  }
-  $('presentation').addEventListener('click',presentation);
-  $('prev-stage').addEventListener('click',()=>updateStage(current-1));
-  $('next-stage').addEventListener('click',()=>updateStage(current+1));
-  $('read-source').addEventListener('click',()=>documentPreview(data.source));
-  const dialog=$('preview-dialog');
-  function openDialog(asset,kind) {
-    request?.abort();pauseAll();
-    $('dialog-title').textContent=asset.label;
-    $('dialog-kind').textContent=kind;
-    $('dialog-caption').textContent=[asset.status,asset.caption].filter(Boolean).join(' · ');
-    $('dialog-original').href=asset.url;
-    $('dialog-body').replaceChildren();
-    if(!dialog.open)dialog.showModal();
-  }
-  function imagePreview(asset) {
-    openDialog(asset,'原图预览');
-    const img=document.createElement('img');img.src=asset.url;img.alt=asset.label;
-    img.addEventListener('error',()=>{$('dialog-caption').textContent='图片读取失败，请通过原文件链接重试。';});
-    $('dialog-body').append(img);
-  }
-  async function documentPreview(asset) {
-    const name=asset.url.split('?')[0].toLowerCase();
-    if(!/\.(md|json|csv|txt|log|gd|godot|tscn|py)$/.test(name))return false;
-    openDialog(asset,executive?'查看工作资料':'验收与交付文档');
-    $('dialog-body').innerHTML='<p class="loading">正在读取原始文件…</p>';
-    request=new AbortController();
-    const signal=request.signal;
+  const play=event.target.closest('[data-play]');
+  if(play){
+    const player=document.getElementById(play.dataset.play);
+    play.disabled=true;
+    play.textContent='加载中';
     try{
-      const response=await fetch(asset.url,{signal});
-      if(!response.ok)throw new Error(`HTTP ${response.status}`);
-      let text=await response.text();
-      if(signal.aborted)return true;
-      if(name.endsWith('.json')){try{text=JSON.stringify(JSON.parse(text),null,2);}catch{}}
-      const pre=document.createElement('pre');pre.textContent=text;
-      $('dialog-body').replaceChildren(pre);
-      $('dialog-caption').textContent='原始文本预览。需要完整文件时可打开原文件。';
-    }catch(error){
-      if(signal.aborted)return true;
-      $('dialog-body').innerHTML='<p class="loading">资料暂时没能打开。可点击下方“打开原文件”重试。</p>';
-    }
-    return true;
+      if(player.error)player.load();
+      if(player.ended)player.currentTime=0;
+      await player.play();
+      play.textContent='播放';
+    }catch{play.textContent='重试';}
+    finally{play.disabled=false;}
+    return;
   }
-  function closePreview(){request?.abort();pauseAll();dialog.close();$('dialog-body').replaceChildren();}
-  $('close-preview').addEventListener('click',closePreview);
-  dialog.addEventListener('cancel',event=>{event.preventDefault();closePreview();});
-  dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)closePreview();}});
-  document.addEventListener('click',async event=>{
-    const stage=event.target.closest('[data-stage]');if(stage){updateStage(Number(stage.dataset.stage));return;}
-    const chip=event.target.closest('[data-filter]');if(chip){status=chip.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===chip);b.setAttribute('aria-pressed',String(b===chip));});filter();return;}
-    const img=event.target.closest('[data-image]');if(img){imagePreview(mediaLookup.get(img.dataset.image));return;}
-    const expand=event.target.closest('[data-expand]');if(expand){const expanded=expand.getAttribute('aria-expanded')!=='true';$(expand.dataset.expand).querySelectorAll('[data-extra]').forEach(e=>e.hidden=!expanded);expand.setAttribute('aria-expanded',String(expanded));expand.textContent=expanded?'收起扩展作品':`展开全部${data.modules.find(m=>m.id===expand.dataset.expand).media.length}张作品`;return;}
-    const play=event.target.closest('[data-play]');if(play){const video=$('video-'+play.dataset.play);try{if(video.error)video.load();if(video.ended)video.currentTime=0;await video.play();play.textContent='重新播放';}catch{play.textContent='播放失败，点击重试';}return;}
-    const videoButton=event.target.closest('[data-video]');if(videoButton){const asset=mediaLookup.get(videoButton.dataset.video);openDialog(asset,'视频预览');const v=document.createElement('video');v.src=asset.url;v.controls=true;v.playsInline=true;$('dialog-body').append(v);try{await v.play();}catch{$('dialog-caption').textContent='请点击播放器开始播放，或打开原文件。';}return;}
-    const doc=event.target.closest('[data-document]');
-    if(doc && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey){
-      const asset=linkLookup.get(doc.dataset.document);
-      if(asset.type==='image'){
-        event.preventDefault();
-        imagePreview(asset);
-      }else if(/\.(md|json|csv|txt|log|gd|godot|tscn|py)$/i.test(asset.url)){
-        event.preventDefault();
-        await documentPreview(asset);
-      }
-    }
-  });
-  document.addEventListener('keydown',event=>{
-    if(dialog.open||/INPUT|TEXTAREA|VIDEO/.test(event.target.tagName)||event.target.isContentEditable)return;
-    if(!presenting)return;
-    if(event.key==='ArrowRight'){event.preventDefault();updateStage(current+1);}
-    if(event.key==='ArrowLeft'){event.preventDefault();updateStage(current-1);}
-    if(event.key==='Escape'){event.preventDefault();presentation();}
-  });
-  document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{if(!img.parentElement.querySelector('.media-error')){const msg=document.createElement('span');msg.className='media-error';msg.textContent='图片暂不可用，可打开原文件。';img.parentElement.append(msg);}}));
-  const observer=new IntersectionObserver(entries=>{if(presenting)return;entries.forEach(entry=>{if(entry.isIntersecting)updateStage(stages.indexOf(entry.target),false);});},{rootMargin:'-10% 0px -65% 0px'});
-  stages.forEach(s=>observer.observe(s));
-  updateStage(0,false);
-  if(!location.hash){history.scrollRestoration='manual';window.scrollTo({top:0,behavior:'instant'});}
-})();
+  const documentLink=event.target.closest('a[data-document]');
+  if(!documentLink||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();
+  preview(documentLink.textContent,documentLink.href);
+  activeRequest=new AbortController();
+  const signal=activeRequest.signal;
+  previewBody.textContent='正在读取…';
+  try{
+    const response=await fetch(documentLink.href,{signal});
+    if(!response.ok)throw Error(response.status);
+    const text=await response.text();
+    if(signal.aborted)return;
+    const pre=document.createElement('pre');
+    pre.textContent=text;
+    previewBody.replaceChildren(pre);
+  }catch{if(!signal.aborted)previewBody.textContent='资料暂时无法预览，请打开原文件。';}
+});
 </script>
 </body>
 </html>
