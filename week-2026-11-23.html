@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="report-edition" content="20261126">
+<meta name="report-revision" content="ai-six-workflows-r486-milo-breakfast">
+<title>动物小镇 · AI 工作周报</title>
+<style>
+:root{color:#20342c;background:#f6f6ee;font:15px/1.55 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0}
+button,a,summary{touch-action:manipulation}
+button{font:inherit;cursor:pointer}
+a{color:#255b40;text-underline-offset:3px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #437550;outline-offset:3px}
+.wrap{max-width:1280px;margin:auto;padding:0 24px 18px}
+.header{display:flex;align-items:end;justify-content:space-between;gap:18px;padding:23px 0 15px;border-bottom:1px solid #d6ded1;margin-bottom:14px}
+h1{font-size:clamp(24px,3vw,38px);line-height:1.12;letter-spacing:-.055em;margin:0;color:#18382a}
+.period{white-space:nowrap;font-size:13px;color:#506154;margin:0 0 1px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;align-items:start}
+.card{background:#fffef8;border:1px solid #d6ded1;border-radius:14px;padding:13px 15px 9px;min-width:0}
+.card-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-bottom:10px}
+.topic{color:#4b6851;font-size:12px;font-weight:700;white-space:nowrap}
+h2{letter-spacing:-.035em;font-size:21px;line-height:1.22;margin:0;color:#223b2e}
+.feature{display:grid;grid-template-columns:126px minmax(0,1fr);gap:12px;align-items:stretch}
+.game{margin:0;display:grid;grid-template-rows:1fr auto;text-align:center;border-radius:9px;background:#e6ebde;overflow:hidden}
+.game button{display:block;width:100%;height:151px;padding:0;border:0;background:transparent}
+.game img{width:100%;height:100%;display:block;object-fit:contain;object-position:top center}
+.game figcaption{padding:4px;font-size:11px;color:#435749}
+.routes{display:grid;gap:7px}
+.route{display:grid;grid-template-columns:minmax(88px,.7fr) minmax(0,1fr);align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:#edf2e6}
+.route.risk{background:#f9ecda}
+.route strong{display:block;font-size:14px}
+.route span{font-size:12px;color:#46594d}
+.route b{font-size:22px;color:#2d5b41;line-height:1.3;white-space:nowrap}
+.route.risk b{color:#83552b}
+.capt{font-size:12px;color:#4d6054;margin:6px 0 0}
+.clips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.clip{margin:0;min-width:0;border-radius:8px;overflow:hidden;background:#edf1e6}
+.clip video{width:100%;height:131px;display:block;object-fit:contain;background:#1b3128}
+.clip figcaption{display:flex;align-items:center;justify-content:space-between;gap:5px;padding:4px 6px 4px 8px}
+.clip strong{font-size:13px;overflow-wrap:anywhere}
+.clip button,.close{background:#285940;color:white;border:0;border-radius:5px;padding:3px 9px;font-size:12px}
+.clip button:disabled{opacity:.65;cursor:wait}
+.scopes{font-size:12px;color:#536256;margin:5px 0 0}
+.compare{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px;margin:4px 0 7px}
+.count{padding:7px 10px;border-radius:8px;background:#f3e8d8}
+.count.after{background:#e8efe0}
+.count b{font-size:32px;line-height:1.02;font-weight:750;letter-spacing:-.045em}
+.count span{font-size:12px;margin-left:7px;color:#4a5a50}
+.limit{font-size:12px;color:#754a2b;margin:3px 0 0}
+.status-rows{margin:0}
+.status-row{padding:5px 0;border-bottom:1px solid #e3e8dc;display:grid;grid-template-columns:minmax(63px,.54fr) 58px minmax(0,1.8fr);gap:7px;align-items:center}
+.status-row:last-child{border:0}
+.status-row dt{font-weight:700;font-size:13px}
+.status-row dd{margin:0;font-size:12px;color:#495b50}
+.status-row .ratio{color:#295c44;font-size:20px;font-weight:750;white-space:nowrap;line-height:1.12}
+.status-link{font-size:12px;margin:5px 0 0}
+details{margin-top:8px;padding:7px 0 0;border-top:1px solid #dce3d7}
+summary{width:fit-content;color:#295b42;font-weight:650;font-size:13px;cursor:pointer}
+.links{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin:7px 0;font-size:12px}
+.module-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(145px,36%);gap:9px;align-items:start}
+.inline-shots{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.inline-shots figure{margin:0;min-width:0;flex:1 1 64px;max-width:200px;border:1px solid #dce5d8;border-radius:7px;overflow:hidden;background:#eff3e8}
+.inline-shots button{display:block;width:100%;height:90px;border:0;background:transparent;padding:0}
+.inline-shots img{display:block;width:100%;height:100%;object-fit:contain}
+.inline-shots figcaption{text-align:center;padding:3px 4px;font-size:11px;color:#435749}
+.module-split .inline-shots{margin:0}
+.qa-shots button,.cluster-shot button{height:84px}
+.cluster-shot figure{max-width:none}
+.candidate-shots button,.delta-table .inline-shots button{height:104px}
+.dialog-foot[hidden]{display:none}
+@media(max-width:400px){.module-split{grid-template-columns:1fr}.module-split .inline-shots{margin:4px 0}.cluster-shot button{height:136px}}
+.schedule{margin-top:13px;display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));gap:10px;align-items:start;border-top:1px solid #d6ded1;padding-top:11px}
+.schedule h2{font-size:15px;padding-top:1px;margin-right:4px}
+.milestone{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px;padding-left:9px;border-left:2px solid #d6ded1;line-height:1.45}
+.milestone b{white-space:nowrap;font-size:12px}
+.milestone span{font-size:12px;color:#526456}
+.footer{margin-top:10px;font-size:12px;color:#59695b;display:flex;gap:12px;align-items:center}
+dialog{width:min(740px,calc(100% - 28px));max-height:90vh;overflow:auto;border:1px solid #cedbd0;border-radius:12px;padding:15px;background:#fffef8;color:inherit}
+dialog::backdrop{background:#152b22bb}
+.dialog-head,.dialog-foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.dialog-head h2{font-size:17px}
+.dialog-body{margin:10px 0}
+.dialog-body img{width:100%;max-height:66vh;object-fit:contain;display:block}
+.dialog-body pre{font:inherit;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;padding:10px;background:#f1f4ea}
+@media(max-width:760px){.wrap{padding:0 14px 18px}.header{align-items:start;flex-direction:column;gap:5px;padding-top:18px}.grid{grid-template-columns:1fr}.schedule{grid-template-columns:1fr}.milestone{grid-template-columns:65px minmax(0,1fr)}}
+@media(max-width:380px){.feature{grid-template-columns:88px minmax(0,1fr);gap:8px}.route{grid-template-columns:1fr}.clip strong{font-size:11px}}
+
+.delta{margin-top:11px;padding:0;border:1px solid #d6ded1;border-radius:10px;background:#fffef8}
+.delta>summary{width:100%;padding:6px 12px;min-height:33px;font-size:14px}
+.delta>summary span{margin-left:10px;color:#536b59;font-size:12px;font-weight:400}
+.delta-content{padding:0 13px 12px}
+.delta-meta{margin:5px 0 9px;color:#4d6054;font-size:12px}
+.delta-nav{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 13px}
+.delta-nav a{border:1px solid #c9d6c8;border-radius:16px;padding:4px 10px;font-size:12px;text-decoration:none}
+.delta-group{margin:15px 0 20px;scroll-margin-top:10px}
+.delta-group h3{font-size:17px;margin:0 0 7px;color:#294d38}
+.delta-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.delta-table col:first-child{width:20%}
+.delta-table col:nth-child(2){width:32%}
+.delta-table thead{background:#e7eee2;color:#294d38}
+.delta-table th,.delta-table td{text-align:left;vertical-align:top;padding:8px 9px;border-bottom:1px solid #dce5d8;font-size:13px;overflow-wrap:anywhere}
+.delta-table tbody th{color:#2a4635}
+.delta-table tbody tr:nth-child(even){background:#f6f8f1}
+.delta-table td p{margin:0}
+.delta-status{display:block;font-size:11px;color:#5c695f;font-weight:400;margin-top:3px}
+.delta-links{display:flex;flex-wrap:wrap;gap:2px 10px;margin-top:4px;font-size:12px}
+.delta-side{display:none}
+.delta-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:490px;margin:8px 0 0}
+.delta-pair figure{margin:0;border:1px solid #dce5d8;border-radius:7px;overflow:hidden;background:#eff3e8}
+.delta-pair button{width:100%;height:128px;border:0;background:transparent;padding:0;display:block}
+.delta-pair img{width:100%;height:100%;display:block;object-fit:contain}
+.delta-pair figcaption{padding:4px 8px;color:#54665a;font-size:12px}
+@media(max-width:600px){.delta>summary{padding:6px 9px}.delta>summary span{margin-left:4px}.delta-content{padding:0 8px 9px}.delta-table colgroup{display:none}.delta-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.delta-table,.delta-table tbody{display:block}.delta-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid #dce5d8}.delta-table tbody th{grid-column:1/-1;padding-bottom:2px}.delta-table th,.delta-table td{border:0;padding:5px 6px}.delta-side{display:block;font-size:11px;font-weight:700;color:#4d6955;margin-bottom:2px}.delta-pair button{height:107px}}
+
+.delta-visual{display:grid;grid-template-columns:minmax(0,1.36fr) minmax(0,1fr);gap:12px;margin:9px 0 12px;align-items:start}
+#scene-delta .delta-motion img{aspect-ratio:768 / 452}.scene-preview{max-width:490px;margin:0}.scene-preview video{height:205px;width:100%;object-fit:contain}.delta-visual h3{margin:0 0 5px;font-size:15px;color:#294d38}
+.delta-motion{min-width:0;margin:0;border:1px solid #d6ded1;border-radius:9px;overflow:hidden;background:#edf1e5}
+.delta-motion img{display:block;width:100%;height:auto;max-height:410px;aspect-ratio:576 / 480;object-fit:contain}
+.recording-labels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));text-align:center;gap:6px;padding:4px 4px 0;color:#294d38;font-size:12px;font-weight:700}
+.recording-labels span{white-space:normal}
+.delta-motion figcaption{display:flex;gap:10px;align-items:center;padding:5px 9px;font-size:12px}
+.delta-motion button{border:1px solid #b9ccba;border-radius:5px;background:#fffef8;color:#2a5740;padding:2px 8px;font-size:12px}
+.delta-pair{max-width:none;margin:0 0 7px}
+.delta-pair button{height:104px}
+.delta-pair figcaption{padding:4px;font-size:11px}
+.delta-group{margin:6px 0;padding:5px 0;border-top:1px solid #dce5d8}
+.delta-group>summary{padding:3px 0}
+.delta-group>summary span,.delta-row-evidence summary{font-size:12px;font-weight:400;color:#536b59}
+.delta-row-evidence{margin-top:3px;padding:0;border:0}
+.delta-row-evidence .delta-links{margin-top:3px}
+.delta-table th,.delta-table td{padding:5px 8px}
+@media(max-width:760px){.delta-visual{grid-template-columns:1fr;gap:8px}.delta-pair button{height:92px}}
+
+
+.report-lead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:0 0 8px;font-size:15px}
+.report-lead span{color:#536256;font-size:12px;text-align:right}
+.flow-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:10px}
+.workflow-card{display:flex;flex-direction:column;gap:5px;padding:9px 10px 7px}
+.workflow-card .card-head{margin:0}
+.workflow-card .card-head h2{font-size:20px;color:#244634}
+.workflow-roles,.workflow-links{display:grid;gap:3px;margin:0;min-width:0;font-size:12px;line-height:1.35}
+.workflow-roles div,.workflow-links div{display:grid;grid-template-columns:42px minmax(0,1fr);align-items:baseline;gap:6px}
+.workflow-roles dt,.workflow-links dt{font-weight:700;color:#385d47}
+.workflow-roles dd,.workflow-links dd{margin:0;overflow-wrap:anywhere;color:#3f5446}
+.ua-demo{margin:7px 0 0}
+.ua-demo video{display:block;width:100%;height:228px;background:#182b23;object-fit:contain}
+.ua-v22-picker{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:7px 0 2px;color:#294638;font-size:12px}
+.ua-v22-picker select{max-width:100%;min-height:32px;padding:3px 7px;border:1px solid #8ca694;border-radius:6px;background:#fff;color:#233d31;font:inherit}
+.ua-demo figcaption{display:flex;flex-wrap:wrap;align-items:center;gap:3px 7px}
+.ua-demo figcaption button{flex:none}
+.ua-v22-evidence .thumb button{height:70px}
+@media(max-width:660px){.ua-demo video{height:245px}}
+.workflow-examples{display:grid;grid-template-columns:minmax(0,1fr);gap:5px;margin:5px 0 3px}
+.workflow-example{min-width:0;padding:6px 7px;background:#f4f8f1;border:1px solid #e2ebdf;border-radius:8px}
+.workflow-example h3{margin:0 0 2px;font-size:13px;color:#294638}
+.workflow-example p{margin:0 0 4px;font-size:12px;line-height:1.42;color:#3f5446}
+.example-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+.example-shots .thumb button,.workflow-example>.thumb button{height:78px}
+.order-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin:4px 0 0;padding:0;list-style:none;font-size:11px}
+.order-results li{background:#e6f1e1;border-radius:6px;padding:3px 5px;color:#2f5240}
+@media(max-width:660px){.example-shots .thumb button,.workflow-example>.thumb button{height:112px}}
+.ua-localization{margin:8px 0 10px;padding:9px 10px;border-radius:8px;background:#e8f1e3;color:#294638}
+.ua-localization h3{margin:0 0 3px;font-size:14px}
+.ua-localization p{margin:0;font-size:12px;line-height:1.5}
+.ua-locales{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0 0;padding:0;list-style:none}
+.ua-locales li{border-radius:10px;background:#fff;padding:1px 6px;font-size:11px}
+.workflow-result{margin:0;color:#304b3b;font-size:13px;line-height:1.42;min-height:2.84em}
+.workflow-content{display:grid;grid-template-columns:minmax(0,1.24fr) minmax(0,1fr);gap:8px;align-items:start}
+.workflow-copy{min-width:0}
+.workflow-content .workflow-result{margin-top:5px;min-height:0}
+.workflow-media{width:100%;min-width:0}
+.workflow-media .clips{gap:4px}
+.workflow-media .clips figcaption{display:grid;justify-items:start;gap:2px;padding:2px 4px}
+.workflow-media .clips figcaption button{padding:1px 5px}
+.thumb{min-width:0;margin:0;background:#edf1e6;border:1px solid #dce5d8;border-radius:8px;overflow:hidden}
+.thumb button{padding:0;border:0;background:transparent;width:100%;height:94px;display:block}
+.thumb img{display:block;width:100%;height:100%;object-fit:contain}
+.thumb figcaption{padding:2px 5px;font-size:11px;line-height:1.4;color:#435749;text-align:center}
+.workflow-media .thumb button,.workflow-media .clip video{height:96px}
+.workflow-media .clip figcaption{min-height:24px}
+.workflow-media .clip strong{font-size:11px}
+.workflow-links{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:auto;padding-top:1px}
+.workflow-links div{grid-template-columns:26px minmax(0,1fr);gap:3px}
+.workflow-card details{margin:0;padding-top:3px}
+.workflow-card summary{font-size:12px}
+.cluster-assignments{display:grid;gap:5px;margin:8px 0;padding:0;list-style:none}
+.cluster-assignments li{display:grid;gap:1px;padding:4px 7px;border:1px solid #dce7d9;border-radius:7px;background:#f8faf5;font-size:12px;line-height:1.4}
+.cluster-assignments strong{color:#274634}
+.cluster-task-links{display:flex;flex-wrap:wrap;gap:2px 9px}
+@media(max-width:1000px){.flow-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:660px){.flow-grid{grid-template-columns:minmax(0,1fr)}.workflow-content{grid-template-columns:minmax(0,1fr)}.workflow-result{min-height:0}.workflow-media .thumb button,.workflow-media .clip video{height:138px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <h1>动物小镇 · AI 工作周报</h1>
+    <p class="period"><time datetime="2026-11-23">11 月 23 日</time> – <time datetime="2026-11-27">27 日</time></p>
+  </header>
+  <main>
+
+
+
+    <p class="report-lead"><strong>六条工作流</strong><span>11 月 27 日 · 核对至 r480</span></p>
+    <div class="grid flow-grid">
+      <section class="card workflow-card" aria-labelledby="ua-title">
+        <header class="card-head"><h2 id="ua-title">自动 UA</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>产品、二合制作人、UA 素材、运营小云</dd></div>
+          <div><dt>Skill</dt><dd>买量创意、玩法拍摄与剪辑、广告多语种适配、运营核对</dd></div>
+        </dl>
+        <p class="workflow-result">玩法 R4 实录三轮交单。剧情 R29 已更新，待复审。</p>
+        </div>
+        <div class="workflow-media"><div class="clips"><figure class="clip"><video id="uaGameplay" controls playsinline preload="none" src="weekly/20261126/files/ua-tailwood-b-r4.mp4" poster="weekly/20261126/files/ua-tailwood-b-r4-poster.jpg" aria-label="玩法 B R4 · 内审试剪"></video><figcaption><strong>玩法 B R4 · 内审试剪</strong><button type="button" data-play="uaGameplay">播放</button></figcaption></figure><figure class="clip"><video id="uaStory" controls playsinline preload="none" src="weekly/20261126/files/ua-loaf-r29-480p.mp4" poster="weekly/20261126/files/ua-loaf-r29-poster.jpg" aria-label="剧情 R29 · 内部复审样片"></video><figcaption><strong>剧情 R29 · 内部复审样片</strong><button type="button" data-play="uaStory">播放</button></figcaption></figure></div></div>
+        </div>
+        <section class="ua-localization" aria-labelledby="ua-localization-title"><h3 id="ua-localization-title">视频多语言适配 · 支持 8 种语言</h3><p>自动换文字、图片、对白和配音，也能调整部分口型。已交商业化小组试用，等待反馈。</p><ul class="ua-locales" aria-label="支持的语言"><li>简中</li><li>繁中</li><li>西语</li><li>德语</li><li>阿语</li><li>韩语</li><li>印尼语</li><li>马来语</li></ul><p><strong>《一美分小费》V22 · 七语种完整审阅片</strong></p><label class="ua-v22-picker" for="uaV22Language">切换语种<select id="uaV22Language"><option value="zh-TW" data-src="weekly/20261126/files/one-cent-tip-zh-TW-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-zh-TW-v22-poster.png">繁体中文</option><option value="es" data-src="weekly/20261126/files/one-cent-tip-es-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-es-v22-poster.png">西班牙语</option><option value="de-DE" data-src="weekly/20261126/files/one-cent-tip-de-DE-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-de-DE-v22-poster.png">德语</option><option value="ar" data-src="weekly/20261126/files/one-cent-tip-ar-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-ar-v22-poster.png">阿拉伯语</option><option value="ko-KR" data-src="weekly/20261126/files/one-cent-tip-ko-KR-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-ko-KR-v22-poster.png">韩语</option><option value="id-ID" data-src="weekly/20261126/files/one-cent-tip-id-ID-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-id-ID-v22-poster.png">印尼语</option><option value="ms-MY" data-src="weekly/20261126/files/one-cent-tip-ms-MY-v22.mp4" data-poster="weekly/20261126/files/one-cent-tip-ms-MY-v22-poster.png">马来语</option></select></label><figure class="clip ua-demo" id="ua-v22-review"><video id="uaV22Film" controls playsinline preload="none" src="weekly/20261126/files/one-cent-tip-zh-TW-v22.mp4" poster="weekly/20261126/files/one-cent-tip-zh-TW-v22-poster.png" aria-label="一美分小费 V22 · 繁体中文"></video><figcaption><button type="button" data-play="uaV22Film">播放</button><span>每支约 36 秒 · 可切换到同一时点</span></figcaption></figure><details class="ua-v22-evidence"><summary>看七种片尾和图文对照</summary><div class="example-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/one-cent-tip-v22-outros.jpg" aria-label="放大七语种片尾实帧"><img src="weekly/20261126/files/one-cent-tip-v22-outros.jpg" loading="lazy" alt="七语种片尾实帧"></button><figcaption>七语种片尾实帧</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/one-cent-tip-v22-text-review.jpg" aria-label="放大七语种图文实帧"><img src="weekly/20261126/files/one-cent-tip-v22-text-review.jpg" loading="lazy" alt="七语种图文实帧"></button><figcaption>七语种图文实帧</figcaption></figure></div></details></section>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/ua-loaf-r29-480p.mp4" target="_blank" rel="noopener">新版剧情样片 MP4</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/ua-new-samples-20261127.md" data-document target="_blank" rel="noopener">两支样片复核</a> · <a href="weekly/20261126/files/ua-localization-trial-20261127.md" data-document target="_blank" rel="noopener">多语言工具试用</a> · <a href="weekly/20261126/files/one-cent-tip-v22-review-evidence.md" data-document target="_blank" rel="noopener">V22 样片与审阅记录</a></dd></div>
+        </dl>
+        <details><summary>产品决策、样片和运营承接</summary><p class="capt">玩法 R4 把三次交单接到一张缺木板的新订单。剧情 R29 调整了水花、对应音效和片尾。试投回执待核。</p>
+          <div class="inline-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/ua-loaf-r29-rain-review.jpg" aria-label="放大 R29 · 雨景修订实帧"><img src="weekly/20261126/files/ua-loaf-r29-rain-review.jpg" loading="lazy" alt="R29 · 雨景修订实帧"></button><figcaption>R29 · 雨景修订实帧</figcaption></figure></div>
+          <div class="links"><a href="weekly/20261126/files/ua-tailwood-b-r4.mp4" target="_blank" rel="noopener">玩法 R4 MP4</a><a href="weekly/20261126/files/ua-new-samples-20261127.md" data-document target="_blank" rel="noopener">样片交付与复核</a><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">分镜审核 Skill 更新</a><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">历史样片归档</a><a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">历史 v46 可编辑工程</a><a href="weekly/20261126/files/readme-6062166159b2.md" data-document target="_blank" rel="noopener">本地化 Skill 发布回执</a><a href="weekly/20261126/files/readme-14a8df8893bf.md" data-document target="_blank" rel="noopener">换皮流程验证</a></div>
+        </details>
+      </section>
+      <section class="card workflow-card" aria-labelledby="design-title">
+        <header class="card-head"><h2 id="design-title">自动设计</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>二合大牛、主策与数值策划</dd></div>
+          <div><dt>Skill</dt><dd>Foodstars 新手研究、新手引导调优</dd></div>
+        </dl>
+        <p class="workflow-result">重排客栈和早餐亭的委托，新增 4 个可选单。新版规则已复跑。</p>
+        </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-design-proof.png" aria-label="放大r478 · 修门 12 金币"><img src="weekly/20261126/files/r478-design-proof.png" alt="r478 · 修门 12 金币"></button><figcaption>r478 · 修门 12 金币</figcaption></figure></div>
+        </div>
+        <div class="workflow-examples"><section class="workflow-example"><h3>开局两单接到修门</h3><p>第一单给 4 金，第二单给 8 金，刚好够用 12 金修车站门。</p><div class="example-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-example-first-order-delivered.png" aria-label="放大 第一单 · 到账 4 金"><img src="weekly/20261126/files/r478-example-first-order-delivered.png" loading="lazy" alt="第一单 · 到账 4 金"></button><figcaption>第一单 · 到账 4 金</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-design-proof.png" aria-label="放大 第二单后 · 可支付 12 金"><img src="weekly/20261126/files/r478-design-proof.png" loading="lazy" alt="第二单后 · 可支付 12 金"></button><figcaption>第二单后 · 可支付 12 金</figcaption></figure></div></section><section class="workflow-example"><h3>给合成成品安排去处</h3><p>可选委托 10 → 14。四张建设委托随对应进度开放，给这些高级成品明确的交付用途。</p><ul class="order-results"><li>餐椅 · 56 金</li><li>长椅 · 116 金</li><li>防雨罩 · 26 金</li><li>三明治 · 56 金</li></ul></section></div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/r478-opening-economy.xlsx" target="_blank" rel="noopener">新版策划源表</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">新旧委托对照</a> · <a href="weekly/20261126/files/design-production-examples-20261127.md" data-document target="_blank" rel="noopener">设计与复跑</a></dd></div>
+        </dl>
+        <details><summary>策划表与竞品拆解</summary><div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">下午交接表</a><a href="weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx" target="_blank" rel="noopener">可编辑策划源表</a><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">数值交接说明</a><a href="weekly/20261126/files/material-e4a6e4d4de7f.md" data-document target="_blank" rel="noopener">竞品逐单拆解</a></div></details>
+      </section>
+      <section class="card workflow-card" aria-labelledby="production-title">
+        <header class="card-head"><h2 id="production-title">自动制作</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>客户端研发，实例名待核</dd></div>
+          <div><dt>Skill</dt><dd>客户端代码审核、出包校验</dd></div>
+        </dl>
+        <p class="workflow-result">正式棋盘换新。新档能合成、交单和修门，手机包待验。</p>
+        </div>
+        <div class="workflow-media"><figure class="clip"><video id="currentGame" controls playsinline preload="none" src="weekly/20261126/files/r478-opening.mp4" poster="weekly/20261126/files/r478-game-poster.png" aria-label="r478 · 开局实录"></video><figcaption><strong>r478 · 开局实录</strong><button type="button" data-play="currentGame">播放</button></figcaption></figure></div>
+        </div>
+        <div class="workflow-examples"><section class="workflow-example"><h3>修门后马上看到结果</h3><p>交互接通扣费、木板进场和门口恢复通行。桌面实录已走通。</p><div class="example-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-example-pr02-planks-moving.png" aria-label="放大 扣费后 · 木板进场"><img src="weekly/20261126/files/r478-example-pr02-planks-moving.png" loading="lazy" alt="扣费后 · 木板进场"></button><figcaption>扣费后 · 木板进场</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-example-pr02-window-reopened.png" aria-label="放大 施工后 · 门口恢复通行"><img src="weekly/20261126/files/r478-example-pr02-window-reopened.png" loading="lazy" alt="施工后 · 门口恢复通行"></button><figcaption>施工后 · 门口恢复通行</figcaption></figure></div></section><section class="workflow-example"><h3>棋盘加载时可以返回</h3><p>等待时能回到城镇，再点合成可以重新打开棋盘。桌面实点已复验。</p><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-board-loading.png" aria-label="放大 加载中的实际画面"><img src="weekly/20261126/files/r478-board-loading.png" loading="lazy" alt="加载中的实际画面"></button><figcaption>加载中的实际画面</figcaption></figure></section></div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">客户端交接</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">新版工程与验收</a> · <a href="weekly/20261126/files/design-production-examples-20261127.md" data-document target="_blank" rel="noopener">施工与返回复验</a></dd></div>
+        </dl>
+        <details><summary>工程证据和出包核验</summary>
+          <div class="inline-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/current-material-source.png" aria-label="放大此前 r465 · 材料来源弹窗"><img src="weekly/20261126/files/current-material-source.png" loading="lazy" alt="此前 r465 · 材料来源弹窗"></button><figcaption>此前 r465 · 材料来源弹窗</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-board-frame.png" aria-label="放大r469 · 正式棋盘"><img src="weekly/20261126/files/r469-board-frame.png" loading="lazy" alt="r469 · 正式棋盘"></button><figcaption>r469 · 正式棋盘</figcaption></figure></div>
+          <div class="links"><a href="weekly/20261126/files/r471-opening-and-garden-check.md" data-document target="_blank" rel="noopener">r471 上轮复测</a><a href="weekly/20261126/files/r471-opening.mp4" target="_blank" rel="noopener">r471 上轮实录</a><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">客户端交接</a><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">出包核验记录</a><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">棋盘整理修复回执</a></div>
+        </details>
+      </section>
+      <section class="card workflow-card" aria-labelledby="art-title">
+        <header class="card-head"><h2 id="art-title">自动美术</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>棋盘、场景和角色美术</dd></div>
+          <div><dt>Skill</dt><dd>棋盘落地、场景制作、D2 角色</dd></div>
+        </dl>
+        <p class="workflow-result">新版棋盘、锁区和订单画面已接入。车站拆件仍待整景验收。</p>
+        </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-board-proof.png" aria-label="放大r478 · 正式棋盘"><img src="weekly/20261126/files/r478-board-proof.png" alt="r478 · 正式棋盘"></button><figcaption>r478 · 正式棋盘</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景 Skill 与资产归档</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">新版棋盘实机</a></dd></div>
+        </dl>
+        <details><summary>候选图、前后对照与 Skill 归档</summary>
+          <p class="capt">松湾三态和居民入景仍为美术候选。地图拆件新增回装验收方法，车站整景仍待签收。</p><div class="inline-shots candidate-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-candidate.jpg" aria-label="放大场景与角色返修 · 候选"><img src="weekly/20261126/files/scene-art-r05-candidate.jpg" loading="lazy" alt="场景与角色返修 · 候选"></button><figcaption>场景与角色返修 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-three-stage-candidate.jpg" aria-label="放大松湾三态 · 候选"><img src="weekly/20261126/files/pinebay-three-stage-candidate.jpg" loading="lazy" alt="松湾三态 · 候选"></button><figcaption>松湾三态 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-changes.jpg" aria-label="放大场景修改对照 · 候选"><img src="weekly/20261126/files/scene-art-r05-changes.jpg" loading="lazy" alt="场景修改对照 · 候选"></button><figcaption>场景修改对照 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/scene-art-r05-characters.jpg" aria-label="放大角色入景对照 · 候选"><img src="weekly/20261126/files/scene-art-r05-characters.jpg" loading="lazy" alt="角色入景对照 · 候选"></button><figcaption>角色入景对照 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png" aria-label="放大松湾调整前 · 候选"><img src="weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png" loading="lazy" alt="松湾调整前 · 候选"></button><figcaption>松湾调整前 · 候选</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" aria-label="放大松湾调整后 · 候选"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="松湾调整后 · 候选"></button><figcaption>松湾调整后 · 候选</figcaption></figure></div>
+          <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾制作记录</a><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景 Skill 与米洛资产归档</a></div>
+        </details>
+      </section>
+      <section class="card workflow-card" aria-labelledby="qa-title">
+        <header class="card-head"><h2 id="qa-title">自动测试与迭代</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>小Q、客户端 QA</dd></div>
+          <div><dt>Skill</dt><dd>历史缺陷回归</dd></div>
+        </dl>
+        <p class="workflow-result">模拟器和桌面专项有回执。25–27 日内测的真机用包仍待核。</p>
+        </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-qa-repair.png" aria-label="放大r478 桌面复测 · 修门完成"><img src="weekly/20261126/files/r478-qa-repair.png" alt="r478 桌面复测 · 修门完成"></button><figcaption>r478 桌面复测 · 修门完成</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">桌面开局复测</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/company-qa-20261125-27.md" data-document target="_blank" rel="noopener">公司功能 QA 回查</a></dd></div>
+        </dl>
+        <details><summary>25–27 日功能 QA 与待复验</summary>
+          <div class="cluster-assignments" aria-label="公司内部功能 QA 回查">
+            <p class="capt"><strong>25 日 · v96／r396 模拟器。</strong> 39 个历史项里，21 个在所测条件下未复现，11 个只复测了一部分，5 个复现，1 个场景没能重现，1 个判为非缺陷。另确认建设预览英文被截断。</p>
+            <p class="capt"><strong>27 日 · 正式桌面。</strong> 开局 56 项和棋盘返回 20 项通过。风铃花园 32 个委托的规则复算通过。</p>
+            <p class="capt"><strong>待同包真机。</strong> 实际安装包和实体手机回执待核。封箱详情、拖放后绿色提示、详情遮挡需在手机上复验。五玩法预览仍待交 APK，独立验收未派发。</p>
+          </div>
+          <div class="links"><a href="weekly/20261126/files/company-qa-20261125-27.md" data-document target="_blank" rel="noopener">25–27 日核对明细</a><a href="http://sha1553:8788/?view=tasks&amp;task=1574eecd-1840-4824-b441-c0d0f8112d16" target="_blank" rel="noopener">工作站出包回执（内网）</a><a href="http://sha1553:8788/?view=tasks&amp;task=744c6c2b-8045-417b-b9ab-aaf694c81847" target="_blank" rel="noopener">工作站独立复验（内网）</a></div>
+          <div class="inline-shots"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/company-qa-r396-build-text.png" aria-label="放大 25 日 MuMu · 建设预览截字"><img src="weekly/20261126/files/company-qa-r396-build-text.png" loading="lazy" alt="25 日 MuMu · 建设预览截字"></button><figcaption>25 日 MuMu · 建设预览截字</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r478-board-loading.png" aria-label="放大r478 · 棋盘加载中可返回"><img src="weekly/20261126/files/r478-board-loading.png" loading="lazy" alt="r478 · 棋盘加载中可返回"></button><figcaption>r478 · 棋盘加载中可返回</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-loading-cancel.png" aria-label="放大r469 复测 · 棋盘加载中可返回"><img src="weekly/20261126/files/r469-loading-cancel.png" loading="lazy" alt="r469 复测 · 棋盘加载中可返回"></button><figcaption>r469 复测 · 棋盘加载中可返回</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/r469-board-frame.png" aria-label="放大r469 复测 · 进入棋盘"><img src="weekly/20261126/files/r469-board-frame.png" loading="lazy" alt="r469 复测 · 进入棋盘"></button><figcaption>r469 复测 · 进入棋盘</figcaption></figure></div>
+          <div class="links"><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">分工与 Skill 记录</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">25 日新档 QA</a><a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">25 日 v96 模拟器原报告</a><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">问题处理与复测</a><a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">首局路线与体力</a><a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷回归 Skill</a><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">历史模拟器卡顿对照</a></div>
+        </details>
+      </section>
+      <section class="card workflow-card" aria-labelledby="cluster-title">
+        <header class="card-head"><h2 id="cluster-title">集群工作流</h2></header>
+        <div class="workflow-content">
+        <div class="workflow-copy">
+        <dl class="workflow-roles">
+          <div><dt>Agent</dt><dd>两台工作站完成 Pip 接力和五套棋盘。</dd></div>
+          <div><dt>Skill</dt><dd>角色动画、窗口测试、棋盘换图与核对。</dd></div>
+        </dl>
+        <p class="workflow-result">Pip 跨站复验通过。五套棋盘已合版，末轮独立复验待补。</p>
+        </div>
+        <div class="workflow-media"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" aria-label="放大工作站调度看板 · 历史实拍"><img src="weekly/20261126/files/cluster-overview-ed7b30392569.jpg" alt="工作站调度看板 · 历史实拍"></button><figcaption>工作站调度看板 · 历史实拍</figcaption></figure></div>
+        </div>
+        <dl class="workflow-links">
+          <div><dt>交付</dt><dd><a href="weekly/20261126/files/board-execution-receipts-20261127.md" data-document target="_blank" rel="noopener">五套棋盘分工与交付</a></dd></div>
+          <div><dt>验收</dt><dd><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">工作站原始回执</a></dd></div>
+        </dl>
+        <details>
+          <summary>Agent、Skill 与验收回执</summary>
+          <p class="capt"><strong>Pip 已通过。</strong> SHA1713 核对 3 件动画资源和 9 个动作，按角色 Spine Skill 交回核验数据。SHA1256 复核同一份数据，使用角色 Spine、Godot 自动检查和界面交互方法做窗口复验。50 项窗口检查通过，日志、代表帧和证据包已留档。</p>
+          <div class="links"><a href="http://sha1553:8788/?view=tasks&amp;task=53a56f7b-8ac3-4761-bbea-f1daba8ef60a" target="_blank" rel="noopener">资源核验</a><a href="http://sha1553:8788/?view=tasks&amp;task=f08c9993-36ac-475e-9933-8638fcc3517b" target="_blank" rel="noopener">窗口复验</a></div>
+          <p class="capt"><strong>五套棋盘已冻结候选。</strong> 两台工作站完成五条制作线。海边首轮交齐，其余四套按样板接力补齐。每套 582 件，同一 Windows 候选 <code>f898ddc3</code> 已跑通开局。</p>
+          <ul class="cluster-assignments" aria-label="五套棋盘的实际工作站和 Agent">
+            <li><strong>海边木作</strong><span>SHA1713 Agent 1 完成全量</span><span class="cluster-task-links"><a href="http://sha1553:8788/?view=tasks&amp;task=df94019f-99d1-4d62-acec-20480c0ac5af" target="_blank" rel="noopener" aria-label="制作回执 TASK-00186">制作回执</a></span></li>
+            <li><strong>花园温室</strong><span>SHA1256 Agent 2 样板，SHA1713 补齐</span><span class="cluster-task-links"><a href="http://sha1553:8788/?view=tasks&amp;task=e341302a-e4df-4481-8c2d-f5290180ca08" target="_blank" rel="noopener" aria-label="样板回执 TASK-00187">样板回执</a> <a href="http://sha1553:8788/?view=tasks&amp;task=8218cd6f-216c-4314-ba73-b5e3d58a8bfa" target="_blank" rel="noopener" aria-label="补齐回执 TASK-00193">补齐回执</a></span></li>
+            <li><strong>街角工坊</strong><span>SHA1713 Agent 3 样板，SHA1713 补齐</span><span class="cluster-task-links"><a href="http://sha1553:8788/?view=tasks&amp;task=a4debf21-d381-4ef1-99c9-b1537f6231dc" target="_blank" rel="noopener" aria-label="样板回执 TASK-00188">样板回执</a> <a href="http://sha1553:8788/?view=tasks&amp;task=8317a6d8-ad10-46aa-8a1a-b5a3382727bf" target="_blank" rel="noopener" aria-label="补齐回执 TASK-00194">补齐回执</a></span></li>
+            <li><strong>山间集市</strong><span>SHA1256 Agent 4 样板，SHA1256 补齐</span><span class="cluster-task-links"><a href="http://sha1553:8788/?view=tasks&amp;task=0fcf2b5c-ee3a-449b-9a00-61a2f0ed3ef2" target="_blank" rel="noopener" aria-label="样板回执 TASK-00189">样板回执</a> <a href="http://sha1553:8788/?view=tasks&amp;task=3d5d89d4-f436-4c94-9a8e-f7d380921f17" target="_blank" rel="noopener" aria-label="补齐回执 TASK-00195">补齐回执</a></span></li>
+            <li><strong>灯火广场</strong><span>SHA1713 Agent 5 样板，SHA1256 补齐</span><span class="cluster-task-links"><a href="http://sha1553:8788/?view=tasks&amp;task=02a45df8-0db0-4112-8a82-5aa194c0dc5c" target="_blank" rel="noopener" aria-label="样板回执 TASK-00190">样板回执</a> <a href="http://sha1553:8788/?view=tasks&amp;task=bfeaa110-108a-4139-a8d2-daebc63730b2" target="_blank" rel="noopener" aria-label="补齐回执 TASK-00196">补齐回执</a></span></li>
+          </ul>
+          <p class="capt"><strong>日志核实的 Skill。</strong> 五套均有换图、逐件画面核对、交互验收和客户端接入的 Skill 读取记录。海边另读代码审核、关系核对、GDScript 和行为对照。工坊补齐另读需求验收。<a href="weekly/20261126/files/board-execution-receipts-20261127.md" data-document target="_blank" rel="noopener">看每个会话的 Skill 和验收</a></p>
+          <div class="links"><a href="http://sha1553:8788/?view=tasks&amp;task=a76bf107-b070-4d0e-959e-1a6bf1762b1a" target="_blank" rel="noopener">旧版独立 QA</a><a href="http://sha1553:8788/?view=tasks&amp;task=55d262ae-7e2b-423f-971d-6dd83dc138fb" target="_blank" rel="noopener">集成冻结</a><a href="http://sha1553:8788/?view=tasks&amp;task=90621db8-0bdb-45ec-8c78-5f4d2de67498" target="_blank" rel="noopener">末轮独立 QA</a></div>
+          <p class="capt"><strong>待补验收。</strong> SHA1122 的末轮交付失败，任务取消。旧版验收报告及新版集成回执均已留存，五套尚待独立签收。原任务需公司网络和工作站权限。</p>
+          <div class="links"><a href="weekly/20261126/files/cluster-receipts-20261127.md" data-document target="_blank" rel="noopener">Pip 与合版回执</a><a href="weekly/20261126/files/ai-role-workflow-record.md" data-document target="_blank" rel="noopener">原分工资料</a></div>
+        </details>
+      </section>
+    </div>
+
+    <details class="delta" id="weekly-delta">
+      <summary>每周项目增量对比 <span>11 月 19 日 → 27 日 · 30 项</span></summary>
+      <div class="delta-content">
+        <div class="delta-visual">
+          <div>
+            <h3>上周与本周 · 合成和交单</h3>
+            <figure class="delta-motion">
+              <div class="recording-labels"><span>11 月 20 日 · v35 续档</span><span>11 月 27 日 · r478 新档</span></div>
+              <img id="delta-gif" src="weekly/20261126/files/nov20-v35-nov27-r478-board-compare-poster.jpg" data-poster="weekly/20261126/files/nov20-v35-nov27-r478-board-compare-poster.jpg" data-animated="weekly/20261126/files/nov20-v35-nov27-r478-board-compare.gif" alt="左为 11 月 20 日 v35 续档，右为 11 月 27 日 r478 新档。两侧为合成和交第二单的真实录屏。" width="432" height="468" loading="lazy">
+              <figcaption><button type="button" id="delta-gif-toggle">播放 GIF</button><span>两版都实点合成并交第二单</span></figcaption>
+            </figure>
+          </div>
+          <div>
+            <h3>车站第二单 · 前后画面</h3>
+            <div class="delta-pair"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/nov20-v35-second-order.png" aria-label="放大 11 月 20 日 · v35 续档"><img src="weekly/20261126/files/nov20-v35-second-order.png" loading="lazy" alt="11 月 20 日 · v35 续档"></button><figcaption>11 月 20 日 · v35 续档</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/nov27-r478-second-order.png" aria-label="放大 11 月 27 日 · r478 新档"><img src="weekly/20261126/files/nov27-r478-second-order.png" loading="lazy" alt="11 月 27 日 · r478 新档"></button><figcaption>11 月 27 日 · r478 新档</figcaption></figure></div>
+            <h3>盖布解锁 · 26 日下午交接记录</h3>
+            <div class="delta-pair"><figure><button type="button" aria-label="放大解锁前" data-image="weekly/20261126/files/01-0b56a0bee134.png"><img loading="lazy" src="weekly/20261126/files/01-0b56a0bee134.png" alt="解锁前"></button><figcaption>解锁前</figcaption></figure><figure><button type="button" aria-label="放大解锁后 · 奖励到账" data-image="weekly/20261126/files/02-43bdc4c61107.png"><img loading="lazy" src="weekly/20261126/files/02-43bdc4c61107.png" alt="解锁后 · 奖励到账"></button><figcaption>解锁后 · 奖励到账</figcaption></figure></div>
+          </div>
+        </div>
+        <div class="delta-visual" id="scene-delta">
+          <div>
+            <h3>局外实录 · 米洛早餐亭</h3>
+            <figure class="delta-motion">
+              <div class="recording-labels"><span>11 月 20 日版本 · v35</span><span>11 月 27 日工程 · r486</span></div>
+              <img id="scene-delta-gif" src="weekly/20261126/files/milo-breakfast-v35-r486-poster.jpg" data-poster="weekly/20261126/files/milo-breakfast-v35-r486-poster.jpg" data-animated="weekly/20261126/files/milo-breakfast-v35-r486.gif" alt="米洛早餐亭 10/10 的两个实际运行版本。左为 11 月 20 日 v35 复录，右为 11 月 27 日 r486，能看到 3D 小动物沿场景走动。" width="768" height="452" loading="lazy">
+              <figcaption><button type="button" id="scene-delta-gif-toggle">播放 GIF</button><span>同为早餐亭开张后 · 两版均在 27 日复录</span></figcaption>
+            </figure>
+          </div>
+          <div>
+            <h3>最新工程 · 3D 小动物巡游</h3>
+            <figure class="clip scene-preview"><video id="miloPatrol" src="weekly/20261126/files/milo-breakfast-r486-patrol.mp4" poster="weekly/20261126/files/milo-breakfast-r486-patrol.jpg" controls playsinline preload="none" aria-label="米洛早餐亭 r486 · 3D 角色巡游"></video><figcaption><strong>r486 · 桌面实录</strong><button type="button" data-play="miloPatrol">播放</button></figcaption></figure>
+            <div class="delta-pair"><figure class="thumb"><button type="button" data-image="weekly/20261126/files/milo-breakfast-v35-replay.jpg" aria-label="放大v35 · 上周版本复录"><img src="weekly/20261126/files/milo-breakfast-v35-replay.jpg" loading="lazy" alt="v35 · 上周版本复录"></button><figcaption>v35 · 上周版本复录</figcaption></figure><figure class="thumb"><button type="button" data-image="weekly/20261126/files/milo-breakfast-r486-patrol.jpg" aria-label="放大r486 · 当前工程"><img src="weekly/20261126/files/milo-breakfast-r486-patrol.jpg" loading="lazy" alt="r486 · 当前工程"></button><figcaption>r486 · 当前工程</figcaption></figure></div>
+            <p class="delta-meta"><a href="weekly/20261126/files/milo-breakfast-comparison-20261127.md" data-document target="_blank" rel="noopener">早餐亭实录与版本记录</a></p>
+          </div>
+        </div>
+        <details id="delta-1" class="delta-group"><summary>正式工程与功能 <span>· 21 项</span></summary><table class="delta-table" aria-label="正式工程与功能"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">默认玩法与出包<span class="delta-status">模拟器已复验</span></th><td><span class="delta-side">上周</span><p>内测车站版，备选开场并行</p></td><td><span class="delta-side">本周</span><p>统一车站版，出包可拦错</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">参考包与出包验证</a></div></details></td></tr>
+<tr><th scope="row">序章开场和续玩<span class="delta-status">桌面已实点</span></th><td><span class="delta-side">上周</span><p>车厢教学后进车站</p></td><td><span class="delta-side">本周</span><p>5 秒片头可跳过，旧档可续</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md" data-document target="_blank" rel="noopener">片头、跳过与旧档</a></div></details></td></tr>
+<tr><th scope="row">章节入口与场景<span class="delta-status">桌面已复验</span></th><td><span class="delta-side">上周</span><p>三处场景已能试玩</p></td><td><span class="delta-side">本周</span><p>进早餐亭后首项建设会弹出</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-chapter-entry.md" data-document target="_blank" rel="noopener">跨章走查</a></div></details></td></tr>
+<tr><th scope="row">订单与续单<span class="delta-status">正式工程交接</span></th><td><span class="delta-side">上周</span><p>主线与续单已走通</p></td><td><span class="delta-side">本周</span><p>可选委托 10 → 14，晚期六种委托按新配置循环</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">下午交接表</a> <a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">可运行规则</a></div></details></td></tr>
+<tr><th scope="row">生产器与补货<span class="delta-status">正式工程交接</span></th><td><span class="delta-side">上周</span><p>基础合成和交单已测</p></td><td><span class="delta-side">本周</span><p>六个设备每 45 秒补货</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">供给规则</a> <a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">运行复测</a></div></details></td></tr>
+<tr><th scope="row">建设与体力节奏<span class="delta-status">自动路线已有结果</span></th><td><span class="delta-side">上周</span><p>三处场景、23 步建设</p></td><td><span class="delta-side">本周</span><p>重排开局供给和委托。早餐亭整段实跑待复验。</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">两条自动路线</a> <a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">建设数值表</a></div></details></td></tr>
+<tr><th scope="row">初始棋盘与解锁奖励<span class="delta-status">桌面实跑</span></th><td><span class="delta-side">上周</span><p>已有开局棋盘和解锁</p></td><td><span class="delta-side">本周</span><p>新版调整上方锁区、建设解锁与奖励</p><div class="inline-shots"><figure><button type="button" aria-label="放大本周操作前" data-image="weekly/20261126/files/01-0b56a0bee134.png"><img src="weekly/20261126/files/01-0b56a0bee134.png" loading="lazy" alt="本周操作前"></button><figcaption>本周操作前</figcaption></figure><figure><button type="button" aria-label="放大本周到账后" data-image="weekly/20261126/files/02-43bdc4c61107.png"><img src="weekly/20261126/files/02-43bdc4c61107.png" loading="lazy" alt="本周到账后"></button><figcaption>本周到账后</figcaption></figure></div></td></tr>
+<tr><th scope="row">棋盘整理<span class="delta-status">内网更新已发</span></th><td><span class="delta-side">上周</span><p>已验常用棋盘操作</p></td><td><span class="delta-side">本周</span><p>v96 内网补回整理</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md" data-document target="_blank" rel="noopener">补丁与实点记录</a></div></details></td></tr>
+<tr><th scope="row">棋盘换新与交互修复<span class="delta-status">正式桌面</span></th><td><span class="delta-side">此前</span><p>旧版棋盘和订单栏。</p></td><td><span class="delta-side">本周</span><p>新棋盘接入，修正封箱详情、落位绿格和详情遮挡。</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">新版工程与验收</a></div></details></td></tr>
+<tr><th scope="row">棋盘拖拽与订单横滑<span class="delta-status">桌面已复验</span></th><td><span class="delta-side">上周</span><p>已调整订单显示</p></td><td><span class="delta-side">本周</span><p>拖走棋子后原格恢复，顾客跟随横滑</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-scroll-and-drag.md" data-document target="_blank" rel="noopener">拖拽和横滑复测</a></div></details></td></tr>
+<tr><th scope="row">仓库、售价与撤销<span class="delta-status">规则及事务回归</span></th><td><span class="delta-side">上周</span><p>已有资产收支检查</p></td><td><span class="delta-side">本周</span><p>先用盘面再扣仓库，70 种材料卖出换体力</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">交单、仓库与撤销</a> <a href="weekly/20261126/files/readme-2228b0661384.md" data-document target="_blank" rel="noopener">材料售价口径</a></div></details></td></tr>
+<tr><th scope="row">顾客动作与交付<span class="delta-status">桌面已复验</span></th><td><span class="delta-side">上周</span><p>已有接物和交单反馈</p></td><td><span class="delta-side">本周</span><p>五位顾客实跑待机、眨眼、接物和退场</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-order-animation.md" data-document target="_blank" rel="noopener">订单交付复测</a> <a href="weekly/20261126/files/delta-order-idle.md" data-document target="_blank" rel="noopener">待机和双单复测</a></div></details></td></tr>
+<tr><th scope="row">连续交单、升等与到账<span class="delta-status">桌面专项</span></th><td><span class="delta-side">上周</span><p>已有金币和建设回执</p></td><td><span class="delta-side">本周</span><p>第二单排队演出，奖励到账后退场</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-level-and-reward.md" data-document target="_blank" rel="noopener">连交和升级复测</a></div></details></td></tr>
+<tr><th scope="row">操作按钮、文案与竖屏<span class="delta-status">桌面已验证</span></th><td><span class="delta-side">上周</span><p>调整订单、奖励和底栏</p></td><td><span class="delta-side">本周</span><p>按钮统一，长短屏复测</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-button-and-screen.md" data-document target="_blank" rel="noopener">长短屏复测</a> <a href="weekly/20261126/files/qa-a0a995305fb0.md" data-document target="_blank" rel="noopener">章节标题、导航和文案</a></div></details></td></tr>
+<tr><th scope="row">合成操作卡顿<span class="delta-status">模拟器候选</span></th><td><span class="delta-side">上周</span><p>已减少重复刷新</p></td><td><span class="delta-side">本周</span><p>同机卡顿 11 → 0，待真机验</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md" data-document target="_blank" rel="noopener">同机会话实测</a></div></details></td></tr>
+<tr><th scope="row">订单材料怎么获得<span class="delta-status">晚间工程 · 已见弹窗</span></th><td><span class="delta-side">上周</span><p>能查看材料合成关系</p></td><td><span class="delta-side">本周</span><p>点订单材料，直接显示来源和合成链</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a></div></details></td></tr>
+<tr><th scope="row">进棋盘等待与返回<span class="delta-status">晚间工程 · 桌面复测</span></th><td><span class="delta-side">上周</span><p>进入棋盘时等待资源</p></td><td><span class="delta-side">本周</span><p>提前准备画面，加载能返回，重进可用</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a></div></details></td></tr>
+<tr><th scope="row">场景内动物巡游<span class="delta-status">r469 · 工程已接入</span></th><td><span class="delta-side">上周</span><p>有场景常驻角色动作</p></td><td><span class="delta-side">本周</span><p>补入巡游路径、步幅与贴地动作</p></td></tr>
+<tr><th scope="row">风铃花园<span class="delta-status">r478 · 规则复跑通过</span></th><td><span class="delta-side">上周</span><p>范围到早餐亭</p></td><td><span class="delta-side">本周</span><p>32 份委托规则再次通过。整章试玩待验。</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/r471-opening-and-garden-check.md" data-document target="_blank" rel="noopener">开局与花园复测</a></div></details></td></tr>
+<tr><th scope="row">章节资源下载<span class="delta-status">桌面限速与分包验证</span></th><td><span class="delta-side">上周</span><p>试过早餐分享单项分包</p></td><td><span class="delta-side">本周</span><p>首次进客栈 188 → 19.9 MB</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-chapter-priority.md" data-document target="_blank" rel="noopener">首场景下载和恢复</a> <a href="weekly/20261126/files/delta-download-progress.md" data-document target="_blank" rel="noopener">提前下载和进度显示</a></div></details></td></tr>
+<tr><th scope="row">旅行等待、棋盘伙伴与触感<span class="delta-status">源码记录 · 待实测</span></th><td><span class="delta-side">上周</span><p>已有进章等待和触感候选</p></td><td><span class="delta-side">本周</span><p>盖章、伙伴和触感有改动，待实跑</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-engine-scope.md" data-document target="_blank" rel="noopener">工程变更取证范围</a></div></details></td></tr></tbody></table></details><details id="delta-2" class="delta-group"><summary>内容产出与候选 <span>· 5 项</span></summary><table class="delta-table" aria-label="内容产出与候选"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">前 20 级玩法候选<span class="delta-status">独立候选</span></th><td><span class="delta-side">上周</span><p>已能试玩前三处场景</p></td><td><span class="delta-side">本周</span><p>独立候选跑到晨市开张</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/delta-20-level-candidate.md" data-document target="_blank" rel="noopener">候选版复测</a> <a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">原集群需求</a></div></details></td></tr>
+<tr><th scope="row">场景素材与返修<span class="delta-status">美术候选与归档</span></th><td><span class="delta-side">上周</span><p>已有实景和待改场景图</p></td><td><span class="delta-side">本周</span><p>松湾做出三态；米洛恢复 16 张选图</p><div class="inline-shots"><figure><button type="button" aria-label="放大松湾候选返修图" data-image="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"><img src="weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png" loading="lazy" alt="松湾候选返修图"></button><figcaption>松湾候选返修图</figcaption></figure></div><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-c2f1bc872ba3.md" data-document target="_blank" rel="noopener">松湾三态</a>  <a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">米洛资产归档</a></div></details></td></tr>
+<tr><th scope="row">居民概念<span class="delta-status">概念候选</span></th><td><span class="delta-side">上周</span><p>已有居民草图</p></td><td><span class="delta-side">本周</span><p>新增六位角色概念，待采用</p><div class="inline-shots"><figure><button type="button" aria-label="放大六位居民候选图" data-image="weekly/20261126/files/delta-six-resident-candidates.jpg"><img src="weekly/20261126/files/delta-six-resident-candidates.jpg" loading="lazy" alt="六位居民候选图"></button><figcaption>六位居民候选图</figcaption></figure></div></td></tr>
+<tr><th scope="row">五套棋盘主题<span class="delta-status">整合候选</span></th><td><span class="delta-side">上周</span><p>试玩盘检查过 582 件物品</p></td><td><span class="delta-side">本周</span><p>五套棋盘已合版，16/17 项完成</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">派单与交回记录</a></div></details></td></tr>
+<tr><th scope="row">宣传短片<span class="delta-status">内部样例归档</span></th><td><span class="delta-side">上周</span><p>有修门、合成及救援样片</p></td><td><span class="delta-side">本周</span><p>玩法 B R4 与剧情 R29 已上页，试投待核</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-a454a3fdb866.md" data-document target="_blank" rel="noopener">实录与剧情归档</a> <a href="weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip" target="_blank" rel="noopener">可编辑工程</a> <a href="weekly/20261126/files/ua-tailwood-b-r4.mp4" target="_blank" rel="noopener">玩法 B R4</a> <a href="weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4" target="_blank" rel="noopener">历史 v46</a> <a href="weekly/20261126/files/ua-loaf-r28-480p.mp4" target="_blank" rel="noopener">历史剧情 R28</a> <a href="weekly/20261126/files/ua-loaf-r29-480p.mp4" target="_blank" rel="noopener">剧情 R29</a> <a href="weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4" target="_blank" rel="noopener">历史剧情 R25</a></div></details></td></tr></tbody></table></details><details id="delta-3" class="delta-group"><summary>AI 与交付流程 <span>· 4 项</span></summary><table class="delta-table" aria-label="AI 与交付流程"><colgroup><col><col><col></colgroup><thead><tr><th scope="col">变化项</th><th scope="col">上周</th><th scope="col">本周</th></tr></thead><tbody><tr><th scope="row">自动设计<span class="delta-status">设计到实跑</span></th><td><span class="delta-side">上周</span><p>开局和订单方案已复算</p></td><td><span class="delta-side">本周</span><p>更新委托与奖励，可选委托增到 14 个</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/material-e4a6e4d4de7f.md" data-document target="_blank" rel="noopener">实录拆解</a> <a href="weekly/20261126/files/material-2564ed2a5caf.xlsx" target="_blank" rel="noopener">数值交付</a> <a href="weekly/20261126/files/readme-1299eba797fc.md" data-document target="_blank" rel="noopener">自动复跑</a></div></details></td></tr>
+<tr><th scope="row">自动 QA 与缺陷复盘<span class="delta-status">两份专项报告</span></th><td><span class="delta-side">上周</span><p>已跑过 23 步和六份 AI 首玩</p></td><td><span class="delta-side">本周</span><p>模拟器和桌面专项有记录，安卓真机待对包</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html" target="_blank" rel="noopener">工程新档报告</a> <a href="weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html" target="_blank" rel="noopener">安卓包报告</a> <a href="weekly/20261126/files/readme-f6278337024f.md" data-document target="_blank" rel="noopener">历史缺陷回归</a></div></details></td></tr>
+<tr><th scope="row">集群工作流<span class="delta-status">Pip 通过 · 五盘待独立签收</span></th><td><span class="delta-side">上周</span><p>已有远端回报与分组交付</p></td><td><span class="delta-side">本周</span><p>Pip 双站接力通过；五盘已冻结候选</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/workstation-records-ea584c82aad4.html" target="_blank" rel="noopener">跨站原始回执</a></div></details></td></tr>
+<tr><th scope="row">制作 Skill<span class="delta-status">可复用流程</span></th><td><span class="delta-side">上周</span><p>已有分工手册和初期案例</p></td><td><span class="delta-side">本周</span><p>新增场景、录制和本地化案例</p><details class="delta-row-evidence"><summary>证据</summary><div class="delta-links"><a href="weekly/20261126/files/readme-288c27901ec8.md" data-document target="_blank" rel="noopener">场景制作</a> <a href="weekly/20261126/files/readme-6062166159b2.md" data-document target="_blank" rel="noopener">本地化</a> <a href="weekly/20261126/files/readme-14a8df8893bf.md" data-document target="_blank" rel="noopener">视频换皮</a></div></details></td></tr></tbody></table></details>
+        <p class="delta-meta"><a href="weekly/20261126/files/r478-engine-verification.md" data-document target="_blank" rel="noopener">新版工程与验收</a> · <a href="weekly/20261126/files/weekly-baseline-nov20-nov27.md" data-document target="_blank" rel="noopener">两版录屏来源</a> · <a href="weekly/20261126/files/delta-previous-week-baseline.md" data-document target="_blank" rel="noopener">上周基线</a> · <a href="weekly/20261126/files/delta-engine-scope.md" data-document target="_blank" rel="noopener">核对范围与待补证据</a></p>
+      </div>
+    </details>
+    <section class="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">计划节点</h2>
+      <div class="milestone"><b>23 日</b><span>候选版已分段复测，验收待确认</span></div>
+      <div class="milestone"><b>24 日</b><span>试投未见回执</span></div>
+      <div class="milestone"><b>25–27 日</b><span>已核模拟器和桌面专项，真机包与整批签收待核</span></div>
+    </section>
+  </main>
+  <footer class="footer"><a href="weekly/20261126/files/readme-4ff384c16681.md" data-document target="_blank" rel="noopener">下午报告存档</a><a href="weekly/20261126/files/current-engine-record.md" data-document target="_blank" rel="noopener">19:22 工程复验留档</a><span>r478 开局录于 11 月 27 日 12:13</span></footer>
+</div>
+
+<dialog id="preview" aria-labelledby="preview-title">
+  <div class="dialog-head"><h2 id="preview-title"></h2><button type="button" class="close">关闭</button></div>
+  <div class="dialog-body"></div>
+  <div class="dialog-foot"><a target="_blank" rel="noopener">打开原文件</a></div>
+</dialog>
+<script id="report-data" type="application/json">{"attachments":[{"url":"weekly/20261126/files/readme-4ff384c16681.md"},{"url":"weekly/20261126/files/readme-1299eba797fc.md"},{"url":"weekly/20261126/files/r469-board-frame.png"},{"url":"weekly/20261126/files/material-2564ed2a5caf.xlsx"},{"url":"weekly/20261126/files/flambe-mainline-001af76b0e0c.xlsx"},{"url":"weekly/20261126/files/readme-2228b0661384.md"},{"url":"weekly/20261126/files/material-e4a6e4d4de7f.md"},{"url":"weekly/20261126/files/readme-288c27901ec8.md"},{"url":"weekly/20261126/files/readme-c2f1bc872ba3.md"},{"url":"weekly/20261126/files/pinebay-before-repair-9ee5870542ed.png"},{"url":"weekly/20261126/files/pinebay-flourishing-roof-tree-80d7670e5f4d.png"},{"url":"weekly/20261126/files/readme-a454a3fdb866.md"},{"url":"weekly/20261126/files/tp2s-v46-editable-f7cb6d76466d.zip"},{"url":"weekly/20261126/files/readme-6062166159b2.md"},{"url":"weekly/20261126/files/readme-14a8df8893bf.md"},{"url":"weekly/20261126/files/tp2s-v46-03548d45d0eb.mp4"},{"url":"weekly/20261126/files/final-contact-5b5b5f686558.jpg"},{"url":"weekly/20261126/files/loaf-r25-b8ec6742cbd7.mp4"},{"url":"weekly/20261126/files/r25-final-review-7c556da8e42c.jpg"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-111630-a1a0d2fc8642.html"},{"url":"weekly/20261126/files/animaltown-bug-brief-20261125-142923-69e3abff6a4c.html"},{"url":"weekly/20261126/files/qa-a0a995305fb0.md"},{"url":"weekly/20261126/files/android-reference-profile-20261124-7be0f45fc815.md"},{"url":"weekly/20261126/files/readme-f6278337024f.md"},{"url":"weekly/20261126/files/board-action-frame-pacing-20261125-bc1a548d59b0.md"},{"url":"weekly/20261126/files/board-sort-restoration-20261125-e52979e07f1a.md"},{"url":"weekly/20261126/files/01-0b56a0bee134.png"},{"url":"weekly/20261126/files/02-43bdc4c61107.png"},{"url":"weekly/20261126/files/workstation-records-ea584c82aad4.html"},{"url":"weekly/20261126/files/cluster-overview-ed7b30392569.jpg"},{"url":"weekly/20261126/files/delta-scroll-and-drag.md"},{"url":"weekly/20261126/files/delta-order-animation.md"},{"url":"weekly/20261126/files/delta-order-idle.md"},{"url":"weekly/20261126/files/delta-level-and-reward.md"},{"url":"weekly/20261126/files/delta-button-and-screen.md"},{"url":"weekly/20261126/files/delta-chapter-priority.md"},{"url":"weekly/20261126/files/delta-download-progress.md"},{"url":"weekly/20261126/files/delta-20-level-candidate.md"},{"url":"weekly/20261126/files/delta-chapter-entry.md"},{"url":"weekly/20261126/files/delta-six-resident-candidates.jpg"},{"url":"weekly/20261126/files/delta-previous-week-baseline.md"},{"url":"files/ddc2c8f4d2bfbda1d56bbcdf.png"},{"url":"weekly/20261126/files/delta-engine-scope.md"},{"url":"weekly/20261126/files/current-engine-opening-stream.mp4"},{"url":"weekly/20261126/files/r471-opening-compare.gif"},{"url":"weekly/20261126/files/r471-opening-compare-poster.jpg"},{"url":"weekly/20261126/files/current-build-payment.png"},{"url":"weekly/20261126/files/current-build-receipt.png"},{"url":"weekly/20261126/files/current-station-scene.png"},{"url":"weekly/20261126/files/current-material-source.png"},{"url":"weekly/20261126/files/current-board-wait.png"},{"url":"weekly/20261126/files/current-inn-scene.png"},{"url":"weekly/20261126/files/pinebay-three-stage-candidate.jpg"},{"url":"weekly/20261126/files/current-engine-record.md"},{"url":"weekly/20261126/files/r469-game-opening.mp4"},{"url":"weekly/20261126/files/r469-build-design.png"},{"url":"weekly/20261126/files/r469-repair-receipt.png"},{"url":"weekly/20261126/files/r469-town-frame.png"},{"url":"weekly/20261126/files/r469-loading-cancel.png"},{"url":"weekly/20261126/files/scene-art-r05-candidate.jpg"},{"url":"weekly/20261126/files/scene-art-r05-changes.jpg"},{"url":"weekly/20261126/files/scene-art-r05-characters.jpg"},{"url":"weekly/20261126/files/ai-role-workflow-record.md"},{"url":"weekly/20261126/files/r471-opening.mp4"},{"url":"weekly/20261126/files/r471-design-proof.png"},{"url":"weekly/20261126/files/r471-game-poster.png"},{"url":"weekly/20261126/files/r471-qa-repair.png"},{"url":"weekly/20261126/files/r471-board-proof.png"},{"url":"weekly/20261126/files/r471-opening-and-garden-check.md"},{"url":"weekly/20261126/files/cluster-receipts-20261127.md"},{"url":"weekly/20261126/files/board-execution-receipts-20261127.md"},{"url":"weekly/20261126/files/r478-board-proof.png"},{"url":"weekly/20261126/files/r478-design-proof.png"},{"url":"weekly/20261126/files/r478-qa-repair.png"},{"url":"weekly/20261126/files/r478-board-loading.png"},{"url":"weekly/20261126/files/r478-opening-economy.xlsx"},{"url":"weekly/20261126/files/r478-opening.mp4"},{"url":"weekly/20261126/files/r478-game-poster.png"},{"url":"weekly/20261126/files/r471-r478-board-compare.gif"},{"url":"weekly/20261126/files/r471-r478-board-compare-poster.jpg"},{"url":"weekly/20261126/files/r478-engine-verification.md"},{"url":"weekly/20261126/files/company-qa-20261125-27.md"},{"url":"weekly/20261126/files/company-qa-r396-build-text.png"},{"url":"weekly/20261126/files/nov20-v35-nov27-r478-board-compare.gif"},{"url":"weekly/20261126/files/nov20-v35-nov27-r478-board-compare-poster.jpg"},{"url":"weekly/20261126/files/nov20-v35-second-order.png"},{"url":"weekly/20261126/files/nov27-r478-second-order.png"},{"url":"weekly/20261126/files/weekly-baseline-nov20-nov27.md"},{"url":"weekly/20261126/files/ua-localization-trial-20261127.md"},{"url":"weekly/20261126/files/ua-tailwood-b-r4.mp4"},{"url":"weekly/20261126/files/ua-tailwood-b-r4-poster.jpg"},{"url":"weekly/20261126/files/ua-loaf-r28-480p.mp4"},{"url":"weekly/20261126/files/ua-loaf-r28-poster.jpg"},{"url":"weekly/20261126/files/ua-loaf-r28-order-review.jpg"},{"url":"weekly/20261126/files/ua-new-samples-20261127.md"},{"url":"weekly/20261126/files/ua-loaf-r29-480p.mp4"},{"url":"weekly/20261126/files/ua-loaf-r29-poster.jpg"},{"url":"weekly/20261126/files/ua-loaf-r29-rain-review.jpg"},{"url":"weekly/20261126/files/ua-localization-demo-en-zh.mp4"},{"url":"weekly/20261126/files/ua-localization-demo-en-zh.jpg"},{"url":"weekly/20261126/files/ua-localization-original-en.mp4"},{"url":"weekly/20261126/files/ua-localization-output-zh.mp4"},{"url":"weekly/20261126/files/r478-example-first-order-delivered.png"},{"url":"weekly/20261126/files/r478-example-pr02-planks-moving.png"},{"url":"weekly/20261126/files/r478-example-pr02-window-reopened.png"},{"url":"weekly/20261126/files/ua-localization-demo-evidence.md"},{"url":"weekly/20261126/files/design-production-examples-20261127.md"},{"url":"weekly/20261126/files/nov20-v35-nov27-r478-station-compare.gif"},{"url":"weekly/20261126/files/nov20-v35-nov27-r478-station-compare-poster.jpg"},{"url":"weekly/20261126/files/nov20-v35-inn-arrival.png"},{"url":"weekly/20261126/files/nov27-r478-inn-arrival.png"},{"url":"weekly/20261126/files/weekly-town-scene-compare-20261127.md"},{"url":"weekly/20261126/files/one-cent-tip-zh-TW-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-zh-TW-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-es-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-es-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-de-DE-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-de-DE-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-ar-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-ar-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-ko-KR-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-ko-KR-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-id-ID-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-id-ID-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-ms-MY-v22.mp4"},{"url":"weekly/20261126/files/one-cent-tip-ms-MY-v22-poster.png"},{"url":"weekly/20261126/files/one-cent-tip-v22-outros.jpg"},{"url":"weekly/20261126/files/one-cent-tip-v22-text-review.jpg"},{"url":"weekly/20261126/files/one-cent-tip-v22-review-evidence.md"},{"url":"weekly/20261126/files/milo-breakfast-v35-r486.gif"},{"url":"weekly/20261126/files/milo-breakfast-v35-r486-poster.jpg"},{"url":"weekly/20261126/files/milo-breakfast-r486-patrol.mp4"},{"url":"weekly/20261126/files/milo-breakfast-r486-patrol.jpg"},{"url":"weekly/20261126/files/milo-breakfast-v35-replay.jpg"},{"url":"weekly/20261126/files/milo-breakfast-comparison-20261127.md"}]}</script>
+<script>
+
+const comparePanel=document.querySelector('#weekly-delta');
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const comparisons=[
+  {image:document.querySelector('#delta-gif'),button:document.querySelector('#delta-gif-toggle'),motion:!reduceMotion.matches},
+  {image:document.querySelector('#scene-delta-gif'),button:document.querySelector('#scene-delta-gif-toggle'),motion:false}
+];
+function updateGif(record){
+  const playing=comparePanel.open&&record.motion;
+  const src=playing?record.image.dataset.animated:record.image.dataset.poster;
+  if(record.image.getAttribute('src')!==src)record.image.setAttribute('src',src);
+  record.button.textContent=playing?'暂停 GIF':'播放 GIF';
+}
+for(const record of comparisons){
+  record.button.addEventListener('click',()=>{record.motion=!record.motion;updateGif(record);});
+  updateGif(record);
+}
+comparePanel.addEventListener('toggle',()=>comparisons.forEach(updateGif));
+const dialog=document.querySelector('#preview');
+const previewBody=dialog.querySelector('.dialog-body');
+const players=[...document.querySelectorAll('video')];
+const v22Language=document.querySelector('#uaV22Language');
+const v22Film=document.querySelector('#uaV22Film');
+v22Language.addEventListener('change',()=>{
+  const picked=v22Language.selectedOptions[0];
+  const playhead=Number.isFinite(v22Film.currentTime)?v22Film.currentTime:0;
+  v22Film.pause();
+  v22Film.src=picked.dataset.src;
+  v22Film.poster=picked.dataset.poster;
+  v22Film.setAttribute('aria-label','一美分小费 V22 · '+picked.textContent);
+  v22Film.load();
+  v22Film.currentTime=playhead;
+});
+let activeRequest;
+function pauseVideos(except){for(const video of players){if(video!==except)video.pause();}}
+function preview(title,url,showSource=true){
+  activeRequest?.abort();
+  pauseVideos();
+  dialog.querySelector('h2').textContent=title;
+  const source=dialog.querySelector('.dialog-foot');
+  source.hidden=!showSource;
+  if(showSource)source.querySelector('a').href=url;
+  previewBody.replaceChildren();
+  dialog.showModal();
+}
+for(const video of players){video.addEventListener('play',()=>pauseVideos(video));}
+document.querySelector('.close').addEventListener('click',()=>dialog.close());
+dialog.addEventListener('close',()=>{if(dialog.open)return;activeRequest?.abort();previewBody.replaceChildren();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)pauseVideos();});
+document.addEventListener('click',async event=>{
+  const photo=event.target.closest('[data-image]');
+  if(photo){
+    const title=photo.getAttribute('aria-label')||photo.textContent;
+    preview(title,photo.dataset.image,false);
+    const image=document.createElement('img');
+    image.alt=title;
+    image.src=photo.dataset.image;
+    previewBody.append(image);
+    return;
+  }
+  const play=event.target.closest('[data-play]');
+  if(play){
+    const player=document.getElementById(play.dataset.play);
+    play.disabled=true;
+    play.textContent='加载中';
+    try{
+      if(player.error)player.load();
+      if(player.ended)player.currentTime=0;
+      await player.play();
+      play.textContent='播放';
+    }catch{play.textContent='重试';}
+    finally{play.disabled=false;}
+    return;
+  }
+  const documentLink=event.target.closest('a[data-document]');
+  if(!documentLink||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();
+  preview(documentLink.textContent,documentLink.href);
+  activeRequest=new AbortController();
+  const signal=activeRequest.signal;
+  previewBody.textContent='正在读取…';
+  try{
+    const response=await fetch(documentLink.href,{signal});
+    if(!response.ok)throw Error(response.status);
+    const text=await response.text();
+    if(signal.aborted)return;
+    const pre=document.createElement('pre');
+    pre.textContent=text;
+    previewBody.replaceChildren(pre);
+  }catch{if(!signal.aborted)previewBody.textContent='资料暂时无法预览，请打开原文件。';}
+});
+</script>
+</body>
+</html>
